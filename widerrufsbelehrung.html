@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widerrufsbelehrung — Hey Coach Production GmbH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #06081A;
+      --text: #FFFFFF;
+      --text2: #B0B8D0;
+      --accent: #B87C1A;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: rgba(6, 8, 26, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(184, 124, 26, 0.15);
+    }
+
+    .nav-logo img {
+      height: 32px;
+      display: block;
+    }
+
+    .nav-back {
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover {
+      color: var(--accent);
+    }
+
+    /* ── MAIN ── */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 7rem 1.5rem 4rem;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 2.5rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
+      color: var(--text);
+    }
+
+    p {
+      color: var(--text2);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-block {
+      margin-top: 2rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(184, 124, 26, 0.15);
+      border-radius: 12px;
+      padding: 1.8rem 1.5rem;
+    }
+
+    .form-block p {
+      color: var(--text2);
+      font-size: 0.93rem;
+    }
+
+    .form-block .form-label {
+      font-style: italic;
+      color: var(--text2);
+      font-size: 0.88rem;
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+
+    .form-block ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.6rem 0 0;
+    }
+
+    .form-block ul li {
+      color: var(--text2);
+      font-size: 0.93rem;
+      padding: 0.35rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .form-block ul li:last-child {
+      border-bottom: none;
+    }
+
+    .stand {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--text2);
+      opacity: 0.6;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 0.82rem;
+      color: var(--text2);
+      opacity: 0.5;
+    }
+
+    .footer a {
+      color: var(--text2);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAV
+═══════════════════════════════════════ -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  </a>
+  <div class="nav-right">
+    <a href="javascript:history.back()" class="nav-back">&larr; Zur&uuml;ck</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     CONTENT
+═══════════════════════════════════════ -->
+<main class="content">
+
+  <h1>WIDERRUFSBELEHRUNG</h1>
+
+  <h2>Widerrufsrecht</h2>
+  <p>
+    Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gr&uuml;nden diesen Vertrag zu widerrufen.
+    Die Widerrufsfrist betr&auml;gt 14 Tage ab dem Tag des Vertragsschlusses.
+  </p>
+  <p>
+    Um Ihr Widerrufsrecht auszu&uuml;ben, m&uuml;ssen Sie uns
+    (Hey Coach Production GmbH, Kandelstr. 5, 79199 Kirchzarten,
+    E-Mail: heycoachproduction@gmail.com)
+    mittels einer eindeutigen Erkl&auml;rung (z.&thinsp;B. E-Mail)
+    &uuml;ber Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
+  </p>
+  <p>
+    Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung
+    &uuml;ber die Aus&uuml;bung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.
+  </p>
+
+  <h2>Folgen des Widerrufs</h2>
+  <p>
+    Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen,
+    die wir von Ihnen erhalten haben, unverz&uuml;glich und sp&auml;testens
+    binnen 14 Tagen ab dem Tag zur&uuml;ckzuzahlen, an dem die Mitteilung
+    &uuml;ber Ihren Widerruf bei uns eingegangen ist. F&uuml;r diese R&uuml;ckzahlung
+    verwenden wir dasselbe Zahlungsmittel, das Sie bei der urspr&uuml;nglichen
+    Transaktion eingesetzt haben.
+  </p>
+
+  <h2>Besonderer Hinweis bei digitalen Inhalten</h2>
+  <p>
+    Das Widerrufsrecht erlischt vorzeitig, wenn wir mit der Ausf&uuml;hrung
+    des Vertrags (Bereitstellung des digitalen Inhalts) begonnen haben,
+    nachdem Sie ausdr&uuml;cklich zugestimmt haben, dass wir mit der
+    Ausf&uuml;hrung des Vertrags vor Ablauf der Widerrufsfrist beginnen,
+    und Sie Ihre Kenntnis davon best&auml;tigt haben, dass Sie durch Ihre
+    Zustimmung mit Beginn der Ausf&uuml;hrung des Vertrags Ihr Widerrufsrecht verlieren.
+  </p>
+
+  <h2>Muster-Widerrufsformular</h2>
+
+  <div class="form-block">
+    <span class="form-label">(Formular nur ausf&uuml;llen und zur&uuml;cksenden, wenn Sie den Vertrag widerrufen m&ouml;chten)</span>
+
+    <p>
+      An: Hey Coach Production GmbH, Kandelstr. 5, 79199 Kirchzarten,
+      E-Mail: heycoachproduction@gmail.com
+    </p>
+    <p>
+      Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag
+      &uuml;ber den Kauf der folgenden digitalen Inhalte:
+    </p>
+    <ul>
+      <li>Bestellt am / erhalten am:</li>
+      <li>Name des/der Verbraucher(s):</li>
+      <li>Anschrift des/der Verbraucher(s):</li>
+      <li>Datum:</li>
+      <li>Unterschrift (nur bei Mitteilung auf Papier):</li>
+    </ul>
+  </div>
+
+  <p class="stand">Stand: M&auml;rz 2026</p>
+
+</main>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer class="footer">
+  <p>&copy; 2026 Hey Coach Production GmbH &middot; <a href="index.html">Startseite</a></p>
+</footer>
+
+</body>
+</html>

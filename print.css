@@ -1,0 +1,284 @@
+/* ============================================================
+   PRINT-FRIENDLY OVERRIDES — Light theme for PDF export
+   ============================================================ */
+
+:root {
+  --bg-primary:    #FFFFFF !important;
+  --bg-secondary:  #F5F5F5 !important;
+  --bg-card:       #FFFFFF !important;
+  --bg-elevated:   #F0F0F0 !important;
+  --accent:        #2563EB !important;
+  --accent-hover:  #3B82F6 !important;
+  --accent-bright: #2563EB !important;
+  --accent-dim:    rgba(37,99,235,0.08) !important;
+  --accent-glow:   rgba(37,99,235,0.15) !important;
+  --text-primary:  #111111 !important;
+  --text-secondary:#444444 !important;
+  --text-muted:    #777777 !important;
+  --border:        rgba(0,0,0,0.12) !important;
+  --border-accent: rgba(37,99,235,0.25) !important;
+  --gradient-card: none !important;
+}
+
+/* Force all backgrounds white */
+body, .section, .section--dark, .hero, .footer,
+.final-cta, .nav, .proof-section, .partner-section {
+  background: #FFFFFF !important;
+  color: #111 !important;
+}
+
+/* All text dark */
+h1, h2, h3, h4, p, span, a, strong, li, div, button, label {
+  color: #111 !important;
+}
+h1 em, .section-label, .hero-eyebrow {
+  color: #2563EB !important;
+}
+.hero-sub, .course-row-trainer, .card-desc,
+.testimonial-text, .review-text, .faq-answer-inner,
+.feature-text p, .partner-list-item, .footer-brand p {
+  color: #444 !important;
+}
+.text-muted, .price-note, .course-meta-pill,
+.trainer-card-creds, .stat-label, .hero-stat-label,
+.reviews-rating-count, .footer-col a {
+  color: #666 !important;
+}
+
+/* Hide videos, show poster images */
+video, .video-iframe-wrap, iframe { display: none !important; }
+.hero-bg { display: none !important; }
+.hero {
+  background: linear-gradient(135deg, #0A1428 0%, #162040 100%) !important;
+  min-height: auto !important;
+  padding: 60px 0 40px !important;
+}
+.hero h1, .hero p, .hero span, .hero a, .hero-eyebrow,
+.hero-stat-number, .hero-stat-label {
+  color: #FFFFFF !important;
+}
+.hero h1 em { color: #60A5FA !important; }
+.hero .btn-primary { background: #2563EB !important; color: #fff !important; }
+
+/* Final CTA - dark section */
+.final-cta {
+  background: linear-gradient(135deg, #0A1428 0%, #162040 100%) !important;
+  min-height: auto !important;
+}
+.final-cta-bg { display: none !important; }
+.final-cta h2, .final-cta p, .final-cta span, .final-cta a,
+.final-cta .section-label {
+  color: #FFFFFF !important;
+}
+
+/* Buttons readable */
+.btn-primary {
+  background: #2563EB !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+.btn-outline, .btn-ghost {
+  border: 1.5px solid #2563EB !important;
+  color: #2563EB !important;
+}
+.nav-cta {
+  background: #2563EB !important;
+  color: #fff !important;
+}
+
+/* Cards & sections with visible borders */
+.course-card, .proof-card, .feature-card, .testimonial-card,
+.review-card, .course-row, .faq-item, .coming-soon-card,
+.trainer-card, .about-badge, .partner-inner {
+  border: 1px solid #ddd !important;
+  background: #fff !important;
+}
+.course-row {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  margin-bottom: 20px !important;
+}
+
+/* Stats bar */
+.stats-bar, .hero-stats-bar {
+  background: #F5F5F5 !important;
+  border: 1px solid #ddd !important;
+}
+.stat-number, .hero-stat-number {
+  color: #2563EB !important;
+}
+
+/* Trainer cards */
+.trainer-card {
+  background: #F8F8F8 !important;
+  overflow: hidden !important;
+}
+.trainer-card-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 60%) !important;
+}
+.trainer-card-name, .trainer-card-role, .trainer-card-creds {
+  color: #fff !important;
+}
+.trainer-card-tag {
+  background: #2563EB !important;
+  color: #fff !important;
+}
+
+/* Section labels */
+.section-label {
+  color: #2563EB !important;
+}
+
+/* Proof icons */
+.proof-icon svg { stroke: #2563EB !important; }
+.feature-icon svg { stroke: #2563EB !important; }
+
+/* Price styling */
+.price { color: #111 !important; font-weight: 700 !important; }
+.price-old { color: #999 !important; }
+.course-row-tag {
+  background: #2563EB !important;
+  color: #fff !important;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+/* FAQ */
+.faq-tab {
+  border: 1px solid #ddd !important;
+  color: #111 !important;
+  background: #f5f5f5 !important;
+}
+.faq-tab.active {
+  background: #2563EB !important;
+  color: #fff !important;
+}
+.faq-question {
+  color: #111 !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+/* Reviews */
+.reviews-rating-stars, .review-stars, .testimonial-stars {
+  color: #F59E0B !important;
+}
+.reviews-rating-score { color: #111 !important; }
+
+/* Awards */
+.trainer-award {
+  border: 1px solid #ddd !important;
+  background: #F8F8F8 !important;
+}
+.trainer-award strong { color: #111 !important; }
+
+/* Coming soon badge */
+.coming-soon-badge {
+  background: #2563EB !important;
+  color: #fff !important;
+}
+
+/* Footer */
+.footer {
+  background: #F5F5F5 !important;
+  border-top: 1px solid #ddd !important;
+}
+.footer img[src*="Logo-white"] { filter: invert(1) !important; }
+.footer h4 { color: #111 !important; }
+.footer a { color: #444 !important; }
+
+/* Navigation */
+.nav {
+  background: #FFFFFF !important;
+  border-bottom: 1px solid #ddd !important;
+}
+.nav-logo img { filter: invert(1) !important; }
+.nav-links a { color: #444 !important; }
+
+/* Images always visible */
+img {
+  display: block !important;
+  max-width: 100% !important;
+}
+
+/* Kill ALL pseudo-element overlays, grain, noise */
+body::after,
+body::before,
+.hero-bg::after,
+.hero-bg::before,
+.final-cta-bg::after,
+.final-cta-bg::before,
+.course-row-media-overlay,
+.video-overlay,
+.trainer-card-overlay,
+.coming-soon-card::after,
+.coming-soon-card::before,
+.trainers-scroll-wrapper::after {
+  display: none !important;
+  content: none !important;
+  opacity: 0 !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+/* No animations, no filters, no blur */
+*, *::before, *::after {
+  animation: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  background-image: none !important;
+}
+
+/* Restore backgrounds that were killed by background-image:none */
+img { background-image: none !important; }
+.hero { background: #0E1E3A !important; }
+.final-cta { background: #0E1E3A !important; }
+.btn-primary { background-color: #2563EB !important; }
+.course-row-tag { background-color: #2563EB !important; }
+.coming-soon-badge { background-color: #2563EB !important; }
+.faq-tab.active { background-color: #2563EB !important; }
+.trainer-award { background-color: #F8F8F8 !important; }
+.stats-bar, .hero-stats-bar { background-color: #F5F5F5 !important; }
+.nav { background-color: #FFFFFF !important; }
+.section, .section--dark { background-color: #FFFFFF !important; }
+.footer { background-color: #F5F5F5 !important; }
+
+/* Reveal classes (JS animation) — force visible */
+.reveal, .reveal-delay-1, .reveal-delay-2,
+.reveal-delay-3, .reveal-delay-4 {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Print color preservation */
+* {
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+/* Page breaks */
+.section, section { page-break-inside: avoid; }
+h2, h3 { page-break-after: avoid; }
+img { page-break-inside: avoid; }
+
+/* Scrollable sections → visible */
+.trainers-track, .reviews-track {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+  overflow: visible !important;
+}
+.trainers-scroll-wrapper, .reviews-carousel-wrap {
+  overflow: visible !important;
+}
+
+/* Hide scroll controls */
+.reviews-controls { display: none !important; }
+.nav-hamburger { display: none !important; }

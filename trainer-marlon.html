@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marlon — Muay Thai Experte | Hey Coach Production</title>
+  <meta name="description" content="Marlon — ISKA Weltmeister, 1st DAN, Gr&uuml;nder T1 Kampfsportzentrum. Lernen Sie Muay Thai von einem echten Weltmeister.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://heycoachproduction.de/wp-content/uploads/2025/04/favicon.jpg" type="image/jpeg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #06081A;
+      --bg2:       #0C1228;
+      --bg3:       #121A38;
+      --bg-elevated: #1A2248;
+      --accent:    #B87C1A;
+      --accent-hover: #D4A040;
+      --accent-glow: rgba(184, 124, 26, 0.15);
+      --text:      #FFFFFF;
+      --text2:     #B0B8D0;
+      --text3:     #7080B0;
+      --border:    rgba(255,255,255,0.08);
+      --border2:   rgba(255,255,255,0.12);
+      --r:         14px;
+      --max:       1100px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: radial-gradient(ellipse 80% 60% at 65% 0%, #141E48 0%, #0A1230 35%, #06081A 65%);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.012'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 0 24px; height: 64px; display: flex; align-items: center;
+      justify-content: space-between;
+      background: rgba(6, 8, 26, 0.88); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo img { height: 28px; display: block; }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-back { color: var(--text3); text-decoration: none; font-size: 14px; transition: color .2s; }
+    .nav-back:hover { color: var(--text); }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* ── HERO (Split Layout) ── */
+    .hero {
+      display: grid; grid-template-columns: 50% 50%;
+      min-height: 100vh; margin-top: 64px;
+    }
+    .hero-photo {
+      position: relative; overflow: hidden;
+    }
+    .hero-photo img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
+      display: block;
+    }
+    .hero-photo::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, transparent 60%, var(--bg) 100%);
+      pointer-events: none;
+    }
+    .hero-panel {
+      background: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      padding: 60px 48px;
+    }
+    .hero-panel-inner {
+      max-width: 480px; width: 100%;
+    }
+    .hero-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(184, 124, 26, 0.12); border: 1px solid rgba(184, 124, 26, 0.3);
+      color: var(--accent-hover); border-radius: 100px; padding: 5px 14px;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.05em;
+      text-transform: uppercase; margin-bottom: 28px;
+    }
+    .hero-label span { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    .hero-name {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(42px, 6vw, 64px);
+      font-weight: 800; line-height: 1.05;
+      letter-spacing: -0.03em; color: #fff; margin-bottom: 16px;
+    }
+    .hero-role {
+      font-size: 16px; color: var(--accent-hover);
+      font-weight: 500; margin-bottom: 24px; line-height: 1.5;
+    }
+    .hero-divider {
+      width: 48px; height: 3px; background: var(--accent);
+      margin-bottom: 24px; border-radius: 2px;
+    }
+    .hero-bio {
+      font-size: 15px; color: var(--text2); line-height: 1.75; margin-bottom: 36px;
+    }
+    .hero-stats {
+      display: flex; gap: 32px; padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+    .hero-stat { display: flex; flex-direction: column; }
+    .hero-stat-num {
+      font-family: 'Syne', sans-serif; font-size: 24px;
+      font-weight: 800; color: #fff;
+    }
+    .hero-stat-label {
+      font-size: 12px; color: var(--text3); margin-top: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── SECTIONS ── */
+    .section { padding: 96px 0; }
+    .label {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: block;
+    }
+    .h2 {
+      font-family: 'Syne', sans-serif; font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 20px;
+      color: #fff;
+    }
+
+    /* ── COURSES SECTION ── */
+    .courses-section {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .courses-header {
+      text-align: center; margin-bottom: 56px;
+    }
+    .courses-header p {
+      color: var(--text2); font-size: 16px; max-width: 480px; margin: 0 auto;
+    }
+    .courses-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+    }
+    .course-card {
+      background: var(--bg3);
+      border: 1px solid var(--border2);
+      border-radius: var(--r);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 56px rgba(0,0,0,0.35);
+      border-color: rgba(184, 124, 26, 0.3);
+    }
+    .course-img {
+      position: relative; aspect-ratio: 16/10; overflow: hidden;
+    }
+    .course-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .course-card:hover .course-img img { transform: scale(1.04); }
+    .course-badge {
+      position: absolute; top: 14px; left: 14px;
+      background: rgba(6, 8, 26, 0.8); backdrop-filter: blur(8px);
+      border: 1px solid rgba(184, 124, 26, 0.3);
+      color: var(--accent-hover); font-size: 11px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 5px 12px; border-radius: 8px;
+    }
+    .course-body {
+      padding: 28px 28px 32px;
+      flex: 1; display: flex; flex-direction: column;
+    }
+    .course-tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+    }
+    .course-title {
+      font-family: 'Syne', sans-serif; font-size: 22px;
+      font-weight: 700; line-height: 1.2; color: #fff; margin-bottom: 12px;
+    }
+    .course-desc {
+      color: var(--text2); font-size: 14px; line-height: 1.6;
+      flex: 1; margin-bottom: 20px;
+    }
+    .course-price-row {
+      display: flex; align-items: baseline; gap: 8px; margin-bottom: 20px;
+    }
+    .course-price {
+      font-family: 'Syne', sans-serif; font-size: 32px;
+      font-weight: 800; color: #fff;
+    }
+    .course-price-note {
+      font-size: 13px; color: var(--text3);
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--accent); color: #fff; font-family: 'Outfit', sans-serif;
+      font-size: 15px; font-weight: 600; padding: 14px 28px; border-radius: 12px;
+      text-decoration: none; border: none; cursor: pointer; transition: background .2s;
+      width: 100%; text-align: center;
+    }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .course-guarantee {
+      display: flex; align-items: center; justify-content: center;
+      gap: 6px; margin-top: 12px; font-size: 12px; color: var(--text3);
+    }
+    .course-guarantee svg { width: 13px; height: 13px; color: #4ade80; flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg); border-top: 1px solid var(--border);
+      padding: 40px 24px; text-align: center;
+    }
+    footer img { height: 24px; margin-bottom: 14px; }
+    footer p { font-size: 13px; color: var(--text3); }
+    footer a { color: var(--text3); }
+    footer a:hover { color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-photo { height: 50vh; }
+      .hero-photo::after {
+        background: linear-gradient(180deg, transparent 50%, var(--bg) 100%);
+      }
+      .hero-panel { padding: 40px 24px; }
+      .courses-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+    }
+    @media (max-width: 600px) {
+      .hero-photo { height: 40vh; }
+      .hero-name { font-size: 36px; }
+      .hero-stats { flex-wrap: wrap; gap: 20px; }
+      .section { padding: 64px 0; }
+      .wrap { padding: 0 16px; }
+      .course-body { padding: 22px 20px 26px; }
+      .course-title { font-size: 19px; }
+      .course-price { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index-v7.html" class="nav-logo">
+    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  </a>
+  <div class="nav-right">
+    <a href="javascript:history.back()" class="nav-back">&larr; Zur&uuml;ck</a>
+  </div>
+</nav>
+
+
+<!-- HERO (Split Layout) -->
+<section class="hero">
+  <div class="hero-photo">
+    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="Marlon">
+  </div>
+  <div class="hero-panel">
+    <div class="hero-panel-inner">
+      <div class="hero-label"><span></span>Muay Thai</div>
+      <h1 class="hero-name">Marlon</h1>
+      <p class="hero-role">Gr&uuml;nder T1 Kampfsportzentrum &middot; 1st DAN ISKA Weltmeister Muay Thai</p>
+      <div class="hero-divider"></div>
+      <p class="hero-bio">
+        Marlon ist ISKA Weltmeister im Muay Thai und Gr&uuml;nder des T1 Kampfsportzentrums. Seine Leidenschaft: Kampfsport f&uuml;r jeden zug&auml;nglich machen. Im Hey Coach Programm ist Marlon das Gesicht des Muay Thai Kurses und des 7-Tage-FitStart.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">WM</span>
+          <span class="hero-stat-label">Weltmeister</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">1st DAN</span>
+          <span class="hero-stat-label">ISKA</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">T1</span>
+          <span class="hero-stat-label">Gr&uuml;nder</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- KURSE MIT MARLON -->
+<section class="section courses-section">
+  <div class="wrap">
+    <div class="courses-header">
+      <span class="label">Kurse mit Marlon</span>
+      <h2 class="h2">Lernen Sie von einem Weltmeister</h2>
+      <p>Strukturierte Online-Kurse &mdash; entwickelt von einem echten K&auml;mpfer, f&uuml;r alle Levels.</p>
+    </div>
+
+    <div class="courses-grid">
+
+      <!-- Card 1: Muay Thai Komplettkurs -->
+      <div class="course-card">
+        <div class="course-img">
+          <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="Muay Thai Komplettkurs">
+          <div class="course-badge">Komplettkurs</div>
+        </div>
+        <div class="course-body">
+          <span class="course-tag">Muay Thai</span>
+          <h3 class="course-title">Muay Thai Komplettkurs</h3>
+          <p class="course-desc">Schlagtechnik, Kicks, Ellenbogen, Knie, Clinch &mdash; 80+ Videos, 6 Module. Einmal kaufen, lebenslang trainieren.</p>
+          <div class="course-price-row">
+            <span class="course-price">&euro;129</span>
+            <span class="course-price-note">inkl. 19% MwSt</span>
+          </div>
+          <a href="kurs-muay-thai.html" class="btn-primary">Zum Kurs &rarr;</a>
+          <div class="course-guarantee">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            14 Tage Geld-zur&uuml;ck-Garantie
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: 7-Tage-FitStart -->
+      <div class="course-card">
+        <div class="course-img">
+          <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="7-Tage-FitStart mit Marlon">
+          <div class="course-badge">Mini-Kurs</div>
+        </div>
+        <div class="course-body">
+          <span class="course-tag">Fitness &middot; Einsteiger</span>
+          <h3 class="course-title">7-Tage FitStart</h3>
+          <p class="course-desc">20-Minuten-Workouts f&uuml;r Einsteiger &mdash; 7 Tage, 7 Lektionen. Der perfekte Einstieg in den Kampfsport.</p>
+          <div class="course-price-row">
+            <span class="course-price">&euro;9</span>
+            <span class="course-price-note">inkl. 19% MwSt</span>
+          </div>
+          <a href="https://marlon-fitstart.de" class="btn-primary">Zum Kurs &rarr;</a>
+          <div class="course-guarantee">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            14 Tage Geld-zur&uuml;ck-Garantie
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <a href="index-v7.html">
+    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  </a>
+  <p>&copy; 2026 Hey Coach Production GmbH &middot; Kandelstr. 5, 79199 Kirchzarten</p>
+  <p style="margin-top:10px;">
+    <a href="impressum.html" style="margin:0 10px; font-size:13px;">Impressum</a>
+    <a href="datenschutz.html" style="margin:0 10px; font-size:13px;">Datenschutz</a>
+    <a href="agb.html" style="margin:0 10px; font-size:13px;">AGB</a>
+  </p>
+</footer>
+
+</body>
+</html>

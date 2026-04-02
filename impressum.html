@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum — Hey Coach Production GmbH</title>
+  <meta name="description" content="Impressum der Hey Coach Production GmbH. Angaben gemäß § 5 TMG.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://heycoachproduction.de/wp-content/uploads/2025/04/favicon.jpg" type="image/jpeg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #06081A;
+      --bg2:      #0C1228;
+      --accent:   #B87C1A;
+      --accent-hover: #D4A040;
+      --text:     #FFFFFF;
+      --text2:    #B0B8D0;
+      --border:   rgba(255,255,255,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: var(--accent); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--accent-hover); }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+      background: rgba(6,8,26,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .nav-logo img {
+      height: 32px;
+      display: block;
+    }
+
+    nav .nav-back {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text2);
+      transition: color .2s;
+    }
+    nav .nav-back:hover { color: var(--text); }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text2);
+      font-size: 15px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p, address {
+      color: var(--text2);
+      font-size: 15px;
+      font-style: normal;
+      margin-bottom: 16px;
+    }
+
+    address { line-height: 1.9; }
+
+    .legal-block {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 40px 36px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer img {
+      height: 28px;
+      margin-bottom: 14px;
+      opacity: 0.7;
+    }
+
+    footer p {
+      color: var(--text2);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    footer .footer-links {
+      margin-top: 10px;
+    }
+
+    footer .footer-links a {
+      margin: 0 10px;
+      font-size: 13px;
+      color: var(--text2);
+    }
+    footer .footer-links a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      nav { padding: 14px 18px; }
+      main { padding: 40px 18px 60px; }
+      .legal-block { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAV
+═══════════════════════════════════════ -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  </a>
+  <a href="javascript:history.back()" class="nav-back">&larr; Zurück</a>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     IMPRESSUM
+═══════════════════════════════════════ -->
+<main>
+  <h1>Impressum</h1>
+  <p class="subtitle">Angaben gemäß § 5 TMG</p>
+
+  <div class="legal-block">
+
+    <h2>Anbieter</h2>
+    <address>
+      Hey Coach Production GmbH<br>
+      Kandelstr. 5<br>
+      79199 Kirchzarten<br>
+      Deutschland
+    </address>
+
+    <p><strong style="color:var(--text);">Geschäftsführer:</strong> Nils Sylvain Gustav Loton, Leonard Felix Andris, Heidar Rudyi</p>
+
+    <hr class="divider">
+
+    <h2>Kontakt</h2>
+    <p>
+      Telefon: <a href="tel:+4917677337704">+49 176 77337704</a><br>
+      E-Mail: <a href="mailto:heycoachproduction@gmail.com">heycoachproduction@gmail.com</a>
+    </p>
+
+    <hr class="divider">
+
+    <h2>Registereintrag</h2>
+    <p>
+      Handelsregister: Amtsgericht Freiburg i. Br., HRB 732729<br>
+      USt-IdNr.: DE452700631
+    </p>
+
+    <hr class="divider">
+
+    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+    <p>
+      Heidar Rudyi<br>
+      Kandelstr. 5<br>
+      79199 Kirchzarten
+    </p>
+
+    <hr class="divider">
+
+    <h2>EU-Streitschlichtung</h2>
+    <p>
+      Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+      <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>.
+    </p>
+    <p>
+      Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+
+    <hr class="divider">
+
+    <h2>Haftung für Inhalte</h2>
+    <p>
+      Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+    </p>
+    <p>
+      Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+    </p>
+
+    <hr class="divider">
+
+    <h2>Haftung für Links</h2>
+    <p>
+      Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+    </p>
+    <p>
+      Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+    </p>
+
+    <hr class="divider">
+
+    <h2>Urheberrecht</h2>
+    <p>
+      Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+    </p>
+    <p>
+      Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+    </p>
+
+  </div>
+</main>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  <p>&copy; 2026 Hey Coach Production GmbH &middot; Kandelstr. 5, 79199 Kirchzarten</p>
+  <p class="footer-links">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="agb.html">AGB</a>
+    <a href="widerrufsbelehrung.html">Widerrufsbelehrung</a>
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hey Coach Production &mdash; Online Kampfsport-Kurse von Weltmeistern</title>
+  <meta name="description" content="Lerne Kickboxen &amp; Muay Thai von ISKA Weltmeistern. Seit 2006. 680+ Bewertungen. Einmal zahlen, lebenslanger Zugang. Hey Coach Production.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://heycoachproduction.de/wp-content/uploads/2025/04/favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles-v5.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       1. HERO — Porsche-style with video background
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto">
+      <source src="https://exitasia.de/wp-content/uploads/eas-video-banner.mp4" type="video/mp4">
+    </video>
+    <div class="hero-fallback"></div>
+    <div class="hero-overlay"></div>
+
+    <nav class="hero-nav">
+      <a href="index-v5.html" class="nav-logo-link">
+        <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production" style="height:24px;">
+      </a>
+      <div class="nav-links">
+        <a href="#kurse">Kurse</a>
+        <a href="#trainer">Trainer</a>
+        <a href="#ueber-uns">&Uuml;ber uns</a>
+        <a href="#bewertungen">Bewertungen</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#kurse" class="hero-nav-cta">Kurs starten</a>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">ISKA Weltmeister &middot; Est. 2006 &middot; Freiburg</div>
+      <h1 class="hero-headline">Kampfsport lernen.<br><em>Von echten</em><br>Weltmeistern.</h1>
+      <div style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+        <a href="#kurse" class="hero-cta">Kurse entdecken</a>
+        <a href="#einblick" class="hero-cta-secondary">
+          <span class="play-icon"><svg viewBox="0 0 10 10"><polygon points="2,1 9,5 2,9"/></svg></span>
+          Trailer ansehen
+        </a>
+      </div>
+    </div>
+
+    <!-- Play/Pause button — bottom right like Porsche -->
+    <button class="hero-video-toggle" id="heroVideoToggle" aria-label="Video abspielen / pausieren">
+      <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:none;"><polygon points="6,4 20,12 6,20"/></svg>
+    </button>
+
+    <div class="hero-scroll"><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ============================================================
+       2. &Uuml;BER UNS — Simplified stats
+       ============================================================ -->
+  <section class="section" id="ueber-uns">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label reveal">Seit 2006</span>
+          <h2 class="reveal reveal-delay-1">Tauche ein in die Welt<br>des Martial Arts</h2>
+          <p class="reveal reveal-delay-2">
+            Hey Coach Production ist ein Team aus lizenzierten Weltmeistern und hauptberuflichen
+            Kampfsport-Trainern. Unser Ziel: jedem Menschen Kampfsport zu erm&ouml;glichen &mdash;
+            egal wo, egal wann.
+          </p>
+          <p class="reveal reveal-delay-2">
+            Die Kampfsportschule ExitAsia wurde 2006 von Heiko und Nils gegr&uuml;ndet. Drei Standorte
+            in Freiburg, 1.000+ Sch&uuml;ler pro Monat, zahllose Europa- und Weltmeistertitel.
+          </p>
+        </div>
+        <div class="about-photos reveal reveal-delay-2">
+          <div class="about-photo about-photo--tall">
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f2.jpg" alt="Training" loading="lazy">
+          </div>
+          <div class="about-photo">
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f4.jpg" alt="Kickboxen" loading="lazy">
+          </div>
+          <div class="about-photo">
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f7.jpg" alt="Muay Thai" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="stats-bar reveal">
+        <div class="stat-item"><span class="stat-number" data-target="20" data-suffix="+">0</span><span class="stat-label">Jahre Erfahrung</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="1000" data-suffix="+">0</span><span class="stat-label">Aktive Mitglieder</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="680" data-suffix="+">0</span><span class="stat-label">Google Bewertungen</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="3" data-suffix="">0</span><span class="stat-label">Standorte Freiburg</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. VIDEO TRAILER
+       ============================================================ -->
+  <section class="video-section section" id="einblick">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label reveal">Einblick ins Training</span>
+        <h2 class="reveal reveal-delay-1">Erlebe unsere Welt</h2>
+        <p class="reveal reveal-delay-2">Schau dir an, wie unsere Kurse aufgebaut sind.</p>
+      </div>
+      <div class="video-wrapper reveal reveal-delay-3">
+        <img class="video-poster" src="https://heycoachproduction.de/wp-content/uploads/2025/04/bg12.jpg" alt="Trailer">
+        <div class="video-overlay">
+          <div class="video-play-btn">
+            <svg viewBox="0 0 24 24" fill="var(--bg-primary)"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="video-play-label">Trailer ansehen</span>
+        </div>
+        <div class="video-iframe-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/AIyFkeaq_6A?rel=0&modestbranding=1"
+            title="Hey Coach Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. KURSE — No strikethrough prices
+       ============================================================ -->
+  <section class="section" id="kurse">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Unsere Kurse</span>
+        <h2 class="reveal reveal-delay-1">Professionelle Online-Kurse</h2>
+        <p class="reveal reveal-delay-2">Einmal zahlen. Lebenslanger Zugang. Kein Abo.</p>
+      </div>
+
+      <!-- Kickboxen -->
+      <div class="course-row reveal">
+        <div class="course-row-media">
+          <img src="https://www.exitasia.de/wp-content/uploads/eas-kurse-kickboxen-kickboxen-fuer-anfaenger.webp"
+               alt="Kickboxen Komplettkurs" loading="lazy">
+          <div class="course-row-media-overlay"></div>
+        </div>
+        <div class="course-row-info">
+          <span class="course-row-tag">Kickboxen</span>
+          <h3>Kickboxen Komplettkurs</h3>
+          <div class="course-row-trainer">mit Nils, Heiko &amp; Jana</div>
+          <p>Vom Wei&szlig;gurt zum Schwarzgurt. &Uuml;ber 40 Techniken in 120+ Videos &mdash; Schlag, Kick, Combo, Verteidigung.</p>
+          <div class="course-row-meta">
+            <span class="course-meta-pill">120+ Videos</span>
+            <span class="course-meta-pill">10+ Stunden</span>
+            <span class="course-meta-pill">9 Module</span>
+            <span class="course-meta-pill">Lebenslanger Zugang</span>
+          </div>
+          <div class="course-row-price">
+            <span class="price">&euro;99</span>
+            <span class="price-note">inkl. 19% MwSt</span>
+          </div>
+          <a href="kurs-kickboxen.html" class="btn btn-primary">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <!-- Muay Thai -->
+      <div class="course-row reverse reveal">
+        <div class="course-row-media">
+          <img src="https://www.exitasia.de/wp-content/uploads/eas-kurse-thaiboxen-thaiboxen-fuer-anfaenger.webp"
+               alt="Muay Thai Komplettkurs" loading="lazy">
+          <div class="course-row-media-overlay"></div>
+        </div>
+        <div class="course-row-info">
+          <span class="course-row-tag">Muay Thai</span>
+          <h3>Muay Thai Komplettkurs</h3>
+          <div class="course-row-trainer">mit Marlon</div>
+          <p>Technik, Power und Mentalit&auml;t &mdash; alles was du brauchst, von einem ISKA Weltmeister.</p>
+          <div class="course-row-meta">
+            <span class="course-meta-pill">8,5+ Stunden</span>
+            <span class="course-meta-pill">6 Module</span>
+            <span class="course-meta-pill">Lebenslanger Zugang</span>
+          </div>
+          <div class="course-row-price">
+            <span class="price">&euro;129</span>
+            <span class="price-note">inkl. 19% MwSt</span>
+          </div>
+          <a href="kurs-muay-thai.html" class="btn btn-primary">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <!-- Physiotherapie -->
+      <div class="course-row reveal">
+        <div class="course-row-media">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=500&fit=crop"
+               alt="Physiotherapie Online-Kurs" loading="lazy">
+          <div class="course-row-media-overlay"></div>
+        </div>
+        <div class="course-row-info">
+          <span class="course-row-tag">Physiotherapie</span>
+          <h3>Physiotherapie Online-Kurs</h3>
+          <div class="course-row-trainer">mit Elza</div>
+          <p>Beweglichkeit, R&uuml;cken und Gelenke &mdash; professionelle &Uuml;bungen von einer zertifizierten Physiotherapeutin.</p>
+          <div class="course-row-meta">
+            <span class="course-meta-pill">4 Module</span>
+            <span class="course-meta-pill">Kein Equipment</span>
+          </div>
+          <div class="course-row-price">
+            <span class="course-coming-soon-badge">Demn&auml;chst verf&uuml;gbar</span>
+            <span class="price-note">&euro;79 &middot; inkl. 19% MwSt</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. FEATURES — "Mehr als ein Online-Kurs" (merged)
+       ============================================================ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label reveal">Was du bekommst</span>
+        <h2 class="reveal reveal-delay-1">Mehr als ein Online-Kurs</h2>
+        <p class="reveal reveal-delay-2">Alles, was du brauchst &mdash; in einer Plattform.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>Hey Coach Community</h3>
+            <p>Tausche dich mit anderen Teilnehmern aus, teile Erfolge und erhalte direkte Unterst&uuml;tzung von unseren Trainern.</p>
+          </div>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>Offizielles Zertifikat</h3>
+            <p>Nach Kursabschluss erh&auml;ltst du ein offizielles Hey Coach Zertifikat &mdash; unterzeichnet von deinem Trainer.</p>
+          </div>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>Trainings-Tracking</h3>
+            <p>Plane deine Einheiten, verfolge deinen Fortschritt und bleibe auf Kurs. Dein Ziel konsequent erreichen.</p>
+          </div>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="feature-text">
+            <h3>Krankenkasse-Zertifizierung</h3>
+            <p>Muay Thai Kurs in Zertifizierung nach &sect;20 SGB V &mdash; Erstattung von &euro;150&ndash;300 m&ouml;glich.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="features-cta" style="text-align:center; margin-top:2.5rem;">
+        <a href="https://heycoach-kampfsport.app.clientclub.net/communities/groups/hey-coach-production-/private-group" class="btn btn-outline" target="_blank" rel="noopener">Community beitreten</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. TRAINER — Horizontal scroll carousel
+       ============================================================ -->
+  <section class="section section--dark" id="trainer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Unsere Coaches</span>
+        <h2 class="reveal reveal-delay-1">Trainiere unter der Anleitung<br>von Weltmeistern</h2>
+        <p class="reveal reveal-delay-2">Unsere Trainer wurden von den f&uuml;hrenden Kampfsportverb&auml;nden der Welt ausgezeichnet.</p>
+      </div>
+    </div>
+
+    <div class="container--wide">
+      <div class="trainers-scroll-wrapper reveal">
+        <div class="trainers-track">
+
+          <a href="kurs-kickboxen.html" class="trainer-card">
+            <span class="trainer-card-tag">Kickboxen</span>
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/03/photo1.jpg" alt="Nils" loading="lazy">
+            <div class="trainer-card-overlay"></div>
+            <div class="trainer-card-info">
+              <div class="trainer-card-name">Nils</div>
+              <div class="trainer-card-role">Gr&uuml;nder ExitAsia &middot; Standortleitung Freiburg</div>
+              <div class="trainer-card-creds">5th DAN Schwarzgurt ISKA &middot; Europameister &middot; 30+ Jahre</div>
+            </div>
+          </a>
+
+          <a href="kurs-muay-thai.html" class="trainer-card">
+            <span class="trainer-card-tag">Muay Thai</span>
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="Marlon" loading="lazy">
+            <div class="trainer-card-overlay"></div>
+            <div class="trainer-card-info">
+              <div class="trainer-card-name">Marlon</div>
+              <div class="trainer-card-role">Gr&uuml;nder T1 Kampfsportzentrum</div>
+              <div class="trainer-card-creds">1st DAN Schwarzgurt ISKA &middot; Weltmeister Muay Thai</div>
+            </div>
+          </a>
+
+          <a href="kurs-kickboxen.html" class="trainer-card">
+            <span class="trainer-card-tag">Kickboxen</span>
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/3.jpg" alt="Heiko" loading="lazy">
+            <div class="trainer-card-overlay"></div>
+            <div class="trainer-card-info">
+              <div class="trainer-card-name">Heiko</div>
+              <div class="trainer-card-role">Gr&uuml;nder ExitAsia &middot; Standortleitung Kirchzarten</div>
+              <div class="trainer-card-creds">3rd DAN Schwarzgurt ISKA &middot; Mehrfacher Dt. Meister &middot; 20+ Jahre</div>
+            </div>
+          </a>
+
+          <a href="kurs-kickboxen.html" class="trainer-card">
+            <span class="trainer-card-tag">Kickboxen</span>
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/2.jpg" alt="Jana" loading="lazy">
+            <div class="trainer-card-overlay"></div>
+            <div class="trainer-card-info">
+              <div class="trainer-card-name">Jana</div>
+              <div class="trainer-card-role">ISKA Weltmeisterin &middot; Aktive Wetk&auml;mpferin</div>
+              <div class="trainer-card-creds">Studium Fitness&ouml;konomie &middot; Hauptberufliche Trainerin</div>
+            </div>
+          </a>
+
+          <div class="trainer-card" style="cursor:default">
+            <span class="trainer-card-tag">K1 &middot; Kickboxen</span>
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/4.jpg" alt="Mohsen" loading="lazy">
+            <div class="trainer-card-overlay"></div>
+            <div class="trainer-card-info">
+              <div class="trainer-card-name">Mohsen</div>
+              <div class="trainer-card-role">K1 Weltmeister ISKA</div>
+              <div class="trainer-card-creds">1st DAN Schwarzgurt ISKA &middot; Hauptberuflicher Trainer</div>
+            </div>
+          </div>
+
+          <div class="trainer-card" style="cursor:default">
+            <span class="trainer-card-tag">Trainer</span>
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/5.jpg" alt="Leo" loading="lazy">
+            <div class="trainer-card-overlay"></div>
+            <div class="trainer-card-info">
+              <div class="trainer-card-name">Leo</div>
+              <div class="trainer-card-role">Hauptberuflicher Trainer</div>
+              <div class="trainer-card-creds">Aktiver Wetk&auml;mpfer</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="trainer-awards reveal">
+        <div class="trainer-award">
+          <div class="award-icon">&#127947;</div>
+          <div class="award-text"><strong>ISKA Weltmeister</strong><span>Mehrfach ausgezeichnet</span></div>
+        </div>
+        <div class="trainer-award">
+          <div class="award-icon">&#127942;</div>
+          <div class="award-text"><strong>Europameister</strong><span>H&ouml;chste DACH-Auszeichnung</span></div>
+        </div>
+        <div class="trainer-award">
+          <div class="award-icon">&#127894;</div>
+          <div class="award-text"><strong>5th DAN Schwarzgurt</strong><span>H&ouml;chste Graduierung</span></div>
+        </div>
+        <div class="trainer-award">
+          <div class="award-icon">&#128197;</div>
+          <div class="award-text"><strong>Seit 2006</strong><span>Hauptberufliche Trainer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. TESTIMONIALS — "Das sagen unsere Teilnehmer" (6 cards)
+       ============================================================ -->
+  <section class="section" id="bewertungen">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label reveal">Erfahrungen</span>
+        <h2 class="reveal reveal-delay-1">Das sagen unsere Teilnehmer</h2>
+      </div>
+      <div class="testimonials-grid reveal">
+        <!-- Card 1: Thomas -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="https://www.exitasia.de/wp-content/uploads/eas-kurse-kickboxen-kickboxen-fuer-anfaenger.webp" alt="Kickboxen Teilnehmer" loading="lazy">
+          </div>
+          <div class="testimonial-body">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">&bdquo;Das Kickboxen ist absolut spitze! Die Trainer sind hochprofessionell, motivierend und achten sehr genau auf die Technik. Nach 4 Wochen mehr gelernt als in 6 Monaten im Gym.&ldquo;</p>
+            <div class="testimonial-author"><strong>Thomas K.</strong><span>Google Bewertung &middot; ExitAsia</span></div>
+          </div>
+        </div>
+        <!-- Card 2: Sarah -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="https://www.exitasia.de/wp-content/uploads/eas-kurse-thaiboxen-thaiboxen-fuer-anfaenger.webp" alt="Muay Thai Teilnehmer" loading="lazy">
+          </div>
+          <div class="testimonial-body">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">&bdquo;Als absoluter Anf&auml;nger hatte ich gro&szlig;en Respekt vor Kampfsport. Marlon erkl&auml;rt jede Technik so klar, dass man wirklich schnell Fortschritte macht. Ich bin begeistert!&ldquo;</p>
+            <div class="testimonial-author"><strong>Sarah M.</strong><span>Google Bewertung &middot; ExitAsia</span></div>
+          </div>
+        </div>
+        <!-- Card 3: Alexander -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="https://www.exitasia.de/wp-content/uploads/eas-kurse-thaiboxen-thaiboxen-fuer-fortgeschrittene.webp" alt="Community Teilnehmer" loading="lazy">
+          </div>
+          <div class="testimonial-body">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">&bdquo;Die Community ist das Besondere. Man trainiert nicht nur &mdash; man wird Teil einer Familie. Die Atmosph&auml;re ist famili&auml;r und sehr respektvoll. Absolut empfehlenswert!&ldquo;</p>
+            <div class="testimonial-author"><strong>Alexander P.</strong><span>Google Bewertung &middot; ExitAsia</span></div>
+          </div>
+        </div>
+        <!-- Card 4: Michael -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f7.jpg" alt="Training Teilnehmer" loading="lazy">
+          </div>
+          <div class="testimonial-body">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">&bdquo;Nils und sein Team sind einfach Weltklasse. Ich trainiere seit 3 Jahren bei ExitAsia und habe mehr erreicht als ich je gedacht h&auml;tte.&ldquo;</p>
+            <div class="testimonial-author"><strong>Michael B.</strong><span>Google Bewertung &middot; ExitAsia</span></div>
+          </div>
+        </div>
+        <!-- Card 5: Anna -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f4.jpg" alt="Kickboxen Training" loading="lazy">
+          </div>
+          <div class="testimonial-body">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">&bdquo;Endlich ein Online-Kurs, der wirklich Qualit&auml;t liefert. Die Videos sind professionell produziert und die Techniken werden super erkl&auml;rt.&ldquo;</p>
+            <div class="testimonial-author"><strong>Anna L.</strong><span>Google Bewertung &middot; ExitAsia</span></div>
+          </div>
+        </div>
+        <!-- Card 6: David -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f2.jpg" alt="ExitAsia Training" loading="lazy">
+          </div>
+          <div class="testimonial-body">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">&bdquo;Bestes Preis-Leistungs-Verh&auml;ltnis im Netz. Einmal zahlen, lebenslanger Zugang &mdash; das ist echte Wertsch&auml;tzung f&uuml;r den Kunden.&ldquo;</p>
+            <div class="testimonial-author"><strong>David R.</strong><span>Google Bewertung &middot; ExitAsia</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- Google reviews link -->
+      <div class="reviews-google-link reveal" style="text-align:center; margin-top:2.5rem;">
+        <div style="color:var(--accent); font-size:1.25rem; letter-spacing:3px; margin-bottom:0.5rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p style="color:var(--text-muted); margin-bottom:1rem;">680+ Bewertungen &mdash; alle 5 Sterne &mdash; alle auf Google</p>
+        <a href="https://www.google.com/maps/place/ExitAsia" class="btn btn-outline" target="_blank" rel="noopener">Alle Bewertungen lesen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. COMING SOON — Hey Coach Brand Logos Marquee
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Was kommt als N&auml;chstes</span>
+        <h2 class="reveal reveal-delay-1">Mehr als nur Kampfsport</h2>
+        <p class="reveal reveal-delay-2">Hey Coach wird zur ganzheitlichen Coaching-Plattform &mdash; in jeder Lebenslage.</p>
+      </div>
+    </div>
+    <div class="marquee-wrapper reveal">
+      <div class="marquee-track">
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-fitness.png" alt="Hey Coach Fitness" loading="lazy"><div class="marquee-item-content"><h3>Fitness</h3><p>Kraft &middot; Ausdauer &middot; Athletik</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-kochen.png" alt="Hey Coach Kochen" loading="lazy"><div class="marquee-item-content"><h3>Kochen</h3><p>Meal Prep &middot; Ern&auml;hrung</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-psychologie.png" alt="Hey Coach Psychologie" loading="lazy"><div class="marquee-item-content"><h3>Psychologie</h3><p>Mindset &middot; Mental Health</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-business.png" alt="Hey Coach Business" loading="lazy"><div class="marquee-item-content"><h3>Business</h3><p>Karriere &middot; F&uuml;hrung</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-sprachen.png" alt="Hey Coach Sprachen" loading="lazy"><div class="marquee-item-content"><h3>Sprachen</h3><p>Deutsch &middot; Englisch &middot; mehr</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-finanzen.png" alt="Hey Coach Finanzen" loading="lazy"><div class="marquee-item-content"><h3>Finanzen</h3><p>Investieren &middot; Sparen</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-kommunikation.png" alt="Hey Coach Kommunikation" loading="lazy"><div class="marquee-item-content"><h3>Kommunikation</h3><p>Rhetorik &middot; Auftritt</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-social-media.png" alt="Hey Coach Social Media" loading="lazy"><div class="marquee-item-content"><h3>Social Media</h3><p>Content &middot; Wachstum</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-technik.png" alt="Hey Coach Technik" loading="lazy"><div class="marquee-item-content"><h3>Technik</h3><p>Digital &middot; Tools &middot; Automation</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-erste-hilfe.png" alt="Hey Coach Erste Hilfe" loading="lazy"><div class="marquee-item-content"><h3>Erste Hilfe</h3><p>Notfall &middot; Sicherheit</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-eltern.png" alt="Hey Coach Eltern" loading="lazy"><div class="marquee-item-content"><h3>Eltern</h3><p>Erziehung &middot; Familie</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-dating.png" alt="Hey Coach Dating" loading="lazy"><div class="marquee-item-content"><h3>Dating</h3><p>Beziehung &middot; Selbstvertrauen</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-tiere.png" alt="Hey Coach Tiere" loading="lazy"><div class="marquee-item-content"><h3>Tiere</h3><p>Hundeerziehung &middot; Pflege</p></div></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-fitness.png" alt="Hey Coach Fitness" loading="lazy"><div class="marquee-item-content"><h3>Fitness</h3><p>Kraft &middot; Ausdauer &middot; Athletik</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-kochen.png" alt="Hey Coach Kochen" loading="lazy"><div class="marquee-item-content"><h3>Kochen</h3><p>Meal Prep &middot; Ern&auml;hrung</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-psychologie.png" alt="Hey Coach Psychologie" loading="lazy"><div class="marquee-item-content"><h3>Psychologie</h3><p>Mindset &middot; Mental Health</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-business.png" alt="Hey Coach Business" loading="lazy"><div class="marquee-item-content"><h3>Business</h3><p>Karriere &middot; F&uuml;hrung</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-sprachen.png" alt="Hey Coach Sprachen" loading="lazy"><div class="marquee-item-content"><h3>Sprachen</h3><p>Deutsch &middot; Englisch &middot; mehr</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-finanzen.png" alt="Hey Coach Finanzen" loading="lazy"><div class="marquee-item-content"><h3>Finanzen</h3><p>Investieren &middot; Sparen</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-kommunikation.png" alt="Hey Coach Kommunikation" loading="lazy"><div class="marquee-item-content"><h3>Kommunikation</h3><p>Rhetorik &middot; Auftritt</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-social-media.png" alt="Hey Coach Social Media" loading="lazy"><div class="marquee-item-content"><h3>Social Media</h3><p>Content &middot; Wachstum</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-technik.png" alt="Hey Coach Technik" loading="lazy"><div class="marquee-item-content"><h3>Technik</h3><p>Digital &middot; Tools &middot; Automation</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-erste-hilfe.png" alt="Hey Coach Erste Hilfe" loading="lazy"><div class="marquee-item-content"><h3>Erste Hilfe</h3><p>Notfall &middot; Sicherheit</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-eltern.png" alt="Hey Coach Eltern" loading="lazy"><div class="marquee-item-content"><h3>Eltern</h3><p>Erziehung &middot; Familie</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-dating.png" alt="Hey Coach Dating" loading="lazy"><div class="marquee-item-content"><h3>Dating</h3><p>Beziehung &middot; Selbstvertrauen</p></div></div>
+        <div class="marquee-item marquee-logo-item"><img src="logos/hc-tiere.png" alt="Hey Coach Tiere" loading="lazy"><div class="marquee-item-content"><h3>Tiere</h3><p>Hundeerziehung &middot; Pflege</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       9. PARTNER / EXPERT
+       ============================================================ -->
+  <section class="section partner-section">
+    <div class="container">
+      <div class="partner-inner">
+        <div>
+          <span class="section-label reveal">F&uuml;r Experten</span>
+          <h2 class="reveal reveal-delay-1">Bist du Experte in deiner Nische?</h2>
+          <p class="reveal reveal-delay-2">
+            Hey Coach Production ist mehr als eine Kursplattform &mdash; wir sind dein Partner
+            f&uuml;r die Vermarktung deines Wissens. Du bringst deine Expertise.
+            Wir &uuml;bernehmen Produktion, Marketing und Vertrieb.
+          </p>
+          <ul class="partner-list reveal reveal-delay-3">
+            <li class="partner-list-item">Professionelle Videoproduktion vor Ort in Freiburg</li>
+            <li class="partner-list-item">Vollst&auml;ndige Marketing-Infrastruktur (GHL, Email, Ads)</li>
+            <li class="partner-list-item">Zugang zu unserer 1.000+ starken Community</li>
+            <li class="partner-list-item">Revenue-Share-Modell &mdash; kein Risiko f&uuml;r dich</li>
+          </ul>
+          <a href="mailto:heycoachproduction@gmail.com?subject=Kooperation Hey Coach" class="btn btn-primary reveal reveal-delay-4">
+            Lass uns reden
+          </a>
+        </div>
+        <div class="partner-image reveal reveal-delay-2">
+          <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f1.jpg" alt="Zusammenarbeit" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. FAQ
+       ============================================================ -->
+  <section class="section section--dark" id="faq">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-label reveal">FAQ</span>
+        <h2 class="reveal reveal-delay-1">H&auml;ufig gestellte Fragen</h2>
+        <p class="reveal reveal-delay-2">Keine Antwort gefunden? Schreib uns: <a href="mailto:heycoachproduction@gmail.com" style="color:var(--gold);">heycoachproduction@gmail.com</a></p>
+      </div>
+
+      <div class="faq-tabs reveal">
+        <button class="faq-tab active" data-panel="faq-allgemein">Allgemein</button>
+        <button class="faq-tab" data-panel="faq-kurse">Kurse &amp; Inhalte</button>
+        <button class="faq-tab" data-panel="faq-zahlung">Zahlung &amp; Zugang</button>
+      </div>
+
+      <div id="faq-allgemein" class="faq-panel active reveal">
+        <div class="faq-item">
+          <button class="faq-question">Was ist Hey Coach Production?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Hey Coach Production ist eine Online-Kampfsport-Plattform, gegr&uuml;ndet von den Weltmeistern hinter ExitAsia &mdash; einer der gr&ouml;&szlig;ten Kampfsportschulen Deutschlands (seit 2006, 3 Standorte Freiburg). Wir bieten professionelle Online-Kurse in Kickboxen, Muay Thai und Physiotherapie.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">F&uuml;r wen sind die Kurse geeignet?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Unsere Kurse sind f&uuml;r alle Levels geeignet &mdash; vom absoluten Anf&auml;nger bis zum Fortgeschrittenen. Jeder Kurs beginnt mit den Grundlagen und baut systematisch auf.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Brauche ich Equipment?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">F&uuml;r die Grundlagen-Module brauchst du kein Equipment. F&uuml;r fortgeschrittene Einheiten empfehlen wir Boxhandschuhe und einen Sandsack &mdash; das ist aber optional.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Gibt es eine Community?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Ja! Mit jedem Kurs bekommst du Zugang zur Hey Coach Community. Dort kannst du dich mit anderen Teilnehmern austauschen, Fragen stellen und Feedback von unseren Trainern erhalten.</div></div>
+        </div>
+      </div>
+
+      <div id="faq-kurse" class="faq-panel reveal">
+        <div class="faq-item">
+          <button class="faq-question">Wie sind die Kurse aufgebaut?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Jeder Kurs besteht aus mehreren Modulen mit Videoeinheiten. Du lernst in deinem eigenen Tempo &mdash; die Videos sind jederzeit abrufbar. Kickboxen hat 9 Module (120+ Videos), Muay Thai 6 Module (8,5+ Stunden).</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Erhalte ich ein Zertifikat?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Ja &mdash; nach erfolgreichem Kursabschluss erh&auml;ltst du ein offizielles Hey Coach Zertifikat, unterzeichnet von deinem Trainer.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Was bedeutet Krankenkasse-Zertifizierung?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Unser Muay Thai Kurs befindet sich im Prozess der Zertifizierung nach &sect;20 SGB V. Nach Abschluss k&ouml;nnen gesetzlich Versicherte eine Kostenerstattung von &euro;150&ndash;300 bei ihrer Krankenkasse beantragen.</div></div>
+        </div>
+      </div>
+
+      <div id="faq-zahlung" class="faq-panel reveal">
+        <div class="faq-item">
+          <button class="faq-question">Gibt es ein Abo?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Nein &mdash; kein Abo, keine versteckten Kosten. Du zahlst einmal und hast lebenslangen Zugang zu deinem Kurs, inklusive aller zuk&uuml;nftigen Updates.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Welche Zahlungsarten werden akzeptiert?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Wir akzeptieren Kreditkarte (Visa, Mastercard), PayPal und Klarna (Ratenzahlung). Alle Preise sind Bruttopreise inkl. 19% MwSt.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Gibt es eine Geld-zur&uuml;ck-Garantie?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Ja &mdash; du hast 14 Tage Widerrufsrecht nach dem Kauf. Wenn du nicht zufrieden bist, erstatten wir dir den vollen Kaufpreis ohne Fragen.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Wie lange habe ich Zugang?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">Lebenslanger Zugang &mdash; einmal kaufen, f&uuml;r immer nutzen. Du kannst die Videos jederzeit und so oft du m&ouml;chtest ansehen, auch auf dem Smartphone.</div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. FINAL CTA
+       ============================================================ -->
+  <section class="final-cta">
+    <div class="final-cta-bg">
+      <video autoplay muted loop playsinline>
+        <source src="https://www.exitasia.de/wp-content/uploads/eas-video-banner.mp4" type="video/mp4">
+        <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/bg12.jpg" alt="">
+      </video>
+    </div>
+    <div class="container">
+      <div class="final-cta-content">
+        <span class="section-label reveal">Starte jetzt</span>
+        <h2 class="reveal reveal-delay-1">Bist du bereit f&uuml;r den ersten Schritt?</h2>
+        <p class="reveal reveal-delay-2">
+          Lerne Kickboxen &amp; Muay Thai von ISKA-zertifizierten Weltmeistern &mdash;
+          jederzeit, &uuml;berall. 14 Tage Geld-zur&uuml;ck-Garantie.
+        </p>
+        <div class="final-cta-buttons reveal reveal-delay-3">
+          <a href="#kurse" class="btn btn-primary btn--lg">Kurs ausw&auml;hlen</a>
+          <a href="mailto:heycoachproduction@gmail.com" class="btn btn-outline btn--lg">Noch Fragen?</a>
+        </div>
+        <div class="final-cta-note reveal reveal-delay-4">
+          <span>Kein Abo</span>
+          <span>14 Tage Garantie</span>
+          <span>Lebenslanger Zugang</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+          <p>Online Kampfsport-Kurse von ISKA Weltmeistern. Gegr&uuml;ndet von ExitAsia &mdash; seit 2006 eine der f&uuml;hrenden Kampfsportschulen Deutschlands.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Kurse</h4>
+          <a href="kurs-kickboxen.html">Kickboxen Komplettkurs</a>
+          <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
+          <a href="kurs-physiotherapie.html">Physiotherapie</a>
+        </div>
+        <div class="footer-col">
+          <h4>Unternehmen</h4>
+          <a href="#ueber-uns">&Uuml;ber uns</a>
+          <a href="#trainer">Trainer</a>
+          <a href="https://heycoach-kampfsport.app.clientclub.net" target="_blank" rel="noopener">Community</a>
+          <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <a href="https://heycoachproduction.de/impressum/" target="_blank" rel="noopener">Impressum</a>
+          <a href="https://heycoachproduction.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a>
+          <a href="https://heycoachproduction.de/agb/" target="_blank" rel="noopener">AGB</a>
+          <a href="https://heycoachproduction.de/widerrufsbelehrung/" target="_blank" rel="noopener">Widerrufsbelehrung</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Hey Coach Production GmbH &middot; Kandelstr. 5, 79199 Kirchzarten</span>
+        <div class="footer-legal">
+          <a href="https://heycoachproduction.de/impressum/" target="_blank" rel="noopener">Impressum</a>
+          <a href="https://heycoachproduction.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

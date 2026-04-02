@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physiotherapie Online — Demnächst | Hey Coach Production</title>
+  <meta name="description" content="Professionelle Körperpflege und Verletzungsprävention — speziell für Kampfsportler entwickelt. Kurs von Physiotherapeutin Elza. Demnächst verfügbar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://heycoachproduction.de/wp-content/uploads/2025/04/favicon.jpg" type="image/jpeg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #06081A;
+      --bg2:       #0C1228;
+      --bg3:       #121A38;
+      --bg-elevated: #1A2248;
+      --accent:    #B87C1A;
+      --accent-hover: #D4A040;
+      --accent-glow: rgba(184, 124, 26, 0.15);
+      --text:      #FFFFFF;
+      --text2:     #B0B8D0;
+      --text3:     #7080B0;
+      --border:    rgba(255,255,255,0.08);
+      --border2:   rgba(255,255,255,0.12);
+      --r:         14px;
+      --max:       1100px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: radial-gradient(ellipse 80% 60% at 65% 0%, #141E48 0%, #0A1230 35%, #06081A 65%);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.012'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 0 24px; height: 64px; display: flex; align-items: center;
+      justify-content: space-between;
+      background: rgba(6, 8, 26, 0.88); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo img { height: 28px; display: block; }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-back { color: var(--text3); text-decoration: none; font-size: 14px; transition: color .2s; }
+    .nav-back:hover { color: var(--text); }
+    .btn-nav {
+      background: var(--accent); color: #fff; border: none;
+      padding: 9px 20px; border-radius: 8px; font-size: 14px;
+      font-weight: 600; cursor: pointer; text-decoration: none;
+      font-family: 'Outfit', sans-serif; transition: background .2s;
+    }
+    .btn-nav:hover { background: var(--accent-hover); }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    /* ── HERO (full-width bg image, centered content) ── */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      margin-top: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(6, 8, 26, 0.55) 0%,
+        rgba(6, 8, 26, 0.75) 40%,
+        rgba(6, 8, 26, 0.92) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center;
+      max-width: 680px;
+      padding: 80px 24px 100px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(184, 124, 26, 0.15); border: 1px solid rgba(184, 124, 26, 0.4);
+      color: var(--accent-hover); border-radius: 100px; padding: 8px 20px;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; margin-bottom: 32px;
+    }
+    .hero-badge span { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+    .hero h1 {
+      font-family: 'Syne', sans-serif; font-size: clamp(36px, 5vw, 60px);
+      font-weight: 800; line-height: 1.1; margin-bottom: 16px;
+      letter-spacing: -0.02em; color: #fff;
+    }
+    .hero h1 em { font-style: normal; color: var(--accent-hover); }
+    .hero-divider {
+      width: 48px; height: 3px; background: var(--accent);
+      margin: 0 auto 20px; border-radius: 2px;
+    }
+    .hero-with {
+      font-size: 17px; font-weight: 500; color: var(--text2); margin-bottom: 16px;
+    }
+    .hero-sub {
+      font-size: 16px; color: var(--text3); margin-bottom: 36px; line-height: 1.7;
+      max-width: 520px; margin-left: auto; margin-right: auto;
+    }
+    .hero-price {
+      font-family: 'Syne', sans-serif; font-size: 42px; font-weight: 800; color: #fff;
+      margin-bottom: 4px;
+    }
+    .hero-price-note {
+      font-size: 14px; color: var(--text3); margin-bottom: 32px;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--accent); color: #fff; font-family: 'Outfit', sans-serif;
+      font-size: 17px; font-weight: 600; padding: 16px 32px; border-radius: 12px;
+      text-decoration: none; border: none; cursor: pointer; transition: background .2s;
+    }
+    .btn-primary:hover { background: var(--accent-hover); }
+
+    /* ── SECTIONS ── */
+    .section { padding: 96px 0; }
+    .section-sm { padding: 72px 0; }
+    .label {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: block;
+    }
+    .h2 {
+      font-family: 'Syne', sans-serif; font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 20px;
+      color: #fff;
+    }
+
+    /* ── FEATURES (what to expect) ── */
+    .features-section {
+      background: var(--bg2);
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .features-header { text-align: center; margin-bottom: 56px; }
+    .features-header p { color: var(--text2); max-width: 540px; margin: 0 auto; font-size: 16px; }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    .feature-card {
+      background: var(--bg3); border: 1px solid var(--border2); border-radius: var(--r);
+      padding: 32px 24px; text-align: center;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    .feature-card:hover {
+      border-color: rgba(184, 124, 26, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(184, 124, 26, 0.08);
+    }
+    .feature-icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      background: rgba(184, 124, 26, 0.1); border: 1px solid rgba(184, 124, 26, 0.2);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px; font-size: 24px;
+    }
+    .feature-card h3 {
+      font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700;
+      color: #fff; margin-bottom: 10px; line-height: 1.3;
+    }
+    .feature-card p {
+      font-size: 14px; color: var(--text2); line-height: 1.65;
+    }
+
+    /* ── NOTIFICATION FORM ── */
+    .notify-section {
+      padding: 120px 0;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .notify-inner {
+      max-width: 520px; margin: 0 auto;
+    }
+    .notify-inner .h2 { margin-bottom: 12px; }
+    .notify-sub {
+      color: var(--text2); font-size: 16px; margin-bottom: 40px; line-height: 1.7;
+    }
+    .notify-form {
+      display: flex; gap: 12px; margin-bottom: 16px;
+    }
+    .notify-input {
+      flex: 1; padding: 16px 20px; border-radius: 12px;
+      background: var(--bg3); border: 1px solid var(--border2);
+      color: #fff; font-family: 'Outfit', sans-serif; font-size: 15px;
+      outline: none; transition: border-color .2s;
+    }
+    .notify-input::placeholder { color: var(--text3); }
+    .notify-input:focus { border-color: var(--accent); }
+    .notify-btn {
+      background: var(--accent); color: #fff; border: none;
+      padding: 16px 28px; border-radius: 12px; font-family: 'Outfit', sans-serif;
+      font-size: 15px; font-weight: 600; cursor: pointer; transition: background .2s;
+      white-space: nowrap;
+    }
+    .notify-btn:hover { background: var(--accent-hover); }
+    .notify-note {
+      font-size: 13px; color: var(--text3);
+    }
+
+    /* ── WEITERE KURSE ── */
+    .weitere-kurse {
+      padding: clamp(60px, 8vw, 100px) 0;
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+    }
+    .wk-header { text-align: center; margin-bottom: 48px; }
+    .wk-header .h2 { margin-bottom: 10px; }
+    .wk-sub { color: var(--text2); font-size: 16px; max-width: 500px; margin: 0 auto; }
+    .wk-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .wk-card {
+      background: var(--bg3); border-radius: var(--r);
+      border: 1px solid var(--border2); overflow: hidden;
+      text-decoration: none; color: var(--text);
+      transition: transform 0.22s, box-shadow 0.22s;
+      display: flex; flex-direction: column;
+    }
+    .wk-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+    }
+    .wk-img { position: relative; aspect-ratio: 16/10; overflow: hidden; }
+    .wk-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .wk-card:hover .wk-img img { transform: scale(1.04); }
+    .wk-body { padding: 22px 24px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+    .wk-tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .wk-body h3 {
+      font-family: 'Syne', sans-serif; font-size: 19px;
+      font-weight: 700; line-height: 1.2; color: #fff;
+    }
+    .wk-body p { color: var(--text2); font-size: 14px; line-height: 1.55; flex: 1; }
+    .wk-price { font-size: 22px; font-weight: 700; margin-top: 4px; color: #fff; }
+    .wk-price span { font-size: 13px; font-weight: 400; color: var(--text3); }
+    .wk-cta { font-size: 14px; font-weight: 600; color: var(--accent); }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--bg); border-top: 1px solid var(--border); }
+    .faq-list { max-width: 720px; margin: 48px auto 0; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0; background: none; border: none; color: var(--text2);
+      font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 500;
+      cursor: pointer; text-align: left; gap: 16px;
+    }
+    .faq-q:hover { color: #fff; }
+    .faq-icon { font-size: 22px; color: var(--accent); flex-shrink: 0; transition: transform .25s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding-bottom: 20px; color: var(--text3); line-height: 1.75; font-size: 15px; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg); border-top: 1px solid var(--border);
+      padding: 40px 24px; text-align: center;
+    }
+    footer img { height: 24px; margin-bottom: 14px; }
+    footer p { font-size: 13px; color: var(--text3); }
+    footer a { color: var(--text3); }
+    footer a:hover { color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .wk-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .features-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 32px; }
+      .wrap { padding: 0 16px; }
+      .section { padding: 64px 0; }
+      .notify-form { flex-direction: column; }
+      .notify-btn { width: 100%; }
+      .hero-content { padding: 60px 20px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAV
+═══════════════════════════════════════ -->
+<nav class="nav">
+  <a href="index-v7.html" class="nav-logo">
+    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  </a>
+  <div class="nav-right">
+    <a href="javascript:history.back()" class="nav-back">&larr; Zur&uuml;ck</a>
+    <a href="#notify" class="btn-nav">Benachrichtigt werden</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     1. HERO
+═══════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span></span>
+      Demn&auml;chst
+    </div>
+    <h1>Physiotherapie<br><em>Online</em></h1>
+    <div class="hero-divider"></div>
+    <p class="hero-with">Mit Elza &mdash; Physiotherapeutin</p>
+    <p class="hero-sub">
+      Professionelle K&ouml;rperpflege und Verletzungspr&auml;vention &mdash; speziell f&uuml;r Kampfsportler entwickelt. Bald verf&uuml;gbar.
+    </p>
+    <div class="hero-price">&euro;79</div>
+    <p class="hero-price-note">inkl. 19% MwSt &middot; Einmalzahlung</p>
+    <a href="#notify" class="btn-primary">Benachrichtigt werden &darr;</a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     2. WHAT TO EXPECT
+═══════════════════════════════════════ -->
+<section class="features-section">
+  <div class="wrap">
+    <div class="features-header">
+      <span class="label">Was dich erwartet</span>
+      <h2 class="h2">Professionelle Physiotherapie<br>f&uuml;r Kampfsportler.</h2>
+      <p>Elza zeigt dir, wie du deinen K&ouml;rper gezielt pflegst, Verletzungen vorbeugst und schneller regenerierst.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Verletzungspr&auml;vention</h3>
+        <p>Lerne, wie du Verletzungen vermeidest und deinen K&ouml;rper optimal vorbereitest.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Regeneration</h3>
+        <p>Effektive Methoden zur schnelleren Erholung nach dem Training.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3>Mobilit&auml;t &amp; Flexibilit&auml;t</h3>
+        <p>Verbessere deine Beweglichkeit f&uuml;r bessere Kampfsport-Leistung.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Schmerzfrei trainieren</h3>
+        <p>Professionelle Tipps f&uuml;r schmerzfreies und nachhaltiges Training.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     3. NOTIFICATION FORM
+═══════════════════════════════════════ -->
+<section class="notify-section" id="notify">
+  <div class="wrap">
+    <div class="notify-inner">
+      <span class="label">Warteliste</span>
+      <h2 class="h2">Sei der Erste, der es erf&auml;hrt.</h2>
+      <p class="notify-sub">Trag dich ein und wir benachrichtigen dich, sobald der Kurs verf&uuml;gbar ist.</p>
+      <form class="notify-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Eingetragen!'; this.querySelector('button').disabled=true;">
+        <input type="email" class="notify-input" placeholder="Deine E-Mail-Adresse" required>
+        <button type="submit" class="notify-btn">Eintragen</button>
+      </form>
+      <p class="notify-note">Kein Spam. Nur eine E-Mail bei Kursstart.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     4. WEITERE KURSE
+═══════════════════════════════════════ -->
+<section class="weitere-kurse">
+  <div class="wrap">
+    <div class="wk-header">
+      <span class="label">Hey Coach Production</span>
+      <h2 class="h2">Weitere Kurse entdecken</h2>
+      <p class="wk-sub">Erweitere dein Training mit weiteren Programmen von unserem Trainer-Team.</p>
+    </div>
+    <div class="wk-grid">
+
+      <a href="kurs-kickboxen.html" class="wk-card">
+        <div class="wk-img">
+          <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/f7.jpg" alt="Kickboxen Komplettkurs" loading="lazy">
+        </div>
+        <div class="wk-body">
+          <span class="wk-tag">Kickboxen</span>
+          <h3>Kickboxen Komplettkurs</h3>
+          <p>Schlag- und Tritttechniken von Grund auf. Mit Nils, Heiko und Jana &mdash; dem ExitAsia-Trainerteam.</p>
+          <div class="wk-price">&euro;99 <span>inkl. 19% MwSt &middot; einmalig</span></div>
+          <span class="wk-cta">Kurs ansehen &rarr;</span>
+        </div>
+      </a>
+
+      <a href="kurs-muay-thai.html" class="wk-card">
+        <div class="wk-img">
+          <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="Muay Thai Komplettkurs" loading="lazy">
+        </div>
+        <div class="wk-body">
+          <span class="wk-tag">Muay Thai</span>
+          <h3>Muay Thai Komplettkurs</h3>
+          <p>Schlagtechnik, Kicks, Ellenbogen, Knie, Clinch &mdash; strukturiert von ISKA Weltmeister Marlon.</p>
+          <div class="wk-price">&euro;129 <span>inkl. 19% MwSt &middot; einmalig</span></div>
+          <span class="wk-cta">Kurs ansehen &rarr;</span>
+        </div>
+      </a>
+
+      <a href="https://marlon-fitstart.de" class="wk-card">
+        <div class="wk-img">
+          <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="7-Tage FitStart mit Marlon" loading="lazy">
+        </div>
+        <div class="wk-body">
+          <span class="wk-tag">Einsteiger</span>
+          <h3>7-Tage FitStart</h3>
+          <p>Der perfekte Einstieg in die Kampfsport-Welt &mdash; 7 Tage, 7 Lektionen, sofort loslegen. Mit Marlon.</p>
+          <div class="wk-price">&euro;9 <span>inkl. 19% MwSt &middot; einmalig</span></div>
+          <span class="wk-cta">Kurs ansehen &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  <p>&copy; 2026 Hey Coach Production GmbH &middot; Kandelstr. 5, 79199 Kirchzarten</p>
+  <p style="margin-top:10px;">
+    <a href="https://heycoachproduction.de/impressum/" style="margin:0 10px; font-size:13px;">Impressum</a>
+    <a href="https://heycoachproduction.de/datenschutz/" style="margin:0 10px; font-size:13px;">Datenschutz</a>
+    <a href="https://heycoachproduction.de/agb/" style="margin:0 10px; font-size:13px;">AGB</a>
+  </p>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
