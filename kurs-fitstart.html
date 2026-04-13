@@ -524,6 +524,20 @@
       .section { padding: 64px 0; }
       .hero-stats { flex-wrap: wrap; gap: 16px; }
       .hero-panel { padding: 32px 20px; }
+      .hero-photo { min-height: 40vh; }
+      .hero-photo img { object-position: center 20%; }
+      .nav-back { display: none; }
+      .btn-nav { font-size: 13px; padding: 8px 16px; }
+      .reviews-carousel { gap: 16px; }
+      .review-card { min-width: 100%; max-width: 100%; }
+    }
+    @media (max-width: 375px) {
+      .skills-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .skill-title { font-size: 11px; }
+      .hero h1 { font-size: 26px; }
+      .hero-panel { padding: 24px 16px; }
+      .hero-meta { font-size: 13px; }
+      .btn-primary-lg { font-size: 15px; padding: 14px 24px; }
     }
   </style>
 </head>
@@ -533,8 +547,8 @@
      NAV
 ═══════════════════════════════════════ -->
 <nav class="nav">
-  <a href="index-v7.html" class="nav-logo">
-    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-white.svg" alt="Hey Coach Production" style="height:28px;">
   </a>
   <div class="nav-right">
     <a href="javascript:history.back()" class="nav-back">&larr; Zur&uuml;ck</a>
@@ -549,7 +563,7 @@
 <section class="hero">
   <!-- LEFT: Photo -->
   <div class="hero-photo">
-    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="Marlon — Muay Thai Trainer">
+    <img src="images/trainers/marlon.jpg" alt="Marlon — Muay Thai Trainer">
   </div>
 
   <!-- RIGHT: Info Panel -->
@@ -677,37 +691,37 @@
     <div class="skills-grid">
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=500&h=350&fit=crop&q=80" alt="Grundhaltung & Stance">
+        <img src="images/marlon-stance.jpg" alt="Grundhaltung & Stance">
         <div class="skill-num">1</div>
         <div class="skill-title">Grundhaltung &amp; Stance</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&h=350&fit=crop&q=80" alt="Erste Schlagkombinationen">
+        <img src="images/training-knee.jpg" alt="Erste Schlagkombinationen">
         <div class="skill-num">2</div>
         <div class="skill-title">Erste Schlag&shy;kombinationen</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1614632537197-38a17061c2bd?w=500&h=350&fit=crop&q=80" alt="Kick-Basics">
+        <img src="images/training-punch.jpg" alt="Kick-Basics">
         <div class="skill-num">3</div>
         <div class="skill-title">Kick-Basics</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=350&fit=crop&q=80" alt="Koordination & Balance">
+        <img src="images/training-boxing.jpg" alt="Koordination & Balance">
         <div class="skill-num">4</div>
         <div class="skill-title">Koordination &amp; Balance</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1545191050-96042d612b1f?w=500&h=350&fit=crop&q=80" alt="Kraft & Ausdauer">
+        <img src="images/training-pad-kick.jpg" alt="Kraft & Ausdauer">
         <div class="skill-num">5</div>
         <div class="skill-title">Kraft &amp; Ausdauer</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1562771379-eafdca7a02f8?w=500&h=350&fit=crop&q=80" alt="Mentale Stärke">
+        <img src="images/team-highfive.jpg" alt="Mentale Stärke">
         <div class="skill-num">6</div>
         <div class="skill-title">Mentale St&auml;rke</div>
       </div>
@@ -842,7 +856,7 @@
   <div class="wrap">
     <div class="trainer-grid">
       <div class="trainer-img-wrap">
-        <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="Marlon — Muay Thai Weltmeister">
+        <img src="images/trainers/marlon.jpg" alt="Marlon — Muay Thai Weltmeister">
         <div class="trainer-awards">
           <span class="award-badge">ISKA Weltmeister</span>
           <span class="award-badge">1st DAN Schwarzgurt</span>
@@ -938,7 +952,7 @@
         <!-- Card 4 -->
         <div class="review-card">
           <div class="review-photo">
-            <img src="images/training-kick.jpg" alt="FitStart Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-kickboxen-kickboxen-fuer-fortgeschrittene.webp" alt="FitStart Teilnehmer" loading="lazy">
           </div>
           <div class="review-body">
             <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
@@ -950,7 +964,7 @@
         <!-- Card 5 -->
         <div class="review-card">
           <div class="review-photo">
-            <img src="images/sparring-kick.jpg" alt="FitStart Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-kickboxen-kickboxen-fuer-wettkaempfer.webp" alt="FitStart Teilnehmer" loading="lazy">
           </div>
           <div class="review-body">
             <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
@@ -962,7 +976,7 @@
         <!-- Card 6 -->
         <div class="review-card">
           <div class="review-photo">
-            <img src="images/heiko-leo.jpg" alt="FitStart Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-boxen-banner.webp" alt="FitStart Teilnehmer" loading="lazy">
           </div>
           <div class="review-body">
             <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
@@ -1083,7 +1097,7 @@
 
       <a href="kurs-muay-thai.html" class="wk-card">
         <div class="wk-img">
-          <img src="images/eas-kurse-thaiboxen-banner.webp" alt="Muay Thai Komplettkurs" loading="lazy">
+          <img src="images/hero-muaythai-marlon.png" alt="Muay Thai Komplettkurs" loading="lazy">
         </div>
         <div class="wk-body">
           <span class="wk-tag">Muay Thai</span>
@@ -1096,7 +1110,7 @@
 
       <a href="kurs-kickboxen-v2.html" class="wk-card">
         <div class="wk-img">
-          <img src="images/training-kick.jpg" alt="Kickboxen Komplettkurs" loading="lazy">
+          <img src="images/team-trainers-gym.png" alt="Kickboxen Komplettkurs" loading="lazy">
         </div>
         <div class="wk-body">
           <span class="wk-tag">Kickboxen</span>
@@ -1109,7 +1123,7 @@
 
       <a href="kurs-guertel-v2.html" class="wk-card">
         <div class="wk-img">
-          <img src="images/eas-kurse-thaiboxen-thaiboxen-fuer-fortgeschrittene.webp" alt="ISKA G&uuml;rtelpr&uuml;fung" loading="lazy">
+          <img src="images/team-trainers-gym.png" alt="ISKA G&uuml;rtelpr&uuml;fung" loading="lazy">
         </div>
         <div class="wk-body">
           <span class="wk-tag">G&uuml;rtelpr&uuml;fung</span>
@@ -1147,7 +1161,7 @@
      FOOTER
 ═══════════════════════════════════════ -->
 <footer>
-  <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  <img src="images/logo-white.svg" alt="Hey Coach Production" style="height:28px;">
   <p>&copy; 2026 Hey Coach Production GmbH &middot; Kandelstr. 5, 79199 Kirchzarten</p>
   <p style="margin-top:10px;">
     <a href="impressum.html" style="margin:0 10px; font-size:13px;">Impressum</a>

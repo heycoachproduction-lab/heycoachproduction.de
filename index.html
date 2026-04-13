@@ -9,13 +9,13 @@
   <!-- OG Meta Tags -->
   <meta property="og:title" content="Hey Coach Production — Online Kampfsport-Kurse von Weltmeistern">
   <meta property="og:description" content="Lerne Kickboxen & Muay Thai von ISKA Weltmeistern. 680+ Bewertungen. Einmal zahlen, lebenslanger Zugang.">
-  <meta property="og:image" content="https://heycoachproduction.de/wp-content/uploads/2025/04/bg12.jpg">
+  <meta property="og:image" content="images/training-gym-panorama.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hey Coach Production — Online Kampfsport-Kurse von Weltmeistern">
   <meta name="twitter:description" content="Lerne Kickboxen & Muay Thai von ISKA Weltmeistern. Einmal zahlen, lebenslanger Zugang.">
-  <meta name="twitter:image" content="https://heycoachproduction.de/wp-content/uploads/2025/04/bg12.jpg">
+  <meta name="twitter:image" content="images/training-gym-panorama.jpg">
   <link rel="canonical" href="https://heycoachproduction.de">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
     "@type": "Organization",
     "name": "Hey Coach Production GmbH",
     "url": "https://heycoachproduction.de",
-    "logo": "https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg",
+    "logo": "images/logo-white.svg",
     "description": "Online-Kampfsportkurse von ISKA-zertifizierten Weltmeistern",
     "address": {
       "@type": "PostalAddress",
@@ -208,6 +208,8 @@ body {
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   padding: 1.25rem 0;
+  background: rgba(6, 8, 26, 0.7);
+  backdrop-filter: blur(12px);
   transition: padding var(--transition), background var(--transition), border-color var(--transition);
 }
 .nav.scrolled {
@@ -216,8 +218,9 @@ body {
   border-bottom: 1px solid var(--border);
   padding: 0.85rem 0;
 }
-.nav .container { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.nav .container { max-width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 0 1.5rem; }
 .nav-logo img { height: 28px; display: block; }
+.nav-logo-text { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.1rem; color: #fff; letter-spacing: 0.02em; }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
 .nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--text-secondary); transition: var(--transition); }
 .nav-links a:hover { color: var(--text-primary); }
@@ -358,7 +361,7 @@ body {
   grid-template-rows: 300px 200px; gap: 1rem;
 }
 .about-photo { border-radius: var(--radius-md); overflow: hidden; }
-.about-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease); }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.7s var(--ease); }
 .about-photo:hover img { transform: scale(1.04); }
 .about-photo--tall { grid-row: span 2; }
 
@@ -583,18 +586,28 @@ body {
 .trainer-card-creds { font-size: 0.75rem; color: var(--accent); font-weight: 500; }
 
 .trainer-awards {
-  display: flex; flex-wrap: wrap; gap: 1.5rem;
+  display: flex; flex-wrap: nowrap; gap: 1.5rem;
   margin-top: 3rem; padding-top: 3rem; border-top: 1px solid var(--border);
+  justify-content: space-between;
 }
-.trainer-award { display: flex; align-items: center; gap: 1rem; flex: 1 1 200px; }
+.trainer-award { display: flex; align-items: center; gap: 0.75rem; flex: 1 1 0; min-width: 0; }
 .award-icon {
   width: 44px; height: 44px; background: var(--accent-dim);
   border: 1px solid var(--border-accent); border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.2rem; flex-shrink: 0;
 }
-.award-text strong { display: block; color: var(--text-primary); font-size: 0.875rem; font-weight: 600; }
-.award-text span { font-size: 0.75rem; color: var(--text-muted); }
+.award-text strong { display: block; color: var(--text-primary); font-size: 0.8rem; font-weight: 600; white-space: nowrap; }
+.award-text span { font-size: 0.7rem; color: var(--text-muted); white-space: nowrap; }
+
+@media (max-width: 1100px) {
+  .trainer-awards { flex-wrap: wrap; justify-content: center; }
+  .trainer-award { flex: 0 1 auto; }
+}
+@media (max-width: 600px) {
+  .trainer-awards { gap: 1rem; }
+  .trainer-award { flex: 0 1 calc(50% - 0.5rem); }
+}
 
 /* ============================================================
    7. TESTIMONIALS
@@ -1421,7 +1434,7 @@ body {
   <nav class="nav" id="mainNav">
     <div class="container">
       <a href="index.html" class="nav-logo">
-        <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+        <img src="images/logo-white.svg" alt="Hey Coach Production">
       </a>
       <div class="nav-links" id="navLinksMenu">
         <a href="#kurse">Kurse</a>
@@ -1491,13 +1504,13 @@ body {
         </div>
         <div class="about-photos reveal reveal-delay-2">
           <div class="about-photo about-photo--tall">
-            <img src="images/team-highfive.jpg" alt="ExitAsia Team Training" loading="lazy">
+            <img src="images/exitasia-building-new.webp" alt="ExitAsia Kampfsportschule Freiburg" loading="lazy">
           </div>
           <div class="about-photo">
-            <img src="images/training-kick.jpg" alt="Kickboxen Training" loading="lazy">
+            <img src="images/exitasia-kids.jpg" alt="Kinder Training bei ExitAsia" loading="lazy">
           </div>
           <div class="about-photo">
-            <img src="images/training-boxing.jpg" alt="Kickboxen Training" loading="lazy">
+            <img src="images/exitasia-training-live.jpg" alt="Live Kickboxen Training" loading="lazy">
           </div>
         </div>
       </div>
@@ -1505,7 +1518,7 @@ body {
         <div class="stat-item"><span class="stat-number" data-target="20" data-suffix="+">0</span><span class="stat-label">Jahre Erfahrung</span></div>
         <div class="stat-item"><span class="stat-number" data-target="1000" data-suffix="+">0</span><span class="stat-label">Aktive Mitglieder</span></div>
         <div class="stat-item"><span class="stat-number" data-target="680" data-suffix="+">0</span><span class="stat-label">Google Bewertungen</span></div>
-        <div class="stat-item"><span class="stat-number" data-target="3" data-suffix="">0</span><span class="stat-label">Standorte Freiburg</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="3" data-suffix="">0</span><span class="stat-label">Standorte in Baden-W&uuml;rttemberg</span></div>
       </div>
     </div>
   </section>
@@ -1521,7 +1534,7 @@ body {
         <p class="reveal reveal-delay-2">Schau dir an, wie unsere Kurse aufgebaut sind.</p>
       </div>
       <div class="video-wrapper reveal reveal-delay-3">
-        <img class="video-poster" src="https://heycoachproduction.de/wp-content/uploads/2025/04/bg12.jpg" alt="Trailer">
+        <img class="video-poster" src="images/training-gym-panorama.jpg" alt="Trailer">
         <div class="video-overlay">
           <div class="video-play-btn">
             <svg viewBox="0 0 24 24" fill="var(--bg-primary)"><path d="M8 5v14l11-7z"/></svg>
@@ -1550,7 +1563,7 @@ body {
       <!-- Kickboxen -->
       <div class="course-row reveal stagger-1">
         <div class="course-row-media">
-          <img src="images/eas-kurse-kickboxen-kickboxen-fuer-anfaenger.webp"
+          <img src="images/kickboxen-cover.webp"
                alt="Kickboxen Komplettkurs" loading="lazy">
           <div class="course-row-media-overlay"></div>
         </div>
@@ -1576,8 +1589,9 @@ body {
       <!-- ISKA Gürtelprüfung -->
       <div class="course-row reverse reveal stagger-2">
         <div class="course-row-media">
-          <img src="images/eas-kurse-kickboxen-kickboxen-fuer-fortgeschrittene.webp"
-               alt="ISKA G&uuml;rtelpr&uuml;fung" loading="lazy">
+          <img src="images/guertel-stufen.jpg"
+               alt="ISKA G&uuml;rtelpr&uuml;fung — Alle Gurtstufen" loading="lazy"
+               style="object-fit: cover; object-position: center;">
           <div class="course-row-media-overlay"></div>
         </div>
         <div class="course-row-info">
@@ -1601,8 +1615,8 @@ body {
       <!-- Muay Thai -->
       <div class="course-row reveal stagger-3">
         <div class="course-row-media">
-          <img src="images/eas-kurse-thaiboxen-banner.webp"
-               alt="Muay Thai Komplettkurs" loading="lazy">
+          <img src="images/hero-muaythai-marlon.png"
+               alt="Muay Thai Komplettkurs — mit Marlon" loading="lazy">
           <div class="course-row-media-overlay"></div>
         </div>
         <div class="course-row-info">
@@ -1627,8 +1641,9 @@ body {
       <!-- 7-Tage-FitStart -->
       <div class="course-row reverse reveal stagger-4">
         <div class="course-row-media">
-          <img src="images/training-punch.jpg"
-               alt="7-Tage-FitStart mit Marlon" loading="lazy">
+          <img src="images/fitstart-banner.png"
+               alt="7-Tage-FitStart mit Marlon" loading="lazy"
+               style="object-fit: cover; object-position: center;">
           <div class="course-row-media-overlay"></div>
         </div>
         <div class="course-row-info">
@@ -1715,7 +1730,7 @@ body {
 
         <div class="feature-card reveal stagger-1">
           <div class="feature-img">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=450&fit=crop&crop=faces" alt="Hey Coach Community" loading="lazy">
+            <img src="images/community-new.webp" alt="Hey Coach Community" loading="lazy">
           </div>
           <div class="feature-text">
             <h3>Hey Coach Community</h3>
@@ -1725,7 +1740,7 @@ body {
 
         <div class="feature-card reveal stagger-2">
           <div class="feature-img">
-            <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?w=800&h=450&fit=crop" alt="Offizielles Zertifikat" loading="lazy">
+            <img src="images/zertifikat-new.webp" alt="Offizielles Zertifikat" loading="lazy">
           </div>
           <div class="feature-text">
             <h3>Offizielles Zertifikat</h3>
@@ -1735,7 +1750,7 @@ body {
 
         <div class="feature-card reveal stagger-3">
           <div class="feature-img">
-            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&h=450&fit=crop" alt="Trainings-Tracking" loading="lazy">
+            <img src="images/training-tracker-new.webp" alt="Trainings-Tracking" loading="lazy">
           </div>
           <div class="feature-text">
             <h3>Trainings-Tracking</h3>
@@ -1745,7 +1760,7 @@ body {
 
         <div class="feature-card reveal stagger-4">
           <div class="feature-img">
-            <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&h=450&fit=crop" alt="Flexibles Training" loading="lazy">
+            <img src="images/flexibles-training-new.webp" alt="Flexibles Training — Zuhause trainieren" loading="lazy">
           </div>
           <div class="feature-text">
             <h3>Flexibles Training</h3>
@@ -1782,7 +1797,7 @@ body {
 
           <a href="trainer-nils.html" class="trainer-card stagger-1">
             <span class="trainer-card-tag">Kickboxen</span>
-            <img src="https://heycoachproduction.de/wp-content/uploads/2025/03/photo1.jpg" alt="Nils" loading="lazy">
+            <img src="images/trainers/nils.jpg" alt="Nils" loading="lazy">
             <div class="trainer-card-overlay"></div>
             <div class="trainer-card-info">
               <div class="trainer-card-name">Nils</div>
@@ -1793,7 +1808,7 @@ body {
 
           <a href="trainer-marlon.html" class="trainer-card stagger-2">
             <span class="trainer-card-tag">Muay Thai</span>
-            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/6.jpg" alt="Marlon" loading="lazy">
+            <img src="images/trainers/marlon.jpg" alt="Marlon" loading="lazy">
             <div class="trainer-card-overlay"></div>
             <div class="trainer-card-info">
               <div class="trainer-card-name">Marlon</div>
@@ -1804,7 +1819,7 @@ body {
 
           <a href="trainer-heiko.html" class="trainer-card stagger-3">
             <span class="trainer-card-tag">Kickboxen</span>
-            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/3.jpg" alt="Heiko" loading="lazy">
+            <img src="images/trainers/heiko.jpg" alt="Heiko" loading="lazy">
             <div class="trainer-card-overlay"></div>
             <div class="trainer-card-info">
               <div class="trainer-card-name">Heiko</div>
@@ -1815,11 +1830,11 @@ body {
 
           <a href="trainer-jana.html" class="trainer-card stagger-4">
             <span class="trainer-card-tag">Kickboxen</span>
-            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/2.jpg" alt="Jana" loading="lazy">
+            <img src="images/trainers/jana.webp" alt="Jana" loading="lazy">
             <div class="trainer-card-overlay"></div>
             <div class="trainer-card-info">
               <div class="trainer-card-name">Jana</div>
-              <div class="trainer-card-role">ISKA Weltmeisterin &middot; Aktive Wetk&auml;mpferin</div>
+              <div class="trainer-card-role">ISKA Weltmeisterin &middot; Aktive WettkWetk&auml;mpferinauml;mpferin</div>
               <div class="trainer-card-creds">Studium Fitness&ouml;konomie &middot; Hauptberufliche Trainerin</div>
             </div>
           </a>
@@ -1848,7 +1863,7 @@ body {
 
           <a href="trainer-mohsen.html" class="trainer-card stagger-7">
             <span class="trainer-card-tag">K1 &middot; Kickboxen</span>
-            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/4.jpg" alt="Mohsen" loading="lazy">
+            <img src="images/trainers/mohsen.jpg" alt="Mohsen" loading="lazy">
             <div class="trainer-card-overlay"></div>
             <div class="trainer-card-info">
               <div class="trainer-card-name">Mohsen</div>
@@ -1859,7 +1874,7 @@ body {
 
           <a href="trainer-leo.html" class="trainer-card stagger-8">
             <span class="trainer-card-tag">Trainer</span>
-            <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/5.jpg" alt="Leo" loading="lazy">
+            <img src="images/trainers/leo.jpg" alt="Leo" loading="lazy">
             <div class="trainer-card-overlay"></div>
             <div class="trainer-card-info">
               <div class="trainer-card-name">Leo</div>
@@ -1918,7 +1933,7 @@ body {
         <!-- Card 1: Thomas -->
         <div class="testimonial-card stagger-1">
           <div class="testimonial-photo">
-            <img src="images/eas-kurse-kickboxen-kickboxen-fuer-anfaenger.webp" alt="Kickboxen Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-kickboxen-kickboxen-fuer-anfaenger.webp" alt="Kickboxen Training" loading="lazy">
           </div>
           <div class="testimonial-body">
             <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1929,7 +1944,7 @@ body {
         <!-- Card 2: Sarah -->
         <div class="testimonial-card stagger-2">
           <div class="testimonial-photo">
-            <img src="images/eas-kurse-thaiboxen-thaiboxen-fuer-anfaenger.webp" alt="Muay Thai Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-thaiboxen-thaiboxen-fuer-anfaenger.webp" alt="Muay Thai Training" loading="lazy">
           </div>
           <div class="testimonial-body">
             <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1940,7 +1955,7 @@ body {
         <!-- Card 3: Alexander -->
         <div class="testimonial-card stagger-3">
           <div class="testimonial-photo">
-            <img src="images/eas-kurse-thaiboxen-thaiboxen-fuer-fortgeschrittene.webp" alt="Community Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-thaiboxen-thaiboxen-fuer-fortgeschrittene.webp" alt="Community Training" loading="lazy">
           </div>
           <div class="testimonial-body">
             <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -2064,7 +2079,7 @@ body {
           </a>
         </div>
         <div class="partner-image reveal reveal-delay-2">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop" alt="Zusammenarbeit — Hey Coach Production" loading="lazy">
+          <img src="images/bist-du-experte-new.png" alt="Bist du Experte? — Hey Coach Production" loading="lazy">
         </div>
       </div>
     </div>
@@ -2090,7 +2105,7 @@ body {
       <div id="faq-allgemein" class="faq-panel active reveal">
         <div class="faq-item">
           <button class="faq-question">Was ist Hey Coach Production?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><div class="faq-answer-inner">Hey Coach Production ist eine Online-Kampfsport-Plattform, gegr&uuml;ndet von den Weltmeistern hinter ExitAsia &mdash; einer der gr&ouml;&szlig;ten Kampfsportschulen Deutschlands (seit 2006, 3 Standorte Freiburg). Wir bieten professionelle Online-Kurse in Kickboxen, Muay Thai und Physiotherapie.</div></div>
+          <div class="faq-answer"><div class="faq-answer-inner">Hey Coach Production ist eine Online-Kampfsport-Plattform, gegr&uuml;ndet von den Weltmeistern hinter ExitAsia &mdash; einer der gr&ouml;&szlig;ten Kampfsportschulen Deutschlands (seit 2006, 3 Standorte in Baden-W&uuml;rttemberg). Wir bieten professionelle Online-Kurse in Kickboxen, Muay Thai und Physiotherapie.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-question">F&uuml;r wen sind die Kurse geeignet?<span class="faq-icon">+</span></button>
@@ -2150,7 +2165,7 @@ body {
     <div class="final-cta-bg">
       <video autoplay muted loop playsinline>
         <source src="https://www.exitasia.de/wp-content/uploads/eas-video-banner.mp4" type="video/mp4">
-        <img src="https://heycoachproduction.de/wp-content/uploads/2025/04/bg12.jpg" alt="">
+        <img src="images/training-gym-panorama.jpg" alt="">
       </video>
     </div>
     <div class="container">
@@ -2181,7 +2196,7 @@ body {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+          <img src="images/logo-white.svg" alt="Hey Coach Production">
           <p>Online Kampfsport-Kurse von ISKA Weltmeistern. Gegr&uuml;ndet von ExitAsia &mdash; seit 2006 eine der f&uuml;hrenden Kampfsportschulen Deutschlands.</p>
         </div>
         <div class="footer-col">

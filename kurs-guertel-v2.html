@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://heycoachproduction.de/wp-content/uploads/2025/04/favicon.jpg" type="image/jpeg">
+  <link rel="icon" href="images/logo-white.svg" type="image/jpeg">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -617,6 +617,20 @@
       .section { padding: 64px 0; }
       .hero-stats { flex-wrap: wrap; gap: 16px; }
       .hero-panel { padding: 32px 20px; }
+      .hero-photo { min-height: 40vh; }
+      .hero-photo img { object-position: center 20%; }
+      .nav-back { display: none; }
+      .btn-nav { font-size: 13px; padding: 8px 16px; }
+      .reviews-carousel { gap: 16px; }
+      .review-card { min-width: 100%; max-width: 100%; }
+    }
+    @media (max-width: 375px) {
+      .skills-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .skill-title { font-size: 11px; }
+      .hero h1 { font-size: 26px; }
+      .hero-panel { padding: 24px 16px; }
+      .hero-meta { font-size: 13px; }
+      .btn-primary-lg { font-size: 15px; padding: 14px 24px; }
     }
   </style>
 </head>
@@ -626,8 +640,8 @@
      NAV
 ═══════════════════════════════════════ -->
 <nav class="nav">
-  <a href="index-v7.html" class="nav-logo">
-    <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-white.svg" alt="Hey Coach Production">
   </a>
   <div class="nav-right">
     <a href="javascript:history.back()" class="nav-back">&#8592; Zur&uuml;ck</a>
@@ -642,7 +656,7 @@
 <section class="hero">
   <!-- LEFT: Photo -->
   <div class="hero-photo">
-    <img src="images/eas-kurse-kickboxen-kickboxen-fuer-fortgeschrittene.webp" alt="ISKA G&uuml;rtelpr&uuml;fung — Kickboxen Training">
+    <img src="images/training-gym-panorama.jpg" alt="ISKA G&uuml;rtelpr&uuml;fung — Kickboxen Training">
   </div>
 
   <!-- RIGHT: Info Panel -->
@@ -770,37 +784,37 @@
     <div class="skills-grid">
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=500&h=350&fit=crop&q=80" alt="Stand &amp; Deckung">
+        <img src="images/sparring-kick.jpg" alt="Stand &amp; Deckung">
         <div class="skill-num">1</div>
         <div class="skill-title">Stand &amp; Deckung</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&h=350&fit=crop&q=80" alt="Jab, Cross &amp; Haken">
+        <img src="images/training-punch.jpg" alt="Jab, Cross &amp; Haken">
         <div class="skill-num">2</div>
         <div class="skill-title">Jab, Cross &amp; Haken</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1614632537197-38a17061c2bd?w=500&h=350&fit=crop&q=80" alt="Alle Kick-Techniken">
+        <img src="images/training-kick.jpg" alt="Alle Kick-Techniken">
         <div class="skill-num">3</div>
         <div class="skill-title">Alle Kick-Techniken</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=350&fit=crop&q=80" alt="Blocks &amp; Konter">
+        <img src="images/training-boxing.jpg" alt="Blocks &amp; Konter">
         <div class="skill-num">4</div>
         <div class="skill-title">Blocks &amp; Konter</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1545191050-96042d612b1f?w=500&h=350&fit=crop&q=80" alt="Kombinationen">
+        <img src="images/training-pad-kick.jpg" alt="Kombinationen">
         <div class="skill-num">5</div>
         <div class="skill-title">Kombinationen</div>
       </div>
 
       <div class="skill-card">
-        <img src="https://images.unsplash.com/photo-1562771379-eafdca7a02f8?w=500&h=350&fit=crop&q=80" alt="Spinning-Kicks">
+        <img src="images/team-highfive.jpg" alt="Spinning-Kicks">
         <div class="skill-num">6</div>
         <div class="skill-title">Spinning-Kicks</div>
       </div>
@@ -1012,7 +1026,7 @@
     <!-- Trainer 1: Nils -->
     <div class="trainer-block">
       <div class="trainer-img-wrap">
-        <img src="https://heycoachproduction.de/wp-content/uploads/2025/03/photo1.jpg" alt="Nils — 5th DAN ISKA Europameister">
+        <img src="images/trainers/nils.jpg" alt="Nils — 5th DAN ISKA Europameister">
         <div class="trainer-awards">
           <span class="award-badge">ISKA Europameister</span>
           <span class="award-badge">5th DAN Schwarzgurt</span>
@@ -1048,7 +1062,7 @@
     <!-- Trainer 2: Heiko (reversed layout) -->
     <div class="trainer-block reverse">
       <div class="trainer-img-wrap">
-        <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/3.jpg" alt="Heiko — 3rd DAN ISKA">
+        <img src="images/trainers/heiko.jpg" alt="Heiko — 3rd DAN ISKA">
         <div class="trainer-awards">
           <span class="award-badge">3rd DAN ISKA</span>
           <span class="award-badge">Mitgr&uuml;nder ExitAsia</span>
@@ -1084,7 +1098,7 @@
     <!-- Trainer 3: Jana -->
     <div class="trainer-block">
       <div class="trainer-img-wrap">
-        <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/2.jpg" alt="Jana — ISKA Weltmeisterin">
+        <img src="images/trainers/jana.webp" alt="Jana — ISKA Weltmeisterin">
         <div class="trainer-awards">
           <span class="award-badge">ISKA Weltmeisterin</span>
           <span class="award-badge">Fitness&ouml;konomie</span>
@@ -1175,7 +1189,7 @@
         <!-- Card 4: Michael -->
         <div class="review-card">
           <div class="review-photo">
-            <img src="images/training-kick.jpg" alt="Kickboxen Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-kickboxen-kickboxen-fuer-fortgeschrittene.webp" alt="Kickboxen Teilnehmer" loading="lazy">
           </div>
           <div class="review-body">
             <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1187,7 +1201,7 @@
         <!-- Card 5: Anna -->
         <div class="review-card">
           <div class="review-photo">
-            <img src="images/sparring-kick.jpg" alt="Kickboxen Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-kickboxen-kickboxen-fuer-wettkaempfer.webp" alt="Kickboxen Teilnehmer" loading="lazy">
           </div>
           <div class="review-body">
             <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1199,7 +1213,7 @@
         <!-- Card 6: David -->
         <div class="review-card">
           <div class="review-photo">
-            <img src="images/heiko-leo.jpg" alt="Kickboxen Teilnehmer" loading="lazy">
+            <img src="images/eas-kurse-boxen-banner.webp" alt="Kickboxen Teilnehmer" loading="lazy">
           </div>
           <div class="review-body">
             <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1356,7 +1370,7 @@
 
       <a href="kurs-kickboxen-v2.html" class="wk-card">
         <div class="wk-img">
-          <img src="images/training-kick.jpg" alt="Kickboxen Komplettkurs" loading="lazy">
+          <img src="images/team-trainers-gym.png" alt="Kickboxen Komplettkurs" loading="lazy">
         </div>
         <div class="wk-body">
           <span class="wk-tag">Kickboxen</span>
@@ -1369,7 +1383,7 @@
 
       <a href="kurs-muay-thai.html" class="wk-card">
         <div class="wk-img">
-          <img src="images/eas-kurse-thaiboxen-banner.webp" alt="Muay Thai Komplettkurs" loading="lazy">
+          <img src="images/hero-muaythai-marlon.png" alt="Muay Thai Komplettkurs" loading="lazy">
         </div>
         <div class="wk-body">
           <span class="wk-tag">Muay Thai</span>
@@ -1408,7 +1422,7 @@
     <h2 class="h2">Bereit f&uuml;r Ihre n&auml;chste<br>G&uuml;rtelpr&uuml;fung?</h2>
     <p>Einmal zahlen. Lebenslanger Zugang. Einmal zahlen. Lebenslanger Zugang. Kein Abo.</p>
     <div class="final-cta-buttons">
-      <a href="#pricing" class="btn-primary btn-primary-lg">G&uuml;rtel w&auml;hlen — ab &euro;24,99</a>
+      <a href="#pricing" class="btn-primary btn-primary-lg">G&uuml;rtel w&auml;hlen — &euro;24,99</a>
     </div>
     <div class="final-guarantee">
       Sicher bezahlen · SSL-verschl&uuml;sselt · Deutsches Unternehmen
@@ -1421,7 +1435,7 @@
      FOOTER
 ═══════════════════════════════════════ -->
 <footer>
-  <img src="https://heycoachproduction.de/wp-content/uploads/2025/05/Logo-white.svg" alt="Hey Coach Production">
+  <img src="images/logo-white.svg" alt="Hey Coach Production">
   <p>&copy; 2026 Hey Coach Production GmbH · Kandelstr. 5, 79199 Kirchzarten</p>
   <p style="margin-top:10px;">
     <a href="impressum.html" style="margin:0 10px; font-size:13px;">Impressum</a>
