@@ -435,20 +435,22 @@
     .cert-mockup-wrap {
       perspective: 800px;
     }
-    .cert-mockup {
-      background: #fff; border-radius: 16px; padding: 40px 36px; text-align: center;
+    .cert-img-3d {
+      border-radius: 12px;
+      overflow: hidden;
       box-shadow: 0 32px 80px rgba(0,0,0,0.5);
-      position: relative; overflow: hidden;
       transition: transform 0.1s ease-out, box-shadow 0.3s ease;
       transform-style: preserve-3d;
       will-change: transform;
     }
-    .cert-mockup:hover {
-      box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 40px rgba(184, 124, 26, 0.1);
+    .cert-img-3d img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
     }
-    .cert-mockup::before {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(184, 124, 26, 0.06) 0%, transparent 60%);
+    .cert-img-3d:hover {
+      box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 40px rgba(184, 124, 26, 0.15);
     }
     .cert-border {
       border: 2px solid rgba(184, 124, 26, 0.25); border-radius: 10px; padding: 28px 24px;
@@ -1310,31 +1312,8 @@
         </div>
       </div>
       <div class="cert-mockup-wrap">
-        <div class="cert-mockup" data-tilt>
-          <div class="cert-border">
-            <div class="cert-logo-line">
-              <img src="images/logo-dark.svg" alt="Hey Coach">
-            </div>
-            <div class="cert-ornament">— ✦ —</div>
-            <div class="cert-title">Zertifikat der Vollendung</div>
-            <div class="cert-name-field">Dein Name</div>
-            <div class="cert-course-name">
-              <strong>Kickboxen Komplettkurs</strong>
-              mit Nils, Heiko &amp; Jana · Hey Coach Production
-            </div>
-            <div class="cert-divider"></div>
-            <div class="cert-sign-row">
-              <div class="cert-sign">
-                <div class="cert-sign-name">Nils</div>
-                <div class="cert-sign-role">5th DAN ISKA · Gründer</div>
-              </div>
-              <div class="cert-stamp">Hey<br>Coach<br>Certified</div>
-            <div class="cert-sign">
-              <div class="cert-sign-name">2026</div>
-              <div class="cert-sign-role">Abschlussjahr</div>
-            </div>
-          </div>
-        </div>
+        <div class="cert-img-3d" data-tilt>
+          <img src="images/zertifikat-kickboxen.png" alt="Offizielles Kickboxen Zertifikat — Hey Coach Production" loading="lazy">
         </div>
       </div>
     </div>
