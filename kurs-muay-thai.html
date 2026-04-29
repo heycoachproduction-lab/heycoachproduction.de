@@ -752,8 +752,8 @@
             <p style="margin-top:10px;"> <a href="impressum.html" style="margin:0 10px; font-size:13px;">Impressum</a> <a href="datenschutz.html" style="margin:0 10px; font-size:13px;">Datenschutz</a> <a href="agb.html" style="margin:0 10px; font-size:13px;">AGB</a> <a href="widerrufsbelehrung.html" style="margin:0 10px; font-size:13px;">Widerrufsbelehrung</a> </p>
         </footer>
         <script>
-  // 3D Tilt effect on certificate
-  document.querySelectorAll('[data-tilt]').forEach(el => {
+  // 3D Tilt effect on certificate (desktop only)
+  if (window.matchMedia('(pointer: fine)').matches) document.querySelectorAll('[data-tilt]').forEach(el => {
     const maxTilt = 12;
     el.addEventListener('mousemove', (e) => {
       const rect = el.getBoundingClientRect();
