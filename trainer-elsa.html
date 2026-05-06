@@ -60,7 +60,7 @@
     }
     .nav-logo img { height: 48px; display: block; }
     .nav-right { display: flex; align-items: center; gap: 20px; }
-    .nav-back { color: var(--text3); text-decoration: none; font-size: 14px; transition: color .2s; }
+    .nav-back { color: var(--text3); text-decoration: none; font-size: 14px; transition: color .2s; min-height: 44px; display: inline-flex; align-items: center; }
     .nav-back:hover { color: var(--text); }
 
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
@@ -233,6 +233,13 @@
       .course-body { padding: 22px 20px 26px; }
       .course-title { font-size: 19px; }
       .course-price { font-size: 28px; }
+    }
+    @media (max-width: 375px) {
+      .nav { padding: 0 12px; height: 56px; }
+      .nav-logo img { height: 38px; }
+      .hero-name { font-size: 28px; }
+      .hero-stats { gap: 12px; }
+      .courses-grid { gap: 16px; }
     }
   </style>
 </head>

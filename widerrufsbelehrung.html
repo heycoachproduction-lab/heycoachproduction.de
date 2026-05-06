@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo-white.svg" type="image/svg+xml">
   <title>Widerrufsbelehrung — Hey Coach Production GmbH</title>
+  <meta name="description" content="Widerrufsbelehrung der Hey Coach Production GmbH für digitale Online-Kurse. 14 Tage Widerrufsrecht.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -57,6 +59,9 @@
       font-size: 0.95rem;
       font-weight: 500;
       transition: color 0.2s;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
     }
 
     .nav-back:hover {
@@ -161,6 +166,22 @@
     .footer a:hover {
       color: var(--accent);
     }
+
+    @media (max-width: 768px) {
+      .nav { padding: 0.75rem 1rem; }
+      .nav-logo img { height: 42px; }
+      .content { padding: 5.5rem 1.25rem 3rem; }
+      h1 { font-size: 1.4rem; }
+      h2 { font-size: 1.05rem; }
+      .form-block { padding: 1.2rem 1rem; }
+    }
+
+    @media (max-width: 375px) {
+      .content { padding: 5rem 1rem 2.5rem; }
+      h1 { font-size: 1.25rem; }
+      p { font-size: 0.88rem; }
+      .form-block ul li { font-size: 0.85rem; }
+    }
   </style>
 </head>
 <body>
@@ -251,7 +272,11 @@
      FOOTER
 ═══════════════════════════════════════ -->
 <footer class="footer">
-  <p>&copy; 2026 Hey Coach Production GmbH &middot; <a href="index.html">Startseite</a></p>
+  <p>&copy; 2026 Hey Coach Production GmbH &middot;
+    <a href="impressum.html">Impressum</a> &middot;
+    <a href="datenschutz.html">Datenschutz</a> &middot;
+    <a href="agb.html">AGB</a>
+  </p>
 </footer>
 
 <script src="cookie-banner.js"></script>

@@ -60,7 +60,7 @@
     }
     .nav-logo img { height: 48px; display: block; }
     .nav-right { display: flex; align-items: center; gap: 20px; }
-    .nav-back { color: var(--text3); text-decoration: none; font-size: 14px; transition: color .2s; }
+    .nav-back { color: var(--text3); text-decoration: none; font-size: 14px; transition: color .2s; min-height: 44px; display: inline-flex; align-items: center; }
     .nav-back:hover { color: var(--text); }
 
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
@@ -203,6 +203,13 @@
       .section { padding: 64px 0; }
       .wrap { padding: 0 16px; }
     }
+    @media (max-width: 375px) {
+      .nav { padding: 0 12px; height: 56px; }
+      .nav-logo img { height: 38px; }
+      .hero-name { font-size: 28px; }
+      .hero-stats { gap: 12px; }
+      .courses-grid { gap: 16px; }
+    }
   </style>
 </head>
 <body>
@@ -230,7 +237,7 @@
       <p class="hero-role">Hauptberuflicher Trainer &middot; Aktiver Wetk&auml;mpfer</p>
       <div class="hero-divider"></div>
       <p class="hero-bio">
-        Leo ist hauptberuflicher Trainer bei ExitAsia und aktiver WettkWetk&auml;mpferauml;mpfer. Er unterst&uuml;tzt das Trainerteam bei der Content-Produktion und den operativen Abl&auml;ufen von Hey Coach Production.
+        Leo ist hauptberuflicher Trainer bei ExitAsia und aktiver Wettk&auml;mpfer. Er unterst&uuml;tzt das Trainerteam bei der Content-Produktion und den operativen Abl&auml;ufen von Hey Coach Production.
       </p>
       <div class="hero-stats">
         <div class="hero-stat">
@@ -239,7 +246,7 @@
         </div>
         <div class="hero-stat">
           <span class="hero-stat-num">Aktiv</span>
-          <span class="hero-stat-label">WettkWetk&auml;mpferauml;mpfer</span>
+          <span class="hero-stat-label">Wettk&auml;mpfer</span>
         </div>
         <div class="hero-stat">
           <span class="hero-stat-num">Content</span>

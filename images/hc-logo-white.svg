@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="50" viewBox="0 0 180 50" fill="none">
+  <!-- HC monogram circle -->
+  <circle cx="25" cy="25" r="22" stroke="#B87C1A" stroke-width="2" fill="none" opacity="0.8"/>
+  <text x="25" y="32" font-family="sans-serif" font-weight="800" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">HC</text>
+  <!-- Hey Coach text -->
+  <text x="56" y="24" font-family="sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" letter-spacing="0.5">Hey Coach</text>
+  <text x="56" y="40" font-family="sans-serif" font-weight="400" font-size="10" fill="#B0B8D0" letter-spacing="2">PRODUCTION</text>
+</svg>

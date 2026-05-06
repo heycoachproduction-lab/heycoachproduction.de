@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-        <link rel="icon" href="https://heycoachproduction.de/wp-content/uploads/2025/04/favicon.jpg" type="image/jpeg">
+        <link rel="icon" href="images/logo-white.svg" type="image/svg+xml">
         <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -301,6 +301,12 @@ footer a:hover { color: #fff; }
     .compare-value { font-size: 18px; }
 }
 @media (max-width: 375px) {
+    .nav { padding: 0 12px; }
+    .nav-logo img { height: 40px; }
+    .btn-nav { font-size: 12px; padding: 8px 14px; }
+    .skills-grid { grid-template-columns: 1fr 1fr !important; gap: 10px; }
+    .tagesplan-grid { grid-template-columns: 1fr; }
+    .pricing-card { position: static; }
     .hero h1 { font-size: 26px; }
     .hero-panel { padding: 24px 16px; }
     .hero-meta { font-size: 13px; }
@@ -353,7 +359,7 @@ footer a:hover { color: #fff; }
                                 <span class="hero-stat-label">Tage</span>
                             </div>
                             <div class="hero-stat-item">
-                                <span class="hero-stat-num">4h</span>
+                                <span class="hero-stat-num">4,5h</span>
                                 <span class="hero-stat-label">Gesamt</span>
                             </div>
                         </div>
@@ -424,33 +430,32 @@ footer a:hover { color: #fff; }
                 </div>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <!-- TODO: Replace with Elsa exercise photo -->
-                        <img src="images/trainers/elsa-cover.jpg" alt="LWS-Mobilit&auml;t">
+                        <img src="images/skill-physio-1.png" alt="LWS-Mobilit&auml;t" loading="lazy">
                         <div class="skill-num">1</div>
                         <div class="skill-title">LWS-Mobilit&auml;t</div>
                     </div>
                     <div class="skill-card">
-                        <img src="images/trainers/elsa-cover.jpg" alt="Core-Stabilit&auml;t">
+                        <img src="images/skill-physio-2.png" alt="Core-Stabilit&auml;t" loading="lazy">
                         <div class="skill-num">2</div>
                         <div class="skill-title">Core-Stabilit&auml;t</div>
                     </div>
                     <div class="skill-card">
-                        <img src="images/trainers/elsa-cover.jpg" alt="BWS, Nacken &amp; Schultern">
+                        <img src="images/skill-physio-3.png" alt="BWS, Nacken &amp; Schultern" loading="lazy">
                         <div class="skill-num">3</div>
                         <div class="skill-title">BWS, Nacken &amp; Schultern</div>
                     </div>
                     <div class="skill-card">
-                        <img src="images/trainers/elsa-cover.jpg" alt="H&uuml;fte &amp; F&uuml;&szlig;e">
+                        <img src="images/skill-physio-4.png" alt="H&uuml;fte &amp; F&uuml;&szlig;e" loading="lazy">
                         <div class="skill-num">4</div>
                         <div class="skill-title">H&uuml;fte &amp; F&uuml;&szlig;e</div>
                     </div>
                     <div class="skill-card">
-                        <img src="images/trainers/elsa-cover.jpg" alt="Atmung &amp; Selbstmassage">
+                        <img src="images/skill-physio-5.png" alt="Atmung &amp; Selbstmassage" loading="lazy">
                         <div class="skill-num">5</div>
                         <div class="skill-title">Atmung &amp; Selbstmassage</div>
                     </div>
                     <div class="skill-card">
-                        <img src="images/trainers/elsa-cover.jpg" alt="Alltagstransfer &amp; Routine">
+                        <img src="images/skill-physio-6.png" alt="Alltagstransfer &amp; Routine" loading="lazy">
                         <div class="skill-num">6</div>
                         <div class="skill-title">Alltags&shy;transfer &amp; Routine</div>
                     </div>
@@ -458,20 +463,7 @@ footer a:hover { color: #fff; }
             </div>
         </section>
 
-        <!-- 3b. VIDEO PREVIEW -->
-        <section class="section-sm video-section">
-            <div class="wrap">
-                <div class="video-header">
-                    <span class="label">Einblick ins Training</span>
-                    <h2 class="h2">Schau rein, bevor du startest.</h2>
-                    <p>Erlebe Elsas Unterrichtsstil &mdash; ruhig, pr&auml;zise und auf den Punkt. So sehen deine 15&ndash;20 Minuten aus.</p>
-                </div>
-                <div class="video-wrap">
-                    <!-- TODO: Replace with Elsa's intro/trailer YouTube video -->
-                    <iframe src="about:blank" title="11 Tage R&uuml;cken Reset &mdash; Einblick mit Elsa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
+        <!-- 3b. VIDEO PREVIEW — aktivieren sobald Trailer vorhanden -->
 
         <!-- 4. TAGESPLAN -->
         <section class="tagesplan-section">
@@ -499,7 +491,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Beckenkontrolle: Becken-/R&uuml;ckenlage, Mobilit&auml;t pr&uuml;fen, Alltagsverspannungen l&ouml;sen.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            24 Min
                         </div>
                     </div>
 
@@ -509,7 +501,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Die Mitte finden: Glute Bridge, Dead Bug, Plank-Progression &mdash; H&uuml;fte &uuml;bernimmt die Arbeit.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            25 Min
                         </div>
                     </div>
 
@@ -519,7 +511,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Zusammenhang H&uuml;fte&ndash;R&uuml;cken: Lunge-Flow, Pistol CARs, asymmetrische Muster korrigieren.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            26 Min
                         </div>
                     </div>
 
@@ -529,7 +521,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Brustwirbels&auml;ule mobilisieren: Rotations&uuml;bungen, Flex/Extension &mdash; weniger Kompensation im Nacken.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            23 Min
                         </div>
                     </div>
 
@@ -539,7 +531,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Schulterbewegung ohne Wirbels&auml;ule: Scapula-Press-ups, Nacken-Mobilit&auml;t, Spannungsabbau.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            30 Min
                         </div>
                     </div>
 
@@ -549,7 +541,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Atmung, Selbstmassage mit Ball und Reflexion &mdash; Box Breathing, Faszienarbeit, Erholung.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            30 Min
                         </div>
                     </div>
 
@@ -559,7 +551,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Fu&szlig;arbeit, Balance-&Uuml;bungen, Stabilit&auml;ts-Flow &mdash; reaktive Rumpfstabilit&auml;t von unten.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            20 Min
                         </div>
                     </div>
 
@@ -569,7 +561,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Kontrolle in &Uuml;berg&auml;ngen: Low Lunge, Half Moon, koordinierte Ganzk&ouml;rper-Bewegungen.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            24 Min
                         </div>
                     </div>
 
@@ -579,7 +571,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Aktive Rumpfkraft: Bird-Dog, Core Compression, kontrollierte Rundung und Streckung der LWS.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            30 Min
                         </div>
                     </div>
 
@@ -589,7 +581,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Funktionale Kraft: Farmer&rsquo;s Carry, Pull-Overs, Liegest&uuml;tz-Progression &mdash; R&uuml;cken h&auml;lt trotz Zusatzlast.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            23 Min
                         </div>
                     </div>
 
@@ -599,7 +591,7 @@ footer a:hover { color: #fff; }
                         <div class="tag-focus">Deine Top-3 Routine bauen, Ampel-Check f&uuml;r den Alltag, R&uuml;ckfall-Plan &mdash; du wei&szlig;t, was funktioniert.</div>
                         <div class="tag-duration">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                            15&ndash;20 Min
+                            17 Min
                         </div>
                     </div>
 
@@ -794,7 +786,7 @@ footer a:hover { color: #fff; }
                             <div class="compare-row compare-good">
                                 <div class="compare-label">11 Tage R&uuml;cken Reset</div>
                                 <div class="compare-value compare-price">&euro;49</div>
-                                <div class="compare-note">12 Videos &middot; ~4 Stunden &middot; 24 Monate Zugang &middot; deine eigene Routine</div>
+                                <div class="compare-note">12 Videos &middot; ~4,5 Stunden &middot; 24 Monate Zugang &middot; deine eigene Routine</div>
                             </div>
                         </div>
                         <div class="pricing-promise">
@@ -851,8 +843,7 @@ footer a:hover { color: #fff; }
                             </div>
                         </div>
                         <div class="pricing-card-bot">
-                            <!-- TODO: Replace with GHL checkout link -->
-                            <a href="#" class="btn-primary">Jetzt starten &rarr;</a>
+                            <a href="https://checkout.heycoachproduction.de/physio" class="btn-primary">Jetzt starten &rarr;</a>
                             <div class="pricing-guarantee">
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                                 Sichere Bezahlung &middot; SSL-verschl&uuml;sselt
@@ -885,7 +876,7 @@ footer a:hover { color: #fff; }
                 <div class="faq-list">
 
                     <div class="faq-item">
-                        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <button class="faq-q" type="button">
                             Was brauche ich f&uuml;r den Kurs?
                             <span class="faq-icon">+</span>
                         </button>
@@ -893,15 +884,15 @@ footer a:hover { color: #fff; }
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <button class="faq-q" type="button">
                             Wie lange dauert eine Lektion?
                             <span class="faq-icon">+</span>
                         </button>
-                        <div class="faq-a">Die Einf&uuml;hrung (Tag 0) dauert ca. 5 Minuten. Alle anderen Tage sind zwischen 15 und 20 Minuten &mdash; kurz genug f&uuml;r den Alltag, lang genug f&uuml;r echte Ergebnisse.</div>
+                        <div class="faq-a">Die Einf&uuml;hrung (Tag 0) dauert ca. 5 Minuten. Die einzelnen Tage sind zwischen 17 und 30 Minuten &mdash; kurz genug f&uuml;r den Alltag, lang genug f&uuml;r echte Ergebnisse.</div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <button class="faq-q" type="button">
                             Ist der Kurs f&uuml;r Anf&auml;nger geeignet?
                             <span class="faq-icon">+</span>
                         </button>
@@ -909,7 +900,7 @@ footer a:hover { color: #fff; }
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <button class="faq-q" type="button">
                             Wie lange habe ich Zugang?
                             <span class="faq-icon">+</span>
                         </button>
@@ -917,7 +908,7 @@ footer a:hover { color: #fff; }
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <button class="faq-q" type="button">
                             Was ist, wenn ich einen Tag verpasse?
                             <span class="faq-icon">+</span>
                         </button>
@@ -925,7 +916,7 @@ footer a:hover { color: #fff; }
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+                        <button class="faq-q" type="button">
                             Ersetzt dieser Kurs eine Physiotherapie?
                             <span class="faq-icon">+</span>
                         </button>
@@ -940,7 +931,7 @@ footer a:hover { color: #fff; }
         <section class="final-cta">
             <span class="label">Bereit?</span>
             <h2 class="h2">Starte deinen<br>R&uuml;cken Reset.</h2>
-            <p>11 Tage, 15&ndash;20 Minuten pro Tag &mdash; f&uuml;r den Preis einer einzigen Physio-Sitzung.</p>
+            <p>11 Tage, 17&ndash;30 Minuten pro Tag &mdash; f&uuml;r den Preis einer einzigen Physio-Sitzung.</p>
             <div class="final-cta-buttons">
                 <!-- TODO: Replace with GHL checkout link -->
                 <a href="#pricing" class="btn-primary">Jetzt starten &mdash; &euro;49 &rarr;</a>

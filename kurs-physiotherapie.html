@@ -69,16 +69,20 @@
 .sidebar-cta .btn-primary { width: 100%; text-align: center; font-size: 15px; padding: 14px; }
 .sidebar-guarantee-note { text-align: center; font-size: 12px; color: var(--text3); display: flex; align-items: center; justify-content: center; gap: 6px; }
 
-/* ── FEATURES ── */
-.features-section { background: var(--bg2); padding: 96px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.features-header { text-align: center; margin-bottom: 48px; }
-.features-header p { color: var(--text2); max-width: 500px; margin: 12px auto 0; }
-.features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-.feature-card { background: var(--bg3); border: 1px solid var(--border2); border-radius: var(--r); padding: 32px; transition: border-color .2s, transform .2s; }
-.feature-card:hover { border-color: rgba(184,124,26,0.3); transform: translateY(-3px); }
-.feature-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(184, 124, 26, 0.1); border: 1px solid rgba(184, 124, 26, 0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; }
-.feature-card h3 { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700; margin: 0 0 8px; color: #fff; }
-.feature-card p { font-size: 14px; color: var(--text2); line-height: 1.6; }
+/* ── SKILLS ── */
+.skills-section { background: var(--bg2); padding: 96px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.skills-header { margin-bottom: 40px; text-align: center; }
+.skills-header p { color: var(--text2); max-width: 500px; margin: 12px auto 0; }
+.skills-header .skills-sub { font-size: 14px; color: var(--text3); }
+.skills-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.skill-card { position: relative; border-radius: 12px; overflow: hidden; aspect-ratio: 3/4; cursor: pointer; }
+.skill-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+.skill-card:hover img { transform: scale(1.05); }
+.skill-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(6,8,26,0.85) 100%); }
+.skill-num { position: absolute; top: 12px; left: 12px; z-index: 2; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.skill-title { position: absolute; bottom: 14px; left: 14px; right: 14px; z-index: 2; font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: #fff; line-height: 1.3; }
+@media (max-width: 900px) { .skills-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* ── FOR WHO ── */
 .forwho-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -159,7 +163,7 @@ footer a:hover { color: #fff; }
     .trainer-img-wrap img { aspect-ratio: 4/3; }
     .about-sidebar { position: static; }
     .wk-grid { grid-template-columns: 1fr; }
-    .features-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
     .forwho-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
@@ -228,15 +232,15 @@ footer a:hover { color: #fff; }
                         </div>
                         <div class="hero-stats">
                             <div class="hero-stat-item">
-                                <span class="hero-stat-num">&mdash;</span>
+                                <span class="hero-stat-num">12</span>
                                 <span class="hero-stat-label">Lektionen</span>
                             </div>
                             <div class="hero-stat-item">
-                                <span class="hero-stat-num">&mdash;</span>
+                                <span class="hero-stat-num">4,5h+</span>
                                 <span class="hero-stat-label">Material</span>
                             </div>
                             <div class="hero-stat-item">
-                                <span class="hero-stat-num">&mdash;</span>
+                                <span class="hero-stat-num">11</span>
                                 <span class="hero-stat-label">Module</span>
                             </div>
                         </div>
@@ -266,15 +270,15 @@ footer a:hover { color: #fff; }
                         </div>
                         <div class="sidebar-row">
                             <span class="sidebar-key">Lektionen</span>
-                            <span class="sidebar-val">&mdash;</span>
+                            <span class="sidebar-val">12</span>
                         </div>
                         <div class="sidebar-row">
                             <span class="sidebar-key">Dauer</span>
-                            <span class="sidebar-val">&mdash;</span>
+                            <span class="sidebar-val">4,5h+</span>
                         </div>
                         <div class="sidebar-row">
                             <span class="sidebar-key">Module</span>
-                            <span class="sidebar-val">&mdash;</span>
+                            <span class="sidebar-val">11</span>
                         </div>
                         <div class="sidebar-row">
                             <span class="sidebar-key">Niveau</span>
@@ -301,43 +305,45 @@ footer a:hover { color: #fff; }
         </section>
 
         <!-- ═══════════════════════════════════════
-     3. FEATURES
+     3. SKILLS / WAS DU LERNST
 ═══════════════════════════════════════ -->
-        <section class="features-section">
+        <section class="skills-section">
             <div class="wrap">
-                <div class="features-header">
-                    <span class="label">Was dich erwartet</span>
+                <div class="skills-header">
+                    <span class="label">Was du lernst</span>
                     <h2 class="h2">Professionelle Physiotherapie<br>f&uuml;r Kampfsportler.</h2>
                     <p>Elsa zeigt dir, wie du deinen K&ouml;rper gezielt pflegst, Verletzungen vorbeugst und schneller regenerierst.</p>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <h3>Verletzungspr&auml;vention</h3>
-                        <p>Lerne, wie du Verletzungen vermeidest und deinen K&ouml;rper optimal auf das Training vorbereitest.</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="images/skill-physio-1.png" alt="Atemtechnik &amp; R&uuml;ckenlage" loading="lazy">
+                        <div class="skill-num">1</div>
+                        <div class="skill-title">Atemtechnik &amp; R&uuml;ckenlage</div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                        </div>
-                        <h3>Regeneration</h3>
-                        <p>Effektive Methoden zur schnelleren Erholung nach dem Training &mdash; damit du bereit bist f&uuml;r die n&auml;chste Einheit.</p>
+                    <div class="skill-card">
+                        <img src="images/skill-physio-2.png" alt="Stabilisation &amp; Balance" loading="lazy">
+                        <div class="skill-num">2</div>
+                        <div class="skill-title">Stabilisation &amp; Balance</div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                        </div>
-                        <h3>Mobilit&auml;t &amp; Flexibilit&auml;t</h3>
-                        <p>Verbessere deine Beweglichkeit f&uuml;r bessere Leistung und weniger Verletzungsrisiko.</p>
+                    <div class="skill-card">
+                        <img src="images/skill-physio-3.png" alt="Dehnung &amp; Mobilit&auml;t" loading="lazy">
+                        <div class="skill-num">3</div>
+                        <div class="skill-title">Dehnung &amp; Mobilit&auml;t</div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-hover)"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                        </div>
-                        <h3>Schmerzfrei trainieren</h3>
-                        <p>Professionelle Techniken f&uuml;r nachhaltiges, schmerzfreies Training auf jedem Level.</p>
+                    <div class="skill-card">
+                        <img src="images/skill-physio-4.png" alt="Mobilisation &amp; Gelenke" loading="lazy">
+                        <div class="skill-num">4</div>
+                        <div class="skill-title">Mobilisation &amp; Gelenke</div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/skill-physio-5.png" alt="Entspannung &amp; Meditation" loading="lazy">
+                        <div class="skill-num">5</div>
+                        <div class="skill-title">Entspannung &amp; Meditation</div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/skill-physio-6.png" alt="Kr&auml;ftigung mit Band" loading="lazy">
+                        <div class="skill-num">6</div>
+                        <div class="skill-title">Kr&auml;ftigung mit Band</div>
                     </div>
                 </div>
             </div>

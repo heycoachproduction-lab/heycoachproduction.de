@@ -2,10 +2,10 @@
  * DSGVO Cookie-Banner — Hey Coach Production GmbH
  * Self-contained: injects HTML + CSS on load.
  * Stores consent in localStorage.
+ * Adds a "Cookie-Einstellungen" link to footer for re-opening.
  */
 (function () {
   'use strict';
-  if (localStorage.getItem('hc_cookie_consent')) return;
 
   /* ── CSS ── */
   var css = document.createElement('style');
@@ -26,45 +26,95 @@
     '@media(max-width:600px){.cb-inner{flex-direction:column;gap:16px}.cb-buttons{width:100%}.cb-btn{flex:1;text-align:center}}';
   document.head.appendChild(css);
 
-  /* ── HTML ── */
-  var overlay = document.createElement('div');
-  overlay.className = 'cb-overlay';
+  /* ── Banner HTML builder ── */
+  function createBanner() {
+    var overlay = document.createElement('div');
+    overlay.className = 'cb-overlay';
 
-  var banner = document.createElement('div');
-  banner.className = 'cb-banner';
-  banner.setAttribute('role', 'dialog');
-  banner.setAttribute('aria-label', 'Cookie-Einstellungen');
-  banner.innerHTML =
-    '<div class="cb-inner">' +
-      '<div class="cb-text">' +
-        '<h3>Cookie-Einstellungen</h3>' +
-        '<p>Wir verwenden Cookies und externe Dienste (z.&thinsp;B. Google Fonts), ' +
-        'um dir die bestm\u00f6gliche Nutzererfahrung zu bieten. ' +
-        'Einige davon sind technisch notwendig, andere helfen uns, unsere Website zu verbessern. ' +
-        'Mehr erf\u00e4hrst du in unserer <a href="datenschutz.html">Datenschutzerkl\u00e4rung</a>.</p>' +
-      '</div>' +
-      '<div class="cb-buttons">' +
-        '<button class="cb-btn cb-accept" id="cb-accept">Alle akzeptieren</button>' +
-        '<button class="cb-btn cb-necessary" id="cb-necessary">Nur notwendige</button>' +
-      '</div>' +
-    '</div>';
+    var banner = document.createElement('div');
+    banner.className = 'cb-banner';
+    banner.setAttribute('role', 'dialog');
+    banner.setAttribute('aria-label', 'Cookie-Einstellungen');
+    banner.innerHTML =
+      '<div class="cb-inner">' +
+        '<div class="cb-text">' +
+          '<h3>Cookie-Einstellungen</h3>' +
+          '<p>Wir verwenden technisch notwendige Cookies f\u00fcr den Betrieb dieser Website. ' +
+          'Dar\u00fcber hinaus nutzen wir externe Dienste (z.\u2009B. Google Fonts, Cloudflare CDN), ' +
+          'die Daten an Server in den USA \u00fcbermitteln k\u00f6nnen. ' +
+          'Mehr erf\u00e4hrst du in unserer <a href="datenschutz.html">Datenschutzerkl\u00e4rung</a>.</p>' +
+        '</div>' +
+        '<div class="cb-buttons">' +
+          '<button class="cb-btn cb-accept" data-cb="accept">Alle akzeptieren</button>' +
+          '<button class="cb-btn cb-necessary" data-cb="necessary">Nur notwendige</button>' +
+        '</div>' +
+      '</div>';
 
-  document.body.appendChild(overlay);
-  document.body.appendChild(banner);
+    document.body.appendChild(overlay);
+    document.body.appendChild(banner);
 
-  /* ── Events ── */
-  function closeConsent(level) {
-    localStorage.setItem('hc_cookie_consent', level);
-    localStorage.setItem('hc_cookie_date', new Date().toISOString());
-    banner.remove();
-    overlay.remove();
+    function closeConsent(level) {
+      localStorage.setItem('hc_cookie_consent', level);
+      localStorage.setItem('hc_cookie_date', new Date().toISOString());
+      banner.remove();
+      overlay.remove();
+      applyConsent(level);
+    }
+
+    banner.querySelector('[data-cb="accept"]').addEventListener('click', function () {
+      closeConsent('all');
+    });
+
+    banner.querySelector('[data-cb="necessary"]').addEventListener('click', function () {
+      closeConsent('necessary');
+    });
   }
 
-  document.getElementById('cb-accept').addEventListener('click', function () {
-    closeConsent('all');
-  });
+  /* ── Apply consent: block/unblock external services ── */
+  function applyConsent(level) {
+    if (level === 'all') {
+      // Load Google Fonts if not already loaded
+      if (!document.querySelector('link[href*="fonts.googleapis.com"]')) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap';
+        document.head.appendChild(link);
+      }
+    }
+    // "necessary" = do nothing extra, fonts loaded from <head> will be blocked by next page load
+  }
 
-  document.getElementById('cb-necessary').addEventListener('click', function () {
-    closeConsent('necessary');
-  });
+  /* ── Footer link: "Cookie-Einstellungen" ── */
+  function addFooterLink() {
+    var footers = document.querySelectorAll('footer');
+    if (!footers.length) return;
+
+    var footer = footers[footers.length - 1];
+    // Find or create a footer-links container
+    var linksContainer = footer.querySelector('.footer-links, .footer_links, p:last-child');
+
+    var link = document.createElement('a');
+    link.href = '#';
+    link.textContent = 'Cookie-Einstellungen';
+    link.style.cssText = 'cursor:pointer;margin-left:10px;';
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      localStorage.removeItem('hc_cookie_consent');
+      localStorage.removeItem('hc_cookie_date');
+      createBanner();
+    });
+
+    if (linksContainer) {
+      // Add separator + link
+      var sep = document.createTextNode(' \u00B7 ');
+      linksContainer.appendChild(sep);
+      linksContainer.appendChild(link);
+    }
+  }
+
+  /* ── Init ── */
+  if (!localStorage.getItem('hc_cookie_consent')) {
+    createBanner();
+  }
+  addFooterLink();
 })();
