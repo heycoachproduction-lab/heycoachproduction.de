@@ -20,6 +20,12 @@
 
     <!-- Blog articles -->
     <url>
+        <loc>https://heycoachproduction.de/blog-sport-gegen-stress.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
         <loc>https://heycoachproduction.de/blog-roundhouse-kick.html</loc>
         <lastmod>2026-05-20</lastmod>
         <changefreq>monthly</changefreq>
