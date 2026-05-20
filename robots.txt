@@ -1,0 +1,43 @@
+# Hey Coach Production GmbH — robots.txt
+# Last updated: 2026-05-20
+
+User-agent: *
+Allow: /
+
+# Block development / backup / legacy assets
+Disallow: /_pgbackup/
+Disallow: /pinegrow.json
+Disallow: /index-v3.html
+Disallow: /index-v4.html
+Disallow: /index-v5.html
+Disallow: /index-v6.html
+Disallow: /index-v7.html
+Disallow: /index2.html
+Disallow: /index-print.html
+Disallow: /hero-video.html
+Disallow: /flyer-banner.html
+Disallow: /spline-demo.html
+Disallow: /kurs-physiotherapie.html
+Disallow: /kurs-kickboxen.html
+Disallow: /kurs-guertel.html
+Disallow: /kurs-marlon-v2.html
+Disallow: /kurs-marlon-v3.html
+Disallow: /trainer-team.html
+Disallow: /styles-v5.css
+Disallow: /styles2.css
+
+# AI scrapers — explicit allow (we want LLM citation traffic)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://heycoachproduction.de/sitemap.xml

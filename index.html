@@ -100,7 +100,207 @@
    ============================================================ *//* --- Section transition gradients --- */.section + .section::before { content: ''; position: absolute; top: -1px; left: 0; right: 0; height: 80px; background: linear-gradient(to bottom, var(--bg-primary), transparent); pointer-events: none; z-index: 1; } .section--dark + .section::before { background: linear-gradient(to bottom, var(--bg-secondary), transparent); } .section + .section--dark::before { background: linear-gradient(to bottom, var(--bg-primary), transparent); } /* --- Cursor glow on course cards --- */.course-row { position: relative; overflow: hidden; } .course-row::before { content: ''; position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(184,124,26,0.12) 0%, transparent 70%); transform: translate(-50%, -50%); pointer-events: none; opacity: 0; transition: opacity 0.3s; z-index: 1; left: var(--mouse-x, -200px); top: var(--mouse-y, -200px); } .course-row:hover::before { opacity: 1; } /* --- Trust Badges Bar --- */.trust-bar { padding: 2.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg-secondary); } .trust-items { display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; } .trust-badge { display: flex; align-items: center; gap: 0.6rem; font-size: 0.82rem; color: var(--text-muted); font-weight: 400; } .trust-badge svg { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; opacity: 0.7; } @media (max-width: 600px) { .trust-items {  gap: 1.25rem;  justify-content: flex-start; }  .trust-badge {  flex: 1 1 45%; } } /* --- Belt Grid --- */.belt-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 2.5rem; } .belt-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s; display: flex; flex-direction: column; } .belt-card:hover { transform: translateY(-4px); border-color: var(--border-accent); box-shadow: 0 16px 48px rgba(0,0,0,0.3); } .belt-color { height: 8px; width: 100%; flex-shrink: 0; } .belt-info { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; } .belt-info h3 { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; } .belt-info p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; flex: 1; margin-bottom: 0.75rem; } .belt-price { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); } .belt-free { color: var(--accent); } .belt-card--black { border-color: rgba(184,124,26,0.25); } .belt-card--black .belt-color { box-shadow: 0 0 12px rgba(184,124,26,0.3); } @media (max-width: 900px) { .belt-grid {  grid-template-columns: repeat(3, 1fr); } } @media (max-width: 600px) { .belt-grid {  grid-template-columns: repeat(2, 1fr); } } /* --- Community Section --- */.community-features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2.5rem; } .comm-card { background: rgba(18, 26, 56, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem 1.5rem; text-align: center; transition: var(--transition); } .comm-card:hover { border-color: var(--border-accent); transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.3); } .comm-icon { font-size: 2rem; margin-bottom: 1rem; display: block; } .comm-card h3 { font-size: 1.05rem; margin-bottom: 0.65rem; } .comm-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.65; } @media (max-width: 900px) { .community-features {  grid-template-columns: repeat(2, 1fr); } } @media (max-width: 500px) { .community-features {  grid-template-columns: 1fr; } } /* --- Mobile Sticky CTA --- */.mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 20px; padding-bottom: calc(12px + env(safe-area-inset-bottom)); background: rgba(6,8,26,0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-top: 1px solid rgba(184,124,26,0.3); z-index: 190; text-align: center; transform: translateY(100%); transition: transform 0.3s ease; } .mobile-sticky-cta.visible { transform: translateY(0); } @media (max-width: 768px) { .mobile-sticky-cta {  display: block; } } .mobile-cta-btn { display: block; background: var(--accent); color: #fff; padding: 14px; border-radius: 12px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; text-decoration: none; letter-spacing: 0.03em; transition: background 0.2s; } .mobile-cta-btn:hover { background: var(--accent-hover); } /* ============================================================
    MOBILE COMPREHENSIVE FIX — April 2026
    ============================================================ *//* --- Hero CTA: solid gold on mobile, full width, easy to tap --- */@media (max-width: 768px) { .hero-cta {  background: var(--accent);  border-color: var(--accent);  font-weight: 700;  padding: 15px 28px;  font-size: 15px;  width: 100%;  justify-content: center;  border-radius: var(--radius-md);  box-shadow: 0 4px 24px var(--accent-glow); }  .hero-cta:hover {  background: var(--accent-hover);  border-color: var(--accent-hover); }  .hero-cta-secondary {  width: 100%;  justify-content: center;  font-size: 14px;  padding: 8px 0; }  .hero-content {  bottom: 32px;  left: 20px;  right: 20px; }  .hero-content > div[style] {  flex-direction: column !important;  gap: 10px !important; } } /* --- Trainer cards: lighter overlay on mobile for visibility --- */@media (max-width: 768px) { .trainer-card-overlay {  background: linear-gradient(to top, rgba(6,8,26,0.9) 0%, rgba(6,8,26,0.15) 45%, transparent 100%); }  .trainer-card {  min-width: 240px;  max-width: 240px; }  .trainer-card-info {  padding: 1.5rem 1.25rem 1.25rem; }  .trainer-card-name {  font-size: 1.15rem; } } @media (max-width: 375px) { .trainer-card {  min-width: 220px;  max-width: 220px; } } /* --- Course buy buttons: prominent on mobile --- */@media (max-width: 768px) { .course-row .btn-primary {  width: 100%;  justify-content: center;  padding: 0.95rem 1.5rem;  font-size: 0.9rem;  box-shadow: 0 4px 20px var(--accent-glow);  text-align: center; }  .course-row-info {  padding: 1.5rem 1.25rem; }  .course-row-media {  height: 220px; } } /* --- Container padding on mobile: tighter, symmetric --- */@media (max-width: 768px) { .container, .container--wide {  padding: 0 1.25rem; }  .section {  padding: clamp(2.5rem, 5vw, 3.5rem) 0; } } /* --- About section on mobile --- */@media (max-width: 600px) { .about-photos {  grid-template-columns: 1fr;  grid-template-rows: 200px;  gap: 0.75rem; }  .about-photo--tall {  grid-row: span 1; }  .about-badges {  gap: 1.25rem; }  .about-badge strong {  font-size: 1.6rem; } } /* --- Stats bar: 2x2 on small mobile --- */@media (max-width: 500px) { .stats-bar {  grid-template-columns: repeat(2, 1fr); } } /* --- FAQ tabs: scrollable on mobile --- */@media (max-width: 600px) { .faq-tabs {  overflow-x: auto;  -webkit-overflow-scrolling: touch;  scrollbar-width: none;  gap: 0;  white-space: nowrap; }  .faq-tabs::-webkit-scrollbar {  display: none; }  .faq-tab {  padding: 0.65rem 1rem;  font-size: 0.82rem;  flex-shrink: 0; }  .faq-question {  font-size: 0.9rem;  padding: 1.25rem 0; } } /* --- Footer: cleaner on mobile --- */@media (max-width: 600px) { .footer {  padding: 3rem 0 1.5rem; }  .footer-grid {  gap: 2rem;  margin-bottom: 2.5rem; }  .footer-trust {  font-size: 0.72rem;  gap: 0.75rem; } } /* --- Coming soon cards on mobile --- */@media (max-width: 768px) { .coming-soon-grid {  grid-template-columns: 1fr; }  .coming-soon-card {  min-height: 200px; } } /* --- Partner section mobile --- */@media (max-width: 768px) { .partner-inner {  gap: 2.5rem; } } /* --- Marquee on mobile --- */@media (max-width: 768px) { .marquee-item {  width: 240px;  height: 165px; } } /* --- Video section on mobile --- */@media (max-width: 768px) { .video-wrapper {  border-radius: var(--radius-md); }  .video-play-btn {  width: 64px;  height: 64px;  box-shadow: 0 0 0 10px rgba(255,255,255,0.10); }  .video-play-btn svg {  width: 22px;  height: 22px; } } /* --- Trainer awards on mobile --- */@media (max-width: 500px) { .trainer-awards {  flex-wrap: wrap;  gap: 0.75rem; }  .trainer-award {  flex: 0 1 calc(50% - 0.5rem); }  .award-text strong {  font-size: 0.72rem; }  .award-text span {  font-size: 0.65rem; }  .award-icon {  width: 36px;  height: 36px;  font-size: 1rem; } } /* --- Mobile sticky CTA glow effect --- */.mobile-cta-btn { box-shadow: 0 -4px 24px var(--accent-glow); } /* --- Prevent any horizontal overflow --- */.section, .trust-bar, .footer, .hero-stats-bar { overflow-x: hidden; } /* --- Review cards on mobile --- */@media (max-width: 500px) { .review-card {  min-width: calc(100vw - 48px);  max-width: calc(100vw - 48px);  padding: 1.5rem; }  .review-text {  font-size: 0.88rem; } } /* --- Proof cards: consistent padding --- */@media (max-width: 600px) { .proof-card {  padding: 1.5rem 1.25rem; }  .proof-card h3 {  font-size: 1rem; }  .proof-card p {  font-size: 0.82rem; } } /* --- Testimonial cards on mobile --- */@media (max-width: 600px) { .testimonial-photo {  height: 200px; }  .testimonial-body {  padding: 1.5rem; }  .testimonial-text {  font-size: 0.88rem; } }</style>
-    </head>
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "SportsActivityLocation"
+  ],
+  "name": "Hey Coach Production GmbH",
+  "image": "https://heycoachproduction.de/images/training-gym-panorama.webp",
+  "logo": "https://heycoachproduction.de/images/logo-white.svg",
+  "url": "https://heycoachproduction.de",
+  "telephone": "+49 176 77337704",
+  "email": "heycoachproduction@gmail.com",
+  "priceRange": "€9–€129",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kandelstr. 5",
+    "addressLocality": "Kirchzarten",
+    "postalCode": "79199",
+    "addressRegion": "Baden-Württemberg",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "47.9701",
+    "longitude": "7.9582"
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    {
+      "@type": "Country",
+      "name": "Austria"
+    },
+    {
+      "@type": "Country",
+      "name": "Switzerland"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/exitasia_gym/",
+    "https://exitasia.de"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Nils Sylvain Gustav Loton"
+  },
+  "foundingDate": "2024",
+  "knowsAbout": [
+    "Kickboxen",
+    "Muay Thai",
+    "Kampfsport-Online-Kurse",
+    "Krankenkassen-Prävention",
+    "§20 SGB V",
+    "Selbstverteidigung"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "680",
+    "bestRating": "5"
+  }
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist Hey Coach Production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hey Coach Production ist eine Online-Kampfsport-Plattform, gegründet vom Erfolgsteam hinter ExitAsia — einer der größten Kampfsportschulen Deutschlands (seit 2006, 3 Standorte in Baden-Württemberg). Wir bieten professionelle Online-Kurse in verschiedenen Bereichen an."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Für wen sind die Kurse geeignet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unsere Kurse sind für alle Levels geeignet — vom absoluten Anfänger bis zum Fortgeschrittenen. Jeder Kurs beginnt mit den Grundlagen und baut systematisch auf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Funktioniert Online-Training wirklich so gut wie im Gym?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — wenn es richtig gemacht wird. Marlons Videos sind mit mehreren Kameras gedreht, zeigen Slow-Motion-Korrekturen und erklären jeden Bewegungsablauf Schritt für Schritt. Viele Teilnehmer berichten von schnelleren Fortschritten als im lokalen Gym, weil sie jede Lektion so oft wiederholen können, wie sie es für ihr individuelles Vorankommen benötigen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brauche ich spezielle Ausrüstung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Für den Einstieg reicht Sportkleidung und etwas Platz für deine Übungen. Bandagen und Handschuhe sind hilfreich für spätere Module, für den Start aber nicht zwingend nötig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bin ich als absoluter Anfänger richtig hier?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolut. Modul 1 beginnt bei null — Haltung, Footwork, Grundlagen. Marlon erklärt dir alles so, dass du ohne Vorkenntnisse direkt einsteigen kannst. Fortgeschrittene können direkt die Module für ihre Stufe auswählen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es eine Community?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja! Mit jedem Kurs bekommst du Zugang zur Hey Coach Community. Dort kannst du dich mit anderen Teilnehmern austauschen, Fragen stellen und Feedback von unseren Trainern erhalten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie sind die Kurse aufgebaut?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jeder Kurs besteht aus mehreren Modulen mit Videoeinheiten. Du lernst in deinem eigenen Tempo — die Videos sind jederzeit abrufbar. Kickboxen ist nach 7 Gürtelstufen aufgebaut (126 Lektionen), Muay Thai umfasst 8 Module (7+ Stunden). Zusätzlich gibt es die ISKA Gürtelprüfung — einzelne Gürtelstufen ab €24,99."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viel Zeit brauche ich pro Woche?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das liegt bei dir. Viele Teilnehmer trainieren 3 bis 4 mal pro Woche je 30–45 Minuten. Du kannst auch täglich 20 Minuten machen — die Lektionen sind so gebaut, dass du in deinem Rhythmus vorankommen kannst."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich den Trainern Fragen stellen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — über unsere Community-Plattform kannst du Fragen stellen, Videos hochladen und Feedback von Marlon und anderen Teilnehmern erhalten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Erhalte ich ein Zertifikat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — nach erfolgreichem Kursabschluss erhältst du ein offizielles Hey Coach Zertifikat, unterzeichnet von deinem Trainer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich einzelne Gürtelstufen kaufen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja — mit der ISKA Gürtelprüfung kannst du einzelne Gürtelstufen ab €24,99 kaufen. Der Weißgurt ist sogar kostenlos. Wenn du alle 7 Stufen möchtest, ist der Kickboxen Komplettkurs für €99 die günstigere Option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es ein Abo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein — kein Abo, keine versteckten Kosten. Du zahlst einmal und hast 24 Monate unbeschränkten Zugang zu deinem Kurs, inklusive aller zukünftigen Updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lange habe ich Zugang zum Kurs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sehr lange. Dein Zugang wird sofort für die nächsten zwei Jahre freigeschaltet. Du zahlst nur einmal und hast anschließend für 24 Monate unbeschränkten Zugang. Dein Vorteil: Kein Abo, keine monatlichen Kosten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Zahlungsarten werden akzeptiert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir akzeptieren Kreditkarte (Visa, Mastercard), PayPal und Klarna (Ratenzahlung). Alle Preise sind Bruttopreise inkl. 19% MwSt."
+      }
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Hey Coach Production",
+  "alternateName": "Hey Coach",
+  "url": "https://heycoachproduction.de",
+  "inLanguage": "de-DE",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hey Coach Production GmbH"
+  }
+}
+</script>
+</head>
     <body>
         <!-- ============================================================
        FIXED NAVIGATION (v7 — persistent + hamburger mobile)
