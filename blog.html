@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspektive &mdash; Blog von Hey Coach Production</title>
+    <meta name="description" content="Technik, Mindset, Ernährung und Krankenkasse — Wissen aus dem Ring und der Trainingshalle. Von ISKA-Weltmeistern und Physiotherapeutin Elsa Durieux.">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Perspektive — Blog von Hey Coach Production">
+    <meta property="og:description" content="Technik, Mindset, Ernährung und Krankenkasse — Wissen aus dem Ring und der Trainingshalle.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:url" content="https://heycoachproduction.de/blog.html">
+
+    <link rel="canonical" href="https://heycoachproduction.de/blog.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Perspektive — Hey Coach Production",
+      "description": "Wissen aus dem Ring und der Trainingshalle. Technik, Mindset, Ernährung und Krankenkasse.",
+      "url": "https://heycoachproduction.de/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hey Coach Production GmbH",
+        "logo": "https://heycoachproduction.de/images/logo-white.svg"
+      }
+    }
+    </script>
+
+    <style>
+    /* ============================================================
+       HEY COACH — Blog "Perspektive"
+       Design System v7 — Indigo Night x Burnished Gold
+       ============================================================ */
+
+    /* === RESET === */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
+    body {
+        font-family: 'Outfit', sans-serif;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.7;
+        font-weight: 300;
+        overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; object-fit: cover; object-position: center; }
+    a { text-decoration: none; color: inherit; }
+    button { font-family: inherit; cursor: pointer; }
+    ul, ol { list-style: none; }
+
+    /* === TOKENS === */
+    :root {
+        --bg-primary:     #06081A;
+        --bg-secondary:   #0C1228;
+        --bg-card:        #121A38;
+        --bg-elevated:    #1A2248;
+
+        --accent:         #B87C1A;
+        --accent-hover:   #D4A040;
+        --accent-bright:  #E8B84B;
+        --accent-dim:     rgba(184,124,26,0.12);
+        --accent-glow:    rgba(184,124,26,0.28);
+
+        --text-primary:   #FFFFFF;
+        --text-secondary: #B0B8D0;
+        --text-muted:     #7080B0;
+
+        --border:         rgba(255,255,255,0.07);
+        --border-accent:  rgba(184,124,26,0.28);
+        --border-hover:   rgba(184,124,26,0.55);
+
+        --section-padding: clamp(3.5rem, 6vw, 5.5rem);
+        --container-max:   1280px;
+        --container-narrow:980px;
+
+        --radius-sm: 6px;
+        --radius-md: 14px;
+        --radius-lg: 22px;
+        --radius-xl: 30px;
+
+        --ease:       cubic-bezier(0.4, 0, 0.2, 1);
+        --transition: 0.3s var(--ease);
+        --transition-slow: 0.6s var(--ease);
+    }
+
+    /* === TYPOGRAPHY === */
+    h1, h2, h3, h4 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+    }
+    h1 { font-size: clamp(3rem, 7vw, 6.5rem); line-height: 0.95; letter-spacing: -0.035em; }
+    h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
+    h3 { font-size: clamp(1.4rem, 2.4vw, 2rem); letter-spacing: -0.015em; }
+    p  { color: var(--text-secondary); line-height: 1.75; }
+
+    /* === BACKGROUND ATMOSPHERE === */
+    body {
+        background:
+          radial-gradient(ellipse 80% 60% at 65% 0%, #141E48 0%, #0A1230 35%, #06081A 65%) no-repeat fixed;
+    }
+    body::after {
+        content: '';
+        position: fixed; inset: 0;
+        z-index: 9999;
+        pointer-events: none;
+        opacity: 0.012;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* === LAYOUT === */
+    .container {
+        max-width: var(--container-max);
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .container--narrow {
+        max-width: var(--container-narrow);
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    /* === NAVIGATION === */
+    .nav {
+        position: fixed; top: 0; left: 0; right: 0;
+        z-index: 200;
+        padding: 1.25rem 0;
+        background: rgba(6, 8, 26, 0.7);
+        backdrop-filter: blur(12px);
+        transition: padding var(--transition), background var(--transition), border-color var(--transition);
+    }
+    .nav.scrolled {
+        background: rgba(10,10,10,0.92);
+        backdrop-filter: blur(24px);
+        border-bottom: 1px solid var(--border);
+        padding: 0.85rem 0;
+    }
+    .nav .container {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+    .nav-logo {
+        display: inline-flex;
+        align-items: center;
+    }
+    .nav-logo img {
+        height: 48px;
+        display: block;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .nav-links a {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+        transition: var(--transition);
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-links a.active { color: var(--accent); }
+    .nav-cta {
+        background: var(--accent);
+        color: #fff !important;
+        padding: 0.55rem 1.4rem;
+        border-radius: var(--radius-md);
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        transition: var(--transition);
+    }
+    .nav-cta:hover { background: var(--accent-hover) !important; }
+    .nav-hamburger {
+        display: none;
+        background: none; border: none;
+        padding: 4px;
+        min-width: 44px; min-height: 44px;
+        align-items: center; justify-content: center;
+        position: relative; z-index: 201;
+    }
+    .nav-hamburger span {
+        display: block; width: 22px; height: 2px;
+        background: var(--text-primary);
+        margin: 5px 0;
+        transition: var(--transition);
+        border-radius: 2px;
+    }
+    .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    @media (max-width: 768px) {
+        .nav { background: rgba(6, 8, 26, 0.95); backdrop-filter: blur(20px); }
+        .nav-hamburger { display: flex; }
+        .nav-links {
+            display: none;
+            position: fixed; inset: 0;
+            background: rgba(10,10,10,0.98);
+            backdrop-filter: blur(20px);
+            flex-direction: column;
+            justify-content: center; align-items: center;
+            gap: 2.5rem;
+            z-index: 199;
+        }
+        .nav-links.active { display: flex; }
+        .nav-links a { font-size: 1.5rem; color: var(--text-primary); }
+        .nav-cta { font-size: 1.1rem !important; padding: 0.875rem 2.5rem !important; }
+    }
+
+    /* === BREADCRUMB === */
+    .breadcrumb {
+        padding-top: 7rem;
+        padding-bottom: 0;
+    }
+    .breadcrumb-trail {
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+    }
+    .breadcrumb-trail a { color: var(--text-muted); transition: var(--transition); }
+    .breadcrumb-trail a:hover { color: var(--accent); }
+    .breadcrumb-trail span { color: var(--accent); margin: 0 0.5rem; }
+
+    /* === HERO === */
+    .blog-hero {
+        padding: 3rem 0 2rem;
+    }
+    .launch-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        padding: 0.45rem 1rem 0.45rem 0.85rem;
+        margin-bottom: 1.5rem;
+        background: rgba(184, 124, 26, 0.12);
+        border: 1px solid rgba(184, 124, 26, 0.3);
+        border-radius: 100px;
+        font-family: 'Syne', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent-hover);
+    }
+    .launch-badge .dot-pulse {
+        width: 7px; height: 7px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 0 rgba(184, 124, 26, 0.7);
+        animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0%   { box-shadow: 0 0 0 0 rgba(184, 124, 26, 0.65); }
+        70%  { box-shadow: 0 0 0 10px rgba(184, 124, 26, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(184, 124, 26, 0); }
+    }
+    .blog-hero h1 {
+        margin-bottom: 1.25rem;
+        background: linear-gradient(180deg, #fff 0%, #fff 55%, rgba(184,124,26,0.35) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .blog-hero .tagline {
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        letter-spacing: -0.005em;
+        color: var(--text-primary);
+        max-width: 620px;
+        line-height: 1.4;
+    }
+    .blog-hero .tagline-divider {
+        color: var(--accent);
+        margin: 0 0.6rem;
+        font-weight: 700;
+    }
+    .blog-hero .intro {
+        margin-top: 1.5rem;
+        max-width: 580px;
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    /* === FILTER CHIPS === */
+    .filter-bar {
+        padding: 2.5rem 0 1rem;
+        border-bottom: 1px solid var(--border);
+    }
+    .filter-bar-inner {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+    .filter-label {
+        font-family: 'Syne', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        color: var(--text-muted);
+        margin-right: 0.5rem;
+    }
+    .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.55rem 1.15rem;
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        background: rgba(255,255,255,0.02);
+        font-family: 'Syne', sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        cursor: pointer;
+        transition: var(--transition);
+    }
+    .chip:hover {
+        border-color: var(--border-hover);
+        color: var(--text-primary);
+        background: var(--accent-dim);
+    }
+    .chip.active {
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+    }
+    .chip .count {
+        font-size: 0.7rem;
+        opacity: 0.65;
+        margin-left: 0.15rem;
+        font-weight: 500;
+    }
+
+    /* === ARTICLE LIST === */
+    .article-list {
+        padding: 1rem 0 4rem;
+    }
+    .article {
+        display: grid;
+        grid-template-columns: 1fr 220px;
+        gap: 3rem;
+        align-items: center;
+        padding: 2.75rem 0;
+        border-bottom: 1px solid var(--border);
+        position: relative;
+        transition: var(--transition);
+    }
+    .article--upcoming {
+        opacity: 0.55;
+    }
+    .article--upcoming a { cursor: default; pointer-events: none; }
+    .article--upcoming .article-arrow { display: none; }
+    .article-upcoming-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin-left: 0.5rem;
+        padding: 0.3rem 0.75rem;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        font-family: 'Syne', sans-serif;
+        font-size: 0.6rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        white-space: nowrap;
+    }
+    @media (max-width: 540px) {
+        .article-upcoming-badge {
+            display: block;
+            margin: 0.6rem 0 0 0;
+            width: max-content;
+        }
+    }
+    .article:first-child {
+        padding-top: 2.5rem;
+    }
+    .article:hover {
+        border-bottom-color: var(--border-hover);
+    }
+    .article-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-family: 'Syne', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 1rem;
+    }
+    .article-meta .dot {
+        width: 4px; height: 4px;
+        background: var(--text-muted);
+        border-radius: 50%;
+    }
+    .article-meta .read-time {
+        color: var(--text-muted);
+    }
+    .article-title {
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--text-primary);
+        margin-bottom: 0.9rem;
+        transition: var(--transition);
+    }
+    .article a:hover .article-title {
+        color: var(--accent-hover);
+    }
+    .article-excerpt {
+        color: var(--text-secondary);
+        font-size: 1.02rem;
+        line-height: 1.65;
+        max-width: 620px;
+        margin-bottom: 1.1rem;
+    }
+    .article-foot {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.82rem;
+        color: var(--text-muted);
+    }
+    .article-foot .author {
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+    .article-foot .sep {
+        color: var(--text-muted);
+        opacity: 0.5;
+    }
+    .article-arrow {
+        position: absolute;
+        right: -2px;
+        bottom: 2.75rem;
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: var(--accent);
+        opacity: 0;
+        transform: translateX(-8px);
+        transition: var(--transition);
+        pointer-events: none;
+    }
+    .article:hover .article-arrow {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .article-image {
+        aspect-ratio: 4 / 3;
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        background: var(--bg-card);
+        position: relative;
+    }
+    .article-image::after {
+        content: '';
+        position: absolute; inset: 0;
+        background: linear-gradient(135deg, rgba(184,124,26,0.0) 0%, rgba(6,8,26,0.25) 100%);
+        pointer-events: none;
+    }
+    .article-image-placeholder {
+        width: 100%; height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+          linear-gradient(135deg, rgba(184,124,26,0.18) 0%, rgba(20,30,72,0.55) 60%, rgba(6,8,26,0.85) 100%);
+        font-family: 'Syne', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        color: rgba(255,255,255,0.18);
+    }
+
+    @media (max-width: 768px) {
+        .article {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+        .article-image {
+            order: -1;
+            aspect-ratio: 16 / 9;
+            max-width: 100%;
+        }
+        .article-title { font-size: 1.5rem; }
+        .article-excerpt { font-size: 0.98rem; }
+        .article-arrow { display: none; }
+    }
+
+    /* === PAGINATION === */
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 0;
+        border-top: 1px solid var(--border);
+    }
+    .pagination-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.85rem 1.75rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        font-family: 'Syne', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        background: transparent;
+        transition: var(--transition);
+    }
+    .pagination-btn:hover {
+        color: var(--text-primary);
+        border-color: var(--border-hover);
+        background: var(--accent-dim);
+    }
+    .pagination-btn.disabled {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    .pagination-info {
+        font-family: 'Syne', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        color: var(--text-muted);
+        text-transform: uppercase;
+    }
+
+    /* === NEWSLETTER (flat, no container, matches index final-CTA style) === */
+    .newsletter {
+        margin-top: 1rem;
+        padding: 3.5rem 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        overflow: visible;
+    }
+    .newsletter::before { display: none; }
+    .newsletter-inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    .newsletter h2 {
+        font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+        margin-bottom: 0.6rem;
+    }
+    .newsletter p {
+        color: var(--text-secondary);
+        font-size: 0.98rem;
+        max-width: 380px;
+    }
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+    .newsletter-form-row {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .newsletter input[type=email] {
+        flex: 1;
+        padding: 1rem 1.25rem;
+        background: rgba(6,8,26,0.5);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        color: var(--text-primary);
+        font-family: inherit;
+        font-size: 0.95rem;
+        outline: none;
+        transition: var(--transition);
+    }
+    .newsletter input[type=email]::placeholder { color: var(--text-muted); }
+    .newsletter input[type=email]:focus {
+        border-color: var(--border-hover);
+        background: rgba(6,8,26,0.8);
+    }
+    .newsletter button {
+        padding: 1rem 1.75rem;
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        border-radius: var(--radius-md);
+        font-family: 'Syne', sans-serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: var(--transition);
+    }
+    .newsletter button:hover {
+        background: var(--accent-hover);
+        transform: translateY(-1px);
+        box-shadow: 0 8px 28px var(--accent-glow);
+    }
+    .newsletter-consent {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        line-height: 1.55;
+    }
+    .newsletter-consent a {
+        color: var(--text-secondary);
+        text-decoration: underline;
+        text-decoration-color: var(--border-accent);
+        text-underline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+        .newsletter { padding: 2.5rem 0; margin-top: 1rem; }
+        .newsletter-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+        .newsletter-form-row { flex-direction: column; }
+    }
+
+    /* === FOOTER (parity with index.html) === */
+    .footer {
+        margin-top: 5rem;
+        background: #000;
+        border-top: 1px solid var(--border);
+        padding: 5rem 0 2.5rem;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+    .footer-brand img { height: 48px; margin-bottom: 1.25rem; }
+    .footer-brand p {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        max-width: 260px;
+        line-height: 1.6;
+    }
+    .footer-col h4 {
+        font-family: 'Syne', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--text-secondary);
+        margin-bottom: 1.25rem;
+    }
+    .footer-col a {
+        display: block;
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        margin-bottom: 0.65rem;
+        transition: var(--transition);
+    }
+    .footer-col a:hover { color: var(--text-primary); }
+
+    .footer-trust {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+    }
+    .footer-trust span { display: flex; align-items: center; gap: 0.35rem; }
+    .footer-trust-sep { color: rgba(255,255,255,0.15); }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border);
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .footer-bottom span { font-size: 0.8rem; color: var(--text-muted); }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        transition: var(--transition);
+    }
+    .footer-legal a:hover { color: var(--text-primary); }
+
+    @media (max-width: 900px) {
+        .footer-grid { grid-template-columns: 1fr 1fr; }
+        .footer-brand { grid-column: span 2; }
+    }
+    @media (max-width: 600px) {
+        .footer { padding: 3rem 0 1.5rem; }
+        .footer-grid { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2.5rem; }
+        .footer-brand { grid-column: span 1; }
+        .footer-trust { font-size: 0.72rem; gap: 0.75rem; }
+        .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    /* === MOBILE STICKY CTA === */
+    .mobile-sticky-cta {
+        display: none;
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+        z-index: 150;
+        padding: 0.85rem 1rem calc(0.85rem + env(safe-area-inset-bottom));
+        background: linear-gradient(to top, rgba(6,8,26,0.98) 0%, rgba(6,8,26,0.85) 100%);
+        backdrop-filter: blur(12px);
+        border-top: 1px solid var(--border);
+    }
+    .mobile-cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        background: var(--accent);
+        color: #fff;
+        border-radius: var(--radius-md);
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        box-shadow: 0 -4px 24px var(--accent-glow);
+        transition: var(--transition);
+    }
+    .mobile-cta-btn:hover { background: var(--accent-hover); }
+    @media (max-width: 768px) {
+        .mobile-sticky-cta { display: block; }
+        body { padding-bottom: 80px; }
+    }
+
+    /* === REVEAL ANIMATION === */
+    .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal.visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* === COMING-SOON NOTE === */
+    .more-soon {
+        margin: 4rem 0 1rem;
+        padding: 1.75rem 2rem;
+        border: 1px dashed var(--border-accent);
+        border-radius: var(--radius-md);
+        background: rgba(184, 124, 26, 0.04);
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+    .more-soon a {
+        color: var(--accent-hover);
+        text-decoration: underline;
+        text-decoration-color: var(--border-accent);
+        text-underline-offset: 3px;
+    }
+    .more-soon a:hover { color: var(--accent-bright); }
+    .more-soon .dot-pulse-sm {
+        width: 8px; height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 0 rgba(184, 124, 26, 0.7);
+        animation: pulse 2s infinite;
+        flex-shrink: 0;
+    }
+    @media (max-width: 600px) {
+        .more-soon { padding: 1.5rem; font-size: 0.9rem; align-items: flex-start; }
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><img src="images/logo-white.svg" alt="Hey Coach Production"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#kurse">Kurse</a></li>
+                <li><a href="index.html#trainer">Trainer</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#ueber-uns">&Uuml;ber uns</a></li>
+                <li><a href="index.html#bewertungen">Bewertungen</a></li>
+                <li><a href="index.html#partner">Partner werden</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#kurse" class="nav-cta">Kurs starten</a></li>
+            </ul>
+            <button class="nav-hamburger" id="hamburger" aria-label="Menü">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <section class="breadcrumb">
+        <div class="container--narrow">
+            <div class="breadcrumb-trail">
+                <a href="index.html">Start</a><span>&rsaquo;</span>Blog
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO -->
+    <section class="blog-hero">
+        <div class="container--narrow">
+            <span class="launch-badge reveal"><span class="dot-pulse"></span>Frisch gestartet &middot; Mai 2026</span>
+            <h1 class="reveal">PERSPEKTIVE.</h1>
+            <p class="tagline reveal">
+                Technik<span class="tagline-divider">·</span>Mindset<span class="tagline-divider">·</span>Wettkampf
+            </p>
+            <p class="intro reveal">
+                Wir bauen unseren Blog gerade auf — neue Artikel kommen jede Woche.
+                Wissen aus dem Ring und der Trainingshalle. Keine Floskeln, kein Hype.
+                Nur was im Training und im Leben wirklich funktioniert.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter bar hidden while only 1 article is live -->
+    <section class="filter-bar" style="border-bottom:1px solid var(--border);padding:0.5rem 0;"></section>
+
+    <!-- ARTICLE LIST -->
+    <section class="article-list">
+        <div class="container--narrow">
+
+            <!-- Article 1 -->
+            <article class="article" data-cat="kampfsport">
+                <a href="blog-roundhouse-kick.html" style="display:contents;">
+                    <div class="article-text">
+                        <div class="article-meta">
+                            <span>Kampfsport</span>
+                            <span class="dot"></span>
+                            <span class="read-time">8 Min Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Wie du in 4 Wochen deinen ersten sauberen Roundhouse-Kick lernst
+                        </h2>
+                        <p class="article-excerpt">
+                            Die meisten Anfänger machen denselben Fehler — sie wollen Kraft, bevor sie Technik haben.
+                            Hier ist, warum das nicht funktioniert und welche drei Bewegungen du
+                            jeden Tag fünf Minuten üben solltest.
+                        </p>
+                        <div class="article-foot">
+<span>12. Mai 2026</span>
+                        </div>
+                        <div class="article-arrow">&rarr;</div>
+                    </div>
+                    <div class="article-image">
+                        <div class="article-image-placeholder">M</div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Coming-soon note (only 1 live article right now) -->
+            <div class="more-soon">
+                <span class="dot-pulse-sm"></span>
+                <span>Mehr Artikel jede Woche. Komm bald zur&uuml;ck &mdash; oder folge uns auf <a href="https://www.instagram.com/exitasia_gym/" target="_blank" rel="noopener">Instagram</a>.</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PAGINATION -->
+    <section>
+        <div class="container--narrow">
+            <div class="pagination">
+                <button class="pagination-btn disabled">&larr; Neuere</button>
+                <span class="pagination-info">Seite 1 von 1</span>
+                <button class="pagination-btn disabled">Ältere &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section>
+        <div class="container--narrow">
+            <div class="newsletter reveal">
+                <div class="newsletter-inner">
+                    <div>
+                        <h2>Bleib im Ring.</h2>
+                        <p>Einmal pro Monat: neue Artikel, ehrliche Trainings-Updates und keine Verkaufs-Spam-Mails. Versprochen.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <div class="newsletter-form-row">
+                            <input type="email" name="email" id="newsletterEmail" placeholder="deine@email.de" required>
+                            <button type="submit">Abonnieren</button>
+                        </div>
+                        <p class="newsletter-consent" id="newsletterConsent">
+                            Mit Klick auf &raquo;Abonnieren&laquo; stimmst du unserer
+                            <a href="datenschutz.html">Datenschutzerkl&auml;rung</a> zu.
+                            Abmeldung jederzeit per Klick im Newsletter.
+                        </p>
+                        <p class="newsletter-thanks" id="newsletterThanks" style="display:none;color:var(--accent-hover);font-weight:600;margin-top:0.85rem;">
+                            Danke! Wir melden uns, sobald der Newsletter startet.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (mirrors index.html structure for site-wide consistency + SEO) -->
+    <footer class="footer">
+        <div class="container--narrow">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo-white.svg" alt="Hey Coach Production">
+                    <p>Online Kampfsport-Kurse. Gegr&uuml;ndet von ExitAsia &mdash; seit 2006 eine der f&uuml;hrenden Kampfsportschulen in Deutschland.</p>
+                </div>
+                <nav class="footer-col" aria-label="Kurse">
+                    <h4>Kurse</h4>
+                    <a href="kurs-kickboxen-v2.html">Kickboxen Komplettkurs</a>
+                    <a href="kurs-guertel-v2.html">G&uuml;rtelpr&uuml;fung (Einzelkurse)</a>
+                    <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
+                    <a href="kurs-fitstart.html">7-Tage FitStart</a>
+                    <a href="kurs-ruecken-reset.html">11 Tage R&uuml;cken Fit</a>
+                </nav>
+                <nav class="footer-col" aria-label="Unternehmen">
+                    <h4>Unternehmen</h4>
+                    <a href="index.html#ueber-uns">&Uuml;ber uns</a>
+                    <a href="index.html#trainer">Trainer</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="https://app.heycoachproduction.de/communities/groups/hey-coach-community/home" target="_blank" rel="noopener">Community</a>
+                    <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
+                </nav>
+                <nav class="footer-col" aria-label="Rechtliches">
+                    <h4>Rechtliches</h4>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                </nav>
+            </div>
+            <div class="footer-trust">
+                <span>Zahlungsmethoden: Visa &middot; Mastercard &middot; PayPal &middot; &Uuml;berweisung</span>
+                <span class="footer-trust-sep">|</span>
+                <span>DSGVO-konform &middot; SSL-verschl&uuml;sselt &middot; Made in Germany</span>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Hey Coach Production GmbH &middot; Kandelstr. 5, 79199 Kirchzarten</span>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="index.html#kurse" class="mobile-cta-btn">Kurs starten</a>
+    </div>
+
+    <script>
+    // NAV scroll state
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // Filter chips
+    const chips = document.querySelectorAll('.chip');
+    const articles = document.querySelectorAll('.article');
+    chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            chips.forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+            const cat = chip.dataset.cat;
+            articles.forEach(a => {
+                if (cat === 'all' || a.dataset.cat === cat) {
+                    a.style.display = '';
+                } else {
+                    a.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Newsletter — show thank-you (real GHL integration coming next)
+    const nlForm = document.getElementById('newsletterForm');
+    if (nlForm) {
+        nlForm.addEventListener('submit', e => {
+            e.preventDefault();
+            const email = document.getElementById('newsletterEmail').value.trim();
+            if (!email || !email.includes('@')) return;
+            nlForm.querySelector('.newsletter-form-row').style.display = 'none';
+            document.getElementById('newsletterConsent').style.display = 'none';
+            document.getElementById('newsletterThanks').style.display = 'block';
+            try {
+                const list = JSON.parse(localStorage.getItem('hc_newsletter_waitlist') || '[]');
+                if (!list.includes(email)) { list.push(email); localStorage.setItem('hc_newsletter_waitlist', JSON.stringify(list)); }
+            } catch (_) {}
+        });
+    }
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll('.article').forEach(el => {
+        el.classList.add('reveal');
+        observer.observe(el);
+    });
+    </script>
+
+    <!-- DSGVO Cookie-Banner -->
+    <script src="cookie-banner.js" defer></script>
+</body>
+</html>
