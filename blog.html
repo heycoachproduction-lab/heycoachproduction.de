@@ -503,6 +503,8 @@
         letter-spacing: -0.04em;
         color: rgba(255,255,255,0.18);
     }
+    .article-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s var(--ease); }
+    .article:hover .article-image img { transform: scale(1.03); }
 
     @media (max-width: 768px) {
         .article {
@@ -869,14 +871,40 @@
     <section class="article-list">
         <div class="container--narrow">
 
-            <!-- Article: Sport gegen Stress (newest, 2026-05-20) -->
+            <!-- Article: Muay Thai vs Kickboxen (newest, 2026-05-25) -->
+            <article class="article" data-cat="kampfsport">
+                <a href="blog-muay-thai-vs-kickboxen.html" style="display:contents;">
+                    <div class="article-text">
+                        <div class="article-meta">
+                            <span>Kampfsport allgemein</span>
+                            <span class="dot"></span>
+                            <span class="read-time">9 Min Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Muay Thai vs Kickboxen &mdash; welcher Kampfsport passt zu dir?
+                        </h2>
+                        <p class="article-excerpt">
+                            Was die beiden Sportarten wirklich unterscheidet, wer wo besser aufgehoben ist, und welche Frage du dir vor dem Anfangen stellen solltest. Aus 20 Jahren ExitAsia-Trainingshalle.
+                        </p>
+                        <div class="article-foot">
+                            <span>25. Mai 2026</span>
+                        </div>
+                        <div class="article-arrow">&rarr;</div>
+                    </div>
+                    <div class="article-image">
+                        <img src="images/team-six-trainers.jpg" alt="Hey Coach Trainer-Team &mdash; Muay Thai vs Kickboxen Vergleich" loading="lazy">
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article: Sport gegen Stress (2026-05-20) -->
             <article class="article" data-cat="mindset">
                 <a href="blog-sport-gegen-stress.html" style="display:contents;">
                     <div class="article-text">
                         <div class="article-meta">
                             <span>Sport &amp; Mental Health</span>
                             <span class="dot"></span>
-                            <span class="read-time">8 Min Lesezeit</span>
+                            <span class="read-time">10 Min Lesezeit</span>
                         </div>
                         <h2 class="article-title">
                             Wie Sport gegen chronischen Stress hilft &mdash; eine ehrliche Antwort aus 20 Jahren Trainingshalle
@@ -891,7 +919,7 @@
                         <div class="article-arrow">&rarr;</div>
                     </div>
                     <div class="article-image">
-                        <div class="article-image-placeholder">S</div>
+                        <img src="images/exitasia-ring-community.webp" alt="ExitAsia Kampfsport-Community im Trainingsring" loading="lazy">
                     </div>
                 </a>
             </article>
