@@ -300,10 +300,16 @@
     .routine-card-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.18rem; color: #fff; line-height: 1.25; margin-bottom: 0.3rem; }
     .routine-card-meta { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
     .routine-card-meta .meta-pill { font-family: 'Syne', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.32rem 0.75rem; background: rgba(184,124,26,0.12); border: 1px solid var(--border-accent); color: var(--accent-bright); border-radius: 100px; }
-    .routine-steps { list-style: none; padding: 0; margin: 1.25rem 0 0; counter-reset: rstep; }
-    .routine-steps li { position: relative; margin-bottom: 0.85rem; padding-left: 5rem; line-height: 1.6; font-size: 0.98rem; color: var(--text-prose); min-height: 2.5rem; }
-    .routine-steps li::before { content: ''; display: none; }
-    .routine-steps .step-time { position: absolute; left: 0; top: 0; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.05rem; color: var(--accent-bright); background: rgba(184,124,26,0.10); border: 1px solid var(--border-accent); padding: 0.35rem 0.6rem; border-radius: 8px; line-height: 1; min-width: 4rem; text-align: center; }
+    .routines-grid .routine-steps { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 0.85rem; counter-reset: none; }
+    .routines-grid .routine-steps li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; align-items: baseline; list-style: none; padding: 0; margin: 0; counter-increment: none; font-size: 0.98rem; line-height: 1.6; color: var(--text-prose); }
+    .routines-grid .routine-steps li::before { content: none !important; display: none !important; }
+    .routines-grid .routine-steps li::marker { content: ''; }
+    .routines-grid .routine-steps li > strong { font-family: 'Syne', sans-serif; font-weight: 800; color: var(--accent-bright); font-size: 1rem; letter-spacing: 0.02em; text-align: right; padding-top: 0.05em; }
+    .routines-grid .routine-steps li > span { display: block; }
+    @media (max-width: 600px) {
+        .routines-grid .routine-steps li { grid-template-columns: 3.5rem 1fr; gap: 0.7rem; font-size: 0.94rem; }
+        .routines-grid .routine-steps li > strong { font-size: 0.9rem; }
+    }
     .routine-card-effect { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-size: 0.94rem; color: var(--text-secondary); line-height: 1.6; }
     .routine-card-effect strong { color: var(--accent-bright); font-style: normal; font-weight: 600; }
     @media (max-width: 600px) {
@@ -626,11 +632,11 @@
                             </div>
                         </div>
                     </div>
-                    <ol class="routine-steps">
-                        <li><span class="step-time">2 Min</span>Aufwärmen mit lockerem Springen oder Hampelmann.</li>
-                        <li><span class="step-time">6 Min</span>Schattenboxen: 3 Runden à 2 Min Bewegung, 1 Min Pause. Nur Atem und saubere Technik.</li>
-                        <li><span class="step-time">2 Min</span>Cool-down Stretching, besonders Schultern und Nacken.</li>
-                    </ol>
+                    <ul class="routine-steps">
+                        <li><strong>2 Min</strong><span>Aufwärmen mit lockerem Springen oder Hampelmann.</span></li>
+                        <li><strong>6 Min</strong><span>Schattenboxen: 3 Runden à 2 Min Bewegung, 1 Min Pause. Nur Atem und saubere Technik.</span></li>
+                        <li><strong>2 Min</strong><span>Cool-down Stretching, besonders Schultern und Nacken.</span></li>
+                    </ul>
                     <div class="routine-card-effect"><strong>Wirkung:</strong> Cortisol fällt, Atem reguliert, Kopf wird ruhiger. Funktioniert, wenn nichts anderes geht.</div>
                 </div>
 
@@ -646,11 +652,11 @@
                             </div>
                         </div>
                     </div>
-                    <ol class="routine-steps">
-                        <li><span class="step-time">2 Min</span>Kurzes dynamisches Aufwärmen mit Beweglichkeit der Hüfte.</li>
-                        <li><span class="step-time">6 Min</span>30 Sekunden volle Intensität, dann 30 Sekunden Pause. Mit Partner Pad-Arbeit, ohne Partner Wand-Pad oder Heavy Bag.</li>
-                        <li><span class="step-time">2 Min</span>Lockerer Cool-down, Atem bewusst tief.</li>
-                    </ol>
+                    <ul class="routine-steps">
+                        <li><strong>2 Min</strong><span>Kurzes dynamisches Aufwärmen mit Beweglichkeit der Hüfte.</span></li>
+                        <li><strong>6 Min</strong><span>30 Sekunden volle Intensität, dann 30 Sekunden Pause. Mit Partner Pad-Arbeit, ohne Partner Wand-Pad oder Heavy Bag.</span></li>
+                        <li><strong>2 Min</strong><span>Lockerer Cool-down, Atem bewusst tief.</span></li>
+                    </ul>
                     <div class="routine-card-effect"><strong>Wirkung:</strong> HIIT-Effekt + körperliche Entladung. Eines der schnellsten Cortisol-Reset-Tools, das wir kennen.</div>
                 </div>
 
@@ -666,11 +672,11 @@
                             </div>
                         </div>
                     </div>
-                    <ol class="routine-steps">
-                        <li><span class="step-time">1 Min</span>Stand finden, ruhig stehen, Schultern lockern.</li>
-                        <li><span class="step-time">8 Min</span>Eine Technik wählen (Standbein-Drehung, Jab, Schritte oder Roundhouse-Setup) und sehr langsam üben &mdash; etwa 4 Wiederholungen pro Minute.</li>
-                        <li><span class="step-time">1 Min</span>Eine Minute ruhig stehen, Atem zählen, fertig.</li>
-                    </ol>
+                    <ul class="routine-steps">
+                        <li><strong>1 Min</strong><span>Stand finden, ruhig stehen, Schultern lockern.</span></li>
+                        <li><strong>8 Min</strong><span>Eine Technik wählen (Standbein-Drehung, Jab, Schritte oder Roundhouse-Setup) und sehr langsam üben &mdash; etwa 4 Wiederholungen pro Minute.</span></li>
+                        <li><strong>1 Min</strong><span>Eine Minute ruhig stehen, Atem zählen, fertig.</span></li>
+                    </ul>
                     <div class="routine-card-effect"><strong>Wirkung:</strong> Meditativer als Meditation für die meisten. Beruhigt das Nervensystem ohne Stillstand. Hilft beim Einschlafen.</div>
                 </div>
             </div>
