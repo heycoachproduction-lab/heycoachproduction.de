@@ -296,7 +296,30 @@
         display: flex; align-items: center; justify-content: center;
         font-family: 'Syne', sans-serif; font-size: 6rem; font-weight: 800; color: rgba(255,255,255,0.15);
     }
-    .article-hero-image .frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(6,8,26,0.4) 100%); pointer-events: none; }
+    .article-hero-image .frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(6,8,26,0.4) 100%); pointer-events: none; z-index: 1; }
+    .article-hero-image .frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* === CTA Tier 1 cover image === */
+    .article-cta-cover {
+        position: relative; aspect-ratio: 16/7; overflow: hidden;
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        border: 1px solid var(--border-accent); border-bottom: none;
+    }
+    .article-cta-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .article-cta-cover::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(6,8,26,0.75) 100%); pointer-events: none; }
+    .article-cta--with-cover .article-cta-inner { border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+    @media (max-width: 600px) { .article-cta-cover { aspect-ratio: 4/3; } }
+
+    /* === Course card with image preview === */
+    .course-card { padding: 0; overflow: hidden; }
+    .course-card-img {
+        position: relative; aspect-ratio: 4/3; overflow: hidden;
+        border-bottom: 1px solid var(--border);
+    }
+    .course-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s var(--ease); }
+    .course-card:hover .course-card-img img { transform: scale(1.04); }
+    .course-card-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(6,8,26,0.55) 100%); pointer-events: none; }
+    .course-card-body { padding: 1.5rem 1.5rem 1.75rem; }
 
     /* === PROSE === */
     .prose { font-family: 'Outfit', sans-serif; font-size: 1.13rem; line-height: 1.78; color: var(--text-prose); font-weight: 400; }
@@ -567,9 +590,11 @@
         </div>
     </header>
 
-    <!-- HERO IMAGE (placeholder) -->
+    <!-- HERO IMAGE -->
     <div class="article-hero-image">
-        <div class="frame"><div class="placeholder">S</div></div>
+        <div class="frame">
+            <img src="images/marlon-stance.jpg" alt="Marlon Tröscher in Kampfsport-Stellung im Trainingszentrum &mdash; Hey Coach Muay Thai" loading="eager" fetchpriority="high">
+        </div>
     </div>
 
     <!-- ARTICLE BODY -->
@@ -699,7 +724,10 @@
     </article>
 
     <!-- CTA Tier 1 (entry) -->
-    <section class="article-cta">
+    <section class="article-cta article-cta--with-cover">
+        <div class="article-cta-cover">
+            <img src="images/marlon-fitstart-cover.webp" alt="7-Tage FitStart Kurs mit Marlon Tröscher &mdash; Muay Thai für Einsteiger" loading="lazy">
+        </div>
         <div class="article-cta-inner">
             <div class="article-cta-content">
                 <div>
@@ -717,18 +745,28 @@
         <p class="menu-eyebrow">Und falls dir nach diesen 7 Tagen klar wird: <em>das ist meine Sportart...</em></p>
         <div class="courses-menu-grid">
             <a href="kurs-muay-thai.html" class="course-card">
-                <div class="tag">Muay Thai</div>
-                <h4>Muay Thai Komplettkurs</h4>
-                <div class="price">&euro;129<span>einmalig &middot; 24 Mo. Zugang</span></div>
-                <p>Von der Standbein-Drehung bis Sparring-Setup. Vollständiger Aufbau mit Marlon Tröscher.</p>
-                <span class="more">Kurs ansehen &rarr;</span>
+                <div class="course-card-img">
+                    <img src="images/marlon-muaythai-cover.webp" alt="Muay Thai Komplettkurs mit Marlon Tröscher" loading="lazy">
+                </div>
+                <div class="course-card-body">
+                    <div class="tag">Muay Thai</div>
+                    <h4>Muay Thai Komplettkurs</h4>
+                    <div class="price">&euro;129<span>einmalig &middot; 24 Mo. Zugang</span></div>
+                    <p>Von der Standbein-Drehung bis Sparring-Setup. Vollständiger Aufbau mit Marlon Tröscher.</p>
+                    <span class="more">Kurs ansehen &rarr;</span>
+                </div>
             </a>
             <a href="kurs-kickboxen-v2.html" class="course-card">
-                <div class="tag">Kickboxen</div>
-                <h4>Kickboxen Komplettkurs</h4>
-                <div class="price">&euro;99<span>einmalig &middot; 24 Mo. Zugang</span></div>
-                <p>7 ISKA-Gürtelstufen von Weiß- bis Schwarzgurt. Strukturiert, prüfungsfähig.</p>
-                <span class="more">Kurs ansehen &rarr;</span>
+                <div class="course-card-img">
+                    <img src="images/kickboxen-hero-portrait.webp" alt="Kickboxen Komplettkurs &mdash; 7 ISKA-Gürtelstufen" loading="lazy">
+                </div>
+                <div class="course-card-body">
+                    <div class="tag">Kickboxen</div>
+                    <h4>Kickboxen Komplettkurs</h4>
+                    <div class="price">&euro;99<span>einmalig &middot; 24 Mo. Zugang</span></div>
+                    <p>7 ISKA-Gürtelstufen von Weiß- bis Schwarzgurt. Strukturiert, prüfungsfähig.</p>
+                    <span class="more">Kurs ansehen &rarr;</span>
+                </div>
             </a>
         </div>
     </section>
