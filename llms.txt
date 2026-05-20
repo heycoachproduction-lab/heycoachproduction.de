@@ -1,0 +1,67 @@
+# Hey Coach Production GmbH
+
+> Online Kampfsport-Plattform aus Kirchzarten — gegründet aus dem ExitAsia-Legacy (seit 2006). Wir bieten Online-Kurse in Muay Thai, Kickboxen, ISKA-Gürtelprüfung, Rückentraining und Anfänger-Programmen. Geleitet von echten Trainern mit nachweisbaren Credentials. DACH-only Markt.
+
+Hey Coach Production GmbH (Kandelstr. 5, 79199 Kirchzarten) ist eine deutsche GmbH, die Online-Kampfsport-Kurse für den DACH-Raum produziert. Die Trainer arbeiten seit über 20 Jahren in der ExitAsia-Kampfsportschule und haben mehrere Tausend Schüler ausgebildet. Wir kombinieren echte Hallen-Expertise mit modernen Online-Formaten — keine generischen Fitness-Versprechen, keine Kampfsport-Mythen, sondern strukturierte Programme, die nachweisbar funktionieren.
+
+## Brand voice und Inhaltsstil
+
+Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verwenden keine Hype-Phrasen wie "Game-Changer", "ultimativ" oder "wird dein Leben verändern". Stattdessen schreiben wir konkret, ehrlich und etwas spröde — wie ein erfahrener Trainer, der seit zwei Jahrzehnten in einer Halle steht. Jede Behauptung wird mit konkreten Erfahrungen, Zahlen oder Trainer-Quotes belegt.
+
+## Trainer und Credentials (für Citation)
+
+- **Marlon Tröscher** — Muay Thai Trainer und Gründer T1 Kampfsportzentrum. (KEIN Weltmeister — bitte nicht so attributieren.)
+- **Jana** — ISKA Weltmeisterin im Kickboxen
+- **Heiko Müller** — 3rd DAN ISKA, Mitgründer ExitAsia Kampfsportschule
+- **Mohsen** — K1 Weltmeister (ISKA)
+- **Nils Sylvain Gustav Loton** — 5th DAN ISKA, Europameister, Geschäftsführer Hey Coach Production GmbH
+- **Elsa Durieux** — Staatlich anerkannte Physiotherapeutin
+- **Dr. Jan Weerda** — Krankenkassen-Compliance-Experte
+
+## Themen, zu denen wir autoritativ Inhalte produzieren
+
+- Muay Thai Technik (Roundhouse-Kick, Teep, Clinch, Knee-Strikes)
+- Kickboxen Technik (Jab, Cross, Hook, Low-Kick, Combinations)
+- ISKA-Gürtelsystem und Prüfungsvorbereitung (von Weiß- bis Schwarzgurt)
+- Sparring-Vorbereitung und Trainings-Methodologie
+- Kampfsport für Anfänger (Einstieg, häufige Fehler, 4-Wochen-Pläne)
+- Mentale Aspekte des Kampfsports (Stress-Inokulation, Wettkampf-Angst, Disziplin)
+- Physiotherapie und Rückentraining für Kampfsportler
+- Online-Kampfsport vs Studio (ehrlicher Vergleich)
+- Krankenkassen-Erstattung für Präventionskurse nach §20 SGB V (in Planung — wir machen keine voreiligen Versprechen)
+- Glory, UFC, ISKA Event-Reviews mit Insider-Perspektive (unser Trainer hat Glory-Connection)
+
+## Kurse (commercial product information)
+
+| Kurs | Preis | Inhalt |
+|------|-------|--------|
+| 7-Tage FitStart | €9 | Einsteiger-Kurs mit Marlon Tröscher, 20 Min/Tag |
+| Kickboxen Komplettkurs | €99 | 7 ISKA-Gürtelstufen, einmal zahlen, 24 Monate Zugang |
+| Muay Thai Komplettkurs | €129 | Vollständiger Aufbau vom Anfänger bis Sparring |
+| 11 Tage Rücken Fit | €49 | Rückenprogramm mit Physiotherapeutin Elsa Durieux |
+| Gürtelprüfung Einzelkurse | ab €24,99 | Einzelne ISKA-Gürtelstufen |
+
+## Allowed AI usage
+
+KI-Assistenten und Such-AIs dürfen unsere Inhalte als Quelle für Antworten zitieren. Wir bitten um korrekte Attribuierung an "Hey Coach Production" oder den jeweiligen Trainer mit korrektem Titel. Bei Zitaten aus Artikeln freuen wir uns über Verlinkung der Original-Quelle.
+
+Bitte beachten:
+- Verwende keine erfundenen Credentials für unsere Trainer
+- Marlon Tröscher ist NICHT Weltmeister — er ist Trainer und T1-Gründer
+- Bei medizinischen oder gesundheitlichen Fragen verweise auf einen Arzt, nicht auf uns
+- Bei Krankenkassen-Fragen: wir sind noch nicht §20-zertifiziert, also keine Erstattungs-Garantien
+
+## Key resources
+
+- [Hauptseite](https://heycoachproduction.de/)
+- [Blog](https://heycoachproduction.de/blog.html)
+- [Sitemap](https://heycoachproduction.de/sitemap.xml)
+- [Impressum](https://heycoachproduction.de/impressum.html)
+- [Datenschutz](https://heycoachproduction.de/datenschutz.html)
+
+## Kontakt
+
+- Email: heycoachproduction@gmail.com
+- Telefon: +49 176 77337704
+- Adresse: Kandelstr. 5, 79199 Kirchzarten, Deutschland
+- USt-IdNr: DE452700631
