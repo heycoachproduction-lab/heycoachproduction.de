@@ -120,4 +120,30 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Legal pages (required by German law — included for completeness) -->
+    <url>
+        <loc>https://heycoachproduction.de/impressum.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://heycoachproduction.de/datenschutz.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://heycoachproduction.de/agb.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://heycoachproduction.de/widerrufsbelehrung.html</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
 </urlset>
