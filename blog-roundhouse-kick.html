@@ -907,12 +907,36 @@
         </div>
     </header>
 
-    <!-- HERO IMAGE -->
-    <div class="article-hero-image">
-        <div class="frame">
-            <div class="placeholder">RH</div>
+    <!-- HERO QUICK-FACTS (text-only) -->
+    <section style="margin:2rem auto 4rem;max-width:var(--container-narrow);padding:0 1.5rem;">
+        <div style="position:relative;overflow:hidden;border:1px solid var(--border-accent);border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(20,30,72,0.7) 0%,rgba(18,26,56,0.92) 100%);padding:2rem 2.5rem;">
+            <div style="position:absolute;top:-30%;left:-10%;width:50%;height:160%;background:radial-gradient(ellipse,var(--accent-glow) 0%,transparent 65%);pointer-events:none;"></div>
+            <div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;">
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--accent);line-height:1;">4</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-top:0.4rem;">Wochen</div>
+                </div>
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--accent);line-height:1;">5</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-top:0.4rem;">Min / Tag</div>
+                </div>
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--accent);line-height:1;">0</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-top:0.4rem;">Equipment</div>
+                </div>
+                <div>
+                    <div style="font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;color:var(--text-primary);line-height:1.1;">Marlon T.</div>
+                    <div style="font-family:'Syne',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-top:0.4rem;">Trainer</div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <style>
+    @media (max-width: 600px) {
+        .roundhouse-quickfacts-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+    }
+    </style>
 
     <!-- ARTICLE BODY -->
     <article class="container--prose">
@@ -975,11 +999,9 @@
             <h3>Woche 4 — Tempo</h3>
             <p>Erst jetzt fügen wir Geschwindigkeit hinzu. Die Bewegung bleibt dieselbe — die Geschwindigkeit nimmt zu. Wenn deine Technik in Woche 1 bis 3 sauber geworden ist, wird sich der Kick anders anfühlen: nicht stärker, sondern <em>scharf</em>. Wie ein Schnitt. Falls er sich nicht scharf anfühlt, gehst du eine Woche zurück. Es gibt keine Schande darin. Es gibt Schande nur darin, fünf Jahre einen verwaschenen Kick zu üben.</p>
 
-            <div class="article-figure">
-                <div class="frame">
-                    <div class="placeholder">▲</div>
-                </div>
-                <figcaption>Diagramm: Die Rotation des Standbeins als Ursprung der Kraftkette. Aus dem Muay&nbsp;Thai-Komplettkurs.</figcaption>
+            <div class="insight-box" style="margin: 2rem 0;">
+                <span class="label">Die Kraftkette</span>
+                <p><strong>Standbein → Hüfte → Trittbein → Schienbein.</strong> Die Drehung beginnt unten, beschleunigt nach oben. Jede Stufe gibt Energie an die nächste weiter. Wer die Reihenfolge umkehrt — oder eine Stufe überspringt — verliert 60% der möglichen Kraft. Aus dem Muay&nbsp;Thai-Komplettkurs.</p>
             </div>
 
             <h2>Warum 5 Minuten täglich besser sind als 2 Stunden am Wochenende</h2>
@@ -1001,16 +1023,28 @@
         </div>
     </article>
 
-    <!-- CTA BANNER -->
-    <section class="article-cta">
-        <div class="article-cta-inner">
-            <div class="article-cta-content">
-                <div>
-                    <span class="label">Nächster Schritt</span>
-                    <h3>Muay Thai Komplettkurs</h3>
-                    <p>Der gesamte Aufbau — von der Standbein-Drehung bis zum Sparring-Setup. 24 Monate Zugang. Einmal zahlen. Kein Abo.</p>
-                </div>
-                <a href="kurs-muay-thai.html" class="article-cta-btn">Kurs ansehen &rarr;</a>
+    <!-- CTA FINAL (gradient card, no photos) -->
+    <section style="margin:5rem auto 2rem;max-width:var(--container-narrow);padding:0 1.5rem;">
+        <div style="position:relative;overflow:hidden;border:1px solid var(--border-accent);border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(184,124,26,0.12) 0%,rgba(20,30,72,0.7) 50%,rgba(18,26,56,0.92) 100%);padding:3rem 2.5rem;text-align:center;">
+            <span style="display:inline-block;font-family:'Syne',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:0.85rem;">Starte deinen Weg</span>
+            <h3 style="font-family:'Syne',sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:var(--text-primary);margin-bottom:0.85rem;">Drei Wege, ein Gym.</h3>
+            <p style="font-size:1rem;color:var(--text-secondary);max-width:560px;margin:0 auto 2rem;">Wähle den Einstieg, der zu dir passt. Alle Kurse einmal zahlen, 24 Monate Zugang, kein Abo.</p>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.85rem;max-width:720px;margin:0 auto;">
+                <a href="kurs-fitstart.html" style="display:flex;flex-direction:column;gap:0.25rem;padding:1.1rem 1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-md);text-align:center;text-decoration:none;color:inherit;">
+                    <span style="font-family:'Syne',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">Einsteiger</span>
+                    <span style="font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:var(--text-primary);">7-Tage FitStart</span>
+                    <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--text-primary);">&euro;9</span>
+                </a>
+                <a href="kurs-muay-thai.html" style="display:flex;flex-direction:column;gap:0.25rem;padding:1.1rem 1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-md);text-align:center;text-decoration:none;color:inherit;">
+                    <span style="font-family:'Syne',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">Muay Thai</span>
+                    <span style="font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:var(--text-primary);">Komplettkurs</span>
+                    <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--text-primary);">&euro;129</span>
+                </a>
+                <a href="kurs-kickboxen-v2.html" style="display:flex;flex-direction:column;gap:0.25rem;padding:1.1rem 1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-md);text-align:center;text-decoration:none;color:inherit;">
+                    <span style="font-family:'Syne',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">Kickboxen</span>
+                    <span style="font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:var(--text-primary);">Komplettkurs</span>
+                    <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--text-primary);">&euro;99</span>
+                </a>
             </div>
         </div>
     </section>
