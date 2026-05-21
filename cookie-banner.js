@@ -19,10 +19,10 @@
     '.cb-text a:hover{color:#B87C1A}' +
     '.cb-buttons{display:flex;gap:12px;align-items:center;flex-shrink:0;flex-wrap:wrap}' +
     '.cb-btn{border:none;border-radius:10px;padding:12px 24px;font-family:"Outfit",sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s,opacity .2s;white-space:nowrap}' +
-    '.cb-accept{background:#B87C1A;color:#fff}' +
-    '.cb-accept:hover{background:#D4A040}' +
-    '.cb-necessary{background:rgba(255,255,255,.08);color:#B0B8D0;border:1px solid rgba(255,255,255,.12)}' +
-    '.cb-necessary:hover{background:rgba(255,255,255,.12);color:#fff}' +
+    '.cb-accept{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.18)}' +
+    '.cb-accept:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3)}' +
+    '.cb-necessary{background:rgba(255,255,255,.08);color:#B0B8D0;border:1px solid rgba(255,255,255,.18)}' +
+    '.cb-necessary:hover{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.3)}' +
     '@media(max-width:600px){.cb-inner{flex-direction:column;gap:16px}.cb-buttons{width:100%}.cb-btn{flex:1;text-align:center}}';
   document.head.appendChild(css);
 
@@ -39,9 +39,8 @@
       '<div class="cb-inner">' +
         '<div class="cb-text">' +
           '<h3>Cookie-Einstellungen</h3>' +
-          '<p>Wir verwenden technisch notwendige Cookies f\u00fcr den Betrieb dieser Website. ' +
-          'Dar\u00fcber hinaus nutzen wir externe Dienste (z.\u2009B. Google Fonts, Cloudflare CDN), ' +
-          'die Daten an Server in den USA \u00fcbermitteln k\u00f6nnen. ' +
+          '<p>Wir verwenden ausschlie\u00dflich technisch notwendige Cookies f\u00fcr den Betrieb dieser Website. ' +
+          'Unser CDN-Anbieter Cloudflare (USA) verarbeitet deine IP-Adresse zur Auslieferung der Inhalte. ' +
           'Mehr erf\u00e4hrst du in unserer <a href="datenschutz.html">Datenschutzerkl\u00e4rung</a>.</p>' +
         '</div>' +
         '<div class="cb-buttons">' +
@@ -70,18 +69,10 @@
     });
   }
 
-  /* ── Apply consent: block/unblock external services ── */
+  /* ── Apply consent: no external services to load (fonts self-hosted) ── */
   function applyConsent(level) {
-    if (level === 'all') {
-      // Load Google Fonts if not already loaded
-      if (!document.querySelector('link[href*="fonts.googleapis.com"]')) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap';
-        document.head.appendChild(link);
-      }
-    }
-    // "necessary" = do nothing extra, fonts loaded from <head> will be blocked by next page load
+    // All assets (fonts, images, scripts) are self-hosted.
+    // Consent is recorded for transparency; no third-party loading triggered here.
   }
 
   /* ── Footer link: "Cookie-Einstellungen" ── */
