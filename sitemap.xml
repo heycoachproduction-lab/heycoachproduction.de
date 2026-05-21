@@ -20,6 +20,12 @@
 
     <!-- Blog articles -->
     <url>
+        <loc>https://heycoachproduction.de/blog-glory-vs-ufc.html</loc>
+        <lastmod>2026-05-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
         <loc>https://heycoachproduction.de/blog-muay-thai-vs-kickboxen.html</loc>
         <lastmod>2026-05-25</lastmod>
         <changefreq>monthly</changefreq>
