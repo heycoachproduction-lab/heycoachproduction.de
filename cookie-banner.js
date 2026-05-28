@@ -10,7 +10,7 @@
   /* ── CSS ── */
   var css = document.createElement('style');
   css.textContent =
-    '.cb-overlay{position:fixed;inset:0;z-index:99998;background:rgba(6,8,26,.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}' +
+    '.cb-overlay{position:fixed;inset:0;z-index:99998;background:rgba(6,8,26,.45);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);pointer-events:none}' +
     '.cb-banner{position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#0C1228;border-top:1px solid rgba(184,124,26,.25);padding:28px 24px;font-family:"Outfit",sans-serif;color:#B0B8D0;font-size:14px;line-height:1.65;box-shadow:0 -8px 40px rgba(0,0,0,.5)}' +
     '.cb-inner{max-width:1100px;margin:0 auto;display:flex;align-items:flex-start;gap:28px;flex-wrap:wrap}' +
     '.cb-text{flex:1;min-width:280px}' +

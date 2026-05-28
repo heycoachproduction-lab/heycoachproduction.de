@@ -214,13 +214,17 @@
             background: rgba(10,10,10,0.98);
             backdrop-filter: blur(20px);
             flex-direction: column;
-            justify-content: center; align-items: center;
-            gap: 2.5rem;
+            justify-content: flex-start; align-items: center;
+            gap: 1.5rem;
+            padding: 88px 1.5rem 32px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
             z-index: 199;
+            box-sizing: border-box;
         }
         .nav-links.active { display: flex; }
-        .nav-links a { font-size: 1.5rem; color: var(--text-primary); }
-        .nav-cta { font-size: 1.1rem !important; padding: 0.875rem 2.5rem !important; }
+        .nav-links a { font-size: 1.35rem; color: var(--text-primary); padding: 0.25rem 0; }
+        .nav-cta { font-size: 1.05rem !important; padding: 0.875rem 2.5rem !important; margin-top: 0.5rem; }
     }
 
     /* === BREADCRUMB === */
@@ -886,8 +890,8 @@
                         </div>
                         <div class="article-arrow">&rarr;</div>
                     </div>
-                    <div class="article-image" style="background:linear-gradient(135deg,rgba(184,124,26,0.18) 0%,rgba(20,30,72,0.55) 60%,rgba(6,8,26,0.85) 100%);display:flex;align-items:center;justify-content:center;">
-                        <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:rgba(255,255,255,0.4);letter-spacing:-0.02em;text-align:center;line-height:1.1;">Glory<br>vs<br>UFC</div>
+                    <div class="article-image">
+                        <img src="images/training-gym-panorama.webp" alt="Glory vs UFC &mdash; Kampfsport-Vergleich Stand-up gegen MMA, Hey Coach Production" loading="lazy">
                     </div>
                 </a>
             </article>
@@ -941,6 +945,32 @@
                     </div>
                     <div class="article-image">
                         <img src="images/exitasia-ring-community.webp" alt="ExitAsia Kampfsport-Community im Trainingsring" loading="lazy">
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article: Roundhouse-Kick in 4 Wochen (2026-05-20) -->
+            <article class="article" data-cat="technik">
+                <a href="blog-roundhouse-kick.html" style="display:contents;">
+                    <div class="article-text">
+                        <div class="article-meta">
+                            <span>Technik &amp; Training</span>
+                            <span class="dot"></span>
+                            <span class="read-time">8 Min Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Roundhouse-Kick in 4 Wochen &mdash; der saubere Weg
+                        </h2>
+                        <p class="article-excerpt">
+                            Der 4-Wochen-Plan, der dich aus Knien zur Mitte bringt. Mit Drills, H&auml;ufigkeitsregel und drei Fehlern, die fast jeder Anf&auml;nger macht.
+                        </p>
+                        <div class="article-foot">
+                            <span>20. Mai 2026</span>
+                        </div>
+                        <div class="article-arrow">&rarr;</div>
+                    </div>
+                    <div class="article-image">
+                        <img src="images/jana-punch.jpg" alt="Roundhouse-Kick Technik &mdash; Hey Coach 4-Wochen-Plan, Trainerin Jana ISKA Weltmeisterin" loading="lazy">
                     </div>
                 </a>
             </article>
