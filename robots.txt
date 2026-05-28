@@ -17,7 +17,6 @@ Disallow: /index-print.html
 Disallow: /hero-video.html
 Disallow: /flyer-banner.html
 Disallow: /spline-demo.html
-Disallow: /kurs-physiotherapie.html
 Disallow: /kurs-kickboxen.html
 Disallow: /kurs-guertel.html
 Disallow: /kurs-marlon-v2.html
