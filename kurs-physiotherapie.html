@@ -449,11 +449,11 @@ footer a:hover { color: #fff; }
                     <span class="label">Warteliste</span>
                     <h2 class="h2">Sei der Erste, der es erf&auml;hrt.</h2>
                     <p class="notify-sub">Trag dich ein und wir benachrichtigen dich, sobald der Kurs verf&uuml;gbar ist.</p>
-                    <form class="notify-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Eingetragen ✓'; this.querySelector('button').disabled=true;">
+                    <form class="notify-form" onsubmit="event.preventDefault(); var em=this.querySelector('input').value.trim(); if(!em){return;} var btn=this.querySelector('button'); var body='Hallo Hey Coach Team,%0A%0Abitte informiert mich, sobald der Physiotherapie-Kurs mit Elsa verf%C3%BCgbar ist.%0A%0AMeine E-Mail: '+encodeURIComponent(em)+'%0A%0ADanke!'; window.location.href='mailto:heycoachproduction@gmail.com?subject='+encodeURIComponent('Warteliste: Physiotherapie-Kurs')+'&body='+body; btn.textContent='E-Mail wird geöffnet …'; btn.disabled=true;">
                         <input type="email" class="notify-input" placeholder="Deine E-Mail-Adresse" required>
-                        <button type="submit" class="notify-btn">Eintragen</button>
+                        <button type="submit" class="notify-btn">Benachrichtigt werden</button>
                     </form>
-                    <p class="notify-note">Kein Spam. Nur eine E-Mail bei Kursstart.</p>
+                    <p class="notify-note">Kein Spam. Nur eine E-Mail bei Kursstart &mdash; direkt an unser Team.</p>
                 </div>
             </div>
         </section>
@@ -512,7 +512,7 @@ footer a:hover { color: #fff; }
             <p style="margin-top:10px;">
                 <a href="impressum.html" style="margin:0 10px; font-size:13px;">Impressum</a>
                 <a href="datenschutz.html" style="margin:0 10px; font-size:13px;">Datenschutz</a>
-                <a href="agb.html" style="margin:0 10px; font-size:13px;">AGB</a>
+                <a href="agb.html" style="margin:0 10px; font-size:13px;">AGB</a><a href="widerrufsbelehrung.html" style="margin:0 10px; font-size:13px;">Widerruf</a>
             </p>
         </footer>
 <script src="cookie-banner.js?v=2"></script>
