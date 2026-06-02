@@ -1,10 +1,12 @@
 # Hey Coach Production GmbH — robots.txt
-# Last updated: 2026-05-28
+# Last updated: 2026-06-02
 
 User-agent: *
 Allow: /
 
-# ── Block development / backup / legacy versions of pages ──
+# ── Block development / backup / legacy versions of REAL (200) files only ──
+# (Old WordPress 404 paths are intentionally NOT blocked so Googlebot can
+#  crawl them, confirm the 404, and drop them from the index quickly.)
 Disallow: /_pgbackup/
 Disallow: /pinegrow.json
 Disallow: /index-v3.html
@@ -25,46 +27,12 @@ Disallow: /trainer-team.html
 Disallow: /styles-v5.css
 Disallow: /styles2.css
 
-# ── Block old WordPress paths (site migrated from WP to static) ──
-# Google still tries these from prior index — explicit block tells it to stop.
-Disallow: /wp-admin/
-Disallow: /wp-content/
-Disallow: /wp-includes/
-Disallow: /wp-json/
-Disallow: /xmlrpc.php
-Disallow: /wp-login.php
-Disallow: /wp-cron.php
-Disallow: /wp-config.php
-Disallow: /wp-comments-post.php
-Disallow: /wp-trackback.php
-Disallow: /wp-mail.php
-Disallow: /wp-activate.php
-Disallow: /wp-signup.php
-Disallow: /wp-links-opml.php
-Disallow: /wp-blog-header.php
-Disallow: /wp-load.php
-Disallow: /wp-settings.php
-Disallow: /readme.html
-Disallow: /license.txt
-
-# ── Block old hosting infrastructure ──
-Disallow: /cgi-sys/
-Disallow: /cgi-bin/
-
-# ── Block old WP-style category/archive/feed URLs ──
-Disallow: /category/
-Disallow: /tag/
-Disallow: /author/
-Disallow: /feed/
-Disallow: /comments/
-
-# ── Block old Cyrillic WP URLs from prior site version ──
-Disallow: /создайте-ваш-сайт-с-помощью-блоков/
-
-# ── AI scrapers — explicit allow (we want LLM citation traffic) ──
+# ── AI / LLM crawlers — explicit allow (we want LLM citation traffic) ──
 User-agent: GPTBot
 Allow: /
 User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
 Allow: /
 User-agent: ClaudeBot
 Allow: /
