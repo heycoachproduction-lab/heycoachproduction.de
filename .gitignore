@@ -1,0 +1,8 @@
+.DS_Store
+images/.DS_Store
+_pgbackup/
+pinegrow.json
+# UFC: reference source photos (not displayed; some non-CC) — keep out of public repo
+images/ufc-freedom250/photos/
+# large PNG originals (jpg versions are the ones used on the page)
+images/ufc-freedom250/*.png

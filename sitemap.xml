@@ -176,5 +176,11 @@
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://heycoachproduction.de/blog-ufc-weisses-haus-freedom-250.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 
 </urlset>
