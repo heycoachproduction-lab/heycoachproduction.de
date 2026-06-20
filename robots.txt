@@ -1,7 +1,16 @@
 # Hey Coach Production GmbH — robots.txt
-# Last updated: 2026-06-02
+# Last updated: 2026-06-20
+
+# ── Content Signals (contentsignals.org / Cloudflare, 2025) ──
+# As a condition of accessing this website, you agree to comply with these signals:
+#   search   = build a search index, show links/snippets (not AI-generated summaries)
+#   ai-input = use content as live input for AI answers (RAG / grounding / AI Overviews)
+#   ai-train = use content to train or fine-tune AI models
+# yes = permitted · no = not permitted · (omitted) = neither granted nor restricted
+# We welcome search + AI-answer citation; we do not license our content for model training.
 
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # ── Block development / backup / legacy versions of REAL (200) files only ──
@@ -28,19 +37,34 @@ Disallow: /styles-v5.css
 Disallow: /styles2.css
 
 # ── AI / LLM crawlers — explicit allow (we want LLM citation traffic) ──
+# Content-Signal repeated per group: under RFC 9309 a named bot reads ONLY its own
+# group and does NOT inherit the directives from "User-agent: *".
 User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 User-agent: Claude-Web
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 Sitemap: https://heycoachproduction.de/sitemap.xml

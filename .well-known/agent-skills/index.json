@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "kursauswahl",
+      "type": "skill-md",
+      "description": "Hilft bei der Auswahl des passenden Hey-Coach-Online-Kurses (7-Tage-FitStart 9 €, 11 Tage Rücken Fit 49 €, Kickboxen 99 €, Muay Thai 129 €) inkl. Preis, Inhalt, Trainer und Krankenkassen-Hinweis.",
+      "url": "/.well-known/agent-skills/kursauswahl/SKILL.md",
+      "digest": "sha256:a1152ecc8859a0a56a057389102938323d28e71e7ac60ec8215b18219fa8a71c"
+    }
+  ]
+}
