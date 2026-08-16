@@ -13,6 +13,10 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:url" content="https://heycoachproduction.de/blog.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Perspektive — Blog von Hey Coach Production">
+    <meta name="twitter:description" content="Technik, Mindset, Ernährung und Krankenkasse — Wissen aus dem Ring und der Trainingshalle.">
+    <meta name="twitter:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
 
     <link rel="canonical" href="https://heycoachproduction.de/blog.html">
     <link rel="alternate" hreflang="de-DE" href="https://heycoachproduction.de/blog.html">
@@ -688,7 +692,7 @@
         max-width: 260px;
         line-height: 1.6;
     }
-    .footer-col h4 {
+    .footer-col h3, .footer-col h4 {
         font-family: 'Syne', sans-serif;
         font-size: 0.7rem;
         font-weight: 700;
@@ -829,7 +833,36 @@
     @media (max-width: 600px) {
         .more-soon { padding: 1.5rem; font-size: 0.9rem; align-items: flex-start; }
     }
-    </style>
+    
+    /* ── Fix 2026-08-16: Pagination lief auf 320px 11px nach rechts hinaus ── */
+    @media (max-width: 480px) {
+      .pagination { flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+      .pagination-btn { padding: 0.75rem 1.1rem; font-size: 0.8rem; }
+      .pagination-info { flex: 1 1 100%; text-align: center; order: -1; }
+    }
+
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
 </head>
 
 <body>
@@ -881,6 +914,32 @@
     <!-- ARTICLE LIST -->
     <section class="article-list">
         <div class="container--narrow">
+
+            <!-- Article: Übertraining erkennen (2026-08-16) -->
+            <article class="article" data-cat="mindset">
+                <a href="blog-uebertraining-erkennen.html" style="display:contents;">
+                    <div class="article-text">
+                        <div class="article-meta">
+                            <span>Training &amp; Regeneration</span>
+                            <span class="dot"></span>
+                            <span class="read-time">16 Min Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            &Uuml;bertraining erkennen &mdash; Symptome, Messwerte und die richtige Pause
+                        </h2>
+                        <p class="article-excerpt">
+                            Die Anzeichen in der Reihenfolge, in der sie wirklich auftreten. Dazu die drei Messwerte f&uuml;r die Selbstkontrolle &mdash; samt der unbequemen Frage, was dein Fitnesstracker dabei tats&auml;chlich leisten kann.
+                        </p>
+                        <div class="article-foot">
+                            <span>16. August 2026</span>
+                        </div>
+                        <div class="article-arrow">&rarr;</div>
+                    </div>
+                    <div class="article-image" style="aspect-ratio:16/9;">
+                        <img src="images/exitasia-training-live.webp" alt="Training im ExitAsia Gym Freiburg &mdash; Pratzenarbeit, Beitrag zu &Uuml;bertraining und Regeneration von Hey Coach" loading="lazy">
+                    </div>
+                </a>
+            </article>
 
             <!-- Article: GLORY 109 Kwasi vs Hristov (event preview, 2026-07-24) -->
             <article class="article" data-cat="kampfsport">
@@ -1169,6 +1228,58 @@
                 </a>
             </article>
 
+            <!-- Article: Glory Collision 9 Vorschau (2026-06-02) — Archiv, Recap siehe oben -->
+            <article class="article" data-cat="kampfsport">
+                <a href="blog-glory-collision-9.html" style="display:contents;">
+                    <div class="article-text">
+                        <div class="article-meta">
+                            <span>Archiv &middot; Event-Vorschau</span>
+                            <span class="dot"></span>
+                            <span class="read-time">7 Min Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Glory Collision 9 in Rotterdam &mdash; die Vorschau
+                        </h2>
+                        <p class="article-excerpt">
+                            Der Text vor dem Event vom 13. Juni: Titelverteidigung von Mory Kromah plus Grand Prix &mdash; und was reines Kickboxen &uuml;ber moderne Technik verr&auml;t. Das Ergebnis steht im Recap.
+                        </p>
+                        <div class="article-foot">
+                            <span>2. Juni 2026</span>
+                        </div>
+                        <div class="article-arrow">&rarr;</div>
+                    </div>
+                    <div class="article-image" style="aspect-ratio:16/9;">
+                        <img src="images/blog-glory-collision-9-hero.webp" alt="Glory Collision 9 in Rotterdam &mdash; Event-Vorschau von Hey Coach" loading="lazy">
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article: UFC Weisses Haus Vorschau (2026-06-04) — Archiv, Recap siehe oben -->
+            <article class="article" data-cat="kampfsport">
+                <a href="blog-ufc-weisses-haus-freedom-250.html" style="display:contents;">
+                    <div class="article-text">
+                        <div class="article-meta">
+                            <span>Archiv &middot; Event-Vorschau</span>
+                            <span class="dot"></span>
+                            <span class="read-time">14 Min Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Die UFC zieht ins Wei&szlig;e Haus &mdash; die Vorschau
+                        </h2>
+                        <p class="article-excerpt">
+                            Der Text vor dem Event vom 14./15. Juni: komplette Kampfkarte, Uhrzeiten in MESZ und die offenen Fragen rund um den ungew&ouml;hnlichsten Austragungsort der UFC-Geschichte.
+                        </p>
+                        <div class="article-foot">
+                            <span>4. Juni 2026</span>
+                        </div>
+                        <div class="article-arrow">&rarr;</div>
+                    </div>
+                    <div class="article-image" style="aspect-ratio:16/9;">
+                        <img src="images/ufc-freedom250/hero-matchup.webp" alt="UFC im Wei&szlig;en Haus, Freedom 250 &mdash; Event-Vorschau von Hey Coach" loading="lazy">
+                    </div>
+                </a>
+            </article>
+
             <!-- Coming-soon note -->
             <div class="more-soon">
                 <span class="dot-pulse-sm"></span>
@@ -1178,16 +1289,6 @@
         </div>
     </section>
 
-    <!-- PAGINATION -->
-    <section>
-        <div class="container--narrow">
-            <div class="pagination">
-                <button class="pagination-btn disabled">&larr; Neuere</button>
-                <span class="pagination-info">Seite 1 von 1</span>
-                <button class="pagination-btn disabled">Ältere &rarr;</button>
-            </div>
-        </div>
-    </section>
 
     <!-- NEWSLETTER -->
     <section>
@@ -1226,7 +1327,7 @@
                     <p>Online Kampfsport-Kurse. Gegr&uuml;ndet von ExitAsia &mdash; seit 2006 eine der f&uuml;hrenden Kampfsportschulen in Deutschland.</p>
                 </div>
                 <nav class="footer-col" aria-label="Kurse">
-                    <h4>Kurse</h4>
+                    <h3>Kurse</h3>
                     <a href="kurs-kickboxen-v2.html">Kickboxen Komplettkurs</a>
                     <a href="kurs-guertel-v2.html">G&uuml;rtelpr&uuml;fung (Einzelkurse)</a>
                     <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
@@ -1234,7 +1335,7 @@
                     <a href="kurs-ruecken-reset.html">11 Tage R&uuml;cken Fit</a>
                 </nav>
                 <nav class="footer-col" aria-label="Unternehmen">
-                    <h4>Unternehmen</h4>
+                    <h3>Unternehmen</h3>
                     <a href="index.html#ueber-uns">&Uuml;ber uns</a>
                     <a href="index.html#trainer">Trainer</a>
                     <a href="blog.html">Blog</a>
@@ -1242,7 +1343,7 @@
                     <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
                 </nav>
                 <nav class="footer-col" aria-label="Rechtliches">
-                    <h4>Rechtliches</h4>
+                    <h3>Rechtliches</h3>
                     <a href="impressum.html">Impressum</a>
                     <a href="datenschutz.html">Datenschutz</a>
                     <a href="agb.html">AGB</a>

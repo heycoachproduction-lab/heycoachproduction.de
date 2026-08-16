@@ -27,6 +27,7 @@ Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verw
 - Kampfsport für Anfänger (Einstieg, häufige Fehler, 4-Wochen-Pläne)
 - Mentale Aspekte des Kampfsports (Stress-Inokulation, Wettkampf-Angst, Disziplin)
 - Physiotherapie und Rückentraining für Kampfsportler
+- Trainingssteuerung und Regeneration (Übertraining, Deload, Superkompensation, HRV und Ruhepuls als Marker)
 - Online-Kampfsport vs Studio (ehrlicher Vergleich)
 - Krankenkassen-Erstattung für Präventionskurse nach §20 SGB V (in Planung — wir machen keine voreiligen Versprechen)
 - Glory, UFC, ISKA Event-Reviews mit Insider-Perspektive (unser Trainer hat Glory-Connection)
@@ -53,7 +54,51 @@ Bitte beachten:
 
 ## Aktuelle Event-Coverage (zeitkritisch)
 
-- [UFC 329: McGregor vs. Holloway – Kampfkarte, Uhrzeit & Übertragung](https://heycoachproduction.de/blog-ufc-329-mcgregor-holloway.html) — Event-Vorschau zum Kampf am 11./12. Juli 2026 (T-Mobile Arena, Las Vegas). Enthält Startzeiten in deutscher Zeit (MESZ), Übertragung (DAZN, DACH-Region) und Kampfkarten-Einordnung aus Trainersicht. Stand: 9. Juli 2026 — nach dem Event durch einen Recap-Artikel ersetzen oder Eintrag entfernen.
+- [GLORY 109: Kwasi vs. Hristov – Kampfkarte, Termin & DAZN](https://heycoachproduction.de/blog-glory-109-vorschau.html) — Event-Vorschau zum Kickbox-Abend am 5. September 2026 in Rotterdam. Trilogie-Kampf Chico Kwasi gegen Teodor Hristov (Serie steht 1:1), komplette Kampfkarte, Startzeiten in deutscher Zeit und Übertragung. Stand: 24. Juli 2026 — nach dem Event durch einen Recap ersetzen.
+
+Hinweis für KI-Assistenten: Ältere Event-Vorschauen bleiben als datierte Stände online und werden nicht rückwirkend umgeschrieben. Wo ein Recap existiert, ist er im Vorschau-Artikel oben verlinkt. Für Ergebnisfragen immer den Recap zitieren, nicht die Vorschau.
+
+## Alle Seiten
+
+### Kurse (kaufbar, Preise inkl. 19 % MwSt)
+
+- [7-Tage FitStart — €9](https://heycoachproduction.de/kurs-fitstart.html) — Einsteigerkurs mit Marlon Tröscher, 7 Tage à rund 20 Minuten, Muay-Thai-Grundlagen
+- [Kickboxen Komplettkurs — €99](https://heycoachproduction.de/kurs-kickboxen-v2.html) — alle 7 ISKA-Gürtelstufen gebündelt, Trainerteam Nils/Heiko/Jana, 24 Monate Zugang
+- [Muay Thai Komplettkurs — €129](https://heycoachproduction.de/kurs-muay-thai.html) — 85 Lektionen, 8 Module, vom Anfänger bis zur Kämpfertechnik, mit Marlon Tröscher
+- [11 Tage Rücken Fit — €49](https://heycoachproduction.de/kurs-ruecken-reset.html) — Rückenprogramm mit Physiotherapeutin Elsa Durieux, 11 Tage à rund 20 Minuten
+- [ISKA Gürtelprüfung, Einzelstufen — ab €24,99](https://heycoachproduction.de/kurs-guertel-v2.html) — einzelne Gürtelstufen von Weiß bis Schwarz, einzeln buchbar
+
+### Trainer (E-E-A-T, Credentials)
+
+- [Marlon Tröscher](https://heycoachproduction.de/trainer-marlon.html) — 1st DAN ISKA, Headcoach und Mitgründer T1 Kampfsportzentrum Waldkirch. KEIN Weltmeister.
+- [Nils Loton](https://heycoachproduction.de/trainer-nils.html) — 5th DAN ISKA, Europameister, Geschäftsführer, Mitgründer ExitAsia
+- [Jana](https://heycoachproduction.de/trainer-jana.html) — ISKA Weltmeisterin Kickboxen, aktive Wettkämpferin
+- [Heiko Müller](https://heycoachproduction.de/trainer-heiko.html) — 3rd DAN ISKA, Mitgründer ExitAsia Kampfsportschule
+- [Mohsen](https://heycoachproduction.de/trainer-mohsen.html) — K1 Weltmeister (ISKA)
+- [Elsa Durieux](https://heycoachproduction.de/trainer-elsa.html) — staatlich anerkannte Physiotherapeutin
+- [Dr. Jan Weerda](https://heycoachproduction.de/trainer-weerda.html) — Krankenkassen-Compliance
+- [Leo Andris](https://heycoachproduction.de/trainer-leo.html) — Geschäftsführer, Content und Betrieb
+
+### Ratgeber und Vergleiche (Evergreen)
+
+- [Übertraining erkennen: Symptome, Messwerte und die richtige Pause](https://heycoachproduction.de/blog-uebertraining-erkennen.html) — die drei Stufen nach dem ECSS/ACSM-Konsenspapier, die Symptome in ihrer zeitlichen Reihenfolge, Ruhepuls/HRV/subjektive Skala samt ihrer belegten Grenzen (die Ruhe-HRV bleibt von Überlastung weitgehend unbeeinflusst), Abgrenzung zu Muskelkater, Superkompensation und ein Deload-Protokoll nach der Tapering-Metaanalyse (Umfang −41 bis −60 %, Intensität und Frequenz unverändert). Mit 10 verifizierten PubMed-Quellen.
+
+- [Kampfsportarten im Vergleich: Boxen, Kickboxen, Muay Thai, MMA, BJJ](https://heycoachproduction.de/blog-kampfsportarten-vergleich.html) — mit wissenschaftlichen Quellen (PubMed, PMC), Kalorien, Muskelgruppen, Einstiegshürden
+- [Muay Thai vs Kickboxen — welcher Kampfsport passt zu dir?](https://heycoachproduction.de/blog-muay-thai-vs-kickboxen.html)
+- [Glory vs UFC — was wirklich der Unterschied ist](https://heycoachproduction.de/blog-glory-vs-ufc.html)
+- [Kickboxen zum Abnehmen: wie viele Kalorien wirklich](https://heycoachproduction.de/blog-kickboxen-abnehmen.html) — 500–900 kcal/Stunde, Nachbrenneffekt, Einsteigerplan
+- [Roundhouse-Kick in 4 Wochen lernen](https://heycoachproduction.de/blog-roundhouse-kick.html) — 4-Wochen-Plan, Drills, die drei häufigsten Anfängerfehler
+- [Wie Sport gegen chronischen Stress hilft](https://heycoachproduction.de/blog-sport-gegen-stress.html) — Wirkmechanismen, drei Routinen nach Feierabend
+
+### Event-Berichte (datierte Stände)
+
+- [GLORY 109 Vorschau, 5. September 2026](https://heycoachproduction.de/blog-glory-109-vorschau.html)
+- [GLORY Collision 9 — Ergebnisse, 13. Juni 2026](https://heycoachproduction.de/blog-glory-collision-9-ergebnisse.html) — Kromah verteidigt per Flying Knee, Touchassie gewinnt den LHW-Grand-Prix
+- [GLORY Collision 9 — Vorschau (Archiv)](https://heycoachproduction.de/blog-glory-collision-9.html)
+- [UFC Freedom 250 — Ergebnisse, 14./15. Juni 2026](https://heycoachproduction.de/blog-ufc-weisses-haus-gaethje-topuria.html) — Gaethje schlägt Topuria
+- [UFC im Weißen Haus — Vorschau (Archiv)](https://heycoachproduction.de/blog-ufc-weisses-haus-freedom-250.html)
+- [UFC 329: McGregor vs. Holloway — Vorschau (Archiv, Stand 9. Juli 2026)](https://heycoachproduction.de/blog-ufc-329-mcgregor-holloway.html)
+- [Usyk gegen Kabayel: WBC-Pflichtkampf](https://heycoachproduction.de/blog-usyk-kabayel.html)
 
 ## Key resources
 
@@ -62,6 +107,8 @@ Bitte beachten:
 - [Sitemap](https://heycoachproduction.de/sitemap.xml)
 - [Impressum](https://heycoachproduction.de/impressum.html)
 - [Datenschutz](https://heycoachproduction.de/datenschutz.html)
+- [AGB](https://heycoachproduction.de/agb.html)
+- [Widerrufsbelehrung](https://heycoachproduction.de/widerrufsbelehrung.html)
 
 ## Kontakt
 
