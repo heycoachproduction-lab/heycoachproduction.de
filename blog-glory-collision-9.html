@@ -37,7 +37,7 @@
   "headline": "Glory Collision 9 in Rotterdam: Was reines Kickboxen über moderne Technik verrät",
   "description": "Glory Collision 9 am 13. Juni 2026 in Rotterdam: Kromah verteidigt den Titel, dazu ein Light-Heavyweight-Grand-Prix. Was das Event über Kickbox-Technik zeigt.",
   "datePublished": "2026-06-02",
-  "dateModified": "2026-06-02",
+  "dateModified": "2026-08-16",
   "image": "https://heycoachproduction.de/images/blog-glory-collision-9-hero.jpg",
   "author": {
     "@type": "Organization",
@@ -305,7 +305,7 @@
     /* === Data-viz === */
     .data-viz { margin: 2.5rem 0; padding: 1.75rem 2rem; background: rgba(20,30,72,0.35); border: 1px solid var(--border); border-radius: var(--radius-md); }
     .data-viz .caption { font-family: 'Syne', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
-    .data-viz h4 { font-size: 1rem; margin-bottom: 1.5rem; color: #fff; font-family: 'Syne', sans-serif; font-weight: 700; }
+    .data-viz h3, .data-viz h4 { font-size: 1rem; margin-bottom: 1.5rem; color: #fff; font-family: 'Syne', sans-serif; font-weight: 700; }
     .data-viz svg { max-width: 100%; height: auto; display: block; }
     .data-viz .legend { display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: wrap; font-size: 0.82rem; color: var(--text-secondary); }
     .data-viz .legend .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 0.5rem; vertical-align: middle; }
@@ -416,7 +416,7 @@
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
     .footer-brand img { height: 48px; margin-bottom: 1.25rem; }
     .footer-brand p { font-size: 0.875rem; color: var(--text-muted); max-width: 260px; line-height: 1.6; }
-    .footer-col h4 { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--text-secondary); margin-bottom: 1.25rem; }
+    .footer-col h3, .footer-col h4 { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--text-secondary); margin-bottom: 1.25rem; }
     .footer-col a { display: block; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.65rem; transition: var(--transition); }
     .footer-col a:hover { color: var(--text-primary); }
     .footer-trust { display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; padding: 1.5rem 0; margin-top: 2rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--text-muted); }
@@ -447,7 +447,29 @@
         .prose p { font-size: 1.05rem; }
         .prose > p:first-of-type::first-letter { font-size: 3.5rem; }
     }
-    </style>
+    
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
 </head>
 <body>
 
@@ -507,7 +529,7 @@
         <h2>Wie steige ich ein – und was kostet das?</h2>
 <p>Du musst nicht mit dem Komplettkurs anfangen. Der einfachste Einstieg ist unser <strong>7-Tage-FitStart für 9 € (inkl. 19 % MwSt)</strong>: sieben kurze Trainingseinheiten à rund 20 Minuten mit Trainer Marlon, die du von zu Hause aus mitmachen kannst. Du lernst Stand, die ersten Schläge und ein Gefühl für saubere Bewegung – ohne Vorerfahrung, ohne Equipment-Zwang.</p><p>Wenn du danach tiefer einsteigen willst, baut der <strong>Kickboxen-Komplettkurs für 99 € (inkl. 19 % MwSt)</strong> genau darauf auf: Kombinationen, Tritte, Timing und Beinarbeit – Schritt für Schritt erklärt von unserem Trainerteam aus dem ExitAsia Gym. So gehst du vom ersten Stand bis zu sauberen Kombinationen, in deinem Tempo.</p><p>Der Weg ist bewusst aufgebaut: erst der kleine Einstieg, dann der vollständige Aufbau. So merkst du nach sieben Tagen selbst, ob Kickboxen zu dir passt, bevor du dich für mehr entscheidest. Genauso, wie auch ein Profi nicht mit dem Titelkampf begonnen hat, sondern mit der ersten Trainingseinheit.</p>
         <h2>Wer hat Glory Collision 9 gewonnen? (Update nach dem Event)</h2>
-<p><strong>Update folgt:</strong> Glory Collision 9 ist nach aktuellem Stand für den 13. Juni 2026 angesetzt. Sobald gekämpft wurde, ergänzen wir hier das offizielle Ergebnis des Hauptkampfs (Kromah vs. Cvjetićanin) sowie den Sieger des Light-Heavyweight-Grand-Prix.</p><p>Bis dahin gilt: Schau dir das Event mit dem Blick auf Technik an – auf Distanz, Timing und Beinarbeit. Und wenn dich danach der Ehrgeiz packt, weißt du, wo du anfängst.</p>
+<p><strong>Stand 16. Juni 2026 – das Event ist gelaufen:</strong> Im Hauptkampf hat <strong>Mory Kromah</strong> seinen GLORY-Schwergewichtstitel gegen Miloš Cvjetićanin verteidigt – per K.o. durch ein fliegendes Knie in Runde 3 (1:55). Den Light-Heavyweight-Grand-Prix gewann der erst 24-jährige <strong>Mohamed Touchassie</strong>, der im Finale Donovan Wisse per Split Decision bezwang und damit jüngster Light-Heavyweight-Champion der GLORY-Geschichte wurde.</p><p>Alle Kämpfe, Runden und die technische Einordnung stehen in unserem Recap: <a href="blog-glory-collision-9-ergebnisse.html">GLORY Collision 9 – Ergebnisse und was daraus zu lernen ist</a>.</p><p>Der Blick, der sich beim Anschauen lohnt, bleibt derselbe: Distanz, Timing und Beinarbeit. Und wenn dich danach der Ehrgeiz packt, weißt du, wo du anfängst.</p>
         <div class="article-divider">&middot; &middot; &middot;</div>
     </div></article>
     <!-- CTA -->
@@ -575,7 +597,7 @@
                     <p>Online Kampfsport-Kurse. Gegr&uuml;ndet von ExitAsia &mdash; seit 2006 eine der f&uuml;hrenden Kampfsportschulen in Deutschland.</p>
                 </div>
                 <nav class="footer-col" aria-label="Kurse">
-                    <h4>Kurse</h4>
+                    <h3>Kurse</h3>
                     <a href="kurs-kickboxen-v2.html">Kickboxen Komplettkurs</a>
                     <a href="kurs-guertel-v2.html">G&uuml;rtelpr&uuml;fung (Einzelkurse)</a>
                     <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
@@ -583,7 +605,7 @@
                     <a href="kurs-ruecken-reset.html">11 Tage R&uuml;cken Fit</a>
                 </nav>
                 <nav class="footer-col" aria-label="Unternehmen">
-                    <h4>Unternehmen</h4>
+                    <h3>Unternehmen</h3>
                     <a href="index.html#ueber-uns">&Uuml;ber uns</a>
                     <a href="index.html#trainer">Trainer</a>
                     <a href="blog.html">Blog</a>
@@ -591,7 +613,7 @@
                     <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
                 </nav>
                 <nav class="footer-col" aria-label="Rechtliches">
-                    <h4>Rechtliches</h4>
+                    <h3>Rechtliches</h3>
                     <a href="impressum.html">Impressum</a>
                     <a href="datenschutz.html">Datenschutz</a>
                     <a href="agb.html">AGB</a>

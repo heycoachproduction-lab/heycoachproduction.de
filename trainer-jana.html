@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="Jana — ISKA Weltmeisterin | Hey Coach">
     <meta name="twitter:description" content="Jana — ISKA Weltmeisterin im Kickboxen. Trainerin bei Hey Coach Production.">
     <meta name="twitter:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
-  <meta name="description" content="Jana — ISKA Weltmeisterin, aktive Wettk&auml;mpferin, Studium Fitness&ouml;konomie. Lernen Sie Kickboxen von einer echten Weltmeisterin.">
+  <meta name="description" content="Jana — ISKA Weltmeisterin, aktive Wettk&auml;mpferin, Studium Fitness&ouml;konomie. Lerne Kickboxen von einer echten Weltmeisterin.">
   <link href="fonts/fonts.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
@@ -281,7 +281,37 @@
       .hero-stats { gap: 12px; }
       .courses-grid { gap: 16px; }
     }
-  </style>
+  
+    /* ── Trainerteam-Querverweise ── */
+    .team-x { border-top: 1px solid rgba(255,255,255,.08); }
+    .team-x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; margin-top: 28px; }
+    .team-x-card { display: block; padding: 16px 18px; border: 1px solid rgba(255,255,255,.08); border-radius: 12px; background: rgba(255,255,255,.02); transition: border-color .2s, background .2s; min-height: 44px; }
+    .team-x-card:hover { border-color: rgba(184,124,26,.55); background: rgba(184,124,26,.06); }
+    .team-x-name { display: block; color: #FFFFFF; font-weight: 600; font-size: 15px; margin-bottom: 3px; }
+    .team-x-role { display: block; color: #7080B0; font-size: 12.5px; line-height: 1.45; }
+
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
     <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -356,7 +386,7 @@
   <div class="wrap">
     <div class="courses-header">
       <span class="label">Kurse mit Jana</span>
-      <h2 class="h2">Lernen Sie von einer Weltmeisterin</h2>
+      <h2 class="h2">Lerne von einer Weltmeisterin</h2>
       <p>Strukturierte Online-Kurse &mdash; entwickelt mit Wettkampferfahrung und Fitness-Fachwissen.</p>
     </div>
 
@@ -404,6 +434,47 @@
 
 
 <!-- FOOTER -->
+<!-- TRAINERTEAM — Querverweise -->
+<section class="section team-x">
+  <div class="wrap">
+    <div class="courses-header">
+      <span class="label">Trainerteam</span>
+      <h2 class="h2">Wer sonst noch unterrichtet</h2>
+      <p>Hinter Hey Coach steht das Trainerteam aus dem ExitAsia Gym in Freiburg &mdash; seit 2006 in der Halle. Hier findest du die anderen Trainerinnen und Trainer mit ihren Schwerpunkten.</p>
+    </div>
+    <div class="team-x-grid">
+        <a href="trainer-nils.html" class="team-x-card">
+          <span class="team-x-name">Nils</span>
+          <span class="team-x-role">Gr&uuml;nder ExitAsia &middot; Standortleitung Freiburg</span>
+        </a>
+        <a href="trainer-marlon.html" class="team-x-card">
+          <span class="team-x-name">Marlon</span>
+          <span class="team-x-role">Gr&uuml;nder T1 Kampfsportzentrum</span>
+        </a>
+        <a href="trainer-heiko.html" class="team-x-card">
+          <span class="team-x-name">Heiko</span>
+          <span class="team-x-role">Gr&uuml;nder ExitAsia &middot; Standortleitung Kirchzarten</span>
+        </a>
+        <a href="trainer-mohsen.html" class="team-x-card">
+          <span class="team-x-name">Mohsen</span>
+          <span class="team-x-role">K1 Weltmeister ISKA</span>
+        </a>
+        <a href="trainer-leo.html" class="team-x-card">
+          <span class="team-x-name">Leo</span>
+          <span class="team-x-role">Hauptberuflicher Trainer</span>
+        </a>
+        <a href="trainer-elsa.html" class="team-x-card">
+          <span class="team-x-name">Elsa</span>
+          <span class="team-x-role">Physiotherapeutin &middot; Gr&uuml;nderin MOVE &amp; BE</span>
+        </a>
+        <a href="trainer-weerda.html" class="team-x-card">
+          <span class="team-x-name">Dr. Jan Weerda</span>
+          <span class="team-x-role">Medizinische Leitung &middot; Arzt &amp; Boxtherapeut</span>
+        </a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <a href="index.html">
     <img src="images/logo-white.svg" alt="Hey Coach Production" style="height:28px;">

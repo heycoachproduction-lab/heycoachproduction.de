@@ -6,6 +6,10 @@
         <title>Physiotherapie Online &mdash; Demn&auml;chst | Hey Coach Production</title>
         <meta name="description" content="Professionelle K&ouml;rperpflege und Verletzungspr&auml;vention &mdash; speziell f&uuml;r Kampfsportler entwickelt. Kurs von Physiotherapeutin Elsa. Demn&auml;chst verf&uuml;gbar.">
         <link rel="canonical" href="https://heycoachproduction.de/kurs-physiotherapie.html">
+        <!-- Vorank&uuml;ndigungsseite: noch kein kaufbares Produkt. Aus dem Index gehalten,
+             damit sie nicht mit kurs-ruecken-reset.html (Elsas aktivem &euro;49-Kurs) konkurriert.
+             "follow" bleibt, damit die Verlinkung zum aktiven Kurs weiter z&auml;hlt. -->
+        <meta name="robots" content="noindex, follow">
         <meta property="og:title" content="Physiotherapie Online f&uuml;r Kampfsportler &mdash; Hey Coach Production">
         <meta property="og:description" content="Professionelle K&ouml;rperpflege und Verletzungspr&auml;vention &mdash; speziell f&uuml;r Kampfsportler. Kurs von Physiotherapeutin Elsa. Demn&auml;chst verf&uuml;gbar.">
         <meta property="og:type" content="website">
@@ -201,7 +205,43 @@ footer a:hover { color: #fff; }
     .hero-panel { padding: 24px 16px; }
     .hero-meta { font-size: 13px; }
     .btn-primary-lg { font-size: 15px; padding: 14px 24px; }
-}</style>
+}
+    /* ── Fix 2026-08-16: Trainer-Block lief auf 320–430px nach rechts aus dem Bild ──
+       Ursache: grid-template-columns:1fr = minmax(auto,1fr); die min-content-Breite von
+       .trainer-stats (nicht umbrechende Flex-Reihe) zwang die Spalte auf 383–507px.
+       Sichtbar war es nicht, weil body{overflow-x:hidden} den Ueberlauf verdeckt hat. */
+    @media (max-width: 900px) {
+      .trainer-block, .trainer-block.reverse, .trainer-grid { grid-template-columns: minmax(0, 1fr); }
+      .trainer-block > *, .trainer-grid > * { min-width: 0; }
+      .trainer-stats { flex-wrap: wrap; gap: 20px; }
+      .trainer-img-wrap img { max-width: 100%; }
+    }
+    @media (max-width: 400px) {
+      .trainer-stats { gap: 12px; }
+    }
+
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
     </head>
     <body>
         <!-- ═══════════════════════════════════════
@@ -269,7 +309,7 @@ footer a:hover { color: #fff; }
                     <div class="about-text">
                         <span class="label">&Uuml;ber diesen Kurs</span>
                         <h2 class="h2">Dein K&ouml;rper verdient<br>professionelle Pflege.</h2>
-                        <p>Kampfsport fordert deinen K&ouml;rper auf h&ouml;chstem Niveau. Dieser Kurs zeigt dir, wie du Verletzungen gezielt vorbeugst, schneller regenerierst und langfristig schmerzfrei trainierst &mdash; entwickelt von Physiotherapeutin Elsa, spezialisiert auf Kampfsportler.</p>
+                        <p>Kampfsport fordert deinen K&ouml;rper. Dieser Kurs zeigt dir, wie du deine Beweglichkeit erh&auml;ltst, nach dem Training schneller regenerierst und sauberer arbeitest &mdash; entwickelt von Elsa, staatlich anerkannte Physiotherapeutin. Der Kurs ersetzt keine &auml;rztliche Behandlung und keine Physiotherapie.</p>
                         <p>Von <strong>Mobilit&auml;ts&uuml;bungen</strong> &uuml;ber <strong>Regenerationstechniken</strong> bis hin zu <strong>pr&auml;ventiven Ma&szlig;nahmen</strong> &mdash; du lernst alles, was du brauchst, um deinen K&ouml;rper optimal zu unterst&uuml;tzen. Jede Lektion ist praxisnah und sofort umsetzbar.</p>
                         <p>Egal ob Anf&auml;nger oder erfahrener Kampfsportler: <strong>Dieser Kurs hilft dir, l&auml;nger und besser zu trainieren.</strong></p>
                     </div>
@@ -463,6 +503,7 @@ footer a:hover { color: #fff; }
                         <button type="submit" class="notify-btn">Benachrichtigt werden</button>
                     </form>
                     <p class="notify-note">Kein Spam. Nur eine E-Mail bei Kursstart &mdash; direkt an unser Team.</p>
+                    <p class="notify-note" style="margin-top:14px;">Du willst nicht warten? Elsas <a href="kurs-ruecken-reset.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">11&nbsp;Tage R&uuml;cken Fit</a> ist bereits online &mdash; &euro;49, inkl. 19% MwSt.</p>
                 </div>
             </div>
         </section>
@@ -478,6 +519,16 @@ footer a:hover { color: #fff; }
                     <p class="wk-sub">Erweitere dein Training mit weiteren Programmen von unserem Trainer-Team.</p>
                 </div>
                 <div class="wk-grid">
+                    <a href="kurs-ruecken-reset.html" class="wk-card">
+                        <div class="wk-img"><img src="images/elsa-rueckenfit-cover.jpg" alt="11 Tage R&uuml;cken Fit mit Elsa" loading="lazy"></div>
+                        <div class="wk-body">
+                            <span class="wk-tag">Jetzt verf&uuml;gbar</span>
+                            <h3>11 Tage R&uuml;cken Fit</h3>
+                            <p>Elsas R&uuml;ckenprogramm ist bereits online: 11 Tage, t&auml;glich rund 20 Minuten, sofort startklar.</p>
+                            <div class="wk-price">&euro;49 <span>inkl. 19% MwSt &middot; einmalig</span></div>
+                            <span class="wk-cta">Kurs ansehen &rarr;</span>
+                        </div>
+                    </a>
                     <a href="kurs-fitstart.html" class="wk-card">
                         <div class="wk-img"><img src="images/marlon-fitstart-cover.jpg" alt="7-Tage FitStart mit Marlon" loading="lazy"></div>
                         <div class="wk-body">

@@ -11,6 +11,10 @@
   <meta property="og:description" content="Datenschutzerklärung der Hey Coach Production GmbH gemäß DSGVO.">
   <meta property="og:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
   <meta property="og:url" content="https://heycoachproduction.de/datenschutz.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Datenschutzerklärung — Hey Coach Production">
+  <meta name="twitter:description" content="Datenschutzerklärung der Hey Coach Production GmbH gemäß DSGVO.">
+  <meta name="twitter:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Hey Coach Production">
@@ -161,7 +165,64 @@
       h3 { font-size: 15px; }
       .contact-block { padding: 16px; }
     }
-  </style>
+  
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Datenschutzerklärung",
+    "description": "Datenschutzerklärung der Hey Coach Production GmbH gemäß DSGVO.",
+    "url": "https://heycoachproduction.de/datenschutz.html",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Hey Coach Production",
+      "url": "https://heycoachproduction.de/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hey Coach Production GmbH",
+      "url": "https://heycoachproduction.de/",
+      "vatID": "DE452700631",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kandelstr. 5",
+        "postalCode": "79199",
+        "addressLocality": "Kirchzarten",
+        "addressCountry": "DE"
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Start", "item": "https://heycoachproduction.de/"},
+        {"@type": "ListItem", "position": 2, "name": "Datenschutzerklärung", "item": "https://heycoachproduction.de/datenschutz.html"}
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -243,20 +304,23 @@
   <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Ma&szlig;nahmen) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).</p>
   <p>Die Daten werden gel&ouml;scht, sobald sie f&uuml;r die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Dies ist in der Regel der Fall, wenn die jeweilige Konversation beendet ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
 
-  <!-- ── 7. Google Fonts ── -->
-  <h2>7. Google Fonts</h2>
-  <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Google Fonts, die von Google LLC bereitgestellt werden. Die Google Fonts werden &uuml;ber die Server von Google (ggf. in den USA) geladen. Dabei kann Ihre IP-Adresse an Google &uuml;bermittelt werden.</p>
-  <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer einheitlichen und ansprechenden Darstellung unserer Website).</p>
-  <p>Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerkl&auml;rung von Google</a> sowie unter <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener">Google Fonts FAQ</a>.</p>
-  <p><strong>Hinweis:</strong> Die &Uuml;bermittlung von Daten in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework. Weitere Informationen dazu finden Sie unter <a href="https://www.dataprivacyframework.gov/" target="_blank" rel="noopener">dataprivacyframework.gov</a>.</p>
+  <!-- ── 7. Schriftarten (lokal gehostet) ── -->
+  <h2>7. Schriftarten</h2>
+  <p>Diese Website bindet <strong>keine</strong> Schriftarten von externen Anbietern ein. S&auml;mtliche verwendeten Schriften liegen auf unserem eigenen Server und werden von dort ausgeliefert. Es wird also <strong>keine Verbindung zu Servern von Google</strong> (Google Fonts) oder anderen Font-Diensten aufgebaut, und es wird keine IP-Adresse an solche Dienste &uuml;bermittelt.</p>
 
   <!-- ── 8. YouTube Videos ── -->
   <h2>8. YouTube-Videos</h2>
   <p>Wir binden auf unserer Website Videos der Plattform YouTube ein. Betreiber ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
-  <p>Wenn Sie eine Seite mit eingebetteten YouTube-Videos besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem YouTube-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Konto eingeloggt sind, erm&ouml;glichen Sie YouTube, Ihr Surfverhalten direkt Ihrem pers&ouml;nlichen Profil zuzuordnen. Dies k&ouml;nnen Sie verhindern, indem Sie sich aus Ihrem YouTube-Konto ausloggen.</p>
-  <p>Wir nutzen YouTube im erweiterten Datenschutzmodus, soweit technisch m&ouml;glich. Laut YouTube werden in diesem Modus keine Informationen &uuml;ber Besucher gespeichert, bevor sie sich das Video ansehen.</p>
-  <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der ansprechenden Darstellung unserer Kursinhalte).</p>
+  <p>Wir setzen dabei die sogenannte <strong>Zwei-Klick-L&ouml;sung</strong> ein: Beim Aufruf einer Seite mit einem YouTube-Video wird <strong>zun&auml;chst keine</strong> Verbindung zu YouTube aufgebaut. Sie sehen lediglich ein auf unserem Server gespeichertes Vorschaubild. Erst wenn Sie das Video aktiv per Klick starten, wird das Video nachgeladen und eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem YouTube-Server mitgeteilt, welche unserer Seiten Sie besucht haben.</p>
+  <p>Wir binden Videos ausschlie&szlig;lich &uuml;ber die Domain <code>youtube-nocookie.com</code> ein (erweiterter Datenschutzmodus). Wenn Sie in Ihrem YouTube-Konto eingeloggt sind, kann YouTube Ihr Surfverhalten Ihrem pers&ouml;nlichen Profil zuordnen. Dies k&ouml;nnen Sie verhindern, indem Sie sich aus Ihrem YouTube-Konto ausloggen.</p>
+  <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktives Starten des Videos).</p>
   <p>Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerkl&auml;rung von Google</a>.</p>
+
+  <!-- ── 8b. Hintergrundvideos exitasia.de ── -->
+  <h2>8b. Hintergrundvideos (exitasia.de)</h2>
+  <p>Auf unserer Startseite werden Hintergrundvideos abgespielt, die auf dem Server der Kampfsportschule ExitAsia (<code>exitasia.de</code>, Betreiber in Deutschland) gespeichert sind. Beim Abspielen dieser Videos wird eine Verbindung zu diesem Server aufgebaut; dabei wird Ihre IP-Adresse technisch bedingt an den Server &uuml;bertragen, damit die Videodatei ausgeliefert werden kann.</p>
+  <p>Es werden dabei keine Cookies gesetzt und keine Tracking-Technologien eingesetzt. Die Videos dienen ausschlie&szlig;lich der visuellen Gestaltung.</p>
+  <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer ansprechenden Darstellung unserer Website).</p>
 
   <!-- ── 9. Zahlungsanbieter ── -->
   <h2>9. Zahlungsanbieter</h2>

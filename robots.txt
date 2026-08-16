@@ -1,5 +1,5 @@
 # Hey Coach Production GmbH — robots.txt
-# Last updated: 2026-06-20
+# Last updated: 2026-08-16
 
 # ── Content Signals (contentsignals.org / Cloudflare, 2025) ──
 # As a condition of accessing this website, you agree to comply with these signals:
@@ -13,26 +13,13 @@ User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
-# ── Block development / backup / legacy versions of REAL (200) files only ──
-# (Old WordPress 404 paths are intentionally NOT blocked so Googlebot can
-#  crawl them, confirm the 404, and drop them from the index quickly.)
+# ── Block backups and editor artefacts ──
+# Legacy page versions (index-v3…v7, index2, index-print, old course/trainer pages,
+# demo files) were removed from the repository on 2026-08-16 — they now 404 and
+# Googlebot can drop them on its own. Same logic as the old WordPress paths:
+# a crawlable 404 disappears from the index, a robots-blocked 200 does not.
 Disallow: /_pgbackup/
 Disallow: /pinegrow.json
-Disallow: /index-v3.html
-Disallow: /index-v4.html
-Disallow: /index-v5.html
-Disallow: /index-v6.html
-Disallow: /index-v7.html
-Disallow: /index2.html
-Disallow: /index-print.html
-Disallow: /hero-video.html
-Disallow: /flyer-banner.html
-Disallow: /spline-demo.html
-Disallow: /kurs-kickboxen.html
-Disallow: /kurs-guertel.html
-Disallow: /kurs-marlon-v2.html
-Disallow: /kurs-marlon-v3.html
-Disallow: /trainer-team.html
 Disallow: /styles-v5.css
 Disallow: /styles2.css
 

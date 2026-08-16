@@ -12,6 +12,10 @@
     <meta property="og:description" content="Widerrufsbelehrung für Online-Kurse von Hey Coach Production GmbH.">
     <meta property="og:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
     <meta property="og:url" content="https://heycoachproduction.de/widerrufsbelehrung.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Widerrufsbelehrung — Hey Coach Production">
+    <meta name="twitter:description" content="Widerrufsbelehrung für Online-Kurse von Hey Coach Production GmbH.">
+    <meta name="twitter:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <link href="fonts/fonts.css" rel="stylesheet">
@@ -92,7 +96,67 @@
     footer p { font-size: 0.85rem; color: #7080B0; }
     footer a { color: #B0B8D0; margin: 0 0.75rem; text-decoration: none; font-size: 0.85rem; }
     footer a:hover { color: #fff; }
-    </style>
+    
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+
+    /* E-Mail-Adresse im Muster-Widerrufsformular war auf 320px 12px zu breit */
+    @media (max-width: 480px) { .box p { overflow-wrap: anywhere; } }
+</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Widerrufsbelehrung",
+    "description": "Widerrufsbelehrung für Online-Kurse der Hey Coach Production GmbH.",
+    "url": "https://heycoachproduction.de/widerrufsbelehrung.html",
+    "inLanguage": "de-DE",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Hey Coach Production",
+      "url": "https://heycoachproduction.de/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hey Coach Production GmbH",
+      "url": "https://heycoachproduction.de/",
+      "vatID": "DE452700631",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kandelstr. 5",
+        "postalCode": "79199",
+        "addressLocality": "Kirchzarten",
+        "addressCountry": "DE"
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Start", "item": "https://heycoachproduction.de/"},
+        {"@type": "ListItem", "position": 2, "name": "Widerrufsbelehrung", "item": "https://heycoachproduction.de/widerrufsbelehrung.html"}
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 

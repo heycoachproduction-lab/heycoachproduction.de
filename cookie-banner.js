@@ -69,10 +69,14 @@
     });
   }
 
-  /* ── Apply consent: no external services to load (fonts self-hosted) ── */
+  /* ── Apply consent ── */
   function applyConsent(level) {
-    // All assets (fonts, images, scripts) are self-hosted.
-    // Consent is recorded for transparency; no third-party loading triggered here.
+    // Fonts, styles and scripts are self-hosted — nothing to gate here.
+    // The only third parties are:
+    //   · YouTube (youtube-nocookie.com) — two-click: iframe carries data-src and is
+    //     only activated by an explicit user click. See index.html "VIDEO TRAILER TOGGLE".
+    //   · exitasia.de — background video files, declared in datenschutz.html §8b.
+    // Both are declared in the Datenschutzerklaerung; consent is recorded for transparency.
   }
 
   /* ── Footer link: "Cookie-Einstellungen" ── */
@@ -87,7 +91,9 @@
     var link = document.createElement('a');
     link.href = '#';
     link.textContent = 'Cookie-Einstellungen';
-    link.style.cssText = 'cursor:pointer;margin-left:10px;';
+    // Tippziel: ohne Padding war der Link nur ~16px hoch und auf dem Telefon kaum zu treffen.
+    link.style.cssText = 'cursor:pointer;margin-left:10px;display:inline-block;' +
+                         'padding-top:10px;padding-bottom:10px;margin-top:-10px;margin-bottom:-10px;';
     link.addEventListener('click', function (e) {
       e.preventDefault();
       localStorage.removeItem('hc_cookie_consent');

@@ -45,7 +45,7 @@
   "headline": "UFC 329: McGregor vs. Holloway – Kampfkarte, Uhrzeit und Übertragung auf DAZN",
   "description": "Conor McGregor kehrt bei UFC 329 am 11./12. Juli 2026 nach fast fünf Jahren gegen Max Holloway in den Oktagon zurück. Die komplette Kampfkarte, die Startzeit in deutscher Zeit (MESZ) und die Übertragung in Deutschland, Österreich und der Schweiz – eingeordnet aus Trainersicht.",
   "datePublished": "2026-07-09",
-  "dateModified": "2026-07-09",
+  "dateModified": "2026-08-16",
   "image": {
     "@type": "ImageObject",
     "url": "https://heycoachproduction.de/images/ufc-329/hero-matchup.jpg",
@@ -478,7 +478,7 @@
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
     .footer-brand img { height: 48px; margin-bottom: 1.25rem; }
     .footer-brand p { font-size: 0.875rem; color: var(--text-muted); max-width: 260px; line-height: 1.6; }
-    .footer-col h4 { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--text-secondary); margin-bottom: 1.25rem; }
+    .footer-col h3, .footer-col h4 { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--text-secondary); margin-bottom: 1.25rem; }
     .footer-col a { display: block; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.65rem; transition: var(--transition); }
     .footer-col a:hover { color: var(--text-primary); }
     .footer-trust { display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; padding: 1.5rem 0; margin-top: 2rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--text-muted); }
@@ -509,7 +509,29 @@
         .prose p { font-size: 1.05rem; }
         .prose > p:first-of-type::first-letter { font-size: 3.5rem; }
     }
-    </style>
+    
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
 </head>
 <body>
 
@@ -536,6 +558,7 @@
     <!-- HEADER -->
     <header class="article-header">
         <div class="container--prose">
+            <div style="background:linear-gradient(135deg,rgba(184,124,26,0.16),rgba(20,30,72,0.55));border:1px solid var(--border-accent);border-radius:var(--radius-md);padding:0.9rem 1.25rem;margin-bottom:2rem;font-family:'Syne',sans-serif;font-size:0.88rem;font-weight:600;color:var(--accent-bright);text-align:center;">Dieser Text ist die Vorschau vom 9. Juli 2026 &ndash; das Event hat inzwischen stattgefunden. Wir lassen ihn als datierten Stand stehen. <a href="blog.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">Aktuelle Artikel im Blog &rarr;</a></div>
             <div class="breadcrumb-trail"><a href="index.html">Start</a><span class="sep">&rsaquo;</span><a href="blog.html">Blog</a><span class="sep">&rsaquo;</span>UFC 329: McGregor vs. Holloway 2</div>
             <div class="article-meta-top">
                 <span>UFC · Event-Vorschau</span><span class="dot"></span>
@@ -941,7 +964,7 @@
                     <p>Online Kampfsport-Kurse. Gegründet von ExitAsia &mdash; seit 2006 eine der führenden Kampfsportschulen in Deutschland.</p>
                 </div>
                 <nav class="footer-col" aria-label="Kurse">
-                    <h4>Kurse</h4>
+                    <h3>Kurse</h3>
                     <a href="kurs-kickboxen-v2.html">Kickboxen Komplettkurs</a>
                     <a href="kurs-guertel-v2.html">Gürtelprüfung (Einzelkurse)</a>
                     <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
@@ -949,7 +972,7 @@
                     <a href="kurs-ruecken-reset.html">11 Tage Rücken Fit</a>
                 </nav>
                 <nav class="footer-col" aria-label="Unternehmen">
-                    <h4>Unternehmen</h4>
+                    <h3>Unternehmen</h3>
                     <a href="index.html#ueber-uns">Über uns</a>
                     <a href="index.html#trainer">Trainer</a>
                     <a href="blog.html">Blog</a>
@@ -957,7 +980,7 @@
                     <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
                 </nav>
                 <nav class="footer-col" aria-label="Rechtliches">
-                    <h4>Rechtliches</h4>
+                    <h3>Rechtliches</h3>
                     <a href="impressum.html">Impressum</a>
                     <a href="datenschutz.html">Datenschutz</a>
                     <a href="agb.html">AGB</a>

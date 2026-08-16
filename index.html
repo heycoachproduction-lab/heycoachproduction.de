@@ -68,7 +68,7 @@
    13. FINAL CTA
    ============================================================ */.final-cta { position: relative; overflow: hidden; padding: clamp(6rem, 10vw, 10rem) 0; text-align: center; } .final-cta-bg { position: absolute; inset: 0; overflow: hidden; } .final-cta-bg video { width: 100%; height: 100%; object-fit: cover; } .final-cta-bg::after { content: ''; position: absolute; inset: 0; background: rgba(10,10,10,0.82); } .final-cta-content { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; } .final-cta h2 { margin: 1rem 0 1.5rem; } .final-cta p { font-size: 1.1rem; margin-bottom: 2.5rem; } .final-cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; } .final-cta-note { margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; } .final-cta-note span::before { content: '\2713 '; color: var(--accent); } /* ============================================================
    FOOTER
-   ============================================================ */.footer { background: #000; border-top: 1px solid var(--border); padding: 5rem 0 2.5rem; } .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; } .footer-brand img { height: 48px; margin-bottom: 1.25rem; } .footer-brand p { font-size: 0.875rem; color: var(--text-muted); max-width: 260px; line-height: 1.6; } .footer-col h4 { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--text-secondary); margin-bottom: 1.25rem; } .footer-col a { display: block; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.65rem; transition: var(--transition); } .footer-col a:hover { color: var(--text-primary); } .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2.5rem; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 1rem; } .footer-bottom span { font-size: 0.8rem; color: var(--text-muted); } .footer-legal { display: flex; gap: 1.5rem; } .footer-legal a { font-size: 0.8rem; color: var(--text-muted); transition: var(--transition); } .footer-legal a:hover { color: var(--text-primary); } /* V6 Enhanced Footer */.footer-trust { display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; padding: 1.5rem 0; margin-top: 2rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--text-muted); } .footer-trust span { display: flex; align-items: center; gap: 0.35rem; } .footer-trust-sep { color: rgba(255,255,255,0.15); } @media (max-width: 900px) { .footer-grid {  grid-template-columns: 1fr 1fr; }  .footer-brand {  grid-column: span 2; } } @media (max-width: 600px) { .footer-grid {  grid-template-columns: 1fr; }  .footer-brand {  grid-column: span 1; }  .footer-bottom {  flex-direction: column;  text-align: center; } } /* ============================================================
+   ============================================================ */.footer { background: #000; border-top: 1px solid var(--border); padding: 5rem 0 2.5rem; } .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; } .footer-brand img { height: 48px; margin-bottom: 1.25rem; } .footer-brand p { font-size: 0.875rem; color: var(--text-muted); max-width: 260px; line-height: 1.6; } .footer-col h3, .footer-col h4 { font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--text-secondary); margin-bottom: 1.25rem; } .footer-col a { display: block; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.65rem; transition: var(--transition); } .footer-col a:hover { color: var(--text-primary); } .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2.5rem; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 1rem; } .footer-bottom span { font-size: 0.8rem; color: var(--text-muted); } .footer-legal { display: flex; gap: 1.5rem; } .footer-legal a { font-size: 0.8rem; color: var(--text-muted); transition: var(--transition); } .footer-legal a:hover { color: var(--text-primary); } /* V6 Enhanced Footer */.footer-trust { display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; padding: 1.5rem 0; margin-top: 2rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--text-muted); } .footer-trust span { display: flex; align-items: center; gap: 0.35rem; } .footer-trust-sep { color: rgba(255,255,255,0.15); } @media (max-width: 900px) { .footer-grid {  grid-template-columns: 1fr 1fr; }  .footer-brand {  grid-column: span 2; } } @media (max-width: 600px) { .footer-grid {  grid-template-columns: 1fr; }  .footer-brand {  grid-column: span 1; }  .footer-bottom {  flex-direction: column;  text-align: center; } } /* ============================================================
    V5 — PORSCHE HERO (carried over)
    ============================================================ */.hero { position: relative; width: 100%; height: 100vh; min-height: 100svh; overflow: hidden; display: flex; flex-direction: column; } .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; } .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right,  rgba(6,8,26,0.70) 0%, rgba(6,8,26,0.25) 55%, rgba(6,8,26,0) 100%),
     linear-gradient(to top,    rgba(6,8,26,0.65) 0%, rgba(6,8,26,0.15) 40%, rgba(6,8,26,0) 100%),
@@ -1393,7 +1393,7 @@ Wir sind dein Partner für die Vermarktung deines Wissens. Du bringst deine Idee
        AUS DER HALLE — Latest blog articles (homepage → blog equity)
        ============================================================ -->
         <style>
-        .hc-blogstrip { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2.5rem; }
+        .hc-blogstrip { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1.5rem; margin-top:2.5rem; }
         .hc-blogcard { display:block; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; text-decoration:none; transition:transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease); }
         .hc-blogcard:hover { transform:translateY(-4px); border-color:var(--border-hover); box-shadow:0 16px 48px rgba(0,0,0,0.3); }
         .hc-blogcard-img { aspect-ratio:16/9; overflow:hidden; }
@@ -1403,7 +1403,40 @@ Wir sind dein Partner für die Vermarktung deines Wissens. Du bringst deine Idee
         .hc-blogcard-cat { font-family:'Syne',sans-serif; font-size:0.66rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:0.6rem; }
         .hc-blogcard-title { font-family:'Syne',sans-serif; font-size:1.1rem; line-height:1.28; color:var(--text-primary); font-weight:700; }
         @media (max-width:860px){ .hc-blogstrip{ grid-template-columns:1fr; } }
-        </style>
+        
+    /* ── Fix 2026-08-16: Award-Badges liefen auf <=360px rechts aus dem Bild.
+       Ursache: .award-text strong/span mit white-space:nowrap -> Text kann nicht schrumpfen. ── */
+    @media (max-width: 440px) {
+      .trainer-award { flex: 1 1 100%; }
+      .award-text strong, .award-text span { white-space: normal; }
+    }
+    /* ── Fix 2026-08-16: Google-Bewertungen-Button war auf 320px 17px zu breit ── */
+    @media (max-width: 440px) {
+      .reviews-google-link .btn { max-width: 100%; white-space: normal; text-align: center; }
+    }
+
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
         <section class="section" id="aus-der-halle">
             <div class="container">
                 <div class="section-header section-header--center">
@@ -1477,7 +1510,7 @@ Wir sind dein Partner für die Vermarktung deines Wissens. Du bringst deine Idee
                         <p>Online Kampfsport-Kurse. Gegründet von ExitAsia &#8212; seit 2006 eine der führenden Kampfsportschulen in Deutschland.</p>
                     </div>
                     <div class="footer-col">
-                        <h4>Kurse</h4>
+                        <h3>Kurse</h3>
                         <a href="kurs-kickboxen-v2.html">Kickboxen Komplettkurs</a>
                         <a href="kurs-guertel-v2.html">G&uuml;rtelpr&uuml;fung (Einzelkurse)</a>
                         <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
@@ -1485,14 +1518,14 @@ Wir sind dein Partner für die Vermarktung deines Wissens. Du bringst deine Idee
                         <a href="kurs-ruecken-reset.html">11 Tage R&uuml;cken Fit</a>
                     </div>
                     <div class="footer-col">
-                        <h4>Unternehmen</h4>
+                        <h3>Unternehmen</h3>
                         <a href="#ueber-uns">&Uuml;ber uns</a>
                         <a href="#trainer">Trainer</a>
                         <a href="https://app.heycoachproduction.de/communities/groups/hey-coach-community/home" target="_blank" rel="noopener">Community</a>
                         <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
                     </div>
                     <div class="footer-col">
-                        <h4>Rechtliches</h4>
+                        <h3>Rechtliches</h3>
                         <a href="impressum.html">Impressum</a>
                         <a href="datenschutz.html">Datenschutz</a>
                         <a href="agb.html">AGB</a><a href="widerrufsbelehrung.html">Widerruf</a>

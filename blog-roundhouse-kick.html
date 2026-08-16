@@ -815,7 +815,7 @@
         max-width: 260px;
         line-height: 1.6;
     }
-    .footer-col h4 {
+    .footer-col h3, .footer-col h4 {
         font-family: 'Syne', sans-serif;
         font-size: 0.7rem;
         font-weight: 700;
@@ -972,7 +972,7 @@
     <section style="margin:2rem auto 4rem;max-width:var(--container-narrow);padding:0 1.5rem;">
         <div style="position:relative;overflow:hidden;border:1px solid var(--border-accent);border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(20,30,72,0.7) 0%,rgba(18,26,56,0.92) 100%);padding:2rem 2.5rem;">
             <div style="position:absolute;top:-30%;left:-10%;width:50%;height:160%;background:radial-gradient(ellipse,var(--accent-glow) 0%,transparent 65%);pointer-events:none;"></div>
-            <div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;">
+            <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1.5rem;text-align:center;">
                 <div>
                     <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--accent);line-height:1;">4</div>
                     <div style="font-family:'Syne',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-top:0.4rem;">Wochen</div>
@@ -997,7 +997,29 @@
     @media (max-width: 600px) {
         .roundhouse-quickfacts-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
     }
-    </style>
+    
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
 
     <!-- ARTICLE BODY -->
     <article class="container--prose">
@@ -1090,7 +1112,7 @@
             <span style="display:inline-block;font-family:'Syne',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:0.85rem;">Starte deinen Weg</span>
             <h3 style="font-family:'Syne',sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:var(--text-primary);margin-bottom:0.85rem;">Drei Wege, ein Gym.</h3>
             <p style="font-size:1rem;color:var(--text-secondary);max-width:560px;margin:0 auto 2rem;">Wähle den Einstieg, der zu dir passt. Alle Kurse einmal zahlen, 24 Monate Zugang, kein Abo.</p>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.85rem;max-width:720px;margin:0 auto;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.85rem;max-width:720px;margin:0 auto;">
                 <a href="kurs-fitstart.html" style="display:flex;flex-direction:column;gap:0.25rem;padding:1.1rem 1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-md);text-align:center;text-decoration:none;color:inherit;">
                     <span style="font-family:'Syne',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">Einsteiger</span>
                     <span style="font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:var(--text-primary);">7-Tage FitStart</span>
@@ -1157,7 +1179,7 @@
                     <p>Online Kampfsport-Kurse. Gegr&uuml;ndet von ExitAsia &mdash; seit 2006 eine der f&uuml;hrenden Kampfsportschulen in Deutschland.</p>
                 </div>
                 <nav class="footer-col" aria-label="Kurse">
-                    <h4>Kurse</h4>
+                    <h3>Kurse</h3>
                     <a href="kurs-kickboxen-v2.html">Kickboxen Komplettkurs</a>
                     <a href="kurs-guertel-v2.html">G&uuml;rtelpr&uuml;fung (Einzelkurse)</a>
                     <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
@@ -1165,7 +1187,7 @@
                     <a href="kurs-ruecken-reset.html">11 Tage R&uuml;cken Fit</a>
                 </nav>
                 <nav class="footer-col" aria-label="Unternehmen">
-                    <h4>Unternehmen</h4>
+                    <h3>Unternehmen</h3>
                     <a href="index.html#ueber-uns">&Uuml;ber uns</a>
                     <a href="index.html#trainer">Trainer</a>
                     <a href="blog.html">Blog</a>
@@ -1173,7 +1195,7 @@
                     <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
                 </nav>
                 <nav class="footer-col" aria-label="Rechtliches">
-                    <h4>Rechtliches</h4>
+                    <h3>Rechtliches</h3>
                     <a href="impressum.html">Impressum</a>
                     <a href="datenschutz.html">Datenschutz</a>
                     <a href="agb.html">AGB</a>
