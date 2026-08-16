@@ -37,7 +37,7 @@
       "headline": "Kampfsportarten im Vergleich: Boxen, Kickboxen, Muay Thai, MMA & BJJ — welche passt zu dir?",
       "description": "Ehrlicher Vergleich der fünf wichtigsten Kampfsportarten für Anfänger: Techniken, körperliche Härte, Kalorienverbrauch, Selbstverteidigungswert und für wen welche Disziplin passt. Aus 20 Jahren ExitAsia-Trainingshalle.",
       "datePublished": "2026-06-24",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-08-16",
       "inLanguage": "de-DE",
       "wordCount": 5200,
       "author": {
@@ -561,6 +561,36 @@
         -webkit-hyphens: auto; hyphens: auto;
       }
     }
+
+    /* ── Bild-Figuren im Artikel ── */
+    .article-figure { margin: 3rem auto; max-width: var(--container-narrow); padding: 0 1.5rem; }
+    .article-figure .frame {
+        position: relative; overflow: hidden;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        border: 1px solid var(--border);
+        background: var(--bg-card);
+    }
+    .article-figure .frame img,
+    .article-figure .frame svg { width: 100%; height: auto; display: block; }
+    .article-figure .frame--chart { padding: 1.5rem 1.25rem 1rem; }
+    .article-figure figcaption {
+        margin-top: 0.85rem; text-align: center;
+        font-family: 'Fraunces', serif; font-style: italic;
+        font-size: 0.84rem; color: var(--text-muted); line-height: 1.55;
+    }
+    figure { margin: 0; }
+    @media (min-width: 1024px) {
+      .container--prose .article-figure { width: calc(100% + 220px); margin-left: -110px; margin-right: -110px; max-width: none; padding: 0; }
+    }
+    @media (min-width: 1280px) {
+      .container--prose .article-figure { width: calc(100% + 340px); margin-left: -170px; margin-right: -170px; }
+    }
+    @media (max-width: 600px) {
+      .article-figure { margin: 2.25rem auto; }
+      .article-figure .frame--chart { padding: 1rem 0.5rem 0.75rem; }
+      .article-figure figcaption { font-size: 0.8rem; }
+    }
 </style>
 </head>
 <body>
@@ -659,7 +689,29 @@
 
             <p>Diese eine Entscheidung halbiert deine Auswahl. Wer keinen engen Körperkontakt am Boden mag, landet bei den Schlagkünsten. Wer nicht auf den Kopf getroffen werden will, landet beim Bodenkampf. Wer alles will, bei MMA.</p>
 
-            <h2>Die 5 Kampfsportarten im direkten Vergleich</h2>
+            
+        <figure class="article-figure">
+            <div class="frame">
+                <img src="images/kv-standup.webp" alt="Zwei Kickboxer auf Schlagdistanz, beide in hoher Deckung, einer setzt eine gerade Führhand" loading="lazy" width="1400" height="792">
+            </div>
+            <figcaption>Schlagdistanz. Boxen und Kickboxen spielen sich hier ab: aufrecht, mit Abstand, alles &uuml;ber Timing und F&uuml;&szlig;e.</figcaption>
+        </figure>
+
+        <figure class="article-figure">
+            <div class="frame">
+                <img src="images/kv-clinch.webp" alt="Zwei Muay-Thai-Athleten im aufrechten Clinch, beide H&auml;nde im Nacken, ein Knie kommt hoch" loading="lazy" width="1400" height="792">
+            </div>
+            <figcaption>Clinch. Muay Thai holt sich eine Distanz dazu, die es im Kickboxen nicht gibt &mdash; Nackenkontrolle und Knie.</figcaption>
+        </figure>
+
+        <figure class="article-figure">
+            <div class="frame">
+                <img src="images/kv-boden.webp" alt="Zwei Grappler am Boden, der untere in der geschlossenen Guard, der obere richtet sich auf" loading="lazy" width="1400" height="792">
+            </div>
+            <figcaption>Bodenkampf. Bei BJJ f&auml;llt kein Schlag; entschieden wird &uuml;ber Position, Hebel und Abklopfen.</figcaption>
+        </figure>
+
+        <h2>Die 5 Kampfsportarten im direkten Vergleich</h2>
 
             <p>Zuerst der schnelle Überblick — die wichtigsten Eckdaten nebeneinander. Darunter folgt jede Disziplin ausführlich. (Die Kalorienangaben sind Spannen und hängen stark von Körpergewicht und Intensität ab.)</p>
 

@@ -37,7 +37,7 @@
   "headline": "Kickboxen zum Abnehmen: Wie viele Kalorien verbrennst du wirklich?",
   "description": "Wie viele Kalorien verbrennt Kickboxen pro Stunde? Realistisch 500-900 kcal plus Nachbrenneffekt. So fängst du als Anfänger an, aus 20 Jahren Trainingshalle.",
   "datePublished": "2026-06-02",
-  "dateModified": "2026-06-02",
+  "dateModified": "2026-08-16",
   "image": "https://heycoachproduction.de/images/blog-kickboxen-abnehmen-hero.jpg",
   "author": {
     "@type": "Organization",
@@ -469,6 +469,36 @@
         -webkit-hyphens: auto; hyphens: auto;
       }
     }
+
+    /* ── Bild-Figuren im Artikel ── */
+    .article-figure { margin: 3rem auto; max-width: var(--container-narrow); padding: 0 1.5rem; }
+    .article-figure .frame {
+        position: relative; overflow: hidden;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        border: 1px solid var(--border);
+        background: var(--bg-card);
+    }
+    .article-figure .frame img,
+    .article-figure .frame svg { width: 100%; height: auto; display: block; }
+    .article-figure .frame--chart { padding: 1.5rem 1.25rem 1rem; }
+    .article-figure figcaption {
+        margin-top: 0.85rem; text-align: center;
+        font-family: 'Fraunces', serif; font-style: italic;
+        font-size: 0.84rem; color: var(--text-muted); line-height: 1.55;
+    }
+    figure { margin: 0; }
+    @media (min-width: 1024px) {
+      .container--prose .article-figure { width: calc(100% + 220px); margin-left: -110px; margin-right: -110px; max-width: none; padding: 0; }
+    }
+    @media (min-width: 1280px) {
+      .container--prose .article-figure { width: calc(100% + 340px); margin-left: -170px; margin-right: -170px; }
+    }
+    @media (max-width: 600px) {
+      .article-figure { margin: 2.25rem auto; }
+      .article-figure .frame--chart { padding: 1rem 0.5rem 0.75rem; }
+      .article-figure figcaption { font-size: 0.8rem; }
+    }
 </style>
 </head>
 <body>
@@ -516,8 +546,29 @@
 <p><strong>Kickboxen verbrennt je nach Intensität und Körpergewicht etwa 500 bis 900 Kalorien pro Stunde.</strong> Dazu kommt ein Nachbrenneffekt (EPOC), der deinen Stoffwechsel über mehrere Stunden nach dem Training leicht erhöht hält. Damit liegt Kickboxen beim Kalorienverbrauch ungefähr auf einem Niveau mit Joggen, beansprucht aber den ganzen Körper: Beine, Rumpf, Schultern und Koordination. Der wichtigste Faktor zum Abnehmen ist allerdings nicht die einzelne Stunde, sondern dass du dranbleibst. Und genau dafür ist ein abwechslungsreiches Training wie Kickboxen gut geeignet.</p><p>In diesem Guide zeigen wir dir aus 20 Jahren Trainingshalle, mit welchen Zahlen du realistisch rechnen kannst, wie Kickboxen im Vergleich zum Joggen abschneidet und, am wichtigsten, wie du als kompletter Anfänger sauber startest, ohne dich zu überfordern. Wir bleiben dabei ehrlich: Kickboxen ist ein hervorragendes Werkzeug, aber kein Wundermittel.</p>
         <h2>Wie viele Kalorien verbrennt Kickboxen pro Stunde?</h2>
 <p><strong>Realistisch verbrennst du beim Kickboxen rund 500 bis 900 Kalorien pro Stunde.</strong> Die genaue Zahl hängt vor allem von zwei Dingen ab: deinem Körpergewicht und der Intensität, mit der du trainierst. Je schwerer du bist und je härter du arbeitest, desto höher liegt der Verbrauch.</p><p>Ein paar Orientierungswerte aus gängigen Berechnungen:</p><ul><li><strong>Person mit ca. 70 kg:</strong> rund 550 kcal pro Stunde bei moderatem Training</li><li><strong>Höhere Intensität (viele Kombinationen, kurze Pausen):</strong> 700 bis 900 kcal pro Stunde</li><li><strong>Pro Minute:</strong> oberkörperlastige Einheiten ca. 6,5 kcal, kombiniertes Ganzkörper-Training ca. 8,3 kcal</li></ul><p>Warum ist die Spanne so breit? Kickboxen ist kein gleichmäßiges Dauer-Cardio. Du wechselst zwischen schnellen Schlag- und Tritt-Kombinationen, Beinarbeit und kurzen Pausen, also einem Intervall-Muster, das stark an HIIT erinnert. Wer am Sandsack oder an den Pratzen wirklich Gas gibt, landet am oberen Ende der Spanne. Wer als Anfänger noch Technik lernt und sich Pausen nimmt, eher in der Mitte.</p><p><strong>Beides ist völlig in Ordnung.</strong> Die Technik kommt zuerst, das Tempo später. Wer mit sauberem Stand und richtiger Schlagausführung beginnt, kann das Tempo nach ein paar Wochen ganz von allein steigern, und damit steigt auch der Kalorienverbrauch. Du musst also nicht von Tag eins an am Limit trainieren, um Fortschritte zu machen.</p>
+        
+        <figure class="article-figure">
+            <div class="frame">
+                <img src="images/ka-sack.webp" alt="Kickboxer am schweren Sandsack bei hoher Intensit&auml;t, mitten im Low-Kick" loading="lazy" width="1400" height="792">
+            </div>
+            <figcaption>Die Spanne von 500 bis 900 Kalorien h&auml;ngt genau daran: wie viel von der Stunde tats&auml;chlich so aussieht.</figcaption>
+        </figure>
+
         <h2>Ist Kickboxen besser als Joggen zum Abnehmen?</h2>
 <p><strong>Beim reinen Kalorienverbrauch pro Stunde liegen Kickboxen und Joggen ungefähr gleichauf.</strong> Eine 70 kg schwere Person verbrennt beim moderaten Joggen (etwa 10 km/h) rund 620 kcal pro Stunde, beim Kickboxen je nach Intensität 550 bis 900 kcal. Der eine Sport ist also nicht automatisch der bessere Fatburner.</p><p>Worin sich die beiden unterscheiden, ist die Art der Belastung:</p><ul><li><strong>Joggen:</strong> gleichmäßiges Ausdauertraining, einfach zu starten, aber sich wiederholend und für viele auf Dauer monoton.</li><li><strong>Kickboxen:</strong> Ganzkörper-Training mit Beinen, Rumpf, Schultern und Koordination. Durch das Intervall-Muster bleibt der Puls in Wellen oben, und du lernst nebenbei eine echte Fähigkeit.</li></ul><blockquote>Die wichtigste Frage ist nicht, welcher Sport mehr Kalorien verbrennt, sondern bei welchem Sport du langfristig dabei bleibst. Genau hier punktet Kickboxen: Es macht vielen mehr Spaß als Laufrunden, und Spaß ist der am meisten unterschätzte Faktor beim Abnehmen.</blockquote><p>Ein weiterer Unterschied liegt in der Gelenkbelastung. Joggen bedeutet viele tausend gleichförmige Stöße auf Knie und Sprunggelenke. Kickboxen ist abwechslungsreicher in der Bewegung, stellt aber andere Anforderungen an Hüfte, Rumpf und Schultern. Welcher Sport für dich angenehmer ist, hängt von deinem Körper und deinen Vorlieben ab. Wenn du Knieprobleme hast oder unsicher bist, sprich das vorher mit deiner Ärztin oder deinem Arzt ab.</p><p>Unser ehrlicher Tipp aus der Halle: Du musst dich nicht entscheiden. Eine Laufrunde unter der Woche und zwei Kickbox-Einheiten ergänzen sich gut. Wichtig ist nur, dass du etwas findest, das du nicht nach drei Wochen wieder hinwirfst.</p>
+        
+        <figure class="article-figure">
+            <div class="frame frame--chart">
+<svg viewBox="0 0 900 246" width="100%" role="img" xmlns="http://www.w3.org/2000/svg"
+     aria-label="Kalorienverbrauch pro Stunde bei 70 Kilogramm Körpergewicht. Kickboxen moderat rund 550 Kilokalorien, Joggen bei zehn Kilometern pro Stunde rund 620, Kickboxen intensiv 700 bis 900. Bei moderater Intensität liegen beide etwa gleichauf.">
+  <text x="174" y="26" fill="#7080B0" font-family="Outfit, sans-serif" font-size="12" text-anchor="end">kcal pro Stunde</text>
+  <text x="198" y="26" fill="#7080B0" font-family="Outfit, sans-serif" font-size="12">Beispiel: 70 kg Körpergewicht</text>
+  <line x1="190" y1="42" x2="190" y2="204" stroke="#7080B0" stroke-width="1" opacity="0.16"/><text x="190" y="220" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5" text-anchor="middle">0</text><line x1="340" y1="42" x2="340" y2="204" stroke="#7080B0" stroke-width="1" opacity="0.16"/><text x="340" y="220" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5" text-anchor="middle">250</text><line x1="490" y1="42" x2="490" y2="204" stroke="#7080B0" stroke-width="1" opacity="0.16"/><text x="490" y="220" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5" text-anchor="middle">500</text><line x1="640" y1="42" x2="640" y2="204" stroke="#7080B0" stroke-width="1" opacity="0.16"/><text x="640" y="220" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5" text-anchor="middle">750</text><text x="174" y="71" fill="#D6DCEC" font-family="Outfit, sans-serif" font-size="13" text-anchor="end">Kickboxen moderat</text><rect x="190" y="54" width="330" height="26" rx="5" fill="#B87C1A" fill-opacity="1"/><text x="532" y="72" fill="#B87C1A" font-family="Syne, sans-serif" font-size="13" font-weight="700">ca. 550 kcal</text><text x="174" y="127" fill="#D6DCEC" font-family="Outfit, sans-serif" font-size="13" text-anchor="end">Joggen, 10 km/h</text><rect x="190" y="110" width="372" height="26" rx="5" fill="#7080B0" fill-opacity="1"/><text x="574" y="128" fill="#7080B0" font-family="Syne, sans-serif" font-size="13" font-weight="700">ca. 620 kcal</text><text x="174" y="183" fill="#D6DCEC" font-family="Outfit, sans-serif" font-size="13" text-anchor="end">Kickboxen intensiv</text><rect x="190" y="166" width="540" height="26" rx="5" fill="#D4A040" fill-opacity="0.35"/><rect x="190" y="166" width="420" height="26" rx="5" fill="#D4A040"/><text x="742" y="184" fill="#D4A040" font-family="Syne, sans-serif" font-size="13" font-weight="700">700 – 900 kcal</text>
+</svg>
+            </div>
+            <figcaption>Die ehrliche Antwort auf die Joggen-Frage: Bei moderatem Tempo liegt Kickboxen sogar leicht darunter. Der Vorsprung entsteht erst &uuml;ber die Intensit&auml;t.</figcaption>
+        </figure>
+
         <h2>Was ist der Nachbrenneffekt beim Kickboxen?</h2>
 <p><strong>Der Nachbrenneffekt, fachlich EPOC (Excess Post-Exercise Oxygen Consumption), beschreibt, dass dein Körper nach einem intensiven Training noch eine Weile mehr Energie verbraucht als in Ruhe.</strong> Nach dem Schwitzen muss der Körper wieder ins Gleichgewicht kommen: Sauerstoffspeicher auffüllen, Stoffwechsel herunterregeln, Muskeln reparieren. Das kostet zusätzliche Kalorien.</p><p>Konkret kannst du dir das so vorstellen:</p><ul><li><strong>Zusätzlicher Verbrauch:</strong> je nach Intensität grob 50 bis 150 kcal nach dem Training</li><li><strong>Dauer:</strong> der Effekt kann sich über mehrere Stunden ziehen</li><li><strong>Auslöser:</strong> besonders die intensiven Intervalle (HIIT-Charakter) des Kickboxens regen EPOC stärker an als gleichmäßiges Dauer-Cardio</li></ul><p>Wichtig zur Einordnung: Der Nachbrenneffekt ist ein <strong>netter Bonus, kein Wundermittel</strong>. Die zusätzlichen Kalorien sind überschaubar und ersetzen keine vernünftige Ernährung. Wer dir erzählt, du könntest im Schlaf abnehmen, verkauft dir etwas. Was wirklich zählt: regelmäßige Bewegung, mit der du dranbleibst, plus eine Ernährung, in der du über die Woche mehr verbrauchst, als du isst. EPOC hilft dabei, mehr aber auch nicht. Sieh den Nachbrenneffekt also als kleinen zusätzlichen Vorteil intensiverer Einheiten, nicht als Grund, sich danach mehr zu gönnen.</p>
         <h2>Wie fange ich als Anfänger mit Kickboxen an?</h2>

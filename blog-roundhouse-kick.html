@@ -33,7 +33,7 @@
       "headline": "Roundhouse-Kick in 4 Wochen — der saubere Weg",
       "description": "Der 4-Wochen-Plan, der dich aus Knien zur Mitte bringt. Mit Drills, Häufigkeitsregel und drei Fehlern, die fast jeder Anfänger macht.",
       "datePublished": "2026-05-20",
-      "dateModified": "2026-05-20",
+      "dateModified": "2026-08-16",
       "inLanguage": "de-DE",
       "author": [
         {
@@ -1019,6 +1019,36 @@
         -webkit-hyphens: auto; hyphens: auto;
       }
     }
+
+    /* ── Bild-Figuren im Artikel ── */
+    .article-figure { margin: 3rem auto; max-width: var(--container-narrow); padding: 0 1.5rem; }
+    .article-figure .frame {
+        position: relative; overflow: hidden;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        border: 1px solid var(--border);
+        background: var(--bg-card);
+    }
+    .article-figure .frame img,
+    .article-figure .frame svg { width: 100%; height: auto; display: block; }
+    .article-figure .frame--chart { padding: 1.5rem 1.25rem 1rem; }
+    .article-figure figcaption {
+        margin-top: 0.85rem; text-align: center;
+        font-family: 'Fraunces', serif; font-style: italic;
+        font-size: 0.84rem; color: var(--text-muted); line-height: 1.55;
+    }
+    figure { margin: 0; }
+    @media (min-width: 1024px) {
+      .container--prose .article-figure { width: calc(100% + 220px); margin-left: -110px; margin-right: -110px; max-width: none; padding: 0; }
+    }
+    @media (min-width: 1280px) {
+      .container--prose .article-figure { width: calc(100% + 340px); margin-left: -170px; margin-right: -170px; }
+    }
+    @media (max-width: 600px) {
+      .article-figure { margin: 2.25rem auto; }
+      .article-figure .frame--chart { padding: 1rem 0.5rem 0.75rem; }
+      .article-figure figcaption { font-size: 0.8rem; }
+    }
 </style>
 
     <!-- ARTICLE BODY -->
@@ -1047,7 +1077,15 @@
                 <span class="pullquote-cite">Marlon Tröscher · Muay Thai Trainer</span>
             </div>
 
-            <h2>Die drei Fehler, die fast jeder Anfänger macht</h2>
+            
+        <figure class="article-figure">
+            <div class="frame">
+                <img src="images/rk-pivot.webp" alt="Roundhouse-Kick von der Seite: das Standbein ist nach au&szlig;en gedreht, die H&uuml;fte rotiert mit, das Trittbein l&auml;uft auf horizontaler Bahn" loading="lazy" width="1400" height="792">
+            </div>
+            <figcaption>Woran man einen sauberen Kick erkennt: Die Ferse des Standbeins zeigt zum Ziel. Wenn dieser Fu&szlig; nicht dreht, kann die H&uuml;fte gar nicht mit.</figcaption>
+        </figure>
+
+        <h2>Die drei Fehler, die fast jeder Anfänger macht</h2>
 
             <p>Wir sehen jeden Monat dieselben drei Dinge — egal ob bei Männern oder Frauen, ob bei Fitnessbegeisterten oder erfahrenen Athleten aus anderen Sportarten.</p>
 
@@ -1066,7 +1104,15 @@
                 </li>
             </ol>
 
-            <h2>Der 4-Wochen-Plan</h2>
+            
+        <figure class="article-figure">
+            <div class="frame">
+                <img src="images/rk-fehler.webp" alt="Anf&auml;nger mit typisch falscher Mechanik: Standbein nicht gedreht, Oberk&ouml;rper weit nach hinten gelehnt, Deckung offen" loading="lazy" width="1400" height="792">
+            </div>
+            <figcaption>Der h&auml;ufigste Fehler in einem Bild: Standbein steht starr, daf&uuml;r kippt der Oberk&ouml;rper nach hinten. Die Kraft kommt dann aus dem Arm statt aus der H&uuml;fte.</figcaption>
+        </figure>
+
+        <h2>Der 4-Wochen-Plan</h2>
 
             <p>Hier ist, was wir mit Anfängern in unseren Online-Kursen machen — und was du allein durchziehen kannst, wenn du fünf Minuten täglich hast. Kein Sandsack, keine Halle. Nur dein Körper und ein Spiegel.</p>
 
@@ -1087,7 +1133,19 @@
                 <p><strong>Standbein → Hüfte → Trittbein → Schienbein.</strong> Die Drehung beginnt unten, beschleunigt nach oben. Jede Stufe gibt Energie an die nächste weiter. Wer die Reihenfolge umkehrt — oder eine Stufe überspringt — verliert 60% der möglichen Kraft. Aus dem Muay&nbsp;Thai-Komplettkurs.</p>
             </div>
 
-            <h2>Warum 5 Minuten täglich besser sind als 2 Stunden am Wochenende</h2>
+            
+        <figure class="article-figure">
+            <div class="frame frame--chart">
+<svg viewBox="0 0 900 268" width="100%" role="img" xmlns="http://www.w3.org/2000/svg"
+     aria-label="Der Vier-Wochen-Plan im Überblick. Woche 1 übt nur die Standbein-Drehung, 50 Wiederholungen pro Tag und Seite. Woche 2 ergänzt die Hüftöffnung, 30 Wiederholungen. Woche 3 ergänzt den Unterschenkel als Peitsche, 20 Wiederholungen in Zeitlupe. Woche 4 fügt nur noch Geschwindigkeit hinzu, die Bewegung bleibt dieselbe. Je mehr Elemente dazukommen, desto weniger Wiederholungen.">
+  <text x="40" y="24" fill="#7080B0" font-family="Outfit, sans-serif" font-size="12">Jede Woche kommt genau ein Element dazu &mdash; und die Wiederholungszahl sinkt.</text>
+  <rect x="40" y="38" width="191" height="200" rx="12" fill="#141E48" fill-opacity="0.5" stroke="rgba(255,255,255,0.07)"/><text x="54" y="60" fill="#E8B84B" font-family="Syne, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.4">WOCHE 1</text><text x="54" y="84" fill="#FFFFFF" font-family="Syne, sans-serif" font-size="15.5" font-weight="700">Das Standbein</text><text x="54" y="112" fill="#D4A040" font-family="Syne, sans-serif" font-size="26" font-weight="800">50</text><text x="54" y="130" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5">pro Tag, pro Seite</text><rect x="54" y="152" width="163" height="15" rx="4" fill="#D4A040"/><text x="60" y="163" fill="#0C1228" font-family="Outfit, sans-serif" font-size="9.5" font-weight="600">Standbein-Drehung</text><rect x="245" y="38" width="191" height="200" rx="12" fill="#141E48" fill-opacity="0.5" stroke="rgba(255,255,255,0.07)"/><text x="259" y="60" fill="#E8B84B" font-family="Syne, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.4">WOCHE 2</text><text x="259" y="84" fill="#FFFFFF" font-family="Syne, sans-serif" font-size="15.5" font-weight="700">Die Hüftöffnung</text><text x="259" y="112" fill="#D4A040" font-family="Syne, sans-serif" font-size="26" font-weight="800">30</text><text x="259" y="130" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5">pro Seite, täglich</text><rect x="259" y="152" width="163" height="15" rx="4" fill="rgba(184,124,26,0.28)"/><text x="265" y="163" fill="#B0B8D0" font-family="Outfit, sans-serif" font-size="9.5" font-weight="400">Standbein-Drehung</text><rect x="259" y="173" width="163" height="15" rx="4" fill="#D4A040"/><text x="265" y="184" fill="#0C1228" font-family="Outfit, sans-serif" font-size="9.5" font-weight="600">Hüfte öffnet</text><rect x="450" y="38" width="191" height="200" rx="12" fill="#141E48" fill-opacity="0.5" stroke="rgba(255,255,255,0.07)"/><text x="464" y="60" fill="#E8B84B" font-family="Syne, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.4">WOCHE 3</text><text x="464" y="84" fill="#FFFFFF" font-family="Syne, sans-serif" font-size="15.5" font-weight="700">Die Peitsche</text><text x="464" y="112" fill="#D4A040" font-family="Syne, sans-serif" font-size="26" font-weight="800">20</text><text x="464" y="130" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5">pro Seite, Zeitlupe</text><rect x="464" y="152" width="163" height="15" rx="4" fill="rgba(184,124,26,0.28)"/><text x="470" y="163" fill="#B0B8D0" font-family="Outfit, sans-serif" font-size="9.5" font-weight="400">Standbein-Drehung</text><rect x="464" y="173" width="163" height="15" rx="4" fill="rgba(184,124,26,0.28)"/><text x="470" y="184" fill="#B0B8D0" font-family="Outfit, sans-serif" font-size="9.5" font-weight="400">Hüfte öffnet</text><rect x="464" y="194" width="163" height="15" rx="4" fill="#D4A040"/><text x="470" y="205" fill="#0C1228" font-family="Outfit, sans-serif" font-size="9.5" font-weight="600">Unterschenkel folgt</text><rect x="655" y="38" width="191" height="200" rx="12" fill="#141E48" fill-opacity="0.5" stroke="rgba(255,255,255,0.07)"/><text x="669" y="60" fill="#E8B84B" font-family="Syne, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.4">WOCHE 4</text><text x="669" y="84" fill="#FFFFFF" font-family="Syne, sans-serif" font-size="15.5" font-weight="700">Tempo</text><text x="669" y="112" fill="#D4A040" font-family="Syne, sans-serif" font-size="26" font-weight="800">—</text><text x="669" y="130" fill="#7080B0" font-family="Outfit, sans-serif" font-size="10.5">gleiche Bewegung, schneller</text><rect x="669" y="152" width="163" height="15" rx="4" fill="rgba(184,124,26,0.28)"/><text x="675" y="163" fill="#B0B8D0" font-family="Outfit, sans-serif" font-size="9.5" font-weight="400">Standbein-Drehung</text><rect x="669" y="173" width="163" height="15" rx="4" fill="rgba(184,124,26,0.28)"/><text x="675" y="184" fill="#B0B8D0" font-family="Outfit, sans-serif" font-size="9.5" font-weight="400">Hüfte öffnet</text><rect x="669" y="194" width="163" height="15" rx="4" fill="rgba(184,124,26,0.28)"/><text x="675" y="205" fill="#B0B8D0" font-family="Outfit, sans-serif" font-size="9.5" font-weight="400">Unterschenkel folgt</text><rect x="669" y="215" width="163" height="15" rx="4" fill="#D4A040"/><text x="675" y="226" fill="#0C1228" font-family="Outfit, sans-serif" font-size="9.5" font-weight="600">Geschwindigkeit</text>
+</svg>
+            </div>
+            <figcaption>Der Plan auf einen Blick. Auff&auml;llig ist die Richtung der Zahlen: Je mehr Elemente dazukommen, desto weniger Wiederholungen &mdash; weil sauber langsamer ist als schnell.</figcaption>
+        </figure>
+
+        <h2>Warum 5 Minuten täglich besser sind als 2 Stunden am Wochenende</h2>
 
             <p>Bewegungslernen passiert nicht in der Halle. Es passiert in deinem Nervensystem, zwischen den Trainings — wenn dein Gehirn das, was du geübt hast, in tieferliegende Schichten verschiebt. Studien zur motorischen Konsolidierung sind hier ziemlich eindeutig: Häufigkeit schlägt Dauer. Fünf Minuten an sieben Tagen produzieren in vier Wochen eine bessere Technik als ein zweistündiges Training pro Woche.</p>
 
