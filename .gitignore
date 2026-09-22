@@ -6,3 +6,5 @@ pinegrow.json
 images/ufc-freedom250/photos/
 # large PNG originals (jpg versions are the ones used on the page)
 images/ufc-freedom250/*.png
+_proto/
+_proto-site-*.html
