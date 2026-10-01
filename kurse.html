@@ -8,7 +8,11 @@
         <!-- OG Meta Tags -->
         <meta property="og:title" content="Alle Kurse | Hey Coach Production">
         <meta property="og:description" content="Alle Online-Kurse von Hey Coach: Kickboxen mit Gürtelsystem, Muay Thai und Physio-Training mit Elsa. Einmal zahlen, 24 Monate Zugang.">
-        <meta property="og:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
+        <meta property="og:image" content="https://heycoachproduction.de/images/og-heycoach.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Hey Coach Production – Kampfsport lernen. Online-Kurse für Kickboxen, Muay Thai und Physio-Training">
         <meta property="og:url" content="https://heycoachproduction.de/kurse.html">
         <meta property="og:site_name" content="Hey Coach Production">
         <meta property="og:type" content="website">
@@ -16,7 +20,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Alle Kurse | Hey Coach Production">
         <meta name="twitter:description" content="Alle Online-Kurse von Hey Coach: Kickboxen mit Gürtelsystem, Muay Thai und Physio-Training mit Elsa. Einmal zahlen, 24 Monate Zugang.">
-        <meta name="twitter:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
+        <meta name="twitter:image" content="https://heycoachproduction.de/images/og-heycoach.jpg">
         <link rel="canonical" href="https://heycoachproduction.de/kurse.html">
         <link rel="alternate" hreflang="de-DE" href="https://heycoachproduction.de/kurse.html">
         <link rel="alternate" hreflang="de-AT" href="https://heycoachproduction.de/kurse.html">
@@ -569,25 +573,7 @@
     //  V6 ENHANCEMENTS
     // ============================================================
 
-    // === HERO PARALLAX ===
-    const heroContent = document.getElementById('heroContent');
-    if (heroContent) {
-      let ticking = false;
-      window.addEventListener('scroll', () => {
-        if (!ticking) {
-          window.requestAnimationFrame(() => {
-            const scrollY = window.scrollY;
-            const heroH = window.innerHeight;
-            if (scrollY < heroH) {
-              heroContent.style.transform = 'translateY(' + (scrollY * 0.3) + 'px)';
-              heroContent.style.opacity = 1 - (scrollY / heroH) * 0.6;
-            }
-            ticking = false;
-          });
-          ticking = true;
-        }
-      }, { passive: true });
-    }
+    // HERO: kein Parallax (01.10)
 
     // === CURSOR GLOW ON COURSE CARDS (mouse-only, rAF-batched — no per-event layout thrash) ===
     if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {

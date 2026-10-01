@@ -8,7 +8,11 @@
         <!-- OG Meta Tags -->
         <meta property="og:title" content="Hey Coach Production — Kickboxen & Muay Thai online lernen">
         <meta property="og:description" content="Lerne Kickboxen & Muay Thai online beim ExitAsia-Trainerteam — seit 2006, mit ISKA-Welt- und Europameistern im Team. Einmal zahlen, 24 Monate Zugang.">
-        <meta property="og:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
+        <meta property="og:image" content="https://heycoachproduction.de/images/og-heycoach.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Hey Coach Production – Kampfsport lernen. Online-Kurse für Kickboxen, Muay Thai und Physio-Training">
         <meta property="og:url" content="https://heycoachproduction.de/">
         <meta property="og:site_name" content="Hey Coach Production">
         <meta property="og:type" content="website">
@@ -16,7 +20,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Hey Coach Production — Kickboxen & Muay Thai online lernen">
         <meta name="twitter:description" content="Lerne Kickboxen & Muay Thai online beim ExitAsia-Trainerteam — seit 2006. Einmal zahlen, 24 Monate Zugang.">
-        <meta name="twitter:image" content="https://heycoachproduction.de/images/training-gym-panorama.webp">
+        <meta name="twitter:image" content="https://heycoachproduction.de/images/og-heycoach.jpg">
         <link rel="canonical" href="https://heycoachproduction.de/">
         <link rel="alternate" hreflang="de-DE" href="https://heycoachproduction.de/">
         <link rel="alternate" hreflang="de-AT" href="https://heycoachproduction.de/">
@@ -799,6 +803,7 @@
     }
     /* 01.10 (Heidar): alle Kurs-Karten auf der Startseite größer und gleich groß */.hc-row .hc-track > .hc-card,.hc-row .hc-track > .hc2-card{width:clamp(270px,24vw,360px)}@media (max-width:900px){.hc-row .hc-track > .hc-card,.hc-row .hc-track > .hc2-card,#kurse .hc-row--kurse .hc-track > .hc-card{width:80vw;max-width:340px}}/* 01.10 (Heidar): Foto-Slider symmetrisch — gleiche Höhe wie der Textblock (von Überschrift bis letzter Absatz) */@media (min-width:901px){.about-grid{grid-template-columns:1fr 1.08fr;align-items:stretch}.about-grid .about-slider{aspect-ratio:auto;align-self:start;min-height:480px;margin-top:var(--as-top,0px);height:var(--as-h,560px)}}</style>
 <style>/* 01.10 Feinschliff nach Review */h2{text-wrap:balance}@media(max-width:480px){h1,h2,h3,.section-title{-webkit-hyphens:manual!important;hyphens:manual!important}}@media(max-width:600px){.video-play-label{display:none}}.final-cta-note span::before{margin-right:.35em}</style>
+<style>/* 01.10 Mobil-Fix */@media(max-width:900px){.hero-video,.hero-poster-img{top:0!important;height:100%!important;object-position:center 30%}.nav:not(.scrolled){background:linear-gradient(180deg,rgba(6,8,26,.72) 0%,rgba(6,8,26,.35) 60%,rgba(6,8,26,0) 100%)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-bottom-color:transparent!important}.nav{transition:background .25s ease,padding .25s ease}}.hero{height:100vh;height:100svh;min-height:0}.hero-content{will-change:auto}html,body{overscroll-behavior-x:none}</style>
 </head>
     <body>
         <!-- ============================================================
@@ -1980,25 +1985,7 @@ Wir sind dein Partner für die Vermarktung deines Wissens. Du bringst dein Wisse
     //  V6 ENHANCEMENTS
     // ============================================================
 
-    // === HERO PARALLAX ===
-    const heroContent = document.getElementById('heroContent');
-    if (heroContent) {
-      let ticking = false;
-      window.addEventListener('scroll', () => {
-        if (!ticking) {
-          window.requestAnimationFrame(() => {
-            const scrollY = window.scrollY;
-            const heroH = window.innerHeight;
-            if (scrollY < heroH) {
-              heroContent.style.transform = 'translateY(' + (scrollY * 0.3) + 'px)';
-              heroContent.style.opacity = 1 - (scrollY / heroH) * 0.6;
-            }
-            ticking = false;
-          });
-          ticking = true;
-        }
-      }, { passive: true });
-    }
+    // HERO: kein Parallax mehr (01.10 – Buttons rutschten beim Scrollen aus dem Hero, auf dem Handy ruckelte es)
 
     // === CURSOR GLOW ON COURSE CARDS (mouse-only, rAF-batched — no per-event layout thrash) ===
     if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {

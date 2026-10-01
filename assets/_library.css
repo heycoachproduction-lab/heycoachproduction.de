@@ -52,7 +52,7 @@
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
 .hc-lib--running .hc-track{width:max-content;will-change:transform;padding:2px 0}
-.hc-lib--running .hc-arrow{opacity:0;transition:opacity .3s,background .2s}
+.hc-lib--running .hc-arrow{opacity:.95;transition:opacity .3s,background .2s}
 .hc-lib--running .hc-vp:hover + .hc-arrow,
 .hc-lib--running .hc-row:hover .hc-arrow{opacity:1}
 
@@ -90,7 +90,8 @@
 /* ── mobile: course covers become portrait posters ── */
 @media (max-width:900px){
   .hc-track{gap:9px}
-  .hc-arrow{display:none}
+  .hc-arrow{display:flex;width:38px;height:38px;font-size:18px;top:46%}
+  .hc-arrow.prev{left:6px}.hc-arrow.next{right:6px}
   .hc-row--kurse .hc-card{width:150px}
   .hc-row--kurse .hc-card-media{aspect-ratio:2/3}
   .hc-card{width:210px}
@@ -103,3 +104,6 @@
   .hc-lib-head h2,.hc-row-title,.hc-card-name{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}
   .hc-row-title{white-space:normal}
 }
+
+/* 01.10: Reihen nicht als Browser-Zurück-Geste werten */
+.hc-vp{overscroll-behavior-x:contain}

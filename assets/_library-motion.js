@@ -29,12 +29,17 @@
     let down = null;
     vp.addEventListener("pointerdown", ev => {
       if (ev.button > 0) return;
-      down = {x: ev.clientX, last: ev.clientX, t: performance.now(), v: 0, moved: false, id: ev.pointerId};
+      down = {x: ev.clientX, y: ev.clientY, last: ev.clientX, t: performance.now(), v: 0, moved: false, id: ev.pointerId};
       eng.drag = 0; eng.hold = true;
     });
     vp.addEventListener("pointermove", ev => {
       if (!down || ev.pointerId !== down.id) return;
-      if (!down.moved && Math.abs(ev.clientX - down.x) > 6) {
+      if (!down.moved) {
+        const ax = Math.abs(ev.clientX - down.x), ay = Math.abs(ev.clientY - down.y);
+        if (ay > 10 && ay > ax) { down = null; eng.hold = false; return; }   // vertikal → Browser scrollt
+        if (ax < 8 || ax < ay * 1.2) { down.last = ev.clientX; return; }
+      }
+      if (!down.moved) {
         down.moved = true;
         try { vp.setPointerCapture(ev.pointerId); } catch (_) {}
       }
@@ -59,8 +64,13 @@
     vp.addEventListener("pointercancel", end);
     vp.addEventListener("click", ev => { if (vp.dataset.dragged) { ev.preventDefault(); ev.stopPropagation(); } }, true);
     prev.hidden = false;
-    prev.addEventListener("click", () => eng.drag += 360);
-    next.addEventListener("click", () => eng.drag -= 360);
+    const step = () => {                                          // genau eine Karte weiter
+      const c = track.children[0]; if (!c) return 300;
+      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 12;
+      return c.getBoundingClientRect().width + gap;
+    };
+    prev.addEventListener("click", () => { eng.drag += step(); eng.resumeAt = performance.now() + 5000; });
+    next.addEventListener("click", () => { eng.drag -= step(); eng.resumeAt = performance.now() + 5000; });
     engines.push(eng);
   });
   let last = performance.now();
