@@ -27,7 +27,7 @@
   letter-spacing:-.015em;color:#fff;margin:0;white-space:nowrap}
 .hc-row-note{font-size:12.5px;color:var(--hc-text3);white-space:nowrap}
 .hc-row-rule{flex:1 1 auto;height:1px;background:linear-gradient(90deg,rgba(184,124,26,.3),transparent 75%)}
-.hc-row-link{font-size:13px;color:var(--hc-text3);text-decoration:none;white-space:nowrap}
+.hc-row-link{font-size:13px;font-weight:600;color:#D4A040;text-decoration:none;white-space:nowrap}
 .hc-row-link:hover{color:var(--hc-accent-hi)}
 
 .hc-vp{position:relative}
@@ -107,3 +107,6 @@
 
 /* 01.10: Reihen nicht als Browser-Zurück-Geste werten */
 .hc-vp{overscroll-behavior-x:contain}
+
+/* 02.10: «Zum Kurs» auf dem Handy als goldener Button (gut sichtbar, gut zu tippen) */
+@media (max-width:900px){.hc-row-head{align-items:center;flex-wrap:wrap}.hc-row-link{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:9px 16px;border-radius:999px;background:#B87C1A;color:#fff!important;font-size:13.5px;font-weight:700;letter-spacing:.01em;box-shadow:0 6px 18px rgba(184,124,26,.35)}.hc-row-link:active{background:#D4A040}}
