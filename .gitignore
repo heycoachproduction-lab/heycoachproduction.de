@@ -8,3 +8,11 @@ images/ufc-freedom250/photos/
 images/ufc-freedom250/*.png
 _proto/
 _proto-site-*.html
+
+# 01.10: interne Dateien nicht ausliefern (site-QA)
+AI-IMAGE-PROMPTING-GUIDE.md
+NANO-BANANA-2-GUIDE.md
+scripts/
+.gstack/
+.DS_Store
+**/.DS_Store

@@ -4,9 +4,9 @@
     {
       "name": "kursauswahl",
       "type": "skill-md",
-      "description": "Hilft bei der Auswahl des passenden Hey-Coach-Online-Kurses (7-Tage-FitStart 9 €, 11 Tage Rücken Fit 49 €, Kickboxen 99 €, Muay Thai 129 €) inkl. Preis, Inhalt, Trainer und Krankenkassen-Hinweis.",
+      "description": "Hilft bei der Auswahl des passenden Hey-Coach-Online-Kurses (Kampfsport und Physio-Training) inkl. Preis, Inhalt, Trainer und Erscheinungsstatus.",
       "url": "/.well-known/agent-skills/kursauswahl/SKILL.md",
-      "digest": "sha256:a1152ecc8859a0a56a057389102938323d28e71e7ac60ec8215b18219fa8a71c"
+      "digest": "sha256:bfe92d034d63f1639068e4675f5ba300517cc995c955ba348f5a23bba8f29c7e"
     }
   ]
 }

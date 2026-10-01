@@ -11,7 +11,7 @@
 
   // Same link set as the desktop homepage nav, absolute so it works from any page.
   var LINKS = [
-    { label: 'Kurse',         href: 'index.html#kurse' },
+    { label: 'Kurse',         href: 'kurse.html' },
     { label: 'Trainer',       href: 'index.html#trainer' },
     { label: 'Blog',          href: 'blog.html' },
     { label: 'Über uns',      href: 'index.html#ueber-uns' },

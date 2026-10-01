@@ -1,0 +1,105 @@
+/* Kursbibliothek — shared styles for both prototypes.
+   All selectors are hc-* prefixed so the block can be dropped into the real page. */
+
+.hc-lib{
+  --hc-bg:#05070F; --hc-bg3:#111832;
+  --hc-accent:#B87C1A; --hc-accent-hi:#D9A94E;
+  --hc-text2:#AEB6CE; --hc-text3:#6E7CA8;
+  --hc-border:rgba(255,255,255,.07); --hc-border2:rgba(255,255,255,.13);
+  --hc-pad:clamp(20px,4.4vw,64px);
+  background:var(--hc-bg);color:#fff;font-family:'Outfit',sans-serif;
+  padding:clamp(46px,5.5vw,86px) 0 clamp(52px,6vw,96px);position:relative;
+}
+
+.hc-lib-head{padding:0 var(--hc-pad);max-width:760px;margin-bottom:clamp(28px,3.4vw,46px)}
+.hc-lib-eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--hc-accent);display:block;margin-bottom:14px}
+.hc-lib-head h2{font-family:'Syne',sans-serif;font-size:clamp(28px,3.6vw,44px);font-weight:800;
+  line-height:1.06;letter-spacing:-.025em;color:#fff;margin:0}
+.hc-lib-head h2 em{font-style:normal;color:var(--hc-accent-hi)}
+.hc-lib-head p{color:var(--hc-text2);margin-top:14px;font-size:clamp(15px,1.3vw,17px)}
+
+/* ── row ── */
+.hc-row{margin-bottom:clamp(30px,3.4vw,50px)}
+.hc-row:last-child{margin-bottom:0}
+.hc-row-head{display:flex;align-items:baseline;gap:14px;padding:0 var(--hc-pad);margin-bottom:15px}
+.hc-row-title{font-family:'Syne',sans-serif;font-size:clamp(17px,1.5vw,22px);font-weight:800;
+  letter-spacing:-.015em;color:#fff;margin:0;white-space:nowrap}
+.hc-row-note{font-size:12.5px;color:var(--hc-text3);white-space:nowrap}
+.hc-row-rule{flex:1 1 auto;height:1px;background:linear-gradient(90deg,rgba(184,124,26,.3),transparent 75%)}
+.hc-row-link{font-size:13px;color:var(--hc-text3);text-decoration:none;white-space:nowrap}
+.hc-row-link:hover{color:var(--hc-accent-hi)}
+
+.hc-vp{position:relative}
+.hc-track{display:flex;gap:12px;padding:0 var(--hc-pad)}
+
+/* variant A — manual scrolling with arrows */
+.hc-lib--arrows .hc-track{overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;
+  scroll-snap-type:x proximity;scroll-padding-left:var(--hc-pad)}
+.hc-lib--arrows .hc-track::-webkit-scrollbar{display:none}
+.hc-lib--arrows .hc-card{scroll-snap-align:start}
+.hc-arrow{position:absolute;top:38%;transform:translateY(-50%);z-index:25;width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;border:1px solid var(--hc-border2);cursor:pointer;
+  background:rgba(5,7,15,.76);color:#fff;font-size:17px;backdrop-filter:blur(10px);
+  transition:background .2s,border-color .2s,opacity .2s,visibility .2s}
+.hc-arrow:hover{background:var(--hc-accent);border-color:var(--hc-accent)}
+.hc-arrow.prev{left:max(8px,calc(var(--hc-pad) - 21px))}
+.hc-arrow.next{right:max(8px,calc(var(--hc-pad) - 21px))}
+.hc-arrow[hidden]{opacity:0;visibility:hidden;pointer-events:none}
+
+/* variant B — self-running lanes */
+.hc-lib--running .hc-vp{overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.hc-lib--running .hc-track{width:max-content;will-change:transform;padding:2px 0}
+.hc-lib--running .hc-arrow{opacity:0;transition:opacity .3s,background .2s}
+.hc-lib--running .hc-vp:hover + .hc-arrow,
+.hc-lib--running .hc-row:hover .hc-arrow{opacity:1}
+
+/* ── card ── */
+.hc-card{flex:0 0 auto;width:clamp(224px,19.5vw,300px);text-decoration:none;color:inherit;
+  transition:transform .3s cubic-bezier(.2,.7,.3,1)}
+.hc-card-media{position:relative;aspect-ratio:16/9;border-radius:9px;overflow:hidden;background:var(--hc-bg3);
+  border:1px solid rgba(255,255,255,.06);transition:border-color .3s,box-shadow .3s}
+.hc-card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s,filter .35s}
+.hc-badge{position:absolute;bottom:8px;right:8px;z-index:3;background:var(--hc-accent);color:#fff;
+  font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:4px}
+.hc-dur{position:absolute;bottom:8px;right:9px;z-index:3;font-size:11px;font-weight:600;color:#fff;
+  background:rgba(5,7,15,.78);border:1px solid var(--hc-border);border-radius:4px;padding:2px 7px}
+.hc-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.82);z-index:4;
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.95);color:#05070F;
+  display:flex;align-items:center;justify-content:center;font-size:15px;padding-left:3px;
+  opacity:0;transition:opacity .3s,transform .3s;box-shadow:0 10px 28px rgba(0,0,0,.5)}
+.hc-card-cap{padding:10px 2px 0}
+.hc-card-name{font-size:14px;font-weight:600;line-height:1.3;color:var(--hc-text2);transition:color .25s}
+.hc-card-meta{font-size:12.5px;color:var(--hc-text3);margin-top:3px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.hc-price{color:var(--hc-accent-hi);font-weight:600}
+
+@media (hover:hover) and (min-width:901px){
+  .hc-card:hover{transform:translateY(-5px)}
+  .hc-card:hover .hc-card-media{border-color:rgba(184,124,26,.55);box-shadow:0 18px 44px rgba(0,0,0,.55)}
+  .hc-card:hover .hc-card-media img{transform:scale(1.045)}
+  .hc-card--inhalt:hover .hc-card-media img{filter:brightness(.62)}
+  .hc-card:hover .hc-play{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  .hc-card:hover .hc-card-name{color:#fff}
+}
+
+/* course rows get a slightly larger card so the covers read first */
+.hc-row--kurse .hc-card{width:clamp(248px,22vw,340px)}
+
+/* ── mobile: course covers become portrait posters ── */
+@media (max-width:900px){
+  .hc-track{gap:9px}
+  .hc-arrow{display:none}
+  .hc-row--kurse .hc-card{width:150px}
+  .hc-row--kurse .hc-card-media{aspect-ratio:2/3}
+  .hc-card{width:210px}
+  .hc-card-name{font-size:12.5px}
+  .hc-card-meta{font-size:11.5px;gap:6px}
+  .hc-lib--running .hc-vp{-webkit-mask-image:linear-gradient(90deg,#000 93%,transparent);
+    mask-image:linear-gradient(90deg,#000 93%,transparent)}
+}
+@media (max-width:420px){
+  .hc-lib-head h2,.hc-row-title,.hc-card-name{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}
+  .hc-row-title{white-space:normal}
+}

@@ -1,43 +1,55 @@
 ---
 name: kursauswahl
-description: Hilft dabei, den passenden Online-Kurs von Hey Coach Production auszuwählen — Kampfsport (Kickboxen, Muay Thai) oder Rücken-/Fitness-Einstieg. Mit Preisen (Brutto, inkl. 19% MwSt), Inhalten, Trainern und Hinweis zur Krankenkasse.
+description: Hilft dabei, den passenden Online-Kurs von Hey Coach Production auszuwählen — Kampfsport (Kickboxen, Muay Thai) oder Physio-Training mit Elsa. Mit Preisen (brutto, inkl. 19 % MwSt.), Inhalten, Trainern und Erscheinungsstatus.
 ---
 
 # Kursauswahl — Hey Coach Production
 
-Hey Coach Production GmbH (Freiburg / Kirchzarten, aus dem ExitAsia Gym, seit 2006)
-bietet Online-Kurse für Kampfsport und Rücken-Fitness an. Alle Kurse: einmal zahlen,
-24 Monate Zugang, auf Deutsch, bequem von zuhause. Preise sind Brutto (inkl. 19% MwSt).
+Hey Coach Production GmbH (Kirchzarten bei Freiburg, Trainerteam aus dem ExitAsia Gym, seit 2006)
+bietet Online-Kurse für Kampfsport und Physio-Training an. Alle Kurse: einmal zahlen,
+24 Monate Zugang, auf Deutsch, von zu Hause. Preise sind brutto (inkl. 19 % MwSt.).
+Übersicht aller Kurse: https://heycoachproduction.de/kurse.html
 
-## Kurse im Überblick
+## Jetzt verfügbar
 
-| Kurs | Preis | Für wen | Trainer |
-|------|-------|---------|---------|
-| 7-Tage-FitStart | 9 € | Einstieg, 7 Videos à ~20 Min | Marlon Tröscher |
-| 11 Tage Rücken Fit | 49 € | Rücken-Prävention, 17–30 Min/Tag | Elsa Durieux (staatl. anerkannte Physiotherapeutin) |
-| ISKA Gürtelprüfung (Einzelstufen) | ab 24,99 € | gezielte Prüfungsvorbereitung | Nils, Heiko, Jana |
-| Kickboxen Komplettkurs | 99 € | Weißgurt bis Schwarzgurt, 126 Lektionen | Nils (ISKA Europameister), Heiko, Jana |
-| Muay Thai Komplettkurs | 129 € | 85 Lektionen, 8 Module | Marlon Tröscher (1st DAN ISKA, Headcoach T1 Kampfsportzentrum) |
+| Kurs | Preis | Inhalt | Trainer |
+|------|-------|--------|---------|
+| 7-Tage-FitStart | 9 € | Einstieg in Muay Thai, 7 Videos à ~20 Min | Marlon Tröscher |
+| 11 Tage Rücken Fit | 49 € | Übungen für Rücken, Mobilität und Kraft, 17–30 Min/Tag | Elsa Durieux (staatlich anerkannte Physiotherapeutin) |
+| Vorbereitung auf die ISKA-Gürtelprüfung (Einzelstufen) | ab 24,99 €, Weißgurt kostenlos | Techniken je Gürtelstufe; die Prüfung legst du in deinem Verein ab | Nils, Heiko, Jana |
+| Kickboxen Komplettkurs | 99 € | Weißgurt bis Schwarzgurt, 126 Lektionen | Nils (5. Dan ISKA, Europameister), Heiko, Jana |
+| Muay Thai Komplettkurs | 129 € | 85 Lektionen, 8 Module | Marlon Tröscher (1. Dan ISKA, Headcoach T1 Kampfsportzentrum) |
+
+## Erscheint im Oktober 2026 (noch nicht kaufbar)
+
+| Kurs | Preis | Trainer |
+|------|-------|---------|
+| Kickboxen Basics (6 Lektionen) | 29 € | Nils, Heiko, Jana |
+| Aufrechte Haltung | 49 € | Elsa Durieux |
+| Nacken & Schultern | 49 € | Elsa Durieux |
+| Hüfte & Beweglichkeit | 49 € | Elsa Durieux |
+| Starke Knie | 49 € | Elsa Durieux |
+| Physio-Paket (alle 5 Physio-Kurse) | 199 € | Elsa Durieux |
+| Kämpfen wie Chris Wunn (Masterclass, 16 Videos) | 99 € | Chris Wunn (GLORY-Kämpfer) |
 
 ## So findest du den richtigen Kurs
 
-- **Erstmal reinschnuppern, kleiner Einstieg?** → 7-Tage-FitStart (9 €).
-- **Rückenschmerzen, Bürojob, wenig Bewegung?** → 11 Tage Rücken Fit (49 €).
+- **Erst mal reinschnuppern?** → 7-Tage-FitStart (9 €).
+- **Viel Sitzen, wenig Bewegung, Rücken stärken?** → 11 Tage Rücken Fit (49 €).
 - **Kickboxen systematisch von Anfang an lernen?** → Kickboxen Komplettkurs (99 €).
 - **Muay Thai / Thaiboxen lernen?** → Muay Thai Komplettkurs (129 €).
-- **Konkret auf eine ISKA-Gürtelprüfung vorbereiten?** → ISKA Gürtelprüfung.
+- **Auf eine ISKA-Gürtelprüfung vorbereiten?** → Vorbereitung auf die ISKA-Gürtelprüfung.
 
-## Krankenkasse
+## Wichtig
 
-Hey Coach arbeitet an der Zertifizierung von Präventionskursen nach § 20 SGB V.
-Sobald ein Kurs zertifiziert ist, können gesetzliche Krankenkassen einen Teil der
-Kosten erstatten. Den aktuellen Stand bitte direkt bei der eigenen Krankenkasse erfragen.
-Hinweis: Es werden keine Heilversprechen gemacht — die Kurse sind Prävention bzw.
-Training und ersetzen keine ärztliche Behandlung.
+Die Physio-Kurse sind Bewegungsprogramme für zu Hause. Sie ersetzen keine Physiotherapie
+und keine ärztliche Behandlung; bei Schmerzen oder Diagnosen zuerst ärztlich abklären.
+Die Kurse sind derzeit nicht nach § 20 SGB V zertifiziert — eine Erstattung durch die
+Krankenkasse ist aktuell nicht möglich.
 
 ## Kaufen
 
-Alle Kurse findest du auf https://heycoachproduction.de — Kursseite öffnen,
-auf "Jetzt starten" klicken und sicher bezahlen. Der Zugang wird sofort freigeschaltet.
+Verfügbare Kurse: Kursseite auf https://heycoachproduction.de öffnen und über den
+Kauf-Button bezahlen (Karte, PayPal, Apple Pay). Der Zugang wird direkt nach dem Kauf freigeschaltet.
 
 Kontakt: heycoachproduction@gmail.com · +49 176 77337704
