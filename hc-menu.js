@@ -38,7 +38,7 @@
   var NAVY = '6,8,26';
   var CSS = [
     /* --- Burger --- */
-    '.hcmm-burger{position:fixed;top:10px;right:' + GUTTER + 'px;z-index:100001;width:' + BTN + 'px;height:' + BTN + 'px;',
+    '.hcmm-burger{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:calc(' + GUTTER + 'px + env(safe-area-inset-right,0px));z-index:100001;width:' + BTN + 'px;height:' + BTN + 'px;',
       'display:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:0;margin:0;cursor:pointer;',
       'background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;',
       '-webkit-tap-highlight-color:transparent;transition:background .2s ease,border-color .2s ease;}',
@@ -89,14 +89,18 @@
     '@media(max-width:' + MOBILE + 'px){',
       '.hcmm-burger{display:flex;}',
       '.nav-hamburger,#navHamburger,#hamburger{display:none !important;}',
-      '.hcmm-nav{height:64px !important;min-height:64px !important;padding-top:0 !important;padding-bottom:0 !important;box-sizing:border-box !important;',
+      '.hcmm-nav{height:calc(64px + env(safe-area-inset-top,0px)) !important;min-height:calc(64px + env(safe-area-inset-top,0px)) !important;padding-top:env(safe-area-inset-top,0px) !important;padding-bottom:0 !important;box-sizing:border-box !important;',
         'display:flex !important;align-items:center !important;',
         'background:rgb(' + NAVY + ') !important;-webkit-backdrop-filter:none !important;backdrop-filter:none !important;',
         'border-bottom:1px solid rgba(255,255,255,.07) !important;box-shadow:none;transition:box-shadow .35s ease !important;}',
       '.hcmm-nav.hcmm-raised{box-shadow:0 12px 30px -14px rgba(0,0,0,.75) !important;}',
       '.hcmm-nav.hcmm-menu-open{box-shadow:none !important;border-bottom-color:rgba(255,255,255,.10) !important;}',
       '.hcmm-row{width:100% !important;max-width:none !important;height:64px !important;margin:0 !important;box-sizing:border-box !important;',
-        'display:flex !important;align-items:center !important;padding:0 ' + (GUTTER + BTN + 10) + 'px 0 ' + GUTTER + 'px !important;}',
+        'display:flex !important;align-items:center !important;padding:0 calc(' + (GUTTER + BTN + 10) + 'px + env(safe-area-inset-right,0px)) 0 calc(' + GUTTER + 'px + env(safe-area-inset-left,0px)) !important;}',
+      /* Seiten, deren Header selbst die Zeile ist (Kurs-/Trainerseiten): Statusleisten-Streifen oben dazurechnen */
+      '.hcmm-nav.hcmm-row{height:calc(64px + env(safe-area-inset-top,0px)) !important;padding-top:env(safe-area-inset-top,0px) !important;}',
+      /* fixierter Header + iPhone-Statusleiste: Inhalt um die Statusleiste nach unten schieben (Startseite nicht: dort liegt das Video absichtlich unter dem Header) */
+      '.hcmm-safe-spacer{display:block;height:env(safe-area-inset-top,0px);}',
       '.hcmm-nav .nav-logo img,.hcmm-nav .nav-logo-link img{height:44px !important;width:auto !important;}',
       '.hcmm-nav .nav-logo{display:flex !important;align-items:center;margin:0 !important;}',
       /* Buttons im Header gleich hoch wie der Burger */
@@ -107,7 +111,7 @@
       '.hcmm-nav .nav-right .btn-nav{margin-left:0 !important;}',
       '.hcmm-nav .nav-back{padding-top:12px !important;padding-bottom:12px !important;}',
     '}',
-    '@media(min-width:' + (MOBILE + 1) + 'px){.hcmm-burger,.hcmm-drawer{display:none !important;}',
+    '@media(min-width:' + (MOBILE + 1) + 'px){.hcmm-burger,.hcmm-drawer,.hcmm-safe-spacer{display:none !important;}',
       /* Desktop: oben über dem Video bleibt alles wie bisher; beim Scrollen solides Navy statt schwarz-transparent (kein Durchscheinen) */
       '.hcmm-nav.hcmm-raised{background:rgb(' + NAVY + ') !important;-webkit-backdrop-filter:none !important;backdrop-filter:none !important;',
         'border-bottom:1px solid rgba(255,255,255,.07) !important;box-shadow:0 12px 30px -14px rgba(0,0,0,.75) !important;}',
@@ -147,6 +151,10 @@
       var logo = nav.querySelector('.nav-logo, .nav-logo-link') || (nav.querySelector('img') || {}).parentElement;
       var row = logo && logo.parentElement;
       if (row) row.classList.add('hcmm-row');
+      if (getComputedStyle(nav).position === 'fixed' && !document.body.hasAttribute('data-hcmm-nospacer') && !document.querySelector('.hcmm-safe-spacer')) {
+        var sp = document.createElement('div'); sp.className = 'hcmm-safe-spacer'; sp.setAttribute('aria-hidden', 'true');
+        document.body.insertBefore(sp, document.body.firstChild);
+      }
     }
 
     var burger = document.createElement('button');
@@ -189,7 +197,8 @@
       if (window.innerWidth > MOBILE) return;
       if (nav) {
         var r = nav.getBoundingClientRect();
-        burger.style.top = Math.round(r.top + (r.height - BTN) / 2) + 'px';
+        var rowH = Math.min(64, r.height);   // die Logo-Zeile ist immer die unteren 64 px (darüber ggf. die iPhone-Statusleiste)
+        burger.style.top = Math.round(r.bottom - rowH + (rowH - BTN) / 2) + 'px';
         drawer.style.setProperty('--hcmm-top', Math.max(0, Math.round(r.bottom)) + 'px');
       } else {
         drawer.style.setProperty('--hcmm-top', '0px');
