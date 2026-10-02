@@ -86,6 +86,9 @@
     'body.hcmm-lock{overflow:hidden !important;}',
 
     /* --- Handy: ein Header-Format auf allen Seiten --- */
+    /* Header-Hintergrund nach oben verlängern: In In-App-Browsern (Telegram) und unter der iOS-Statusleiste scrollt die Seite
+       sonst sichtbar ÜBER dem fixierten Header durch. Bei normalem Header-Stand liegt das außerhalb des Bildschirms. */
+    '.hcmm-nav::before{content:\"\";position:absolute;left:0;right:0;bottom:100%;height:100vh;background:#06081A;pointer-events:none;}',
     '@media(max-width:' + MOBILE + 'px){',
       '.hcmm-burger{display:flex;}',
       '.nav-hamburger,#navHamburger,#hamburger{display:none !important;}',
