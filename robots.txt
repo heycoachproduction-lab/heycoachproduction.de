@@ -2,7 +2,7 @@
 # Last updated: 2026-08-16
 
 # ── Content Signals (contentsignals.org / Cloudflare, 2025) ──
-# As a condition of accessing this website, you agree to comply with these signals:
+# By accessing this website you agree to these content signals:
 #   search   = build a search index, show links/snippets (not AI-generated summaries)
 #   ai-input = use content as live input for AI answers (RAG / grounding / AI Overviews)
 #   ai-train = use content to train or fine-tune AI models

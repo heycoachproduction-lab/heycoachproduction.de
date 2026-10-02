@@ -87,220 +87,336 @@
    ============================================================ *//* --- Hero CTA: solid gold on mobile, full width, easy to tap --- */@media (max-width: 768px) { .hero-cta {  background: var(--accent);  border-color: var(--accent);  font-weight: 700;  padding: 15px 28px;  font-size: 15px;  width: 100%;  justify-content: center;  border-radius: var(--radius-md);  box-shadow: 0 4px 24px var(--accent-glow); }  .hero-cta:hover {  background: var(--accent-hover);  border-color: var(--accent-hover); }  .hero-cta-secondary {  width: 100%;  justify-content: center;  font-size: 14px;  padding: 8px 0; }  .hero-content {  bottom: 32px;  left: 20px;  right: 20px; }  .hero-content > div[style] {  flex-direction: column !important;  gap: 10px !important; } } /* --- Trainer cards: lighter overlay on mobile for visibility --- */@media (max-width: 768px) { .trainer-card-overlay {  background: linear-gradient(to top, rgba(6,8,26,0.9) 0%, rgba(6,8,26,0.15) 45%, transparent 100%); }  .trainer-card {  min-width: 240px;  max-width: 240px; }  .trainer-card-info {  padding: 1.5rem 1.25rem 1.25rem; }  .trainer-card-name {  font-size: 1.15rem; } } @media (max-width: 375px) { .trainer-card {  min-width: 220px;  max-width: 220px; } } /* --- Course buy buttons: prominent on mobile --- */@media (max-width: 768px) { .course-row .btn-primary {  width: 100%;  justify-content: center;  padding: 0.95rem 1.5rem;  font-size: 0.9rem;  box-shadow: 0 4px 20px var(--accent-glow);  text-align: center; }  .course-row-info {  padding: 1.5rem 1.25rem; }  .course-row-media {  height: 220px; } } /* --- Container padding on mobile: tighter, symmetric --- */@media (max-width: 768px) { .container, .container--wide {  padding: 0 1.25rem; }  .section {  padding: clamp(2.5rem, 5vw, 3.5rem) 0; } } /* --- About section on mobile --- */@media (max-width: 600px) { .about-photos {  grid-template-columns: 1fr;  grid-template-rows: 200px;  gap: 0.75rem; }  .about-photo--tall {  grid-row: span 1; }  .about-badges {  gap: 1.25rem; }  .about-badge strong {  font-size: 1.6rem; } } /* --- Stats bar: 2x2 on small mobile --- */@media (max-width: 500px) { .stats-bar {  grid-template-columns: repeat(2, 1fr); } } /* --- FAQ tabs: scrollable on mobile --- */@media (max-width: 600px) { .faq-tabs {  overflow-x: auto;  -webkit-overflow-scrolling: touch;  scrollbar-width: none;  gap: 0;  white-space: nowrap; }  .faq-tabs::-webkit-scrollbar {  display: none; }  .faq-tab {  padding: 0.65rem 1rem;  font-size: 0.82rem;  flex-shrink: 0; }  .faq-question {  font-size: 0.9rem;  padding: 1.25rem 0; } } /* --- Footer: cleaner on mobile --- */@media (max-width: 600px) { .footer {  padding: 3rem 0 1.5rem; }  .footer-grid {  gap: 2rem;  margin-bottom: 2.5rem; }  .footer-trust {  font-size: 0.72rem;  gap: 0.75rem; } } /* --- Coming soon cards on mobile --- */@media (max-width: 768px) { .coming-soon-grid {  grid-template-columns: 1fr; }  .coming-soon-card {  min-height: 200px; } } /* --- Partner section mobile --- */@media (max-width: 768px) { .partner-inner {  gap: 2.5rem; } } /* --- Marquee on mobile --- */@media (max-width: 768px) { .marquee-item {  width: 240px;  height: 165px; } } /* --- Video section on mobile --- */@media (max-width: 768px) { .video-wrapper {  border-radius: var(--radius-md); }  .video-play-btn {  width: 64px;  height: 64px;  box-shadow: 0 0 0 10px rgba(255,255,255,0.10); }  .video-play-btn svg {  width: 22px;  height: 22px; } } /* --- Trainer awards on mobile --- */@media (max-width: 500px) { .trainer-awards {  flex-wrap: wrap;  gap: 0.75rem; }  .trainer-award {  flex: 0 1 calc(50% - 0.5rem); }  .award-text strong {  font-size: 0.72rem; }  .award-text span {  font-size: 0.65rem; }  .award-icon {  width: 36px;  height: 36px;  font-size: 1rem; } } /* --- Mobile sticky CTA glow effect --- */.mobile-cta-btn { box-shadow: 0 -4px 24px var(--accent-glow); } /* --- Prevent any horizontal overflow --- */.section, .trust-bar, .footer, .hero-stats-bar { overflow-x: hidden; } /* --- Review cards on mobile --- */@media (max-width: 500px) { .review-card {  min-width: calc(100vw - 48px);  max-width: calc(100vw - 48px);  padding: 1.5rem; }  .review-text {  font-size: 0.88rem; } } /* --- Proof cards: consistent padding --- */@media (max-width: 600px) { .proof-card {  padding: 1.5rem 1.25rem; }  .proof-card h3 {  font-size: 1rem; }  .proof-card p {  font-size: 0.82rem; } } /* --- Testimonial cards on mobile --- */@media (max-width: 600px) { .testimonial-photo {  height: 200px; }  .testimonial-body {  padding: 1.5rem; }  .testimonial-text {  font-size: 0.88rem; } }.kc-sec--bald .hc2-card{cursor:default}.kc-sec--bald .hc2-card:hover{transform:none}.kc-sec--bald .hc2-card:hover .hc2-media{box-shadow:none}.kc-sec--bald .hc2-card:hover .hc2-media img{transform:none}.kc-sec--bald .hc2-media img{filter:none}</style>
     <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Alle Kurse — Hey Coach Production",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "Course",
-        "name": "Kickboxen Komplettkurs",
-        "url": "https://heycoachproduction.de/kurs-kickboxen-v2.html",
-        "description": "Vom Weißgurt bis zum Schwarzgurt — alle Techniken der ISKA-Gürtelprüfungen in einem Kurs.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "name": "Alle Kurse — Hey Coach Production",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item": {
+    "@type": "Course",
+    "name": "Kickboxen Komplettkurs",
+    "url": "https://heycoachproduction.de/kurs-kickboxen-v2.html",
+    "description": "Vom Weißgurt bis zum Schwarzgurt — alle Techniken der ISKA-Gürtelprüfungen in einem Kurs.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
     },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "Course",
-        "name": "Kickboxen Basics",
-        "url": "https://heycoachproduction.de/kurs-basics.html",
-        "description": "Pratzen halten, Boxsack, Bandagen, Mundschutz, Kombinationen — die Grundlagen fürs Training.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "Course",
-        "name": "Vorbereitung auf die ISKA-Gürtelprüfung – einzelne Gürtelstufen",
-        "description": "Gezielte Online-Vorbereitung auf deine ISKA-Gürtelprüfung — vom Weißgurt bis zum Schwarzgurt. 126 Lektionen, 7 Gürtelstufen, in deinem eigenen Tempo.",
-        "url": "https://heycoachproduction.de/kurs-guertel-v2.html",
-        "image": "https://heycoachproduction.de/images/kickboxen-cover-new.webp",
-        "inLanguage": "de-DE",
-        "provider": {
-          "@type": "Organization",
-          "@id": "https://heycoachproduction.de/#organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de"
-        },
-        "instructor": {
-          "@type": "Person",
-          "name": "Nils Sylvain Gustav Loton",
-          "jobTitle": "ISKA-Europameister"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "24.99",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock",
-          "category": "Online-Kurs",
-          "url": "https://heycoachproduction.de/kurs-guertel-v2.html"
-        },
-        "hasCourseInstance": {
-          "@type": "CourseInstance",
-          "courseMode": "Online",
-          "courseWorkload": "PT4H",
-          "inLanguage": "de-DE"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-        "@type": "Course",
-        "name": "Muay Thai Komplettkurs",
-        "url": "https://heycoachproduction.de/kurs-muay-thai.html",
-        "description": "Schlagtechnik, Kicks, Ellenbogen, Knie und Clinch — Schritt für Schritt.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "Course",
-        "name": "7-Tage-FitStart",
-        "url": "https://heycoachproduction.de/kurs-fitstart.html",
-        "description": "Dein Schnellstart ins Muay Thai: eine Woche, jeden Tag ein kurzes Training.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "item": {
-        "@type": "Course",
-        "name": "Physio-Paket mit Elsa",
-        "url": "https://heycoachproduction.de/kurs-physio-paket.html",
-        "description": "Rücken, Haltung, Nacken & Schultern, Hüfte und Knie — alle Kurse mit Elsa in einem Paket.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "item": {
-        "@type": "Course",
-        "name": "11 Tage Rücken Fit",
-        "url": "https://heycoachproduction.de/kurs-ruecken-reset.html",
-        "description": "Übungen für einen stabilen, beweglichen Rücken — 20 bis 30 Minuten am Tag.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "item": {
-        "@type": "Course",
-        "name": "Aufrechte Haltung",
-        "url": "https://heycoachproduction.de/kurs-haltung.html",
-        "description": "Brustwirbelsäule, Schulterblätter und Rumpf: Aufrichten als Bewegung lernen, nicht als Kraftakt.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 9,
-      "item": {
-        "@type": "Course",
-        "name": "Nacken & Schultern",
-        "url": "https://heycoachproduction.de/kurs-nacken-schultern.html",
-        "description": "Halswirbelsäule, oberer Rücken und Schultern: Stabilität und Beweglichkeit, damit nicht der Nacken alles allein macht.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
-      "item": {
-        "@type": "Course",
-        "name": "Hüfte & Beweglichkeit",
-        "url": "https://heycoachproduction.de/kurs-huefte-beweglichkeit.html",
-        "description": "Zehen berühren, aktive Hüfte, Richtung Spagat und tiefe Hocke — Schritt für Schritt.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 11,
-      "item": {
-        "@type": "Course",
-        "name": "Starke Knie",
-        "url": "https://heycoachproduction.de/kurs-knie.html",
-        "description": "Beweglichkeit und Kraft für Knie, Hüfte, Rumpf und Sprunggelenk — fürs Laufen und Wandern.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 12,
-      "item": {
-        "@type": "Course",
-        "name": "Kämpfen wie Chris Wunn",
-        "url": "https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html",
-        "description": "Stellung, Deckung, Distanz — dann Chris' Top 5, Cardio, Recovery und die mentale Vorbereitung.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Hey Coach Production GmbH",
-          "url": "https://heycoachproduction.de/"
-        }
-      }
+    "image": "https://heycoachproduction.de/assets/img/covers/kickboxen-komplettkurs.webp",
+    "offers": {
+     "@type": "Offer",
+     "price": "99.00",
+     "priceCurrency": "EUR",
+     "availability": "https://schema.org/InStock",
+     "url": "https://heycoachproduction.de/kurs-kickboxen-v2.html",
+     "category": "Online-Kurs"
     }
-  ]
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "item": {
+    "@type": "Course",
+    "name": "Kickboxen Basics",
+    "url": "https://heycoachproduction.de/kurs-basics.html",
+    "description": "Pratzen halten, Boxsack, Bandagen, Mundschutz, Kombinationen — die Grundlagen fürs Training.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/images/basics-cover.webp"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "item": {
+    "@type": "Course",
+    "name": "Vorbereitung auf die ISKA-Gürtelprüfung – einzelne Gürtelstufen",
+    "description": "Gezielte Online-Vorbereitung auf deine ISKA-Gürtelprüfung — vom Weißgurt bis zum Schwarzgurt. 126 Lektionen, 7 Gürtelstufen, in deinem eigenen Tempo.",
+    "url": "https://heycoachproduction.de/kurs-guertel-v2.html",
+    "image": "https://heycoachproduction.de/images/kickboxen-cover-new.webp",
+    "inLanguage": "de-DE",
+    "provider": {
+     "@type": "Organization",
+     "@id": "https://heycoachproduction.de/#organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de"
+    },
+    "instructor": {
+     "@type": "Person",
+     "name": "Nils Sylvain Gustav Loton",
+     "jobTitle": "ISKA-Europameister"
+    },
+    "offers": {
+     "@type": "Offer",
+     "price": "24.99",
+     "priceCurrency": "EUR",
+     "availability": "https://schema.org/InStock",
+     "category": "Online-Kurs",
+     "url": "https://heycoachproduction.de/kurs-guertel-v2.html"
+    },
+    "hasCourseInstance": {
+     "@type": "CourseInstance",
+     "courseMode": "Online",
+     "courseWorkload": "PT4H",
+     "inLanguage": "de-DE"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 4,
+   "item": {
+    "@type": "Course",
+    "name": "Muay Thai Komplettkurs",
+    "url": "https://heycoachproduction.de/kurs-muay-thai.html",
+    "description": "Schlagtechnik, Kicks, Ellenbogen, Knie und Clinch — Schritt für Schritt.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/covers/muay-thai-komplettkurs.webp",
+    "offers": {
+     "@type": "Offer",
+     "price": "129.00",
+     "priceCurrency": "EUR",
+     "availability": "https://schema.org/InStock",
+     "url": "https://heycoachproduction.de/kurs-muay-thai.html",
+     "category": "Online-Kurs"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 5,
+   "item": {
+    "@type": "Course",
+    "name": "7-Tage-FitStart",
+    "url": "https://heycoachproduction.de/kurs-fitstart.html",
+    "description": "Dein Schnellstart ins Muay Thai: eine Woche, jeden Tag ein kurzes Training.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/covers/fitstart.webp",
+    "offers": {
+     "@type": "Offer",
+     "price": "9.00",
+     "priceCurrency": "EUR",
+     "availability": "https://schema.org/InStock",
+     "url": "https://heycoachproduction.de/kurs-fitstart.html",
+     "category": "Online-Kurs"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 6,
+   "item": {
+    "@type": "Course",
+    "name": "Physio-Paket mit Elsa",
+    "url": "https://heycoachproduction.de/kurs-physio-paket.html",
+    "description": "Rücken, Haltung, Nacken & Schultern, Hüfte und Knie — alle Kurse mit Elsa in einem Paket.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/new/elsa-portrait-card.webp"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 7,
+   "item": {
+    "@type": "Course",
+    "name": "11 Tage Rücken Fit",
+    "url": "https://heycoachproduction.de/kurs-ruecken-reset.html",
+    "description": "Übungen für einen stabilen, beweglichen Rücken — 20 bis 30 Minuten am Tag.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/new/elsa-ruecken-card.webp",
+    "offers": {
+     "@type": "Offer",
+     "price": "49.00",
+     "priceCurrency": "EUR",
+     "availability": "https://schema.org/InStock",
+     "url": "https://heycoachproduction.de/kurs-ruecken-reset.html",
+     "category": "Online-Kurs"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 8,
+   "item": {
+    "@type": "Course",
+    "name": "Aufrechte Haltung",
+    "url": "https://heycoachproduction.de/kurs-haltung.html",
+    "description": "Brustwirbelsäule, Schulterblätter und Rumpf: Aufrichten als Bewegung lernen, nicht als Kraftakt.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/covers/haltung.webp"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 9,
+   "item": {
+    "@type": "Course",
+    "name": "Nacken & Schultern",
+    "url": "https://heycoachproduction.de/kurs-nacken-schultern.html",
+    "description": "Halswirbelsäule, oberer Rücken und Schultern: Stabilität und Beweglichkeit, damit nicht der Nacken alles allein macht.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/new/elsa-nacken-card.webp"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 10,
+   "item": {
+    "@type": "Course",
+    "name": "Hüfte & Beweglichkeit",
+    "url": "https://heycoachproduction.de/kurs-huefte-beweglichkeit.html",
+    "description": "Zehen berühren, aktive Hüfte, Richtung Spagat und tiefe Hocke — Schritt für Schritt.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/new/elsa-huefte-card.webp"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 11,
+   "item": {
+    "@type": "Course",
+    "name": "Starke Knie",
+    "url": "https://heycoachproduction.de/kurs-knie.html",
+    "description": "Beweglichkeit und Kraft für Knie, Hüfte, Rumpf und Sprunggelenk — fürs Laufen und Wandern.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/new/elsa-knie-card.webp"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 12,
+   "item": {
+    "@type": "Course",
+    "name": "Kämpfen wie Chris Wunn",
+    "url": "https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html",
+    "description": "Stellung, Deckung, Distanz — dann Chris' Top 5, Cardio, Recovery und die mentale Vorbereitung.",
+    "provider": {
+     "@id": "https://heycoachproduction.de/#organization",
+     "@type": "Organization",
+     "name": "Hey Coach Production GmbH",
+     "url": "https://heycoachproduction.de/"
+    },
+    "image": "https://heycoachproduction.de/assets/img/new/chris-portrait-card.webp"
+   }
+  }
+ ]
 }
 </script>
     <link rel="stylesheet" href="assets/lib2.css?v=20261002">
     <link rel="stylesheet" href="assets/kurse.css?v=20261002">
 <style>/* 01.10 */@media(max-width:600px){.kc-grid .kc-card,.kc-sec--bald .hc2-card{max-width:none;width:auto}}h2{text-wrap:balance}@media(max-width:480px){h1,h2,h3{-webkit-hyphens:manual!important;hyphens:manual!important}}</style>
+<style>/* 02.10 Handy-Header: gleiches Format wie hc-menu.js schon vor dem JS (kein Springen) */@media(max-width:860px){.nav,.nav.scrolled{height:64px;padding-top:0!important;padding-bottom:0!important;display:flex;align-items:center;background:#06081A!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-bottom:1px solid rgba(255,255,255,.07)!important}.nav .container{width:100%;padding:0 74px 0 20px!important}.nav .nav-logo img{height:44px!important}.nav .nav-links{display:none!important}.nav-kurse-m{min-height:44px;padding:0 16px!important;border-radius:12px!important;margin:0 0 0 auto!important}}</style>
+<style>/* 02.10 Handy-Footer kompakt (wie Startseite) */@media(max-width:600px){.footer-grid{grid-template-columns:1fr 1fr!important;gap:1.75rem 1.25rem!important}.footer-brand{grid-column:1/-1!important}.footer-grid>.footer-col:last-child{display:none}.footer-trust{flex-direction:column;gap:.4rem;text-align:center}.footer-trust-sep{display:none!important}.footer-bottom{gap:.75rem}.footer-legal{flex-wrap:wrap;justify-content:center;gap:.25rem 1.25rem}}</style>
+<style>/* 02.10 Handy: keine Texte unter 12 px (Preise, MwSt.-Hinweis, Badges, Labels) */@media(max-width:600px){html body .hc2-label,html body .hc2-vat,html body .hc2-badge,html body .hc-badge,html body .hc-dur,html body .section-label,html body .hc-lib-eyebrow,html body .hcs-k,html body .trainer-card-tag,html body .hc-blogcard-cat,html body .footer-col h3,html body .footer-col h4,html body .footer-trust,html body .about-slider figcaption span,html body .award-text span{font-size:12px}html body .hc-card-meta,html body .hc-card-meta span,html body .hc-price{font-size:12.5px}html body .award-text strong{font-size:13px}html body .hc2-badge,html body .hc-badge{letter-spacing:.06em}}</style>
+<style>/* 02.10 Desktop: keine Texte unter 12 px */@media(min-width:601px){html body .hc2-label,html body .hc2-vat,html body .hc2-badge,html body .hc-dur,html body .hc-badge,html body .about-slider figcaption span,html body .section-label,html body .trainer-card-tag,html body .award-text span,html body .footer-col h3,html body .hc-blogcard-cat,html body .hcs-k,html body .hc-lib-eyebrow{font-size:12px}}.hero .hero-eyebrow{color:rgba(255,255,255,.8);text-shadow:0 1px 14px rgba(0,0,0,.6)}</style>
+<style>/* 02.10 Tippziele ≥ 44 px (Handy) */.kc-sec-side a{display:inline-flex;align-items:center;min-height:44px}footer .footer-col a{display:block;width:fit-content;margin:0 0 2px;padding:10px 0}.footer-legal a{display:inline-block;padding:12px 0}@media(max-width:600px){.kc-chip{min-height:44px}}</style>
+<style>/* 02.10 Katalog-FAQ */.kc-faq{padding-top:clamp(40px,4vw,60px)}.kc-faq-list{margin-top:14px;border-top:1px solid rgba(255,255,255,.08);max-width:860px}.kc-faq details{border-bottom:1px solid rgba(255,255,255,.08)}.kc-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:56px;padding:12px 0;font-family:'Syne',sans-serif;font-weight:600;font-size:clamp(15px,1.25vw,17px);line-height:1.35;color:#fff}.kc-faq summary::-webkit-details-marker{display:none}.kc-faq summary::after{content:"+";flex:none;width:28px;height:28px;display:grid;place-items:center;border:1px solid rgba(212,160,64,.45);border-radius:50%;color:#D4A040;font-size:18px;line-height:1;transition:transform .25s ease}.kc-faq details[open] summary::after{transform:rotate(45deg)}.kc-faq summary:hover{color:#D4A040}.kc-faq summary:focus-visible{outline:2px solid #D4A040;outline-offset:4px;border-radius:6px}.kc-faq details p{margin:0;padding:0 44px 18px 0;color:#B0B8D0;font-size:15px;line-height:1.65;max-width:72ch}@media(prefers-reduced-motion:reduce){.kc-faq summary::after{transition:none}}</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Welcher Kurs passt zu mir als Anfänger?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Für Kickboxen startest du mit dem Kickboxen Komplettkurs (€99, 126 Lektionen, alle 7 Gürtelstufen) – er beginnt beim Weißgurt. Für Muay Thai gibt es den Muay Thai Komplettkurs mit Marlon (€129, 8 Module). Zum Reinschnuppern eignet sich der 7-Tage-FitStart für €9. Alle Preise inkl. 19 % MwSt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Komplettkurs oder einzelne Gürtelstufen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Jede Gürtelstufe gibt es als eigenen Vorbereitungskurs ab €24,99, der Weißgurt ist kostenlos. Die Prüfung selbst legst du in deinem Verein ab. Wenn du alle 7 Stufen möchtest, ist der Kickboxen Komplettkurs für €99 die günstigere Option."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Für wen sind die Kurse geeignet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Unsere Kurse sind für alle Levels geeignet – vom absoluten Anfänger bis zum Fortgeschrittenen. Jeder Kurs beginnt mit den Grundlagen und baut systematisch auf. Ausnahme: Die Masterclass „Kämpfen wie Chris Wunn“ setzt Grundlagen voraus."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wie lange habe ich Zugang? Gibt es ein Abo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Kein Abo: Du zahlst einmal und hast 24 Monate lang vollen Zugang zu deinem Kurs. Der Zugang wird direkt nach dem Kauf freigeschaltet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wann erscheinen die Kurse mit „Im Oktober“?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Die neuen Physio-Kurse mit Elsa (Aufrechte Haltung, Nacken & Schultern, Hüfte & Beweglichkeit, Starke Knie), das Physio-Paket, Kickboxen Basics und die Masterclass „Kämpfen wie Chris Wunn“ erscheinen im Oktober 2026. Bis dahin kannst du sie noch nicht kaufen. „11 Tage Rücken Fit“ mit Elsa gibt es schon jetzt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Bekomme ich individuelles Feedback zu meiner Technik?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nein. Unsere Kurse sind Selbstlernangebote: Du lernst mit vorproduzierten Videolektionen in deinem eigenen Tempo. Eine persönliche Korrektur deiner Technik durch unsere Trainer ist nicht Bestandteil der Kurse. In der Community tauschst du dich mit anderen Teilnehmern aus."
+   }
+  }
+ ]
+}
+</script>
 </head>
-    <body>
+    <body><!--email_off-->
         <!-- ============================================================
        FIXED NAVIGATION (v7 — persistent + hamburger mobile)
        ============================================================ -->
@@ -338,7 +454,7 @@
                     <div><h2>Kickboxen · Gürtelsystem</h2><p>Vom Weißgurt bis zum Schwarzgurt. Jede Stufe einzeln oder alle 7 im Komplettkurs.</p></div>
                     <div class="kc-sec-side"><span class="kc-status">8 verfügbar · 1 ab Oktober</span><a href="kurs-guertel-v2.html">Mehr zu den Gürtelstufen ›</a></div>
                 </div>
-                <div class="kc-grid"><a class="hc2-card kc-card" href="kurs-kickboxen-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/kickboxen-komplettkurs.webp" srcset="assets/img/covers/kickboxen-komplettkurs-720.webp 720w, assets/img/covers/kickboxen-komplettkurs.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Kickboxen Komplettkurs" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--gold">Alle 7 Gürtel</span></div><div class="hc2-cap"><span class="hc2-label">Komplettkurs · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Kickboxen Komplettkurs</div><div class="hc2-meta"><span class="hc2-price">€99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">126&nbsp;Lektionen · alle 7 Gürtel</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-basics.html" data-dir="kickboxen" data-status="soon"><div class="hc2-media"><img src="assets/img/covers/basics.webp" srcset="assets/img/covers/basics-720.webp 720w, assets/img/covers/basics.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Kickboxen Basics" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--gold">Im Oktober</span></div><div class="hc2-cap"><span class="hc2-label">Einstieg · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Kickboxen Basics</div><div class="hc2-meta"><span class="hc2-price">€29</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">6&nbsp;Lektionen · 1 Std 17&nbsp;Min</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/weissgurt.webp" srcset="assets/img/covers/weissgurt-720.webp 720w, assets/img/covers/weissgurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Weißgurt" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--free">Kostenlos</span></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 1/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Weißgurt</div><div class="hc2-meta"><span class="hc2-price hc2-price--free">Kostenlos</span><span class="hc2-facts">Stand · Deckung · Atmung · Meidbewegungen</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/gelbgurt.webp" srcset="assets/img/covers/gelbgurt-720.webp 720w, assets/img/covers/gelbgurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Gelbgurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 2/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Gelbgurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Jab · Front Kick · Low Kick · Mittelkick</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/orangegurt.webp" srcset="assets/img/covers/orangegurt-720.webp 720w, assets/img/covers/orangegurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Orangegurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 3/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Orangegurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Haken · Cross · Side Kick · Knie</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/gruengurt.webp" srcset="assets/img/covers/gruengurt-720.webp 720w, assets/img/covers/gruengurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Grüngurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 4/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Grüngurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Uppercut · High Kick · Axe Kick · Feger</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/blaugurt.webp" srcset="assets/img/covers/blaugurt-720.webp 720w, assets/img/covers/blaugurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Blaugurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 5/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Blaugurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Hook Kick · Backheel Kick · Jump Front Kick</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/braungurt.webp" srcset="assets/img/covers/braungurt-720.webp 720w, assets/img/covers/braungurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Braungurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 6/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Braungurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Spinning Hook Kick · Spinning Side Kick · Tornado Kick</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/schwarzgurt.webp" srcset="assets/img/covers/schwarzgurt-720.webp 720w, assets/img/covers/schwarzgurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Schwarzgurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 7/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Schwarzgurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Jump Spinning Kicks · Scorpion Kick · Superman Punch</span></div><span class="hc2-go">Zum Kurs ›</span></div></a></div>
+                <div class="kc-grid"><a class="hc2-card kc-card" href="kurs-kickboxen-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/kickboxen-komplettkurs.webp" srcset="assets/img/covers/kickboxen-komplettkurs-720.webp 720w, assets/img/covers/kickboxen-komplettkurs.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Kickboxen Komplettkurs" fetchpriority="high" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--gold">Alle 7 Gürtel</span></div><div class="hc2-cap"><span class="hc2-label">Komplettkurs · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Kickboxen Komplettkurs</div><div class="hc2-meta"><span class="hc2-price">€99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">126&nbsp;Lektionen · alle 7 Gürtel</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-basics.html" data-dir="kickboxen" data-status="soon"><div class="hc2-media"><img src="assets/img/covers/basics.webp" srcset="assets/img/covers/basics-720.webp 720w, assets/img/covers/basics.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Kickboxen Basics" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--gold">Im Oktober</span></div><div class="hc2-cap"><span class="hc2-label">Einstieg · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Kickboxen Basics</div><div class="hc2-meta"><span class="hc2-price">€29</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">6&nbsp;Lektionen · 1 Std 17&nbsp;Min</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/weissgurt.webp" srcset="assets/img/covers/weissgurt-720.webp 720w, assets/img/covers/weissgurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Weißgurt" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--free">Kostenlos</span></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 1/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Weißgurt</div><div class="hc2-meta"><span class="hc2-price hc2-price--free">Kostenlos</span><span class="hc2-facts">Stand · Deckung · Atmung · Meidbewegungen</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/gelbgurt.webp" srcset="assets/img/covers/gelbgurt-720.webp 720w, assets/img/covers/gelbgurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Gelbgurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 2/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Gelbgurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Jab · Front Kick · Low Kick · Mittelkick</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/orangegurt.webp" srcset="assets/img/covers/orangegurt-720.webp 720w, assets/img/covers/orangegurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Orangegurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 3/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Orangegurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Haken · Cross · Side Kick · Knie</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/gruengurt.webp" srcset="assets/img/covers/gruengurt-720.webp 720w, assets/img/covers/gruengurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Grüngurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 4/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Grüngurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Uppercut · High Kick · Axe Kick · Feger</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/blaugurt.webp" srcset="assets/img/covers/blaugurt-720.webp 720w, assets/img/covers/blaugurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Blaugurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 5/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Blaugurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Hook Kick · Backheel Kick · Jump Front Kick</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/braungurt.webp" srcset="assets/img/covers/braungurt-720.webp 720w, assets/img/covers/braungurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Braungurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 6/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Braungurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Spinning Hook Kick · Spinning Side Kick · Tornado Kick</span></div><span class="hc2-go">Zum Kurs ›</span></div></a><a class="hc2-card kc-card" href="kurs-guertel-v2.html" data-dir="kickboxen" data-status="live"><div class="hc2-media"><img src="assets/img/covers/schwarzgurt.webp" srcset="assets/img/covers/schwarzgurt-720.webp 720w, assets/img/covers/schwarzgurt.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="Schwarzgurt" loading="lazy" decoding="async" width="960" height="540"></div><div class="hc2-cap"><span class="hc2-label">Gürtelstufe 7/7 · mit Nils, Heiko &amp; Jana</span><div class="hc2-name">Schwarzgurt</div><div class="hc2-meta"><span class="hc2-price">€24,99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">Jump Spinning Kicks · Scorpion Kick · Superman Punch</span></div><span class="hc2-go">Zum Kurs ›</span></div></a></div>
             </section>
             <section class="kc-sec" id="muaythai" data-sec="muaythai">
                 <div class="kc-sec-head">
@@ -362,12 +478,13 @@
                 <div class="kc-grid kc-grid--wide"><a class="hc2-card kc-card" href="kurs-kaempfen-wie-chris-wunn.html" data-dir="fighter" data-status="soon"><div class="hc2-media"><img src="assets/img/new/chris-portrait-card.webp" srcset="assets/img/new/chris-portrait-card-720.webp 720w, assets/img/new/chris-portrait-card.webp 1280w" sizes="(max-width: 900px) 82vw, 393px" alt="Kämpfen wie Chris Wunn" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--gold">Im Oktober</span></div><div class="hc2-cap"><span class="hc2-label">Masterclass · Kickboxen · mit Chris Wunn</span><div class="hc2-name">Kämpfen wie Chris Wunn</div><div class="hc2-meta"><span class="hc2-price">€99</span><span class="hc2-vat">inkl. MwSt.</span><span class="hc2-facts">16&nbsp;Videos · 5&nbsp;Module</span></div><span class="hc2-go">Zum Kurs ›</span></div></a></div>
             </section>
             
-            <section class="kc-sec kc-sec--bald" id="bald-verfuegbar" data-sec="planung"> <div class="kc-sec-head"><div><h2>Bald verfügbar</h2><p>Neue Kurslinien, an denen wir gerade arbeiten. Noch nicht buchbar.</p></div></div> <div class="kc-grid"><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/valentin-knau.webp" srcset="assets/img/in-arbeit/valentin-knau-720.webp 720w, assets/img/in-arbeit/valentin-knau.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Masterclass · Kickboxen</span><div class="hc2-name">Kämpfen wie Valentin Knau</div><div class="hc2-meta"><span class="hc2-facts">GLORY-Kämpfer · Team ExitAsia</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/mma-joscha.webp" srcset="assets/img/in-arbeit/mma-joscha-720.webp 720w, assets/img/in-arbeit/mma-joscha.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">MMA · Einstieg</span><div class="hc2-name">MMA mit Joscha</div><div class="hc2-meta"><span class="hc2-facts">Striking · Ringen · Grundlagen</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/karate-felix.webp" srcset="assets/img/in-arbeit/karate-felix-720.webp 720w, assets/img/in-arbeit/karate-felix.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Karate · ExitAsia</span><div class="hc2-name">Karate mit Felix</div><div class="hc2-meta"><span class="hc2-facts">Karate von Grund auf</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/muay-thai-1-khan.webp" srcset="assets/img/in-arbeit/muay-thai-1-khan-720.webp 720w, assets/img/in-arbeit/muay-thai-1-khan.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Muay Thai · Khan-Grad</span><div class="hc2-name">Muay Thai — 1. Khan</div><div class="hc2-meta"><span class="hc2-facts">Prüfungsinhalte Stufe 1</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/muay-thai-2-khan.webp" srcset="assets/img/in-arbeit/muay-thai-2-khan-720.webp 720w, assets/img/in-arbeit/muay-thai-2-khan.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Muay Thai · Khan-Grad</span><div class="hc2-name">Muay Thai — 2. Khan</div><div class="hc2-meta"><span class="hc2-facts">Prüfungsinhalte Stufe 2</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/ernaehrung.webp" srcset="assets/img/in-arbeit/ernaehrung-720.webp 720w, assets/img/in-arbeit/ernaehrung.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Trainingslehre</span><div class="hc2-name">Ernährung im Sport</div><div class="hc2-meta"><span class="hc2-facts">Essen für Training &amp; Wettkampf</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/b2b-gyms.webp" srcset="assets/img/in-arbeit/b2b-gyms-720.webp 720w, assets/img/in-arbeit/b2b-gyms.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">B2B · Für Kampfsportschulen</span><div class="hc2-name">Mehr Mitglieder für dein Gym</div><div class="hc2-meta"><span class="hc2-facts">Vom Interessenten zum Mitglied</span></div></div></div></div> </section>
+            <section class="kc-sec kc-sec--bald" id="bald-verfuegbar" data-sec="planung"> <div class="kc-sec-head"><div><h2>Bald verfügbar</h2><p>Neue Kurslinien, an denen wir gerade arbeiten. Noch nicht buchbar.</p></div></div> <div class="kc-grid"><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/valentin-knau.webp" srcset="assets/img/in-arbeit/valentin-knau-720.webp 720w, assets/img/in-arbeit/valentin-knau.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" aria-hidden="true" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Masterclass · Kickboxen</span><div class="hc2-name">Kämpfen wie Valentin Knau</div><div class="hc2-meta"><span class="hc2-facts">GLORY-Kämpfer · Team ExitAsia</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/mma-joscha.webp" srcset="assets/img/in-arbeit/mma-joscha-720.webp 720w, assets/img/in-arbeit/mma-joscha.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" aria-hidden="true" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">MMA · Einstieg</span><div class="hc2-name">MMA mit Joscha</div><div class="hc2-meta"><span class="hc2-facts">Striking · Ringen · Grundlagen</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/karate-felix.webp" srcset="assets/img/in-arbeit/karate-felix-720.webp 720w, assets/img/in-arbeit/karate-felix.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" aria-hidden="true" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Karate · ExitAsia</span><div class="hc2-name">Karate mit Felix</div><div class="hc2-meta"><span class="hc2-facts">Karate von Grund auf</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/muay-thai-1-khan.webp" srcset="assets/img/in-arbeit/muay-thai-1-khan-720.webp 720w, assets/img/in-arbeit/muay-thai-1-khan.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" aria-hidden="true" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Muay Thai · Khan-Grad</span><div class="hc2-name">Muay Thai — 1. Khan</div><div class="hc2-meta"><span class="hc2-facts">Prüfungsinhalte Stufe 1</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/muay-thai-2-khan.webp" srcset="assets/img/in-arbeit/muay-thai-2-khan-720.webp 720w, assets/img/in-arbeit/muay-thai-2-khan.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" aria-hidden="true" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Muay Thai · Khan-Grad</span><div class="hc2-name">Muay Thai — 2. Khan</div><div class="hc2-meta"><span class="hc2-facts">Prüfungsinhalte Stufe 2</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/ernaehrung.webp" srcset="assets/img/in-arbeit/ernaehrung-720.webp 720w, assets/img/in-arbeit/ernaehrung.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" aria-hidden="true" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">Trainingslehre</span><div class="hc2-name">Ernährung im Sport</div><div class="hc2-meta"><span class="hc2-facts">Essen für Training &amp; Wettkampf</span></div></div></div><div class="hc2-card is-soon" aria-disabled="true"><div class="hc2-media"><img src="assets/img/in-arbeit/b2b-gyms.webp" srcset="assets/img/in-arbeit/b2b-gyms-720.webp 720w, assets/img/in-arbeit/b2b-gyms.webp 960w" sizes="(max-width: 900px) 82vw, 393px" alt="" aria-hidden="true" loading="lazy" decoding="async" width="960" height="540"><span class="hc2-badge hc2-badge--prod">Bald verfügbar</span></div><div class="hc2-cap"><span class="hc2-label">B2B · Für Kampfsportschulen</span><div class="hc2-name">Mehr Mitglieder für dein Gym</div><div class="hc2-meta"><span class="hc2-facts">Vom Interessenten zum Mitglied</span></div></div></div></div> </section>
 <section class="kc-sec" id="in-planung" data-sec="planung">
                 <div class="kc-sec-head"><div><h2>In Planung</h2><p>Diese Richtungen bereiten wir vor, buchen kannst du sie noch nicht (Stand: Oktober 2026).</p></div></div>
                 <ul class="hc2-plan kc-plan"><li class="hc2-ptile"><b>MMA</b><small>Grundlagen · Striking · Ringen</small></li><li class="hc2-ptile"><b>Brazilian Jiu-Jitsu</b><small>Anfänger bis Fortgeschrittene</small></li><li class="hc2-ptile"><b>Kickboxen · Disziplinen</b><small>Semi-, Leicht-, Vollkontakt · K-1</small></li><li class="hc2-ptile"><b>Stile &amp; Seminare</b><small>Karate · Kung Fu · Krav Maga</small></li><li class="hc2-ptile"><b>Trainingslehre &amp; Leistung</b><small>Methodik · Ernährung · Regeneration</small></li><li class="hc2-ptile"><b>Ringrichter &amp; Regelwerk</b><small>Regeln · Ringrichter I &amp; II</small></li><li class="hc2-ptile"><b>Für Gyms</b><small>Marketing · Mitgliedergewinnung</small></li><li class="hc2-ptile"><b>Spezial</b><small>Kinder · Frauen-Selbstverteidigung · Mentale Stärke</small></li></ul>
             </section>
-            <p class="kc-foot">Alle Preise inkl. 19 % MwSt. · Einmalzahlung · 24&nbsp;Monate Zugang ab Kaufdatum · Richtungen „In Planung“ sind noch nicht buchbar.</p>
+           <section class="kc-faq" id="fragen" aria-labelledby="kc-faq-h"><div class="kc-sec-head"><div><h2 id="kc-faq-h">Welcher Kurs passt zu mir?</h2><p>Die häufigsten Fragen vor dem Kauf.</p></div></div><div class="kc-faq-list"><details><summary>Welcher Kurs passt zu mir als Anfänger?</summary><p>Für Kickboxen startest du mit dem Kickboxen Komplettkurs (€99, 126 Lektionen, alle 7 Gürtelstufen) – er beginnt beim Weißgurt. Für Muay Thai gibt es den Muay Thai Komplettkurs mit Marlon (€129, 8 Module). Zum Reinschnuppern eignet sich der 7-Tage-FitStart für €9. Alle Preise inkl. 19 % MwSt.</p></details><details><summary>Komplettkurs oder einzelne Gürtelstufen?</summary><p>Jede Gürtelstufe gibt es als eigenen Vorbereitungskurs ab €24,99, der Weißgurt ist kostenlos. Die Prüfung selbst legst du in deinem Verein ab. Wenn du alle 7 Stufen möchtest, ist der Kickboxen Komplettkurs für €99 die günstigere Option.</p></details><details><summary>Für wen sind die Kurse geeignet?</summary><p>Unsere Kurse sind für alle Levels geeignet – vom absoluten Anfänger bis zum Fortgeschrittenen. Jeder Kurs beginnt mit den Grundlagen und baut systematisch auf. Ausnahme: Die Masterclass „Kämpfen wie Chris Wunn“ setzt Grundlagen voraus.</p></details><details><summary>Wie lange habe ich Zugang? Gibt es ein Abo?</summary><p>Kein Abo: Du zahlst einmal und hast 24 Monate lang vollen Zugang zu deinem Kurs. Der Zugang wird direkt nach dem Kauf freigeschaltet.</p></details><details><summary>Wann erscheinen die Kurse mit „Im Oktober“?</summary><p>Die neuen Physio-Kurse mit Elsa (Aufrechte Haltung, Nacken &amp; Schultern, Hüfte &amp; Beweglichkeit, Starke Knie), das Physio-Paket, Kickboxen Basics und die Masterclass „Kämpfen wie Chris Wunn“ erscheinen im Oktober 2026. Bis dahin kannst du sie noch nicht kaufen. „11 Tage Rücken Fit“ mit Elsa gibt es schon jetzt.</p></details><details><summary>Bekomme ich individuelles Feedback zu meiner Technik?</summary><p>Nein. Unsere Kurse sind Selbstlernangebote: Du lernst mit vorproduzierten Videolektionen in deinem eigenen Tempo. Eine persönliche Korrektur deiner Technik durch unsere Trainer ist nicht Bestandteil der Kurse. In der Community tauschst du dich mit anderen Teilnehmern aus.</p></details></div></section>
+  <p class="kc-foot">Alle Preise inkl. 19 % MwSt. · Einmalzahlung · 24&nbsp;Monate Zugang ab Kaufdatum · Richtungen „In Planung“ sind noch nicht buchbar.</p>
             </div>
         </main>
         <footer class="footer">
@@ -375,7 +492,7 @@
                 <div class="footer-grid">
                     <div class="footer-brand">
                         <img src="images/logo-white.svg" alt="Hey Coach Production">
-                        <p>Online-Kampfsportkurse vom Trainerteam des ExitAsia Gym in Freiburg, seit 2006.</p>
+                        <p>Online-Kampfsportkurse aus der Region Freiburg. Jeden Monat trainieren über 1.500 Menschen offline mit unseren Trainern.</p>
                     </div>
                     <div class="footer-col">
                         <h3>Kurse</h3>
@@ -390,10 +507,10 @@
                     </div>
                     <div class="footer-col">
                         <h3>Unternehmen</h3>
-                        <a href="index.html#ueber-uns">&Uuml;ber uns</a>
+                        <a href="ueber-uns.html">&Uuml;ber uns</a>
                         <a href="index.html#trainer">Trainer</a>
                         <a href="https://app.heycoachproduction.de/communities/groups/hey-coach-community/home" target="_blank" rel="noopener">Community</a>
-                        <a href="mailto:heycoachproduction@gmail.com">Kontakt</a>
+                        <a href="kontakt.html">Kontakt</a>
                     </div>
                     <div class="footer-col">
                         <h3>Rechtliches</h3>
@@ -648,8 +765,8 @@
 
   });
   </script>
-        <script src="cookie-banner.js?v=3" defer></script>
-        <script src="hc-menu.js?v=2" defer></script>
+        <script src="cookie-banner.js?v=20261002m" defer></script>
+        <script src="hc-menu.js?v=20261002m" defer></script>
         <script src="assets/kurse.js?v=20261002" defer></script>
-    </body>
+    <!--/email_off--></body>
 </html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06081A">
+  <title>Über uns — Hey Coach Production GmbH</title>
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://heycoachproduction.de/ueber-uns.html">
+    <meta property="og:title" content="Über uns — Hey Coach Production GmbH">
+    <meta property="og:description" content="Hey Coach Production ist eine Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025. Unsere Geschichte, unsere Trainer und das Unternehmen.">
+    <meta property="og:image" content="https://heycoachproduction.de/images/og-heycoach.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Über uns — Hey Coach Production GmbH">
+    <meta property="og:url" content="https://heycoachproduction.de/ueber-uns.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Hey Coach Production">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Über uns — Hey Coach Production GmbH">
+    <meta name="twitter:description" content="Hey Coach Production ist eine Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025. Unsere Geschichte, unsere Trainer und das Unternehmen.">
+    <meta name="twitter:image" content="https://heycoachproduction.de/images/og-heycoach.jpg">
+  <meta name="description" content="Hey Coach Production ist eine Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025. Unsere Geschichte, unsere Trainer und das Unternehmen.">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #06081A;
+      --bg2:      #0C1228;
+      --accent:   #B87C1A;
+      --accent-hover: #D4A040;
+      --text:     #FFFFFF;
+      --text2:    #B0B8D0;
+      --border:   rgba(255,255,255,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: var(--accent); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--accent-hover); }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+      background: rgba(6,8,26,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .nav-logo img {
+      height: 48px;
+      display: block;
+    }
+
+    nav .nav-back {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text2);
+      transition: color .2s;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+    nav .nav-back:hover { color: var(--text); }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text2);
+      font-size: 15px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p, address {
+      color: var(--text2);
+      font-size: 15px;
+      font-style: normal;
+      margin-bottom: 16px;
+    }
+
+    address { line-height: 1.9; }
+
+    .legal-block {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 40px 36px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer img {
+      height: 28px;
+      margin-bottom: 14px;
+      opacity: 0.7;
+    }
+
+    footer p {
+      color: var(--text2);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    footer .footer-links {
+      margin-top: 10px;
+    }
+
+    footer .footer-links a {
+      margin: 0 10px;
+      font-size: 13px;
+      color: var(--text2);
+    }
+    footer .footer-links a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      nav { padding: 14px 18px; }
+      main { padding: 40px 18px 60px; }
+      .legal-block { padding: 28px 20px; }
+    }
+
+    @media (max-width: 375px) {
+      nav { padding: 12px 14px; }
+      nav .nav-logo img { height: 40px; }
+      main { padding: 32px 14px 48px; }
+      .legal-block { padding: 20px 16px; }
+      h2 { font-size: 17px; }
+      p, address { font-size: 14px; }
+    }
+  
+    /* ── Fix 2026-08-16: Tippziele. Fusszeilen- und Breadcrumb-Links waren 15-24px hoch;
+       unter ~40px trifft man sie auf dem Telefon nicht zuverlaessig. Optik bleibt gleich,
+       nur die klickbare Flaeche waechst (Padding, negativer Margin gleicht den Umbruch aus). ── */
+    footer a, .footer-legal a, .footer-col a, .footer-bottom a, .breadcrumb-trail a {
+      display: inline-block;
+      padding-top: 10px; padding-bottom: 10px;
+      margin-top: -10px; margin-bottom: -10px;
+    }
+    .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
+
+    /* ── Fix 2026-08-16: Lange deutsche Woerter (Komplettkurs, Guertelpruefung,
+       Widerrufsbelehrung, Schwergewicht...) ragten auf 320-375px aus ihrer Ueberschrift
+       heraus und wurden abgeschnitten. Silbentrennung greift, weil <html lang="de"> gesetzt ist. ── */
+    @media (max-width: 480px) {
+      h1, h2, h3, h4, .h1, .h2, .h3, .article-headline, .skill-title,
+      .cta-final-btn-title, .hero-name, .hero-headline {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto; hyphens: auto;
+      }
+    }
+</style>
+  <style>
+    .trainer-list{list-style:none;display:grid;gap:10px;margin:4px 0 8px}
+    .trainer-list li{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.02)}
+    .trainer-list a{font-weight:600;color:var(--text);min-height:24px}
+    .trainer-list a:hover{color:var(--accent-hover)}
+    .trainer-list span{color:var(--text2);font-size:14px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:12px;font-weight:600;font-size:15px}
+    .btn-gold{background:var(--accent);color:#fff}.btn-gold:hover{background:var(--accent-hover);color:#fff}
+    .btn-line{border:1px solid rgba(212,160,64,.55);color:var(--accent-hover)}.btn-line:hover{background:rgba(212,160,64,.1)}
+    .contact-big{font-size:18px;color:var(--text)}
+    .legal-block p a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(212,160,64,.55)}
+    .legal-block p.contact-big a{text-decoration:none}
+    @media (min-width:640px){.trainer-list{grid-template-columns:1fr 1fr}}
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Über Hey Coach",
+  "url": "https://heycoachproduction.de/ueber-uns.html",
+  "inLanguage": "de-DE",
+  "description": "Hey Coach Production ist eine Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Hey Coach Production",
+    "url": "https://heycoachproduction.de/"
+  },
+  "mainEntity": {
+    "@id": "https://heycoachproduction.de/#organization"
+  },
+  "about": {
+    "@id": "https://heycoachproduction.de/#organization"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Start",
+        "item": "https://heycoachproduction.de/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Über uns",
+        "item": "https://heycoachproduction.de/ueber-uns.html"
+      }
+    ]
+  }
+}
+  </script>
+<style>/* 02.10 Handy-Header schon vor hc-menu.js in 64 px (kein Layout-Sprung) */@media(max-width:860px){body>nav{height:64px;min-height:64px;padding:0 74px 0 20px!important;box-sizing:border-box;background:#06081A!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}body>nav .nav-logo img{height:44px!important;width:auto}}</style>
+</head>
+<body><!--email_off-->
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-white.svg" alt="Hey Coach Production">
+  </a>
+  <a href="index.html" class="nav-back">&larr; Zurück</a>
+</nav>
+
+<main>
+  <h1>Über Hey Coach</h1>
+  <p class="subtitle">Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg</p>
+
+  <div class="legal-block">
+
+    <h2>Wer wir sind</h2>
+    <p>Hey Coach Production ist eine Online-Akademie für Kampfsport und Physio-Training: Kickboxen mit dem Gürtelprogramm, Muay Thai und Physio-Training mit Elsa. Die GmbH wurde 2025 gegründet und sitzt in Kirchzarten bei Freiburg.</p>
+    <p>Mit unseren Trainern trainieren jeden Monat über 1.500 Menschen offline. Ihr Wissen steckt in Online-Kursen, die du in deinem Tempo durcharbeitest: einmal zahlen, 24 Monate Zugang, kein Abo.</p>
+
+    <hr class="divider">
+
+    <h2>Wie es angefangen hat</h2>
+    <p>2006 haben Nils und Heiko in Freiburg die Kampfsportschule ExitAsia gegründet. Heute trainieren dort über 1.500 Mitglieder an drei Standorten.</p>
+    <p>Mit den Jahren haben wir immer wieder dasselbe gesehen. Im Training bleibt pro Technik oft nur ein Durchgang, und vor der Gürtelprüfung fehlt vielen die Wiederholung. Wer im Schichtdienst arbeitet, Kinder hat oder weit weg wohnt, schafft es kaum regelmäßig in die Halle.</p>
+    <p>Daraus ist Hey Coach entstanden. Unsere Trainer zeigen jede Technik ruhig und aus mehreren Perspektiven im Video. So lernst du, wann und wo du willst, und bereitest dich gezielt auf deine nächste Stufe vor.</p>
+
+    <hr class="divider">
+
+    <h2>Unsere Trainer und Experten</h2>
+    <ul class="trainer-list">
+      <li><a href="trainer-nils.html">Nils</a><span>Mitgründer ExitAsia · Standortleitung Freiburg</span></li>
+      <li><a href="trainer-heiko.html">Heiko</a><span>Mitgründer ExitAsia · Standortleitung Kirchzarten</span></li>
+      <li><a href="trainer-marlon.html">Marlon</a><span>Mitgründer T1 Kampfsportzentrum</span></li>
+      <li><a href="trainer-jana.html">Jana</a><span>ISKA-Weltmeisterin · Aktive Wettkämpferin</span></li>
+      <li><a href="trainer-mohsen.html">Mohsen</a><span>K-1-Weltmeister (ISKA)</span></li>
+      <li><a href="trainer-chris-wunn.html">Chris Wunn</a><span>GLORY-Kämpfer · Cheftrainer Golden Gloves&nbsp;76</span></li>
+      <li><a href="trainer-elsa.html">Elsa</a><span>Physiotherapeutin · Gründerin MOVE &amp; BE</span></li>
+      <li><a href="trainer-weerda.html">Dr. Jan Weerda</a><span>Medizinische Leitung · Arzt &amp; Boxtherapeut</span></li>
+      <li><a href="trainer-leo.html">Leo</a><span>Hauptberuflicher Trainer</span></li>
+    </ul>
+
+    <hr class="divider">
+
+    <h2>Das Unternehmen</h2>
+    <address>
+      Hey Coach Production GmbH<br>
+      Kandelstr. 5<br>
+      79199 Kirchzarten<br>
+      Deutschland
+    </address>
+    <p>Gegründet 2025 · Amtsgericht Freiburg i. Br., HRB 732729<br>
+      Geschäftsführer: Nils Sylvain Gustav Loton, Leonard Felix Andris, Heidar Rudyi</p>
+
+    <div class="cta-row">
+      <a class="btn btn-gold" href="kurse.html">Alle Kurse ansehen</a>
+      <a class="btn btn-line" href="kontakt.html">Kontakt</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <img src="images/logo-white.svg" alt="Hey Coach Production">
+  <p>&copy; 2026 Hey Coach Production GmbH &middot; Kandelstr. 5, 79199 Kirchzarten</p>
+  <p class="footer-links">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="agb.html">AGB</a><a href="widerrufsbelehrung.html">Widerruf</a>
+  </p>
+</footer>
+
+<script src="cookie-banner.js?v=20261002m"></script>
+    <script src="hc-menu.js?v=20261002m" defer></script>
+<!--/email_off--></body>
+</html>

@@ -1,8 +1,8 @@
 # Hey Coach Production GmbH
 
-> Online Kampfsport-Plattform aus Kirchzarten — gegründet aus dem ExitAsia-Legacy (seit 2006). Wir bieten Online-Kurse in Muay Thai, Kickboxen, ISKA-Gürtelprüfung, Rückentraining und Anfänger-Programmen. Geleitet von echten Trainern mit nachweisbaren Credentials. DACH-only Markt.
+> Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025 (Hey Coach Production GmbH, HRB 732729, Amtsgericht Freiburg). Wir bieten Online-Kurse in Muay Thai, Kickboxen, ISKA-Gürtelprüfung, Rückentraining und Anfänger-Programmen. Geleitet von echten Trainern mit nachweisbaren Credentials. DACH-only Markt.
 
-Hey Coach Production GmbH (Kandelstr. 5, 79199 Kirchzarten) ist eine deutsche GmbH, die Online-Kampfsport-Kurse für den DACH-Raum produziert. Die Trainer arbeiten seit über 20 Jahren in der ExitAsia-Kampfsportschule und haben mehrere Tausend Schüler ausgebildet. Wir kombinieren echte Hallen-Expertise mit modernen Online-Formaten — keine generischen Fitness-Versprechen, keine Kampfsport-Mythen, sondern strukturierte Programme.
+Hey Coach Production GmbH (Kandelstr. 5, 79199 Kirchzarten) ist eine deutsche GmbH, die Online-Kampfsport-Kurse für den DACH-Raum produziert. Mitgründer Nils Loton hat 2006 gemeinsam mit Heiko die Kampfsportschule ExitAsia in Freiburg aufgebaut. Mit unseren Trainern trainieren jeden Monat über 1.500 Menschen offline. Zum Team gehören Welt- und Europameister, Profikämpfer, eine Physiotherapeutin und ein Arzt. Wir kombinieren echte Hallen-Expertise mit modernen Online-Formaten — keine generischen Fitness-Versprechen, keine Kampfsport-Mythen, sondern strukturierte Programme.
 
 ## Brand voice und Inhaltsstil
 
@@ -34,13 +34,19 @@ Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verw
 
 ## Kurse (commercial product information)
 
-| Kurs | Preis | Inhalt |
+| Kurs | Preis (inkl. 19 % MwSt.) | Inhalt |
 |------|-------|--------|
 | 7-Tage-FitStart | €9 | Einsteiger-Kurs mit Marlon Tröscher, 20 Min/Tag |
 | Kickboxen Komplettkurs | €99 | 7 ISKA-Gürtelstufen, einmal zahlen, 24 Monate Zugang |
 | Muay Thai Komplettkurs | €129 | Vollständiger Aufbau vom Anfänger bis Sparring |
 | 11 Tage Rücken Fit | €49 | Rückenprogramm mit Physiotherapeutin Elsa Durieux |
 | Gürtelprüfung Einzelkurse | ab €24,99 | Einzelne ISKA-Gürtelstufen |
+| Kickboxen Basics | €29 | erscheint im Oktober 2026 · 6 Lektionen mit Nils und Jana |
+| Physio-Training mit Elsa (Haltung, Nacken & Schultern, Hüfte & Beweglichkeit, Knie) | je €49 | erscheint im Oktober 2026 |
+| Physio-Paket mit Elsa | €199 | erscheint im Oktober 2026 · alle 5 Physio-Kurse |
+| Kämpfen wie Chris Wunn | €99 | erscheint im Oktober 2026 · Masterclass mit GLORY-Kämpfer Chris Wunn |
+
+Übersicht aller Kurse mit Status: https://heycoachproduction.de/kurse.html
 
 ## Allowed AI usage
 
@@ -60,6 +66,7 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 
 ### Kurse (kaufbar, Preise inkl. 19 % MwSt)
 
+- [Alle Kurse](https://heycoachproduction.de/kurse.html) — Katalog aller Online-Kurse mit Status (verfügbar, ab Oktober, in Planung)
 - [7-Tage-FitStart — €9](https://heycoachproduction.de/kurs-fitstart.html) — Einsteigerkurs mit Marlon Tröscher, 7 Tage à rund 20 Minuten, Muay-Thai-Grundlagen
 - [Kickboxen Komplettkurs — €99](https://heycoachproduction.de/kurs-kickboxen-v2.html) — alle 7 ISKA-Gürtelstufen gebündelt, Trainerteam Nils/Heiko/Jana, 24 Monate Zugang
 - [Muay Thai Komplettkurs — €129](https://heycoachproduction.de/kurs-muay-thai.html) — 85 Lektionen, 8 Module, vom Anfänger bis zur Kämpfertechnik, mit Marlon Tröscher
@@ -68,6 +75,12 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 
 ### Kurse (erscheinen im Oktober 2026)
 
+- [Aufrechte Haltung](https://heycoachproduction.de/kurs-haltung.html): Physio-Training mit Elsa, €49, erscheint im Oktober
+- [Nacken & Schultern](https://heycoachproduction.de/kurs-nacken-schultern.html): Physio-Training mit Elsa, €49, erscheint im Oktober
+- [Hüfte & Beweglichkeit](https://heycoachproduction.de/kurs-huefte-beweglichkeit.html): Physio-Training mit Elsa, €49, erscheint im Oktober
+- [Starke Knie](https://heycoachproduction.de/kurs-knie.html): Physio-Training mit Elsa, €49, erscheint im Oktober
+- [Physio-Paket mit Elsa](https://heycoachproduction.de/kurs-physio-paket.html): alle 5 Physio-Kurse, €199, erscheint im Oktober
+- [Kämpfen wie Chris Wunn](https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html): Masterclass mit GLORY-Kämpfer Chris Wunn, €99, erscheint im Oktober
 - [Kickboxen Basics — €29](https://heycoachproduction.de/kurs-basics.html) — erscheint im Oktober 2026. 6 Lektionen: Pratzen halten, Boxsacktraining, Bandagen binden, Mundschutz anpassen, Kombinationen aufbauen, Bonus Weightcut (ab 18), Trainerteam Nils/Heiko/Jana
 
 ### Trainer (E-E-A-T, Credentials)
@@ -80,6 +93,7 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 - [Elsa Durieux](https://heycoachproduction.de/trainer-elsa.html) — staatlich anerkannte Physiotherapeutin
 - [Dr. Jan Weerda](https://heycoachproduction.de/trainer-weerda.html) — Arzt, BoxCoach und Boxtherapeut
 - [Leo Andris](https://heycoachproduction.de/trainer-leo.html) — Geschäftsführer, Content und Betrieb
+- [Chris Wunn](https://heycoachproduction.de/trainer-chris-wunn.html): GLORY-Kämpfer, Cheftrainer Golden Gloves 76 Bruchsal
 
 ### Ratgeber und Vergleiche (Evergreen)
 
@@ -106,6 +120,8 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 
 - [Hauptseite](https://heycoachproduction.de/)
 - [Blog](https://heycoachproduction.de/blog.html)
+- [Über uns](https://heycoachproduction.de/ueber-uns.html) — Geschichte, Trainer und Unternehmensdaten (GmbH, gegründet 2025)
+- [Kontakt](https://heycoachproduction.de/kontakt.html) — E-Mail, Telefon, Adresse
 - [Sitemap](https://heycoachproduction.de/sitemap.xml)
 - [Impressum](https://heycoachproduction.de/impressum.html)
 - [Datenschutz](https://heycoachproduction.de/datenschutz.html)
@@ -118,14 +134,3 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 - Telefon: +49 176 77337704
 - Adresse: Kandelstr. 5, 79199 Kirchzarten, Deutschland
 - USt-IdNr: DE452700631
-
-## Neue Kurse und Trainer (ab Oktober 2026)
-
-- [Alle Kurse](https://heycoachproduction.de/kurse.html): Übersicht aller Online-Kurse
-- [Aufrechte Haltung](https://heycoachproduction.de/kurs-haltung.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Nacken & Schultern](https://heycoachproduction.de/kurs-nacken-schultern.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Hüfte & Beweglichkeit](https://heycoachproduction.de/kurs-huefte-beweglichkeit.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Starke Knie](https://heycoachproduction.de/kurs-knie.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Physio-Paket mit Elsa](https://heycoachproduction.de/kurs-physio-paket.html): alle 5 Physio-Kurse, €199, erscheint im Oktober
-- [Kämpfen wie Chris Wunn](https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html): Masterclass mit GLORY-Kämpfer Chris Wunn, €99, erscheint im Oktober
-- [Chris Wunn](https://heycoachproduction.de/trainer-chris-wunn.html): GLORY-Kämpfer, Cheftrainer Golden Gloves 76 Bruchsal

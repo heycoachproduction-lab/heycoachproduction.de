@@ -101,11 +101,32 @@
       createBanner();
     });
 
+    // 02.10: wenn es eine Zeile mit Rechtslinks gibt (Impressum · Datenschutz …), gehört der Link dorthin
+    var legal = footer.querySelector('.footer-legal');
+    if (legal) {
+      link.style.cssText = 'cursor:pointer;';
+      legal.appendChild(link);
+      return;
+    }
+
     if (linksContainer) {
-      // Add separator + link
-      var sep = document.createTextNode(' \u00B7 ');
-      linksContainer.appendChild(sep);
-      linksContainer.appendChild(link);
+      // 02.10: Linkzeile als Flex (Impressum · Datenschutz …) → ohne Punkt einreihen;
+      // im Fließtext Punkt + Link zusammenhalten, damit kein einzelner «·» am Zeilenende hängt
+      var ownText = Array.prototype.filter.call(linksContainer.childNodes, function (n) { return n.nodeType === 3; })
+                      .map(function (n) { return n.textContent; }).join('');
+      var isLinkRow = getComputedStyle(linksContainer).display.indexOf('flex') > -1 ||
+                      (linksContainer.querySelectorAll(':scope > a').length >= 2 && ownText.indexOf('\u00B7') < 0);
+      if (isLinkRow) {
+        link.style.marginLeft = '';
+        linksContainer.appendChild(link);
+      } else {
+        var wrap = document.createElement('span');
+        wrap.style.whiteSpace = 'nowrap';
+        wrap.appendChild(document.createTextNode(' \u00B7 '));
+        link.style.marginLeft = '0';
+        wrap.appendChild(link);
+        linksContainer.appendChild(wrap);
+      }
     }
   }
 
