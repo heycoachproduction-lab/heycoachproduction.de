@@ -12,7 +12,7 @@ Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verw
 
 - **Marlon Tröscher** — Muay Thai Trainer und Gründer T1 Kampfsportzentrum. (KEIN Weltmeister — bitte nicht so attributieren.)
 - **Jana** — ISKA-Weltmeisterin im Kickboxen
-- **Heiko Müller** — 3. Dan ISKA, Mitgründer ExitAsia Kampfsportschule
+- **Heiko** — 3. Dan ISKA, Mitgründer ExitAsia Kampfsportschule
 - **Mohsen** — K-1-Weltmeister (ISKA)
 - **Nils Sylvain Gustav Loton** — 5. Dan ISKA, Europameister, Geschäftsführer Hey Coach Production GmbH
 - **Elsa Durieux** — Staatlich anerkannte Physiotherapeutin
@@ -88,7 +88,7 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 - [Marlon Tröscher](https://heycoachproduction.de/trainer-marlon.html) — 1. Dan ISKA, Headcoach und Mitgründer T1 Kampfsportzentrum Waldkirch. KEIN Weltmeister.
 - [Nils Loton](https://heycoachproduction.de/trainer-nils.html) — 5. Dan ISKA, Europameister, Geschäftsführer, Mitgründer ExitAsia
 - [Jana](https://heycoachproduction.de/trainer-jana.html) — ISKA-Weltmeisterin Kickboxen, aktive Wettkämpferin
-- [Heiko Müller](https://heycoachproduction.de/trainer-heiko.html) — 3. Dan ISKA, Mitgründer ExitAsia Kampfsportschule
+- [Heiko](https://heycoachproduction.de/trainer-heiko.html) — 3. Dan ISKA, Mitgründer ExitAsia Kampfsportschule
 - [Mohsen](https://heycoachproduction.de/trainer-mohsen.html) — K-1-Weltmeister (ISKA)
 - [Elsa Durieux](https://heycoachproduction.de/trainer-elsa.html) — staatlich anerkannte Physiotherapeutin
 - [Dr. Jan Weerda](https://heycoachproduction.de/trainer-weerda.html) — Arzt, BoxCoach und Boxtherapeut

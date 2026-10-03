@@ -101,63 +101,93 @@
 
     <!-- FAQPage schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Wie lange dauert es, sich von Übertraining zu erholen?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Das hängt davon ab, wie weit es gegangen ist. Funktionelles Überlasten löst sich nach wenigen Tagen bis rund zwei Wochen Entlastung und geht danach oft mit besserer Leistung einher. Nicht-funktionelles Überlasten braucht Wochen bis Monate. Das eigentliche Übertrainingssyndrom kann Monate und länger dauern und ist laut dem Konsenspapier von ECSS und ACSM eine Ausschlussdiagnose — das gehört zum Arzt, nicht ins Trainingstagebuch."}
-        },
-        {
-          "@type": "Question",
-          "name": "Ist 5x die Woche Sport zu viel?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Nicht die Anzahl der Einheiten entscheidet, sondern das Verhältnis von Belastung und Erholung. Fünf Einheiten mit unterschiedlicher Härte und einem echten Ruhetag sind für die meisten unproblematisch. Fünf harte Einheiten in Folge bei sechs Stunden Schlaf sind es nicht. Das Konsenspapier zum Übertrainingssyndrom formuliert es genau so: Der Reiz muss überschwellig sein, problematisch wird erst die Kombination aus zu viel Reiz und zu wenig Erholung."}
-        },
-        {
-          "@type": "Question",
-          "name": "Wie fühlt sich Übertraining an?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Typisch ist nicht der Schmerz, sondern die Kombination: Die Leistung geht runter, obwohl du mehr trainierst. Der Schlaf wird schlechter, obwohl du müder bist. Die Lust auf Training verschwindet, und kleine Infekte häufen sich. In einer Untersuchung an Triathleten sank bei den überlasteten Sportlern die Schlafdauer um knapp acht Prozent, und Atemwegsinfekte traten häufiger auf."}
-        },
-        {
-          "@type": "Question",
-          "name": "Ist Muskelkater ein Zeichen von Übertraining?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Nein. Muskelkater ist eine normale Reaktion auf ungewohnte Belastung, vor allem auf bremsende Bewegungen. Er beginnt meist nach 12 bis 24 Stunden, ist nach 24 bis 72 Stunden am stärksten und klingt innerhalb weniger Tage ab. Übertraining erkennst du nicht am Schmerz im Muskel, sondern an einer Leistung, die über Wochen nicht zurückkommt."}
-        },
-        {
-          "@type": "Question",
-          "name": "Kann ich Übertraining an meiner HRV erkennen?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Nur eingeschränkt, und das ist die unbequeme Antwort. Eine systematische Übersicht mit 24 Studien in der Metaanalyse kam zu dem Schluss, dass die Ruhe-HRV von Überlastung weitgehend unbeeinflusst bleibt und dass Anstiege der HRV nach Belastung sowohl bei guter Anpassung als auch bei Überlastung auftreten. Ein einzelner Wert aus der Uhr reicht deshalb nicht. Brauchbar wird HRV erst als Verlauf über Wochen und zusammen mit einer ehrlichen Leistungs- und Befindlichkeitskontrolle."}
-        },
-        {
-          "@type": "Question",
-          "name": "Wie messe ich meinen Ruhepuls richtig?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Immer unter gleichen Bedingungen: direkt nach dem Aufwachen, im Liegen, vor dem Aufstehen und vor dem Kaffee, eine Minute lang. Ein einzelner erhöhter Wert bedeutet nichts — Alkohol, wenig Schlaf oder ein beginnender Infekt reichen dafür. Aussagekräftig wird erst der gleitende Durchschnitt über sieben Tage im Vergleich zu deinem persönlichen Normalwert."}
-        },
-        {
-          "@type": "Question",
-          "name": "Was ist eine Deload-Woche und wie baue ich sie auf?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Eine geplante Entlastungswoche. Die wirksamste Variante ist gut untersucht: In einer Metaanalyse mit 27 Studien brachte eine zweiwöchige Reduktion des Trainingsumfangs um 41 bis 60 Prozent die größten Leistungsgewinne — und zwar ohne die Intensität oder die Trainingshäufigkeit zu verändern. Praktisch heißt das: gleiche Tage, gleiche Härte, halb so viel davon."}
-        },
-        {
-          "@type": "Question",
-          "name": "Darf ich mit Erkältung trainieren?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Bei Fieber, Gliederschmerzen oder Symptomen unterhalb des Halses gehört Training pausiert — das ist unstrittig. Bei leichtem Schnupfen ohne Fieber ist lockere Bewegung meist vertretbar. Die Forschungslage zum Zusammenhang von Training und Infektanfälligkeit ist differenzierter, als die populäre Darstellung nahelegt; harte Einheiten in Phasen hoher Belastung gingen in Studien allerdings mit mehr Atemwegsinfekten einher. Im Zweifel ärztlich abklären lassen."}
-        },
-        {
-          "@type": "Question",
-          "name": "Was ist Superkompensation?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Das Modell dahinter ist einfach: Ein Trainingsreiz senkt kurzfristig deine Leistungsfähigkeit, in der Erholung baut der Körper wieder auf — und etwas über das Ausgangsniveau hinaus. Trainierst du zu früh wieder hart, sammelst du Ermüdung statt Anpassung; wartest du zu lange, verpufft der Effekt. Wichtig zu wissen: Das ist ein Denkmodell mit sehr unterschiedlichen Erholungszeiten je nach Reiz, kein exakter Fahrplan mit fester Stundenzahl."}
-        },
-        {
-          "@type": "Question",
-          "name": "Wie viel Schlaf brauche ich als Sportler?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Schlaf ist der am besten belegte Regenerationsfaktor. In einer Untersuchung an 112 jugendlichen Sportlern hatten diejenigen, die im Schnitt weniger als acht Stunden pro Nacht schliefen, ein 1,7-fach höheres Verletzungsrisiko als die mit acht Stunden oder mehr. Wer sein Training steigern will, steigert zuerst den Schlaf."}
-        }
-      ]
+      "@type": "Question",
+      "name": "Wie lange dauert es, sich von Übertraining zu erholen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das hängt davon ab, wie weit es gegangen ist. Funktionelles Überlasten löst sich nach wenigen Tagen bis rund zwei Wochen Entlastung und geht danach oft mit besserer Leistung einher. Nicht-funktionelles Überlasten braucht Wochen bis Monate. Das eigentliche Übertrainingssyndrom kann Monate und länger dauern und ist laut dem Konsenspapier von ECSS und ACSM eine Ausschlussdiagnose — das gehört zum Arzt, nicht ins Trainingstagebuch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist 5× die Woche Sport zu viel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicht die Anzahl der Einheiten entscheidet, sondern das Verhältnis von Belastung und Erholung. Fünf Einheiten mit unterschiedlicher Härte und einem echten Ruhetag sind für die meisten unproblematisch. Fünf harte Einheiten in Folge bei sechs Stunden Schlaf sind es nicht. Das Konsenspapier zum Übertrainingssyndrom formuliert es genau so: Der Reiz muss überschwellig sein, problematisch wird erst die Kombination aus zu viel Reiz und zu wenig Erholung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie fühlt sich Übertraining an?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typisch ist nicht der Schmerz, sondern die Kombination: Die Leistung geht runter, obwohl du mehr trainierst. Der Schlaf wird schlechter, obwohl du müder bist. Die Lust auf Training verschwindet, und kleine Infekte häufen sich. In einer Untersuchung an Triathleten sank bei den überlasteten Sportlern die Schlafdauer um knapp acht Prozent, und Atemwegsinfekte traten häufiger auf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Muskelkater ein Zeichen von Übertraining?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Muskelkater ist eine normale Reaktion auf ungewohnte Belastung, vor allem auf bremsende Bewegungen. Er beginnt meist nach 12 bis 24 Stunden, ist nach 24 bis 72 Stunden am stärksten und klingt innerhalb weniger Tage ab. Übertraining erkennst du nicht am Schmerz im Muskel, sondern an einer Leistung, die über Wochen nicht zurückkommt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich Übertraining an meiner HRV erkennen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nur eingeschränkt, und das ist die unbequeme Antwort. Eine systematische Übersicht mit 24 Studien in der Metaanalyse kam zu dem Schluss, dass die Ruhe-HRV von Überlastung weitgehend unbeeinflusst bleibt und dass Anstiege der HRV nach Belastung sowohl bei guter Anpassung als auch bei Überlastung auftreten. Ein einzelner Wert aus der Uhr reicht deshalb nicht. Brauchbar wird HRV erst als Verlauf über Wochen und zusammen mit einer ehrlichen Leistungs- und Befindlichkeitskontrolle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie messe ich meinen Ruhepuls richtig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Immer unter gleichen Bedingungen: direkt nach dem Aufwachen, im Liegen, vor dem Aufstehen und vor dem Kaffee, eine Minute lang. Ein einzelner erhöhter Wert bedeutet nichts — Alkohol, wenig Schlaf oder ein beginnender Infekt reichen dafür. Aussagekräftig wird erst der gleitende Durchschnitt über sieben Tage im Vergleich zu deinem persönlichen Normalwert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist eine Deload-Woche und wie baue ich sie auf?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eine geplante Entlastungswoche. Die wirksamste Variante ist gut untersucht: In einer Metaanalyse mit 27 Studien brachte eine zweiwöchige Reduktion des Trainingsumfangs um 41 bis 60 Prozent die größten Leistungsgewinne — und zwar ohne die Intensität oder die Trainingshäufigkeit zu verändern. Praktisch heißt das: gleiche Tage, gleiche Härte, halb so viel davon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Darf ich mit Erkältung trainieren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bei Fieber, Gliederschmerzen oder Symptomen unterhalb des Halses gehört Training pausiert — das ist unstrittig. Bei leichtem Schnupfen ohne Fieber ist lockere Bewegung meist vertretbar. Die Forschungslage zum Zusammenhang von Training und Infektanfälligkeit ist differenzierter, als die populäre Darstellung nahelegt; harte Einheiten in Phasen hoher Belastung gingen in Studien allerdings mit mehr Atemwegsinfekten einher. Im Zweifel ärztlich abklären lassen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist Superkompensation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Modell dahinter ist einfach: Ein Trainingsreiz senkt kurzfristig deine Leistungsfähigkeit, in der Erholung baut der Körper wieder auf — und etwas über das Ausgangsniveau hinaus. Trainierst du zu früh wieder hart, sammelst du Ermüdung statt Anpassung; wartest du zu lange, verpufft der Effekt. Wichtig zu wissen: Das ist ein Denkmodell mit sehr unterschiedlichen Erholungszeiten je nach Reiz, kein exakter Fahrplan mit fester Stundenzahl."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viel Schlaf brauche ich als Sportler?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Schlaf ist der am besten belegte Regenerationsfaktor. In einer Untersuchung an 112 jugendlichen Sportlern hatten diejenigen, die im Schnitt weniger als acht Stunden pro Nacht schliefen, ein 1,7-fach höheres Verletzungsrisiko als die mit acht Stunden oder mehr. Wer sein Training steigern will, steigert zuerst den Schlaf."
+      }
     }
-    </script>
+  ]
+}
+</script>
 
 <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1106,17 +1136,17 @@
                 <h3>Feste Tagesl&auml;ngen statt &bdquo;so viel du schaffst&ldquo;.</h3>
                 <p>Unsere Kurse sind bewusst mit festen Einheiten gebaut &mdash; rund 20 Minuten pro Tag, klare Reihenfolge, definiertes Ende. Genau das ist der eingebaute Schutz, &uuml;ber den dieser Artikel spricht: Du kannst dich nicht versehentlich &uuml;berlasten, wenn der Plan f&uuml;r dich aufh&ouml;rt. Und wenn dein R&uuml;cken der Teil ist, der zuerst streikt, liegt das Programm daf&uuml;r bei uns bei Physiotherapeutin Elsa Durieux.</p>
                 <div class="cta-final-buttons">
-                    <a href="kurs-fitstart.html" class="cta-final-btn">
+                    <a href="kurs-fitstart.html?src=blog-uebertraining-erkennen" class="cta-final-btn">
                         <span class="cta-final-btn-tag">Reinschnuppern</span>
                         <span class="cta-final-btn-title">7-Tage-FitStart</span>
                         <span class="cta-final-btn-price">&euro;9<span>einmalig</span></span>
                     </a>
-                    <a href="kurs-ruecken-reset.html" class="cta-final-btn">
+                    <a href="kurs-ruecken-reset.html?src=blog-uebertraining-erkennen" class="cta-final-btn">
                         <span class="cta-final-btn-tag">Regeneration</span>
                         <span class="cta-final-btn-title">11 Tage R&uuml;cken Fit</span>
                         <span class="cta-final-btn-price">&euro;49<span>mit Elsa</span></span>
                     </a>
-                    <a href="kurs-kickboxen-v2.html" class="cta-final-btn">
+                    <a href="kurs-kickboxen-v2.html?src=blog-uebertraining-erkennen" class="cta-final-btn">
                         <span class="cta-final-btn-tag">Kickboxen</span>
                         <span class="cta-final-btn-title">Komplettkurs</span>
                         <span class="cta-final-btn-price">&euro;99<span>24 Mo. Zugang</span></span>

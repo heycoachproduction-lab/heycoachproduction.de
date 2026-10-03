@@ -83,68 +83,101 @@
 
     <!-- FAQPage schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Welche Kampfsportart ist die beste für Anfänger?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Für die meisten Einsteiger sind Boxen und Kickboxen die zugänglichsten Kampfsportarten: einfaches Technik-Set, schnelle Erfolgserlebnisse, hartes Sparring ist optional. Wer Bodenkampf statt Schläge bevorzugt, ist mit BJJ gut beraten. Muay Thai ist das vielseitigste Stand-up-System, MMA das kompletteste, aber auch das anspruchsvollste. Die beste Wahl hängt von deinem Ziel ab, nicht von einer Rangliste."}
-        },
-        {
-          "@type": "Question",
-          "name": "Welche Kampfsportart verbrennt die meisten Kalorien?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Die intensivsten Kalorienfresser sind MMA, Kickboxen und Muay Thai mit grob 600 bis 1000 kcal pro Stunde, je nach Körpergewicht und Intensität. Boxen liegt bei etwa 500 bis 800 kcal, BJJ durch den technik- und bodenlastigen Charakter eher bei 500 bis 800 kcal. Wichtig: Das sind Spannen — der tatsächliche Verbrauch hängt stark von Gewicht und Trainingsintensität ab."}
-        },
-        {
-          "@type": "Question",
-          "name": "Welche Kampfsportart eignet sich am besten zur Selbstverteidigung?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Keine einzelne Disziplin ist ein Allheilmittel. Muay Thai und Boxen sind im Stand sehr stark, BJJ dominiert am Boden, MMA deckt beide Distanzen ab. Entscheidend ist, dass du regelmäßig gegen echten Widerstand sparrst — das funktioniert in allen fünf. Die wichtigste Selbstverteidigung bleibt aber Deeskalation und Weglaufen; Technik ist die letzte Option."}
-        },
-        {
-          "@type": "Question",
-          "name": "Was ist der Unterschied zwischen Kickboxen und Muay Thai?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Kickboxen nutzt Fäuste und Beine über der Gürtellinie, ohne Clinch und ohne Ellbogen — das macht es klarer reguliert und etwas anfängerfreundlicher. Muay Thai ist die Kunst der acht Gliedmaßen: zusätzlich Knie, Ellbogen und der aufrechte Clinch. Muay Thai ist dadurch vielseitiger und körperlich härter, Kickboxen sportlicher und strukturierter."}
-        },
-        {
-          "@type": "Question",
-          "name": "Kann man mit 30 oder 40 noch mit Kampfsport anfangen?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Ja, problemlos. Bei ExitAsia trainieren Einsteiger von Anfang 20 bis über 60. Für einen späteren Start eignen sich Disziplinen mit steuerbarer Härte besonders gut: Boxen und Kickboxen im Fitness-Bereich oder BJJ, weil dort keine Schläge auf den Kopf fallen. Entscheidend ist ein vernünftiger, schrittweiser Aufbau statt sofort hartem Sparring."}
-        },
-        {
-          "@type": "Question",
-          "name": "Welche Kampfsportart hat das geringste Verletzungsrisiko?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Im kontrollierten Training hat BJJ den Vorteil, dass keine Schläge auf den Kopf fallen — man tippt bei einem Hebel einfach ab. Auch Boxen und Kickboxen lassen sich lange ohne harte Treffer trainieren, solange man Sparring weglässt. Das höchste Risiko entsteht überall erst durch frühes, hartes Sparring. Über Jahre betrachtet hat BJJ allerdings eine relevante Rate an Gelenkverletzungen."}
-        },
-        {
-          "@type": "Question",
-          "name": "Welche Kampfsportart ist die richtige für Frauen?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Alle fünf sind für Frauen geeignet — die Wahl hängt vom Ziel ab. BJJ wird oft empfohlen, weil Hebel und Technik körperliche Kraft schlagen, was kleineren oder leichteren Personen entgegenkommt. Kickboxen und Boxen sind top für Fitness, Stressabbau und Distanzkontrolle. Wichtig ist weniger die Disziplin als ein Gym, in dem du dich wohlfühlst und sauber angeleitet wirst."}
-        },
-        {
-          "@type": "Question",
-          "name": "Was kostet Kampfsport-Training im Monat?",
-          "acceptedAnswer": {"@type": "Answer", "text": "In einem Verein zahlst du je nach Disziplin und Region meist 30 bis 60 Euro pro Monat, kommerzielle MMA- oder BJJ-Schulen liegen oft höher (80 bis 225 Euro). Online-Kurse sind eine günstige Alternative für den Einstieg: Bei Hey Coach zahlst du einmalig statt monatlich — der 7-Tage-Schnupperkurs kostet 9 Euro, die Komplettkurse 99 bzw. 129 Euro mit 24 Monaten Zugang."}
-        },
-        {
-          "@type": "Question",
-          "name": "Welche Muskeln trainiert Kampfsport?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Kampfsport ist ein Ganzkörpertraining. Schlagkraft kommt nicht aus dem Arm, sondern über die kinetische Kette aus Beinen, Hüfte und Rumpf — bei Boxern wurde eine Schlagkraft von fast dem Vierfachen des Körpergewichts gemessen. Boxen fordert vor allem Rumpf und Schultern, Kickboxen und Muay Thai zusätzlich Hüftbeuger, Gesäß und Beine, BJJ vor allem Unterarme/Griffkraft und die hintere Kette. MMA trainiert alle Gruppen gleichzeitig."}
-        },
-        {
-          "@type": "Question",
-          "name": "Ist Kampfsport gesund für Körper und Psyche?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Die Studienlage ist deutlich. Körperlich verbessert Kampfsport die Ausdauer (VO₂max) und senkt den Ruheblutdruck. Psychisch zeigt die bislang größte Übersichtsarbeit mit über 128.000 Menschen, dass Bewegung Depression und Angst senkt; speziell Kampfkunst-Training verbesserte in Meta-Analysen Wohlbefinden und mentale Gesundheit, und schon eine Einheit hebt den Hirn-Botenstoff BDNF. Das sind Trainingseffekte aus Studien, keine Heilversprechen."}
-        },
-        {
-          "@type": "Question",
-          "name": "Wie viele Kalorien verbrennt Kampfsport pro Stunde?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Je nach Disziplin, Körpergewicht und Intensität grob 500 bis über 1000 kcal pro Stunde. Auf Basis offizieller MET-Werte verbrennt eine 80-kg-Person rund 613 kcal in einer Stunde Kickboxen und bis über 1000 kcal beim intensiven Boxen im Ring. Das sind Schätzwerte — eine echte Trainingseinheit hat Pausen, der reale Schnitt liegt meist etwas niedriger."}
-        }
-      ]
+      "@type": "Question",
+      "name": "Welche Kampfsportart ist die beste für Anfänger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Für die meisten Einsteiger sind Boxen und Kickboxen die zugänglichsten Kampfsportarten: einfaches Technik-Set, schnelle Erfolgserlebnisse, hartes Sparring ist optional. Wer Bodenkampf statt Schläge bevorzugt, ist mit BJJ gut beraten. Muay Thai ist das vielseitigste Stand-up-System, MMA das kompletteste, aber auch das anspruchsvollste. Die beste Wahl hängt von deinem Ziel ab, nicht von einer Rangliste."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Kampfsportart verbrennt die meisten Kalorien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die intensivsten Kalorienfresser sind MMA, Kickboxen und Muay Thai mit grob 600 bis 1000 kcal pro Stunde, je nach Körpergewicht und Intensität. Boxen liegt bei etwa 500 bis 800 kcal, BJJ durch den technik- und bodenlastigen Charakter eher bei 500 bis 800 kcal. Wichtig: Das sind Spannen — der tatsächliche Verbrauch hängt stark von Gewicht und Trainingsintensität ab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Kampfsportart eignet sich am besten zur Selbstverteidigung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keine einzelne Disziplin ist ein Allheilmittel. Muay Thai und Boxen sind im Stand sehr stark, BJJ dominiert am Boden, MMA deckt beide Distanzen ab. Entscheidend ist, dass du regelmäßig gegen echten Widerstand sparrst — das funktioniert in allen fünf. Die wichtigste Selbstverteidigung bleibt aber Deeskalation und Weglaufen; Technik ist die letzte Option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der Unterschied zwischen Kickboxen und Muay Thai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kickboxen nutzt Fäuste und Beine über der Gürtellinie, ohne Clinch und ohne Ellbogen — das macht es klarer reguliert und etwas anfängerfreundlicher. Muay Thai ist die Kunst der acht Gliedmaßen: zusätzlich Knie, Ellbogen und der aufrechte Clinch. Muay Thai ist dadurch vielseitiger und körperlich härter, Kickboxen sportlicher und strukturierter. Mehr dazu in unserem ausführlichen Vergleich Muay Thai vs Kickboxen ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann man mit 30 oder 40 noch mit Kampfsport anfangen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, problemlos. Bei ExitAsia trainieren Einsteiger von Anfang 20 bis über 60. Für einen späteren Start eignen sich Disziplinen mit steuerbarer Härte besonders gut: Boxen und Kickboxen im Fitness-Bereich oder BJJ, weil dort keine Schläge auf den Kopf fallen. Entscheidend ist ein vernünftiger, schrittweiser Aufbau statt sofort hartem Sparring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Kampfsportart hat das geringste Verletzungsrisiko?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Im kontrollierten Training hat BJJ den Vorteil, dass keine Schläge auf den Kopf fallen — man tippt bei einem Hebel einfach ab. Auch Boxen und Kickboxen lassen sich lange ohne harte Treffer trainieren, solange man Sparring weglässt. Das höchste Risiko entsteht überall erst durch frühes, hartes Sparring. Über Jahre betrachtet hat BJJ allerdings eine relevante Rate an Gelenkverletzungen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Kampfsportart ist die richtige für Frauen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alle fünf sind für Frauen geeignet — die Wahl hängt vom Ziel ab. BJJ wird oft empfohlen, weil Hebel und Technik körperliche Kraft schlagen, was kleineren oder leichteren Personen entgegenkommt. Kickboxen und Boxen sind top für Fitness, Stressabbau und Distanzkontrolle. Wichtig ist weniger die Disziplin als ein Gym, in dem du dich wohlfühlst und sauber angeleitet wirst."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet Kampfsport-Training im Monat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In einem Verein zahlst du je nach Disziplin und Region meist 30 bis 60 Euro pro Monat, kommerzielle MMA- oder BJJ-Schulen liegen oft höher (80 bis 225 Euro). Online-Kurse sind eine günstige Alternative für den Einstieg: Bei Hey Coach zahlst du einmalig statt monatlich — der 7-Tage-Schnupperkurs kostet 9 Euro, die Komplettkurse 99 bzw. 129 Euro mit 24 Monaten Zugang."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Muskeln trainiert Kampfsport?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kampfsport ist ein Ganzkörpertraining. Schlagkraft kommt nicht aus dem Arm, sondern über die kinetische Kette aus Beinen, Hüfte und Rumpf — bei Boxern wurde eine Schlagkraft von fast dem Vierfachen des Körpergewichts gemessen. Boxen fordert vor allem Rumpf und Schultern, Kickboxen und Muay Thai zusätzlich Hüftbeuger, Gesäß und Beine, BJJ vor allem Unterarme/Griffkraft und die hintere Kette. MMA trainiert alle Gruppen gleichzeitig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Kampfsport gesund für Körper und Psyche?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Studienlage ist deutlich. Körperlich verbessert Kampfsport die Ausdauer (VO₂max) und senkt den Ruheblutdruck. Psychisch zeigt die bislang größte Übersichtsarbeit mit über 128.000 Menschen, dass Bewegung Depression und Angst senkt; speziell Kampfkunst-Training verbesserte in Meta-Analysen Wohlbefinden und mentale Gesundheit, und schon eine Einheit hebt den Hirn-Botenstoff BDNF. Das sind Trainingseffekte aus Studien, keine Heilversprechen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Kalorien verbrennt Kampfsport pro Stunde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je nach Disziplin, Körpergewicht und Intensität grob 500 bis über 1000 kcal pro Stunde. Auf Basis offizieller MET-Werte verbrennt eine 80-kg-Person rund 613 kcal in einer Stunde Kickboxen und bis über 1000 kcal beim intensiven Boxen im Ring. Das sind Schätzwerte — eine echte Trainingseinheit hat Pausen, der reale Schnitt liegt meist etwas niedriger."
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1014,17 +1047,17 @@
                 <h3>Wir sind die Stand-up-Leute.</h3>
                 <p>Bei Hey Coach fokussieren wir uns ehrlich auf zwei der fünf Disziplinen: <strong>Kickboxen</strong> und <strong>Muay Thai</strong> — angeleitet von erfahrenen Trainern wie Marlon Tröscher (Muay Thai). Boxen-Basics sind Teil davon. Falls du also im Stand anfangen willst, kannst du bei uns zu Hause starten — ohne gleich in eine Halle gehen zu müssen.</p>
                 <div class="cta-final-buttons">
-                    <a href="kurs-fitstart.html" class="cta-final-btn">
+                    <a href="kurs-fitstart.html?src=blog-kampfsportarten-vergleich" class="cta-final-btn">
                         <span class="cta-final-btn-tag">Reinschnuppern</span>
                         <span class="cta-final-btn-title">7-Tage-FitStart</span>
                         <span class="cta-final-btn-price">&euro;9<span>einmalig</span></span>
                     </a>
-                    <a href="kurs-kickboxen-v2.html" class="cta-final-btn">
+                    <a href="kurs-kickboxen-v2.html?src=blog-kampfsportarten-vergleich" class="cta-final-btn">
                         <span class="cta-final-btn-tag">Kickboxen</span>
                         <span class="cta-final-btn-title">Komplettkurs</span>
                         <span class="cta-final-btn-price">&euro;99<span>24 Mo. Zugang</span></span>
                     </a>
-                    <a href="kurs-muay-thai.html" class="cta-final-btn">
+                    <a href="kurs-muay-thai.html?src=blog-kampfsportarten-vergleich" class="cta-final-btn">
                         <span class="cta-final-btn-tag">Muay Thai</span>
                         <span class="cta-final-btn-title">Komplettkurs</span>
                         <span class="cta-final-btn-price">&euro;129<span>24 Mo. Zugang</span></span>
