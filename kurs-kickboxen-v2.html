@@ -1388,7 +1388,7 @@
     var src = new URLSearchParams(window.location.search).get('src');
     if (!src || !/^[a-z0-9-]{1,80}$/.test(src)) return;
     var utm = 'utm_source=website&utm_medium=blog&utm_campaign=' + src;
-    var links = document.querySelectorAll('a[href^="https://checkout.heycoachproduction.de/"]');
+    var links = document.querySelectorAll('a[href*="//checkout.heycoachproduction.de/"]');
     for (var i = 0; i < links.length; i++) {
       var href = links[i].getAttribute('href');
       var hash = '';
