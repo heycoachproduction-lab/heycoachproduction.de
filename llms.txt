@@ -43,7 +43,7 @@ Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verw
 | Gürtelprüfung Einzelkurse | ab €24,99 | Einzelne ISKA-Gürtelstufen |
 | Kickboxen Basics | €29 | erscheint im Oktober 2026 · 6 Lektionen mit Nils und Jana |
 | Physio-Training mit Elsa (Haltung, Nacken & Schultern, Hüfte & Beweglichkeit, Knie) | je €49 | erscheint im Oktober 2026 |
-| Physio-Paket mit Elsa | €199 | erscheint im Oktober 2026 · alle 5 Physio-Kurse |
+| Physio-Paket mit Elsa | €149 | erscheint im Oktober 2026 · alle 5 Physio-Kurse |
 | Kämpfen wie Chris Wunn | €99 | erscheint im Oktober 2026 · Masterclass mit GLORY-Kämpfer Chris Wunn |
 
 Übersicht aller Kurse mit Status: https://heycoachproduction.de/kurse.html
@@ -79,7 +79,7 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 - [Nacken & Schultern](https://heycoachproduction.de/kurs-nacken-schultern.html): Physio-Training mit Elsa, €49, erscheint im Oktober
 - [Hüfte & Beweglichkeit](https://heycoachproduction.de/kurs-huefte-beweglichkeit.html): Physio-Training mit Elsa, €49, erscheint im Oktober
 - [Starke Knie](https://heycoachproduction.de/kurs-knie.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Physio-Paket mit Elsa](https://heycoachproduction.de/kurs-physio-paket.html): alle 5 Physio-Kurse, €199, erscheint im Oktober
+- [Physio-Paket mit Elsa](https://heycoachproduction.de/kurs-physio-paket.html): alle 5 Physio-Kurse, €149, erscheint im Oktober
 - [Kämpfen wie Chris Wunn](https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html): Masterclass mit GLORY-Kämpfer Chris Wunn, €99, erscheint im Oktober
 - [Kickboxen Basics — €29](https://heycoachproduction.de/kurs-basics.html) — erscheint im Oktober 2026. 6 Lektionen: Pratzen halten, Boxsacktraining, Bandagen binden, Mundschutz anpassen, Kombinationen aufbauen, Bonus Weightcut (ab 18), Trainerteam Nils/Heiko/Jana
 

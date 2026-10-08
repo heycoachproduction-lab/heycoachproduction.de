@@ -29,7 +29,7 @@ bietet Online-Kurse für Kampfsport und Physio-Training an. Alle Kurse: einmal z
 | Nacken & Schultern | 49 € | Elsa Durieux |
 | Hüfte & Beweglichkeit | 49 € | Elsa Durieux |
 | Starke Knie | 49 € | Elsa Durieux |
-| Physio-Paket (alle 5 Physio-Kurse) | 199 € | Elsa Durieux |
+| Physio-Paket (alle 5 Physio-Kurse) | 149 € | Elsa Durieux |
 | Kämpfen wie Chris Wunn (Masterclass, 16 Videos) | 99 € | Chris Wunn (GLORY-Kämpfer) |
 
 ## So findest du den richtigen Kurs

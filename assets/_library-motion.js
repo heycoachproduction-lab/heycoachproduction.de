@@ -14,7 +14,7 @@
     const reps = Math.max(2, Math.ceil((window.innerWidth * 1.7) / (track.children.length * 300)));
     track.innerHTML = strip.repeat(reps * 2);
     [...track.children].slice(row.querySelectorAll(".hc-track > *").length / (reps * 2)).forEach(c => c.setAttribute("aria-hidden", "true"));
-    const dir = i % 2 === 0 ? -1 : 1;
+    const dir = i % 2 === 0 ? 1 : -1;   // 08.10 Heidar: 1. Reihe nach rechts, 2. nach links, abwechselnd
     const eng = {track, x: 0, half: 0, dir, speed: 9 + i * 2, paused: false, drag: 0, init: dir > 0, hold: false, resumeAt: 0};
     const measure = () => { eng.half = track.scrollWidth / 2; if (eng.init && eng.half) { eng.x = -eng.half; eng.init = false; } };
     requestAnimationFrame(measure);
