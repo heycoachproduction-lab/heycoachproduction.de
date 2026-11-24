@@ -270,6 +270,7 @@
 {
   "@context":"https://schema.org",
   "@type":"Person",
+  "@id":"https://heycoachproduction.de/trainer-marlon.html#person",
   "name":"Marlon Tröscher",
   "jobTitle":"Muay Thai Trainer",
   "description":"Marlon Tröscher — Muay-Thai-Trainer, Mitgründer T1 Kampfsportzentrum, Lead-Trainer Hey Coach.",
@@ -281,9 +282,30 @@
   ],
   "worksFor":{
     "@type":"Organization",
+    "@id":"https://heycoachproduction.de/#organization",
     "name":"Hey Coach Production GmbH",
     "url":"https://heycoachproduction.de"
   }
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://heycoachproduction.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marlon Tröscher",
+      "item": "https://heycoachproduction.de/trainer-marlon.html"
+    }
+  ]
 }
 </script>
 <style>/* 01.10 A11y: Kontrast + kein Überlappen mit dem Burger-Menü */.nav-back{color:var(--text2)}.course-price-note{color:var(--text2)}@media(max-width:860px){.nav-right .nav-back{display:none}}</style>
@@ -465,7 +487,9 @@
   var COURSES = [
     { label: 'Kickboxen Komplettkurs', sub: 'alle 7 Gürtel',      href: 'kurs-kickboxen-v2.html' },
     { label: 'Muay Thai Komplettkurs', sub: 'mit Marlon',          href: 'kurs-muay-thai.html' },
-    { label: 'Physio-Training',        sub: 'mit Elsa',            href: 'trainer-elsa.html' },
+    { label: 'Physio-Paket',           sub: '5 Kurse mit Elsa',    href: 'kurs-physio-paket.html' },
+    { label: 'Kämpfen wie Chris Wunn', sub: 'Masterclass',         href: 'kurs-kaempfen-wie-chris-wunn.html' },
+    { label: 'Kickboxen Basics',       sub: 'für Anfänger',        href: 'kurs-basics.html' },
     { label: '7-Tage-FitStart',        sub: 'der Einstieg',        href: 'kurs-fitstart.html' }
   ];
   var ALL = { label: 'Alle Kurse', href: 'kurse.html' };
@@ -498,7 +522,7 @@
     '.hcmm-drawer a{-webkit-tap-highlight-color:transparent;}',
     '.hcmm-drawer a:focus-visible{outline:2px solid #D4A040;outline-offset:3px;border-radius:8px;}',
     '.hcmm-label{font-family:"Outfit",sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:0 0 10px;}',
-    /* Kurse-Kacheln 2 × 2 */
+    /* Kurse-Kacheln, 2 Spalten (3 Reihen) */
     '.hcmm-courses{display:grid;grid-template-columns:1fr 1fr;gap:10px;}',
     '.hcmm-course{display:flex;flex-direction:column;justify-content:space-between;gap:4px;min-height:64px;padding:11px 14px;border-radius:14px;',
       'background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);text-decoration:none;transition:background .2s ease,border-color .2s ease;}',

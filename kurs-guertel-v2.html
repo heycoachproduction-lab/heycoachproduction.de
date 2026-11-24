@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#06081A">
-        <title>ISKA-Gürtelprüfung — mit Nils, Heiko &amp; Jana | Hey Coach</title>
+        <title>ISKA-Gürtelprüfung Kickboxen online vorbereiten | Hey Coach</title>
     <link rel="canonical" href="https://heycoachproduction.de/kurs-guertel-v2.html">
     <link rel="alternate" hreflang="de-DE" href="https://heycoachproduction.de/kurs-guertel-v2.html">
     <link rel="alternate" hreflang="de-AT" href="https://heycoachproduction.de/kurs-guertel-v2.html">
@@ -101,6 +101,7 @@
       "instructor": [
         {
           "@type": "Person",
+          "@id": "https://heycoachproduction.de/trainer-nils.html#person",
           "name": "Nils Loton",
           "jobTitle": "5. Dan ISKA, ISKA-Europameister"
         }
@@ -110,7 +111,7 @@
         "price": "24.99",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "category": "Online-Kurs",
+        "category": "Paid",
         "url": "https://heycoachproduction.de/kurs-guertel-v2.html",
         "validFrom": "2026-05-01"
       },
@@ -925,7 +926,7 @@
                             <span class="wk-tag">Kickboxen &middot; Einstieg</span>
                             <h3>Kickboxen Basics</h3>
                             <p>Pratzen halten, Boxsack, Bandagen, Mundschutz, Kombinationen aufbauen — die Grundlagen in sechs Lektionen. Mit Nils, Heiko &amp; Jana.</p>
-                            <div class="wk-price">€29 <span>inkl. 19 % MwSt. · erscheint im Oktober</span>
+                            <div class="wk-price">€29 <span>inkl. 19 % MwSt. &middot; einmalig</span>
                             </div>
                             <span class="wk-cta">Kurs ansehen →</span>
                         </div> </a>
@@ -1088,7 +1089,9 @@
   var COURSES = [
     { label: 'Kickboxen Komplettkurs', sub: 'alle 7 Gürtel',      href: 'kurs-kickboxen-v2.html' },
     { label: 'Muay Thai Komplettkurs', sub: 'mit Marlon',          href: 'kurs-muay-thai.html' },
-    { label: 'Physio-Training',        sub: 'mit Elsa',            href: 'trainer-elsa.html' },
+    { label: 'Physio-Paket',           sub: '5 Kurse mit Elsa',    href: 'kurs-physio-paket.html' },
+    { label: 'Kämpfen wie Chris Wunn', sub: 'Masterclass',         href: 'kurs-kaempfen-wie-chris-wunn.html' },
+    { label: 'Kickboxen Basics',       sub: 'für Anfänger',        href: 'kurs-basics.html' },
     { label: '7-Tage-FitStart',        sub: 'der Einstieg',        href: 'kurs-fitstart.html' }
   ];
   var ALL = { label: 'Alle Kurse', href: 'kurse.html' };
@@ -1121,7 +1124,7 @@
     '.hcmm-drawer a{-webkit-tap-highlight-color:transparent;}',
     '.hcmm-drawer a:focus-visible{outline:2px solid #D4A040;outline-offset:3px;border-radius:8px;}',
     '.hcmm-label{font-family:"Outfit",sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:0 0 10px;}',
-    /* Kurse-Kacheln 2 × 2 */
+    /* Kurse-Kacheln, 2 Spalten (3 Reihen) */
     '.hcmm-courses{display:grid;grid-template-columns:1fr 1fr;gap:10px;}',
     '.hcmm-course{display:flex;flex-direction:column;justify-content:space-between;gap:4px;min-height:64px;padding:11px 14px;border-radius:14px;',
       'background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);text-decoration:none;transition:background .2s ease,border-color .2s ease;}',

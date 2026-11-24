@@ -588,6 +588,7 @@
       padding-top: 10px; padding-bottom: 10px;
       margin-top: -10px; margin-bottom: -10px;
     }
+    footer .footer-col a { display: block; width: fit-content; margin: 0 0 2px; padding: 7px 0; } /* 01.10: Spaltenlinks untereinander (wie index.html) */
     .footer-brand a, .footer a.nav-logo, footer a img { padding: 0; margin: 0; }
 
     /* ── Fix 2026-08-16: Kurs-CTAs am Artikelende liefen auf 320-375px rechts aus dem Bild.
@@ -1353,10 +1354,17 @@ table.stack td::before{content:attr(data-label);color:var(--text-muted);font-siz
                 <nav class="footer-col" aria-label="Kurse">
                     <h3>Kurse</h3>
                     <a href="kurs-kickboxen-v2.html">Kickboxen Komplettkurs</a>
+                    <a href="kurs-basics.html">Kickboxen Basics</a>
                     <a href="kurs-guertel-v2.html">G&uuml;rtelpr&uuml;fung (Einzelkurse)</a>
                     <a href="kurs-muay-thai.html">Muay Thai Komplettkurs</a>
                     <a href="kurs-fitstart.html">7-Tage-FitStart</a>
                     <a href="kurs-ruecken-reset.html">11 Tage R&uuml;cken Fit</a>
+                    <a href="kurs-physio-paket.html">Physio-Paket mit Elsa</a>
+                    <a href="kurs-haltung.html">Aufrechte Haltung</a>
+                    <a href="kurs-nacken-schultern.html">Nacken &amp; Schultern</a>
+                    <a href="kurs-huefte-beweglichkeit.html">H&uuml;fte &amp; Beweglichkeit</a>
+                    <a href="kurs-knie.html">Starke Knie</a>
+                    <a href="kurs-kaempfen-wie-chris-wunn.html">K&auml;mpfen wie Chris Wunn</a>
                 </nav>
                 <nav class="footer-col" aria-label="Unternehmen">
                     <h3>Unternehmen</h3>
@@ -1459,7 +1467,9 @@ table.stack td::before{content:attr(data-label);color:var(--text-muted);font-siz
   var COURSES = [
     { label: 'Kickboxen Komplettkurs', sub: 'alle 7 Gürtel',      href: 'kurs-kickboxen-v2.html' },
     { label: 'Muay Thai Komplettkurs', sub: 'mit Marlon',          href: 'kurs-muay-thai.html' },
-    { label: 'Physio-Training',        sub: 'mit Elsa',            href: 'trainer-elsa.html' },
+    { label: 'Physio-Paket',           sub: '5 Kurse mit Elsa',    href: 'kurs-physio-paket.html' },
+    { label: 'Kämpfen wie Chris Wunn', sub: 'Masterclass',         href: 'kurs-kaempfen-wie-chris-wunn.html' },
+    { label: 'Kickboxen Basics',       sub: 'für Anfänger',        href: 'kurs-basics.html' },
     { label: '7-Tage-FitStart',        sub: 'der Einstieg',        href: 'kurs-fitstart.html' }
   ];
   var ALL = { label: 'Alle Kurse', href: 'kurse.html' };
@@ -1492,7 +1502,7 @@ table.stack td::before{content:attr(data-label);color:var(--text-muted);font-siz
     '.hcmm-drawer a{-webkit-tap-highlight-color:transparent;}',
     '.hcmm-drawer a:focus-visible{outline:2px solid #D4A040;outline-offset:3px;border-radius:8px;}',
     '.hcmm-label{font-family:"Outfit",sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin:0 0 10px;}',
-    /* Kurse-Kacheln 2 × 2 */
+    /* Kurse-Kacheln, 2 Spalten (3 Reihen) */
     '.hcmm-courses{display:grid;grid-template-columns:1fr 1fr;gap:10px;}',
     '.hcmm-course{display:flex;flex-direction:column;justify-content:space-between;gap:4px;min-height:64px;padding:11px 14px;border-radius:14px;',
       'background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);text-decoration:none;transition:background .2s ease,border-color .2s ease;}',

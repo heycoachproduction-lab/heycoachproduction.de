@@ -6,7 +6,7 @@
       "type": "skill-md",
       "description": "Hilft bei der Auswahl des passenden Hey-Coach-Online-Kurses (Kampfsport und Physio-Training) inkl. Preis, Inhalt, Trainer und Erscheinungsstatus.",
       "url": "/.well-known/agent-skills/kursauswahl/SKILL.md",
-      "digest": "sha256:477831fd32bb741726fe3d5984119e6a9f03deb53d836b12aa3336ce079dd92d"
+      "digest": "sha256:ceaa1fc7144d74382ea1678f8d9de0f40e6f9e5aba8b1503db0ad83b383faa2b"
     }
   ]
 }

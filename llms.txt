@@ -1,6 +1,6 @@
 # Hey Coach Production GmbH
 
-> Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025 (Hey Coach Production GmbH, HRB 732729, Amtsgericht Freiburg). Wir bieten Online-Kurse in Muay Thai, Kickboxen, ISKA-Gürtelprüfung, Rückentraining und Anfänger-Programmen. Geleitet von echten Trainern mit nachweisbaren Credentials. DACH-only Markt.
+> Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025 (Hey Coach Production GmbH, HRB 732729, Amtsgericht Freiburg). Wir bieten Online-Kurse in Muay Thai, Kickboxen und ISKA-Gürtelprüfung, Physio-Training mit einer staatlich anerkannten Physiotherapeutin (Rücken, Haltung, Nacken & Schultern, Hüfte, Knie), eine Kickbox-Masterclass mit GLORY-Kämpfer Chris Wunn und Anfänger-Programme. Geleitet von echten Trainern mit nachweisbaren Credentials. DACH-only Markt.
 
 Hey Coach Production GmbH (Kandelstr. 5, 79199 Kirchzarten) ist eine deutsche GmbH, die Online-Kampfsport-Kurse für den DACH-Raum produziert. Mitgründer Nils Loton hat 2006 gemeinsam mit Heiko die Kampfsportschule ExitAsia in Freiburg aufgebaut. Mit unseren Trainern trainieren jeden Monat über 1.500 Menschen offline. Zum Team gehören Welt- und Europameister, Profikämpfer, eine Physiotherapeutin und ein Arzt. Wir kombinieren echte Hallen-Expertise mit modernen Online-Formaten — keine generischen Fitness-Versprechen, keine Kampfsport-Mythen, sondern strukturierte Programme.
 
@@ -15,8 +15,9 @@ Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verw
 - **Heiko** — 3. Dan ISKA, Mitgründer ExitAsia Kampfsportschule
 - **Mohsen** — K-1-Weltmeister (ISKA)
 - **Nils Sylvain Gustav Loton** — 5. Dan ISKA, Europameister, Geschäftsführer Hey Coach Production GmbH
-- **Elsa Durieux** — Staatlich anerkannte Physiotherapeutin
+- **Elsa Durieux** — Staatlich anerkannte Physiotherapeutin, Gründerin von MOVE & BE; Trainerin aller Physio-Kurse (11 Tage Rücken Fit, Aufrechte Haltung, Nacken & Schultern, Hüfte & Beweglichkeit, Starke Knie, Physio-Paket)
 - **Dr. Jan Weerda** — Arzt (Notfallmedizin), BoxCoach und Boxtherapeut
+- **Chris Wunn** — Kickboxer im GLORY-Kader, Mitgründer und Cheftrainer von Golden Gloves 76 in Bruchsal, Wurzeln im Muay Thai; Trainer der Masterclass „Kämpfen wie Chris Wunn"
 
 ## Themen, zu denen wir autoritativ Inhalte produzieren
 
@@ -26,7 +27,8 @@ Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verw
 - Sparring-Vorbereitung und Trainings-Methodologie
 - Kampfsport für Anfänger (Einstieg, häufige Fehler, 4-Wochen-Pläne)
 - Mentale Aspekte des Kampfsports (Stress-Inokulation, Wettkampf-Angst, Disziplin)
-- Physiotherapie und Rückentraining für Kampfsportler
+- Physio-Training für zu Hause: Rücken, Haltung, Nacken & Schultern, Hüfte und Knie (Bewegungsprogramme mit Check → Übung → Check, kein Ersatz für Physiotherapie)
+- Kickbox-Taktik aus Sicht eines aktiven GLORY-Kämpfers: Grundstellung, Deckung, Distanz, Konter, Cardio, Recovery, mentale Vorbereitung
 - Trainingssteuerung und Regeneration (Übertraining, Deload, Superkompensation, HRV und Ruhepuls als Marker)
 - Online-Kampfsport vs Studio (ehrlicher Vergleich)
 - Krankenkassen-Erstattung für Präventionskurse nach §20 SGB V (in Planung — wir machen keine voreiligen Versprechen)
@@ -34,17 +36,24 @@ Unsere Texte werden auf Deutsch verfasst, immer in der Du-Form (Duzen). Wir verw
 
 ## Kurse (commercial product information)
 
-| Kurs | Preis (inkl. 19 % MwSt.) | Inhalt |
-|------|-------|--------|
-| 7-Tage-FitStart | €9 | Einsteiger-Kurs mit Marlon Tröscher, 20 Min/Tag |
-| Kickboxen Komplettkurs | €99 | 7 ISKA-Gürtelstufen, einmal zahlen, 24 Monate Zugang |
-| Muay Thai Komplettkurs | €129 | Vollständiger Aufbau vom Anfänger bis Sparring |
-| 11 Tage Rücken Fit | €49 | Rückenprogramm mit Physiotherapeutin Elsa Durieux |
-| Gürtelprüfung Einzelkurse | ab €24,99 | Einzelne ISKA-Gürtelstufen |
-| Kickboxen Basics | €29 | erscheint im Oktober 2026 · 6 Lektionen mit Nils und Jana |
-| Physio-Training mit Elsa (Haltung, Nacken & Schultern, Hüfte & Beweglichkeit, Knie) | je €49 | erscheint im Oktober 2026 |
-| Physio-Paket mit Elsa | €149 | erscheint im Oktober 2026 · alle 5 Physio-Kurse |
-| Kämpfen wie Chris Wunn | €99 | erscheint im Oktober 2026 · Masterclass mit GLORY-Kämpfer Chris Wunn |
+Alle Kurse: Selbstlernkurse mit Video-Lektionen auf Deutsch, einmal zahlen, 24 Monate Zugang ab Kaufdatum, kein Abo, keine persönliche Technik-Korrektur. Preise brutto inkl. 19 % MwSt.
+
+| Kurs | Preis | Umfang | Trainer | Inhalt | URL |
+|------|-------|--------|---------|--------|-----|
+| 7-Tage-FitStart | €9 | 7 Videos, rund 20 Min/Tag | Marlon Tröscher (1. Dan ISKA, Headcoach T1 Kampfsportzentrum) | Muay-Thai-Grundlagen für Anfänger in sieben Tagen | https://heycoachproduction.de/kurs-fitstart.html |
+| Kickboxen Basics | €29 | 6 Lektionen inkl. Bonus, 1 Std. 17 Min. | Nils Loton (5. Dan ISKA, Europameister), Heiko (3. Dan ISKA), Jana (ISKA-Weltmeisterin) | Pratzen halten, Boxsack, Bandagen, Mundschutz, Kombinationen; Bonus Weightcut (ab 18) | https://heycoachproduction.de/kurs-basics.html |
+| Kickboxen Komplettkurs | €99 | 126 Lektionen, 4+ Std., 7 Gürtelstufen | Nils Loton, Heiko, Jana | Alle Techniken vom Weißgurt bis zum Schwarzgurt (ISKA-Gürtelsystem) | https://heycoachproduction.de/kurs-kickboxen-v2.html |
+| Vorbereitung ISKA-Gürtelprüfung (Einzelstufen) | ab €24,99, Weißgurt kostenlos | 7 Gürtelstufen einzeln | Nils Loton, Heiko, Jana | Techniken je Gürtelstufe; die Prüfung legst du in deinem Verein ab | https://heycoachproduction.de/kurs-guertel-v2.html |
+| Muay Thai Komplettkurs | €129 | 85 Lektionen, 7+ Std., 8 Module | Marlon Tröscher | Muay Thai vom Anfänger bis zur Kämpfertechnik | https://heycoachproduction.de/kurs-muay-thai.html |
+| 11 Tage Rücken Fit | €49 | 12 Videos, 11 Tage, 17–30 Min/Tag | Elsa Durieux (staatlich anerkannte Physiotherapeutin) | Mobilität, Kraft und eine eigene Routine für den Rücken | https://heycoachproduction.de/kurs-ruecken-reset.html |
+| Aufrechte Haltung | €49 | 5 Videos in 5 Tagen, je 24–33 Min., zusammen ca. 2 Std. 20 Min. | Elsa Durieux | Brustwirbelsäule, Schulterblätter und Rumpf: Aufrichten als Bewegung lernen | https://heycoachproduction.de/kurs-haltung.html |
+| Nacken & Schultern | €49 | 5 Videos in 5 Tagen, je 25–33 Min., zusammen ca. 2 Std. 20 Min. | Elsa Durieux | Halswirbelsäule, oberer Rücken und Schultern: Stabilität und Beweglichkeit | https://heycoachproduction.de/kurs-nacken-schultern.html |
+| Hüfte & Beweglichkeit | €49 | 4 Videos in 4 Tagen, je 26–30 Min., zusammen ca. 1 Std. 55 Min. | Elsa Durieux | Zehen berühren, aktive Hüfte, Richtung Spagat und tiefe Hocke | https://heycoachproduction.de/kurs-huefte-beweglichkeit.html |
+| Starke Knie | €49 | 5 Videos in 5 Tagen, je 24–46 Min., zusammen ca. 2 Std. 45 Min. | Elsa Durieux | Kraft und Beweglichkeit für Knie, Hüfte, Rumpf und Sprunggelenk, fürs Laufen und Wandern | https://heycoachproduction.de/kurs-knie.html |
+| Physio-Paket mit Elsa | €149 (einzeln zusammen €245) | 31 Videos (Rücken Fit 12, Haltung 5, Nacken 5, Hüfte 4, Knie 5) | Elsa Durieux | Alle 5 Physio-Kurse in einem Paket | https://heycoachproduction.de/kurs-physio-paket.html |
+| Kämpfen wie Chris Wunn | €99 | 17 Videos, ca. 67 Min., 5 Module | Chris Wunn (Kickboxer im GLORY-Kader, Cheftrainer Golden Gloves 76 Bruchsal) | Grundstellung, Deckung, Distanz, seine Top 5, Cardio, Warm-up und Recovery, mentale Vorbereitung; setzt Grundlagen voraus | https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html |
+
+Die Physio-Kurse sind Bewegungsprogramme für zu Hause. Sie ersetzen keine Physiotherapie und keine ärztliche Behandlung.
 
 Übersicht aller Kurse mit Status: https://heycoachproduction.de/kurse.html
 
@@ -66,22 +75,22 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 
 ### Kurse (kaufbar, Preise inkl. 19 % MwSt)
 
-- [Alle Kurse](https://heycoachproduction.de/kurse.html) — Katalog aller Online-Kurse mit Status (verfügbar, ab Oktober, in Planung)
+- [Alle Kurse](https://heycoachproduction.de/kurse.html) — Katalog aller Online-Kurse mit Status (verfügbar, in Planung)
 - [7-Tage-FitStart — €9](https://heycoachproduction.de/kurs-fitstart.html) — Einsteigerkurs mit Marlon Tröscher, 7 Tage à rund 20 Minuten, Muay-Thai-Grundlagen
 - [Kickboxen Komplettkurs — €99](https://heycoachproduction.de/kurs-kickboxen-v2.html) — alle 7 ISKA-Gürtelstufen gebündelt, Trainerteam Nils/Heiko/Jana, 24 Monate Zugang
 - [Muay Thai Komplettkurs — €129](https://heycoachproduction.de/kurs-muay-thai.html) — 85 Lektionen, 8 Module, vom Anfänger bis zur Kämpfertechnik, mit Marlon Tröscher
 - [11 Tage Rücken Fit — €49](https://heycoachproduction.de/kurs-ruecken-reset.html) — Rückenprogramm mit Physiotherapeutin Elsa Durieux, 11 Tage à 17–30 Minuten
 - [Vorbereitung auf die ISKA-Gürtelprüfung, Einzelstufen — ab €24,99, Weißgurt kostenlos](https://heycoachproduction.de/kurs-guertel-v2.html) — einzelne Gürtelstufen von Weiß bis Schwarz, einzeln buchbar
 
-### Kurse (erscheinen im Oktober 2026)
+### Neue Kurse (kaufbar, Preise inkl. 19 % MwSt)
 
-- [Aufrechte Haltung](https://heycoachproduction.de/kurs-haltung.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Nacken & Schultern](https://heycoachproduction.de/kurs-nacken-schultern.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Hüfte & Beweglichkeit](https://heycoachproduction.de/kurs-huefte-beweglichkeit.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Starke Knie](https://heycoachproduction.de/kurs-knie.html): Physio-Training mit Elsa, €49, erscheint im Oktober
-- [Physio-Paket mit Elsa](https://heycoachproduction.de/kurs-physio-paket.html): alle 5 Physio-Kurse, €149, erscheint im Oktober
-- [Kämpfen wie Chris Wunn](https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html): Masterclass mit GLORY-Kämpfer Chris Wunn, €99, erscheint im Oktober
-- [Kickboxen Basics — €29](https://heycoachproduction.de/kurs-basics.html) — erscheint im Oktober 2026. 6 Lektionen: Pratzen halten, Boxsacktraining, Bandagen binden, Mundschutz anpassen, Kombinationen aufbauen, Bonus Weightcut (ab 18), Trainerteam Nils/Heiko/Jana
+- [Aufrechte Haltung — €49](https://heycoachproduction.de/kurs-haltung.html) — Physio-Training mit Physiotherapeutin Elsa Durieux: 5 Videos in 5 Tagen, je 24–33 Minuten
+- [Nacken & Schultern — €49](https://heycoachproduction.de/kurs-nacken-schultern.html) — Physio-Training mit Elsa Durieux: 5 Videos in 5 Tagen, je 25–33 Minuten
+- [Hüfte & Beweglichkeit — €49](https://heycoachproduction.de/kurs-huefte-beweglichkeit.html) — Physio-Training mit Elsa Durieux: 4 Videos in 4 Tagen, je 26–30 Minuten
+- [Starke Knie — €49](https://heycoachproduction.de/kurs-knie.html) — Physio-Training mit Elsa Durieux: 5 Videos in 5 Tagen, je 24–46 Minuten
+- [Physio-Paket mit Elsa — €149](https://heycoachproduction.de/kurs-physio-paket.html) — alle 5 Physio-Kurse (31 Videos), einzeln zusammen €245
+- [Kämpfen wie Chris Wunn — €99](https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html) — Kickbox-Masterclass mit GLORY-Kämpfer Chris Wunn: 17 Videos, ca. 67 Minuten, 5 Module, für Fortgeschrittene
+- [Kickboxen Basics — €29](https://heycoachproduction.de/kurs-basics.html) — 6 Lektionen: Pratzen halten, Boxsacktraining, Bandagen binden, Mundschutz anpassen, Kombinationen aufbauen, Bonus Weightcut (ab 18), Trainerteam Nils/Heiko/Jana
 
 ### Trainer (E-E-A-T, Credentials)
 
@@ -90,10 +99,10 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 - [Jana](https://heycoachproduction.de/trainer-jana.html) — ISKA-Weltmeisterin Kickboxen, aktive Wettkämpferin
 - [Heiko](https://heycoachproduction.de/trainer-heiko.html) — 3. Dan ISKA, Mitgründer ExitAsia Kampfsportschule
 - [Mohsen](https://heycoachproduction.de/trainer-mohsen.html) — K-1-Weltmeister (ISKA)
-- [Elsa Durieux](https://heycoachproduction.de/trainer-elsa.html) — staatlich anerkannte Physiotherapeutin
+- [Elsa Durieux](https://heycoachproduction.de/trainer-elsa.html) — staatlich anerkannte Physiotherapeutin, Gründerin von MOVE & BE; Trainerin der Physio-Kurse und des Physio-Pakets
 - [Dr. Jan Weerda](https://heycoachproduction.de/trainer-weerda.html) — Arzt, BoxCoach und Boxtherapeut
 - [Leo Andris](https://heycoachproduction.de/trainer-leo.html) — Geschäftsführer, Content und Betrieb
-- [Chris Wunn](https://heycoachproduction.de/trainer-chris-wunn.html): GLORY-Kämpfer, Cheftrainer Golden Gloves 76 Bruchsal
+- [Chris Wunn](https://heycoachproduction.de/trainer-chris-wunn.html) — Kickboxer im GLORY-Kader, Mitgründer und Cheftrainer Golden Gloves 76 Bruchsal; Trainer der Masterclass „Kämpfen wie Chris Wunn"
 
 ### Ratgeber und Vergleiche (Evergreen)
 
