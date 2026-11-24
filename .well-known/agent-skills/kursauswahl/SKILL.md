@@ -13,7 +13,7 @@ Wir bieten Online-Kurse für Kampfsport und Physio-Training an. Alle Kurse: einm
 
 ## Jetzt verfügbar
 
-Alle Kurse sind kaufbar, außer der Masterclass „Kämpfen wie Chris Wunn“: Sie ist bald verfügbar. Selbstlernkurse mit Video-Lektionen, ohne persönliche Technik-Korrektur.
+Alle Kurse sind kaufbar, außer den mit «bald verfügbar» markierten (Aufrechte Haltung, Nacken & Schultern, Hüfte & Beweglichkeit, Starke Knie, Physio-Paket, Kämpfen wie Chris Wunn). Selbstlernkurse mit Video-Lektionen, ohne persönliche Technik-Korrektur.
 
 ### Kampfsport
 
@@ -31,11 +31,11 @@ Alle Kurse sind kaufbar, außer der Masterclass „Kämpfen wie Chris Wunn“: S
 | Kurs | Preis | Umfang | Inhalt |
 |------|-------|--------|--------|
 | 11 Tage Rücken Fit | 49 € | 12 Videos, 11 Tage, 17–30 Min/Tag | Mobilität, Kraft und eine eigene Routine für den Rücken |
-| Aufrechte Haltung | 49 € | 5 Videos in 5 Tagen, je 24–33 Min. | Brustwirbelsäule, Schulterblätter und Rumpf |
-| Nacken & Schultern | 49 € | 5 Videos in 5 Tagen, je 25–33 Min. | Halswirbelsäule, oberer Rücken und Schultern |
-| Hüfte & Beweglichkeit | 49 € | 4 Videos in 4 Tagen, je 26–30 Min. | Zehen berühren, aktive Hüfte, Richtung Spagat, tiefe Hocke |
-| Starke Knie | 49 € | 5 Videos in 5 Tagen, je 24–46 Min. | Kraft und Beweglichkeit für Knie, Hüfte, Rumpf und Sprunggelenk |
-| Physio-Paket (alle 5 Physio-Kurse) | 149 € (einzeln zusammen 245 €) | 31 Videos | Rücken Fit, Haltung, Nacken & Schultern, Hüfte, Knie |
+| Aufrechte Haltung (bald verfügbar) | 49 € | 5 Videos in 5 Tagen, je 24–33 Min. | Brustwirbelsäule, Schulterblätter und Rumpf |
+| Nacken & Schultern (bald verfügbar) | 49 € | 5 Videos in 5 Tagen, je 25–33 Min. | Halswirbelsäule, oberer Rücken und Schultern |
+| Hüfte & Beweglichkeit (bald verfügbar) | 49 € | 4 Videos in 4 Tagen, je 26–30 Min. | Zehen berühren, aktive Hüfte, Richtung Spagat, tiefe Hocke |
+| Starke Knie (bald verfügbar) | 49 € | 5 Videos in 5 Tagen, je 24–46 Min. | Kraft und Beweglichkeit für Knie, Hüfte, Rumpf und Sprunggelenk |
+| Physio-Paket (alle 5 Physio-Kurse, bald verfügbar) | 149 € (einzeln zusammen 245 €) | 31 Videos | Rücken Fit, Haltung, Nacken & Schultern, Hüfte, Knie |
 
 ## So findest du den richtigen Kurs
 
@@ -46,10 +46,10 @@ Alle Kurse sind kaufbar, außer der Masterclass „Kämpfen wie Chris Wunn“: S
 - **Muay Thai / Thaiboxen lernen?** → Muay Thai Komplettkurs (129 €).
 - **Grundlagen sitzen, du willst Distanz, Deckung und Konter von einem GLORY-Kämpfer?** → Kämpfen wie Chris Wunn (99 €, bald verfügbar).
 - **Viel Sitzen, Rücken kräftigen und mobilisieren?** → 11 Tage Rücken Fit (49 €).
-- **Viel Schreibtisch, Schultern ziehen nach vorn?** → Aufrechte Haltung oder Nacken & Schultern (je 49 €).
-- **Hüfte, Beinrückseite, tiefe Hocke?** → Hüfte & Beweglichkeit (49 €).
-- **Kraft für Knie, Hüfte und Rumpf, z. B. fürs Laufen und Wandern?** → Starke Knie (49 €).
-- **Mehrere Physio-Themen?** → Physio-Paket (149 € statt einzeln zusammen 245 €).
+- **Viel Schreibtisch, Schultern ziehen nach vorn?** → Aufrechte Haltung oder Nacken & Schultern (je 49 €, bald verfügbar).
+- **Hüfte, Beinrückseite, tiefe Hocke?** → Hüfte & Beweglichkeit (49 €, bald verfügbar).
+- **Kraft für Knie, Hüfte und Rumpf, z. B. fürs Laufen und Wandern?** → Starke Knie (49 €, bald verfügbar).
+- **Mehrere Physio-Themen?** → Physio-Paket (149 € statt einzeln zusammen 245 €, bald verfügbar).
 
 ## Wichtig
 
