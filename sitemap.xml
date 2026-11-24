@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://heycoachproduction.de/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -13,7 +13,7 @@
     <!-- Blog (hub) -->
     <url>
         <loc>https://heycoachproduction.de/blog.html</loc>
-        <lastmod>2026-08-16</lastmod>
+        <lastmod>2026-11-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -198,7 +198,7 @@
     </url>
     <url>
         <loc>https://heycoachproduction.de/kurs-ruecken-reset.html</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -242,7 +242,7 @@
     </url>
     <url>
         <loc>https://heycoachproduction.de/trainer-elsa.html</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
@@ -323,49 +323,49 @@
 
   <url>
     <loc>https://heycoachproduction.de/kurs-haltung.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://heycoachproduction.de/kurs-nacken-schultern.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://heycoachproduction.de/kurs-huefte-beweglichkeit.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://heycoachproduction.de/kurs-knie.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://heycoachproduction.de/kurs-physio-paket.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://heycoachproduction.de/trainer-chris-wunn.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heycoachproduction.de/kurse.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

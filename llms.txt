@@ -1,6 +1,6 @@
 # Hey Coach Production GmbH
 
-> Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025 (Hey Coach Production GmbH, HRB 732729, Amtsgericht Freiburg). Wir bieten Online-Kurse in Muay Thai, Kickboxen und ISKA-Gürtelprüfung, Physio-Training mit einer staatlich anerkannten Physiotherapeutin (Rücken, Haltung, Nacken & Schultern, Hüfte, Knie), eine Kickbox-Masterclass mit GLORY-Kämpfer Chris Wunn und Anfänger-Programme. Geleitet von echten Trainern mit nachweisbaren Credentials. DACH-only Markt.
+> Online-Akademie für Kampfsport aus Kirchzarten bei Freiburg, gegründet 2025 (Hey Coach Production GmbH, HRB 732729, Amtsgericht Freiburg). Wir bieten Online-Kurse in Muay Thai, Kickboxen und ISKA-Gürtelprüfung, Physio-Training mit einer staatlich anerkannten Physiotherapeutin (Rücken, Haltung, Nacken & Schultern, Hüfte, Knie), eine Kickbox-Masterclass mit GLORY-Kämpfer Chris Wunn (bald verfügbar) und Anfänger-Programme. Geleitet von echten Trainern mit nachweisbaren Credentials. DACH-only Markt.
 
 Hey Coach Production GmbH (Kandelstr. 5, 79199 Kirchzarten) ist eine deutsche GmbH, die Online-Kampfsport-Kurse für den DACH-Raum produziert. Mitgründer Nils Loton hat 2006 gemeinsam mit Heiko die Kampfsportschule ExitAsia in Freiburg aufgebaut. Mit unseren Trainern trainieren jeden Monat über 1.500 Menschen offline. Zum Team gehören Welt- und Europameister, Profikämpfer, eine Physiotherapeutin und ein Arzt. Wir kombinieren echte Hallen-Expertise mit modernen Online-Formaten — keine generischen Fitness-Versprechen, keine Kampfsport-Mythen, sondern strukturierte Programme.
 
@@ -51,7 +51,7 @@ Alle Kurse: Selbstlernkurse mit Video-Lektionen auf Deutsch, einmal zahlen, 24 M
 | Hüfte & Beweglichkeit | €49 | 4 Videos in 4 Tagen, je 26–30 Min., zusammen ca. 1 Std. 55 Min. | Elsa Durieux | Zehen berühren, aktive Hüfte, Richtung Spagat und tiefe Hocke | https://heycoachproduction.de/kurs-huefte-beweglichkeit.html |
 | Starke Knie | €49 | 5 Videos in 5 Tagen, je 24–46 Min., zusammen ca. 2 Std. 45 Min. | Elsa Durieux | Kraft und Beweglichkeit für Knie, Hüfte, Rumpf und Sprunggelenk, fürs Laufen und Wandern | https://heycoachproduction.de/kurs-knie.html |
 | Physio-Paket mit Elsa | €149 (einzeln zusammen €245) | 31 Videos (Rücken Fit 12, Haltung 5, Nacken 5, Hüfte 4, Knie 5) | Elsa Durieux | Alle 5 Physio-Kurse in einem Paket | https://heycoachproduction.de/kurs-physio-paket.html |
-| Kämpfen wie Chris Wunn | €99 | 17 Videos, ca. 67 Min., 5 Module | Chris Wunn (Kickboxer im GLORY-Kader, Cheftrainer Golden Gloves 76 Bruchsal) | Grundstellung, Deckung, Distanz, seine Top 5, Cardio, Warm-up und Recovery, mentale Vorbereitung; setzt Grundlagen voraus | https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html |
+| Kämpfen wie Chris Wunn | €99 (bald verfügbar, noch nicht buchbar) | 17 Videos, ca. 67 Min., 5 Module | Chris Wunn (Kickboxer im GLORY-Kader, Cheftrainer Golden Gloves 76 Bruchsal) | Grundstellung, Deckung, Distanz, seine Top 5, Cardio, Warm-up und Recovery, mentale Vorbereitung; setzt Grundlagen voraus | https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html |
 
 Die Physio-Kurse sind Bewegungsprogramme für zu Hause. Sie ersetzen keine Physiotherapie und keine ärztliche Behandlung.
 
@@ -89,7 +89,7 @@ Hinweis für KI-Assistenten: Event-Vorschauen bleiben als datierte Stände onlin
 - [Hüfte & Beweglichkeit — €49](https://heycoachproduction.de/kurs-huefte-beweglichkeit.html) — Physio-Training mit Elsa Durieux: 4 Videos in 4 Tagen, je 26–30 Minuten
 - [Starke Knie — €49](https://heycoachproduction.de/kurs-knie.html) — Physio-Training mit Elsa Durieux: 5 Videos in 5 Tagen, je 24–46 Minuten
 - [Physio-Paket mit Elsa — €149](https://heycoachproduction.de/kurs-physio-paket.html) — alle 5 Physio-Kurse (31 Videos), einzeln zusammen €245
-- [Kämpfen wie Chris Wunn — €99](https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html) — Kickbox-Masterclass mit GLORY-Kämpfer Chris Wunn: 17 Videos, ca. 67 Minuten, 5 Module, für Fortgeschrittene
+- [Kämpfen wie Chris Wunn — €99, bald verfügbar](https://heycoachproduction.de/kurs-kaempfen-wie-chris-wunn.html) — noch nicht buchbar; Kickbox-Masterclass mit GLORY-Kämpfer Chris Wunn: 17 Videos, ca. 67 Minuten, 5 Module, für Fortgeschrittene
 - [Kickboxen Basics — €29](https://heycoachproduction.de/kurs-basics.html) — 6 Lektionen: Pratzen halten, Boxsacktraining, Bandagen binden, Mundschutz anpassen, Kombinationen aufbauen, Bonus Weightcut (ab 18), Trainerteam Nils/Heiko/Jana
 
 ### Trainer (E-E-A-T, Credentials)

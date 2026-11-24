@@ -13,7 +13,7 @@ Wir bieten Online-Kurse für Kampfsport und Physio-Training an. Alle Kurse: einm
 
 ## Jetzt verfügbar
 
-Alle Kurse sind kaufbar. Selbstlernkurse mit Video-Lektionen, ohne persönliche Technik-Korrektur.
+Alle Kurse sind kaufbar, außer der Masterclass „Kämpfen wie Chris Wunn“: Sie ist bald verfügbar. Selbstlernkurse mit Video-Lektionen, ohne persönliche Technik-Korrektur.
 
 ### Kampfsport
 
@@ -24,7 +24,7 @@ Alle Kurse sind kaufbar. Selbstlernkurse mit Video-Lektionen, ohne persönliche 
 | Vorbereitung auf die ISKA-Gürtelprüfung (Einzelstufen) | ab 24,99 €, Weißgurt kostenlos | 7 Gürtelstufen einzeln | Techniken je Gürtelstufe; die Prüfung legst du in deinem Verein ab | Nils, Heiko, Jana |
 | Kickboxen Komplettkurs | 99 € | 126 Lektionen, 4+ Std., 7 Gürtelstufen | Weißgurt bis Schwarzgurt | Nils, Heiko, Jana |
 | Muay Thai Komplettkurs | 129 € | 85 Lektionen, 7+ Std., 8 Module | Muay Thai vom Anfänger bis zur Kämpfertechnik | Marlon Tröscher |
-| Kämpfen wie Chris Wunn (Masterclass) | 99 € | 17 Videos, ca. 67 Min., 5 Module | Grundstellung, Deckung, Distanz, seine Top 5, Cardio, Warm-up und Recovery, mentale Vorbereitung; setzt Grundlagen voraus | Chris Wunn (Kickboxer im GLORY-Kader, Cheftrainer Golden Gloves 76 Bruchsal) |
+| Kämpfen wie Chris Wunn (Masterclass, bald verfügbar) | 99 € | 17 Videos, ca. 67 Min., 5 Module | Grundstellung, Deckung, Distanz, seine Top 5, Cardio, Warm-up und Recovery, mentale Vorbereitung; setzt Grundlagen voraus | Chris Wunn (Kickboxer im GLORY-Kader, Cheftrainer Golden Gloves 76 Bruchsal) |
 
 ### Physio-Training mit Elsa Durieux (staatlich anerkannte Physiotherapeutin)
 
@@ -44,7 +44,7 @@ Alle Kurse sind kaufbar. Selbstlernkurse mit Video-Lektionen, ohne persönliche 
 - **Kickboxen systematisch von Anfang an lernen?** → Kickboxen Komplettkurs (99 €).
 - **Auf eine ISKA-Gürtelprüfung vorbereiten?** → Vorbereitung auf die ISKA-Gürtelprüfung.
 - **Muay Thai / Thaiboxen lernen?** → Muay Thai Komplettkurs (129 €).
-- **Grundlagen sitzen, du willst Distanz, Deckung und Konter von einem GLORY-Kämpfer?** → Kämpfen wie Chris Wunn (99 €).
+- **Grundlagen sitzen, du willst Distanz, Deckung und Konter von einem GLORY-Kämpfer?** → Kämpfen wie Chris Wunn (99 €, bald verfügbar).
 - **Viel Sitzen, Rücken kräftigen und mobilisieren?** → 11 Tage Rücken Fit (49 €).
 - **Viel Schreibtisch, Schultern ziehen nach vorn?** → Aufrechte Haltung oder Nacken & Schultern (je 49 €).
 - **Hüfte, Beinrückseite, tiefe Hocke?** → Hüfte & Beweglichkeit (49 €).
